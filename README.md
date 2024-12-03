@@ -59,15 +59,14 @@ Furnovskyland is a unique sovereign political entity, characterized by its rich 
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-### Backend Technologies
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
-
 ## 📝 License
 
 This project and all its contents are protected under the Furnovskyland State Intellectual Property Statute.
 
-## 🤝 Contributing
+## 🧑‍💻 Devs
+
+* [CsPS](https://github.com/CsPS0)
+* [Furnovsky](https://github.com/Furnovsky963)
 
 Interested in contributing to Furnovskyland's digital infrastructure? Check our citizen engagement guidelines and submission protocols.
 
