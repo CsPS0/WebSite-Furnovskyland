@@ -12,7 +12,7 @@ Furnovskyland is a unique sovereign political entity, characterized by its rich 
 
 | Name | Role | Department/Jurisdiction |
 |------|------|-------------------------|
-| Bence Bagosi | Emperor | Imperial Executive |
+| Furnovsky963 | Emperor | Imperial Executive |
 | CsPS | Senator | Legislative Affairs |
 | Katalin Révész | Chief Diplomat | Foreign Relations |
 | Mátyás Horváth | Minister of Defense | National Security |
