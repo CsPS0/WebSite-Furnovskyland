@@ -3,62 +3,128 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Furnovskyföld Nemzetszövetségének Birodalma</title>
+    <title>Főoldal</title>
     <link rel="stylesheet" href="/forras/CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <nav>
+    <header class="main-header">
+        <nav class="navbar">
             <div class="logo">
-                <img src="/forras/img/zaszlo.png" alt="Furnovskyföld Embléma">
+                <img src="/forras/img/banner.png" alt="Furnovskyföld Embléma">
                 <h1 class="cim">Furnovskyland</h1>
             </div>
-            <div class="burger-menu" onclick="toggleMenu()">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
             <ul class="nav-links">
-                <li><a href="#fooldal">Főoldal</a></li>
-                <li><a href="#tortenelem">Történelem</a></li>
-                <li><a href="#politika">Politika</a></li>
-                <li><a href="#kultura">Kultúra</a></li>
-                <li><a href="#egyeb">Egyéb</a></li>
+                <li><a href="#fooldal"><i class="fas fa-home"></i> Főoldal</a></li>
+                <li><a href="#tortenelem"><i class="fas fa-book-open"></i> Történelem</a></li>
+                <li><a href="#politika"><i class="fas fa-landmark"></i> Politika</a></li>
+                <li><a href="#kultura"><i class="fas fa-theater-masks"></i> Kultúra</a></li>
+                <li><a href="#egyeb"><i class="fas fa-ellipsis-h"></i> Egyéb</a></li>
                 <li class="dropdown">
-                    <a href="#nyelv">Nyelv</a>
+                    <a href="#nyelv"><i class="fas fa-globe"></i> Nyelv</a>
                     <div class="dropdown-content">
-                        <a href="#hu">🇭🇺</a>
-                        <a href="#en">eng</a>
-                        <a href="#de">🇩🇪</a>
+                        <a href="#hu">Magyar</a>
+                        <a href="#en">English</a>
+                        <a href="#de">Deutsch</a>
                     </div>
                 </li>
                 <li>
                     <button id="dark-mode-toggle">
-                        🌓 Sötét mód
+                        <i class="fas fa-moon"></i>
                     </button>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="bemutatkozas">
-            <h2>Bemutatkozás</h2>
-            <p>
-                Üdvözlünk Furnovskyföld Nemzetszövetségi Birodalmának hivatalos oldalán!
-                Itt megtudhatod, hogyan csatlakozhatsz Discord, illetve Minecraft
-                szervereinkhez, valamint tanulhatsz a történelmünkről, kultúránkról,
-                politikánkról és még sok egyébről!
-            </p>
+        <section id="hero">
+            <div class="hero-content">
+                <h1>Üdvözöljük Furnovskyföldön!</h1>
+                <p>Fedezze fel nemzetünk gazdag történelmét és kultúráját</p>
+                <a href="#bemutatkozas" class="cta-button">Tudj meg többet</a>
+            </div>
+        </section>
+        <section id="bemutatkozas" class="section-padding">
+            <div class="container">
+                <h2 class="section-title">Bemutatkozás</h2>
+                <div class="intro-grid">
+                    <div class="intro-text">
+                        <p>
+                            Üdvözlünk Furnovskyföld Nemzetszövetségi Birodalmának hivatalos oldalán!
+                            Itt megtudhatod, hogyan csatlakozhatsz Discord, illetve Minecraft
+                            szervereinkhez, valamint tanulhatsz a történelmünkről, kultúránkról,
+                            politikánkról és még sok egyébről!
+                        </p>
+                    </div>
+                    <div class="intro-stats">
+                        <div class="stat-card">
+                            <i class="fas fa-users"></i>
+                            <h3>Lakosság</h3>
+                            <p>128</p>
+                        </div>
+                        <div class="stat-card">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <h3>Terület</h3>
+                            <p>200 Chunk</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="csatlakozas" class="section-padding">
+            <div class="container">
+                <h2 class="section-title">Csatlakozz Közösségünkhöz</h2>
+                <div class="join-grid">
+                    <div class="join-card">
+                        <i class="fab fa-discord"></i>
+                        <h3>Discord Szerver</h3>
+                        <p>Csatlakozz aktív közösségünkhöz</p>
+                        <a href="https://discord.gg/UjcUnNhNfk" class="join-button" target="_blank">Csatlakozás</a>
+                    </div>
+                    <div class="join-card">
+                        <i class="fas fa-cube"></i>
+                        <h3>Minecraft Szerver</h3>
+                        <p>Építsd velünk városainkat</p>
+                        <a href="#" class="join-button">Kapcsolódás</a>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
-        <div class="footer-links">
-            <a href="#adatvedelem">Adatvédelem</a>
-            <a href="#impresszum">Impresszum</a>
-            <a href="#kapcsolat">Kapcsolat</a>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Kapcsolat</h3>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> info@furnovskyland.com</li>
+                    <li><i class="fab fa-discord"></i> Discord</li>
+                    <li><i class="fab fa-facebook"></i> Facebook</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Gyorslinkek</h3>
+                <ul>
+                    <li><a href="#adatvedelem">Adatvédelem</a></li>
+                    <li><a href="#impresszum">Impresszum</a></li>
+                    <li><a href="#kapcsolat">Kapcsolat</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Nyitvatartás</h3>
+                <ul>
+                    <li>Hétfő - Péntek: 9:00 - 17:00</li>
+                    <li>Szombat: 10:00 - 14:00</li>
+                    <li>Vasárnap: Zárva</li>
+                </ul>
+            </div>
         </div>
-        <div class="copyright">
-            © 2024 Furnovskyland Nemzetszövetségének Birodalma
+        <div class="footer-bottom">
+            <p>© 2024 Furnovskyland Nemzetszövetségének Birodalma</p>
         </div>
     </footer>
     <script src="/forras/JS/script.js"></script>
