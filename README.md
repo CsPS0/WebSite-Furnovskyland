@@ -13,12 +13,15 @@ Furnovskyland is a unique sovereign political entity, characterized by its rich 
 | Name | Role | Department/Jurisdiction |
 |------|------|-------------------------|
 | Furnovsky963 | Emperor | Imperial Executive |
-| CsPS | Senator | Legislative Affairs |
-| Katalin Révész | Chief Diplomat | Foreign Relations |
-| Mátyás Horváth | Minister of Defense | National Security |
-| Eszter Kovács | Supreme Court Justice | Judicial Oversight |
-| László Nagy | Economic Chancellor | Treasury and Commerce |
-| Zoltán Szabó | Infrastructure Director | Public Works and Development |
+| Edgebros | Marquess | Observer |
+| PCHUGS | Deputy Prime Minister | Minister of Government |
+| CsPS | Senator | Senate Members |
+| TheGuy | Deputy Senator | Member of the Senate |
+| . | Moderator | Moderating the peasants |
+| Lazzo | Moderator | Moderating the peasants |
+| ☜👁☞ | Moderator | Moderating the peasants |
+| rupitu | Moderator | Moderating the peasants |
+| Shogenki | Moderator | Moderating the peasants |
 
 ## 🌐 Website Sections and Functionality
 

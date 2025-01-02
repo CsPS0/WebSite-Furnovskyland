@@ -834,3 +834,5 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+note.txt
