@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+    /*
     // Element selections
     const darkModeToggle = document.getElementById('dark-mode-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
@@ -30,6 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
             enableDarkMode();
         }
     });
+    */
 
     // Mobile Menu Toggle
     mobileMenu.addEventListener('click', () => {
