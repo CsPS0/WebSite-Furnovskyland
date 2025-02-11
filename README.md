@@ -10,18 +10,21 @@ Furnovskyland is a unique sovereign political entity, characterized by its rich 
 
 ## 🏆 Current Leadership Hierarchy
 
-| Name | Role | Department/Jurisdiction |
+| Name | Highest Role(s) | Department |
 |------|------|-------------------------|
-| Furnovsky963 | Emperor | Imperial Executive |
-| Edgebros | Marquess | Observer |
-| PCHUGS | Deputy Prime Minister | Minister of Government |
-| CsPS | Senator | Senate Members |
-| TheGuy | Deputy Senator | Member of the Senate |
-| . | Moderator | Moderating the peasants |
-| Lazzo | Moderator | Moderating the peasants |
-| ☜👁☞ | Moderator | Moderating the peasants |
-| rupitu | Moderator | Moderating the peasants |
-| Shogenki | Moderator | Moderating the peasants |
+| HM Furnovsky I | Emperor of the Commonwealth | Head of State |
+| HRH Crown Prince Daniel | Crown Prince of the Commonwealth, Duke | Moderation |
+| HRH Prince Matthew | Prince of the Commonwealth, Duke | Moderation |
+| HRH Prince Daniel (Rupitu) | Prince of the Commonwealth, Duke | Moderation |
+| HRH Shogenki | Fourth Palatine of the Commonwealth | Moderation |
+| Damian James Ramirez | Prime Minister of the Government | Executive |
+| Lőrinczi Domokos | Deputy Prime Minister of the Government | Executive |
+| PCHUGS | Deputy Prime Minister of the Government | Executive |
+| CsPS | Senator | Legislative |
+| TheGuy | Deputy Senator | Legislative |
+.
+.
+.
 
 ## 🌐 Website Sections and Functionality
 
