@@ -1,3 +1,5 @@
+"use strict"
+
 document.addEventListener('DOMContentLoaded', () => {
     /*
     // Element selections
@@ -33,7 +35,57 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     */
 
+    // Language handling
+    const defaultLanguage = 'hu';
+    let currentLanguage = localStorage.getItem('selectedLanguage') || defaultLanguage;
+
+    // Function to update text content based on translation key
+    const updateText = (element, translationKey) => {
+        const keys = translationKey.split('.');
+        let translation = translations[currentLanguage];
+        for (const key of keys) {
+            if (translation && translation[key]) {
+                translation = translation[key];
+            } else {
+                console.warn(`Translation missing for key: ${translationKey} in language: ${currentLanguage}`);
+                return;
+            }
+        }
+        if (element.tagName.toLowerCase() === 'input' && element.type === 'submit') {
+            element.value = translation;
+        } else {
+            element.textContent = translation;
+        }
+    };
+
+    // Function to update all translations on the page
+    const updatePageLanguage = () => {
+        document.documentElement.lang = currentLanguage;
+        const elements = document.querySelectorAll('[data-i18n]');
+        elements.forEach(element => {
+            const translationKey = element.getAttribute('data-i18n');
+            updateText(element, translationKey);
+        });
+    };
+
+    // Handle language selection
+    const languageLinks = document.querySelectorAll('[data-lang]');
+    languageLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            currentLanguage = e.target.getAttribute('data-lang');
+            localStorage.setItem('selectedLanguage', currentLanguage);
+            updatePageLanguage();
+        });
+    });
+
+    // Initial language setup
+    updatePageLanguage();
+
     // Mobile Menu Toggle
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navLinks = document.querySelector('.nav-links');
+
     mobileMenu.addEventListener('click', () => {
         mobileMenu.classList.toggle('active');
         navLinks.classList.toggle('active');
@@ -68,7 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             const target = document.querySelector(this.getAttribute('href'));
             if (target) {
-                const headerOffset = header.offsetHeight;
+                const headerOffset = document.querySelector('.main-header').offsetHeight;
                 const elementPosition = target.offsetTop;
                 const offsetPosition = elementPosition - headerOffset;
 
@@ -86,6 +138,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Header scroll effect
     let lastScroll = 0;
+    const header = document.querySelector('.main-header');
+    
     window.addEventListener('scroll', () => {
         const currentScroll = window.pageYOffset;
         
@@ -135,9 +189,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                if (entry.target.classList.contains('stat-card')) {
-                    animateStats();
-                }
                 entry.target.classList.add('animate');
                 observer.unobserve(entry.target);
             }
@@ -147,18 +198,5 @@ document.addEventListener('DOMContentLoaded', () => {
     // Observe elements for animation
     document.querySelectorAll('.join-card, .stat-card, .section-title').forEach(el => {
         observer.observe(el);
-    });
-
-    // Language switcher functionality
-    const languageLinks = document.querySelectorAll('.dropdown-content a');
-    languageLinks.forEach(link => {
-        link.addEventListener('click', (e) => {
-            e.preventDefault();
-            const language = e.target.getAttribute('href').replace('#', '');
-            // Here you would typically implement language switching logic
-            console.log(`Switching to language: ${language}`);
-            // For demonstration purposes, we'll just store the selection
-            localStorage.setItem('selectedLanguage', language);
-        });
     });
 });

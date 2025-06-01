@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Történelem - Furnovskyland</title>
+    <link rel="stylesheet" href="/forras/CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="/forras/img/banner.png" alt="Furnovskyföld Embléma">
+                <h1 class="cim">Furnovskyland</h1>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="./index.html" data-i18n="nav.home"><i class="fas fa-home"></i> <span>Főoldal</span></a></li>
+                <li><a href="./tortenelem.html" data-i18n="nav.history"><i class="fas fa-book-open"></i> <span>Történelem</span></a></li>
+                <li><a href="./politika.html" data-i18n="nav.politics"><i class="fas fa-landmark"></i> <span>Politika</span></a></li>
+                <li><a href="./kultura.html" data-i18n="nav.culture"><i class="fas fa-theater-masks"></i> <span>Kultúra</span></a></li>
+                <li><a href="./egyeb.html" data-i18n="nav.other"><i class="fas fa-ellipsis-h"></i> <span>Egyéb</span></a></li>
+                <li class="dropdown">
+                    <a href="#nyelv" data-i18n="nav.language"><i class="fas fa-globe"></i> <span>Nyelv</span></a>
+                    <div class="dropdown-content">
+                        <a href="#" data-lang="hu">Magyar</a>
+                        <a href="#" data-lang="en">English</a>
+                        <a href="#" data-lang="de">Deutsch</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="page-hero">
+            <div class="hero-content">
+                <h1 data-i18n="history.pageTitle">Történelem</h1>
+                <p data-i18n="history.pageSubtitle">Fedezze fel Furnovskyföld gazdag történelmi örökségét</p>
+            </div>
+        </section>
+
+        <section id="timeline" class="section-padding">
+            <div class="container">
+                <h2 class="section-title" data-i18n="history.timeline.title">Időrendi áttekintés</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date" data-i18n="history.timeline.founding.date">2023</div>
+                        <div class="timeline-content">
+                            <h3 data-i18n="history.timeline.founding.title">Alapítás</h3>
+                            <p data-i18n="history.timeline.founding.description">Furnovskyföld megalapítása és az első települések létrehozása.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date" data-i18n="history.timeline.expansion.date">2023 Nyár</div>
+                        <div class="timeline-content">
+                            <h3 data-i18n="history.timeline.expansion.title">Terjeszkedés</h3>
+                            <p data-i18n="history.timeline.expansion.description">A birodalom területének bővítése és új városok alapítása.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date" data-i18n="history.timeline.federation.date">2023 Ősz</div>
+                        <div class="timeline-content">
+                            <h3 data-i18n="history.timeline.federation.title">Nemzetszövetség</h3>
+                            <p data-i18n="history.timeline.federation.description">A Nemzetszövetségi Birodalom kikiáltása.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="historical-figures" class="section-padding">
+            <div class="container">
+                <h2 class="section-title" data-i18n="history.figures.title">Történelmi személyek</h2>
+                <div class="figures-grid">
+                    <div class="figure-card">
+                        <img src="/forras/img/placeholder.jpg" alt="Történelmi személy">
+                        <h3 data-i18n="history.figures.founder.name">Alapító</h3>
+                        <p data-i18n="history.figures.founder.description">Az első vezető, aki megalapította Furnovskyföldet.</p>
+                    </div>
+                    <div class="figure-card">
+                        <img src="/forras/img/placeholder.jpg" alt="Történelmi személy">
+                        <h3 data-i18n="history.figures.leader.name">Vezető</h3>
+                        <p data-i18n="history.figures.leader.description">A Nemzetszövetség első vezetője.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 data-i18n="footer.contact.title">Kapcsolat</h3>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> <span data-i18n="footer.contact.email">info@furnovskyland.com</span></li>
+                    <li><i class="fab fa-discord"></i> <span data-i18n="footer.contact.discord">Discord</span></li>
+                    <li><i class="fab fa-facebook"></i> <span data-i18n="footer.contact.facebook">Facebook</span></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 data-i18n="footer.quickLinks.title">Gyorslinkek</h3>
+                <ul>
+                    <li><a href="#adatvedelem" data-i18n="footer.quickLinks.privacy">Adatvédelem</a></li>
+                    <li><a href="#impresszum" data-i18n="footer.quickLinks.imprint">Impresszum</a></li>
+                    <li><a href="#kapcsolat" data-i18n="footer.quickLinks.contact">Kapcsolat</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 data-i18n="footer.openingHours.title">Nyitvatartás</h3>
+                <ul>
+                    <li data-i18n="footer.openingHours.weekdays">Hétfő - Péntek: 9:00 - 17:00</li>
+                    <li data-i18n="footer.openingHours.saturday">Szombat: 10:00 - 14:00</li>
+                    <li data-i18n="footer.openingHours.sunday">Vasárnap: Zárva</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-i18n="footer.copyright">© 2024 Furnovskyland Nemzetszövetségének Birodalma</p>
+        </div>
+    </footer>
+    <script src="/forras/JS/translations.js"></script>
+    <script src="/forras/JS/script.js"></script>
+</body>
+</html> 
