@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Egyéb - Furnovskyland</title>
+    <link rel="stylesheet" href="/forras/CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="/forras/img/banner.png" alt="Furnovskyföld Embléma">
+                <h1 class="cim">Furnovskyland</h1>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="./index.html" data-i18n="nav.home"><i class="fas fa-home"></i> <span>Főoldal</span></a></li>
+                <li><a href="./tortenelem.html" data-i18n="nav.history"><i class="fas fa-book-open"></i> <span>Történelem</span></a></li>
+                <li><a href="./politika.html" data-i18n="nav.politics"><i class="fas fa-landmark"></i> <span>Politika</span></a></li>
+                <li><a href="./kultura.html" data-i18n="nav.culture"><i class="fas fa-theater-masks"></i> <span>Kultúra</span></a></li>
+                <li><a href="./egyeb.html" data-i18n="nav.other"><i class="fas fa-ellipsis-h"></i> <span>Egyéb</span></a></li>
+                <li class="dropdown">
+                    <a href="#nyelv" data-i18n="nav.language"><i class="fas fa-globe"></i> <span>Nyelv</span></a>
+                    <div class="dropdown-content">
+                        <a href="#" data-lang="hu">Magyar</a>
+                        <a href="#" data-lang="en">English</a>
+                        <a href="#" data-lang="de">Deutsch</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="page-hero">
+            <div class="hero-content">
+                <h1 data-i18n="other.pageTitle">Egyéb információk</h1>
+                <p data-i18n="other.pageSubtitle">További hasznos információk Furnovskyföldről</p>
+            </div>
+        </section>
+
+        <section id="faq" class="section-padding">
+            <div class="container">
+                <h2 class="section-title" data-i18n="other.faq.title">Gyakran Ismételt Kérdések</h2>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <h3 data-i18n="other.faq.join.question">Hogyan csatlakozhatok Furnovskyföldhez?</h3>
+                        <p data-i18n="other.faq.join.answer">Részletes információk a csatlakozási folyamatról és követelményekről.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3 data-i18n="other.faq.citizenship.question">Hogyan szerezhetek állampolgárságot?</h3>
+                        <p data-i18n="other.faq.citizenship.answer">Az állampolgárság megszerzésének feltételei és folyamata.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3 data-i18n="other.faq.visit.question">Hogyan látogathatok el Furnovskyföldre?</h3>
+                        <p data-i18n="other.faq.visit.answer">Információk a látogatásról és a szükséges engedélyekről.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="resources" class="section-padding">
+            <div class="container">
+                <h2 class="section-title" data-i18n="other.resources.title">Hasznos források</h2>
+                <div class="resources-grid">
+                    <div class="resource-card">
+                        <i class="fas fa-file-pdf"></i>
+                        <h3 data-i18n="other.resources.documents.title">Dokumentumok</h3>
+                        <p data-i18n="other.resources.documents.description">Hivatalos dokumentumok és űrlapok.</p>
+                        <a href="#" class="resource-link" data-i18n="other.resources.documents.link">Letöltés</a>
+                    </div>
+                    <div class="resource-card">
+                        <i class="fas fa-book"></i>
+                        <h3 data-i18n="other.resources.guides.title">Útmutatók</h3>
+                        <p data-i18n="other.resources.guides.description">Részletes útmutatók és kézikönyvek.</p>
+                        <a href="#" class="resource-link" data-i18n="other.resources.guides.link">Olvasás</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-form" class="section-padding">
+            <div class="container">
+                <h2 class="section-title" data-i18n="other.contact.title">Kapcsolatfelvétel</h2>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name" data-i18n="other.contact.form.name">Név:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" data-i18n="other.contact.form.email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject" data-i18n="other.contact.form.subject">Tárgy:</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" data-i18n="other.contact.form.message">Üzenet:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" data-i18n="other.contact.form.submit">Küldés</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 data-i18n="footer.contact.title">Kapcsolat</h3>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> <span data-i18n="footer.contact.email">info@furnovskyland.com</span></li>
+                    <li><i class="fab fa-discord"></i> <span data-i18n="footer.contact.discord">Discord</span></li>
+                    <li><i class="fab fa-facebook"></i> <span data-i18n="footer.contact.facebook">Facebook</span></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 data-i18n="footer.quickLinks.title">Gyorslinkek</h3>
+                <ul>
+                    <li><a href="#adatvedelem" data-i18n="footer.quickLinks.privacy">Adatvédelem</a></li>
+                    <li><a href="#impresszum" data-i18n="footer.quickLinks.imprint">Impresszum</a></li>
+                    <li><a href="#kapcsolat" data-i18n="footer.quickLinks.contact">Kapcsolat</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 data-i18n="footer.openingHours.title">Nyitvatartás</h3>
+                <ul>
+                    <li data-i18n="footer.openingHours.weekdays">Hétfő - Péntek: 9:00 - 17:00</li>
+                    <li data-i18n="footer.openingHours.saturday">Szombat: 10:00 - 14:00</li>
+                    <li data-i18n="footer.openingHours.sunday">Vasárnap: Zárva</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-i18n="footer.copyright">© 2024 Furnovskyland Nemzetszövetségének Birodalma</p>
+        </div>
+    </footer>
+    <script src="/forras/JS/translations.js"></script>
+    <script src="/forras/JS/script.js"></script>
+</body>
+</html> 
