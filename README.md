@@ -17,11 +17,11 @@ Furnovskyland is a unique sovereign political entity, characterized by its rich 
 | HRH Prince Matthew | Prince of the Commonwealth, Duke | Moderation |
 | HRH Prince Daniel (Rupitu) | Prince of the Commonwealth, Duke | Moderation |
 | HRH Shogenki | Fourth Palatine of the Commonwealth | Moderation |
-| Damian James Ramirez | Prime Minister of the Government | Executive |
-| Lőrinczi Domokos | Deputy Prime Minister of the Government | Executive |
-| PCHUGS | Deputy Prime Minister of the Government | Executive |
-| CsPS | Senator | Legislative |
-| TheGuy | Deputy Senator | Legislative |
+| XVDX | Prime Minister of the Government | Executive |
+| Hafiz bin Najmuldin | Deputy Prime Minister of the Government | Executive |
+| Seneca | Deputy Prime Minister of the Government | Executive |
+| Edgeworth | Senator | Legislative |
+| Jole | Deputy Senator | Legislative |
 .
 .
 .
