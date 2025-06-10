@@ -38,33 +38,31 @@ const translations = {
         history: {
             pageTitle: 'Történelem',
             pageSubtitle: 'Fedezze fel Furnovskyföld gazdag történelmi örökségét',
-            timeline: {
-                title: 'Időrendi áttekintés',
-                founding: {
-                    date: '2023',
+            welcome: 'Üdvözöljük Birodalmunkban! Ha érdekli, kérjük olvassa el ezt az üzenetet!',
+            sections: {
+                foundation: {
                     title: 'Alapítás',
-                    description: 'Furnovskyföld megalapítása és az első települések létrehozása.'
+                    content: 'Furnovskyföld Királyságát 2018. október 31-én délután 3 órakor (GMT+2) alapították meg a koronázásommal. Kezdetben egy apró városállam volt, Furnokisfaludi városa.'
                 },
                 expansion: {
-                    date: '2023 Nyár',
-                    title: 'Terjeszkedés',
-                    description: 'A birodalom területének bővítése és új városok alapítása.'
+                    title: 'Terjeszkedés és Háborúk',
+                    content: 'Sok területet szereztünk egy közel egy hónapig tartó háborús időszak alatt. 2019 januárjában megnyertük a Nagy Havas Világháborút, és megszereztük a délkeleti sarkot, valamint néhány keleti, északi és délnyugati területet a szomszédoktól. Ezután nagyon jó partneri kapcsolatot alakítottunk ki a szomszédos Német-Magyar Monarchiával, amely ma már Német-Szlovák. 2020-tól jó kapcsolatban állunk a The Diamondboy birtokkal (ma Land of the Deadbringers) is, és megszereztük szigetük nyugati részét Furnovskyföld számára.'
                 },
-                federation: {
-                    date: '2023 Ősz',
-                    title: 'Nemzetszövetség',
-                    description: 'A Nemzetszövetségi Birodalom kikiáltása.'
-                }
-            },
-            figures: {
-                title: 'Történelmi személyek',
-                founder: {
-                    name: 'Alapító',
-                    description: 'Az első vezető, aki megalapította Furnovskyföldet.'
+                modernEra: {
+                    title: 'Modern Korszak',
+                    content: 'Egy nagyon szerencsés évet kezdtünk. Bár volt COVID-19, most nagyon gazdagok vagyunk, és a gazdaság növekszik. 2021. április 15-én a Nemzetközösség zászlajára való tekintettel úgy döntöttem, hogy az országot átnevezem Furnovskyföld Nemzetközösségi Birodalomra, a következő kormányt pedig Furnovskyföld I. Szövetségi Kormányára.'
                 },
-                leader: {
-                    name: 'Vezető',
-                    description: 'A Nemzetszövetség első vezetője.'
+                geography: {
+                    title: 'Földrajz',
+                    content: 'Nagyon gazdagok vagyunk, de szükségünk van az export növelésére. Csak kis mennyiségű dombunk van, egyetlen hegyünk a délkeleti országhatáron található a Német-Szlovák Monarchiával.'
+                },
+                government: {
+                    title: 'Kormányzás',
+                    content: 'Nagy kerületi rendszerünk van, jelenleg 36 kerülettel és 2 határrégióval, amelyek a térképen láthatók. Minden nagyváros 9 részre van osztva. Az irányítószámaink így néznek ki: 1019. Ez a főváros központjának irányítószáma. Az első 1 az 1. kerület. A 01 a kerület legfontosabb városa, a 9 pedig a város 9. régiója.'
+                },
+                flag: {
+                    title: 'Zászló',
+                    content: 'Az eredeti egy magyar zászló volt (piros-fehér-zöld trikolór) egy narancssárga ponttal középen. Később ezt sárgára cserélték.'
                 }
             }
         },
@@ -468,33 +466,31 @@ const translations = {
         history: {
             pageTitle: 'Geschichte',
             pageSubtitle: 'Entdecken Sie das reiche historische Erbe von Furnovskyland',
-            timeline: {
-                title: 'Zeitlicher Überblick',
-                founding: {
-                    date: '2023',
+            welcome: 'Willkommen in unserem Reich! Wenn Sie interessiert sind, lesen Sie bitte diese Nachricht!',
+            sections: {
+                foundation: {
                     title: 'Gründung',
-                    description: 'Die Gründung von Furnovskyland und die ersten Siedlungen.'
+                    content: 'Das Königreich Furnovskyland wurde durch meine Krönung am 31. Oktober 2018 um 15 Uhr GMT+2 gegründet. Es war ein kleiner Stadtstaat, die Stadt Furnotinyvillage.'
                 },
                 expansion: {
-                    date: 'Sommer 2023',
-                    title: 'Expansion',
-                    description: 'Erweiterung des Reichsgebiets und Gründung neuer Städte.'
+                    title: 'Expansion und Kriege',
+                    content: 'Wir erhielten viele Länder während einer Kriegsperiode, die fast einen Monat dauerte. Im Januar 2019 gewannen wir den Großen Schneeweltkrieg und erhielten die südöstliche Ecke, einige östliche, nördliche und südwestliche Gebiete von den Nachbarn. Danach wurden wir sehr gute Partner mit der benachbarten Deutsch-Ungarischen Monarchie, jetzt Deutsch-Slowakisch. Ab 2020 stehen wir auch in guter Beziehung zum Diamondboy-Anwesen (jetzt Land der Deadbringers) und gewannen deren westlichen Teil der Insel für Furnovskyland.'
                 },
-                federation: {
-                    date: 'Herbst 2023',
-                    title: 'Föderation',
-                    description: 'Ausrufung des Nationalen Föderationsreiches.'
-                }
-            },
-            figures: {
-                title: 'Historische Persönlichkeiten',
-                founder: {
-                    name: 'Gründer',
-                    description: 'Der erste Anführer, der Furnovskyland gründete.'
+                modernEra: {
+                    title: 'Moderne Ära',
+                    content: 'Wir begannen ein sehr glückliches Jahr. Obwohl wir COVID-19 hatten, sind wir jetzt sehr reich und die Wirtschaft wächst. Am 15. April 2021 beschloss ich für die Flagge des Commonwealth, das Land in Das Reich des Commonwealth von Furnovskyland umzubenennen und die nächste Regierung in I. Bundesregierung von Furnovskyland.'
                 },
-                leader: {
-                    name: 'Führer',
-                    description: 'Der erste Führer der Nationalen Föderation.'
+                geography: {
+                    title: 'Geographie',
+                    content: 'Wir sind sehr reich, brauchen aber dringend Exporte. Wir haben nur eine kleine Anzahl von Hügeln, nur einen Berg im Südosten der Landesgrenze mit der Deutsch-Slowakischen Monarchie.'
+                },
+                government: {
+                    title: 'Regierung',
+                    content: 'Wir haben ein großes Bezirkssystem, derzeit mit 36 und 2 Grenzregionen, die auf der Karte gezeigt werden. Jede große Stadt ist in 9 Teile unterteilt. Unsere Postleitzahlen sind wie folgt: 1019. Dies ist die Postleitzahl des Stadtzentrums der Hauptstadt. Die erste 1 ist der 1. Bezirk. Die 01 ist die wichtigste Stadt des Bezirks, und 9 ist die 9. Region der Stadt.'
+                },
+                flag: {
+                    title: 'Flagge',
+                    content: 'Die ursprüngliche war eine ungarische Flagge (rot-weiß-grüne Trikolore) mit einem orangen Punkt in der Mitte. Später wurde sie durch eine gelbe ersetzt.'
                 }
             }
         },
