@@ -68,7 +68,7 @@ Furnovskyland is a unique sovereign political entity, characterized by its rich 
 ## 🖼️ Preview
 
 <div align="center">
-  <img src="/forras/img/preview.png" alt="Website Preview">
+  <img src="/docs/IMG/preview.png" alt="Website Preview">
 </div>
 
 ## 📝 License
