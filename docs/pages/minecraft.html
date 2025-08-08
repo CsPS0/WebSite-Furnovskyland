@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Politics - Furnovskyland</title>
+    <title>Minecraft - Furnovskyland</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="../CSS/source.css">
@@ -69,45 +69,41 @@
     </div>
 
     <main class="mt-20">
-        <section id="politics" class="py-20">
+        <section id="minecraft" class="py-20">
             <div class="container mx-auto">
-                <h2 class="text-4xl font-bold text-cardinal mb-4 text-center" data-i18n="politics.pageTitle">Politics</h2>
-                <p class="text-lg text-manatee mb-12 text-center" data-i18n="politics.pageSubtitle">Learn about the political system of Furnovskyland</p>
+                <h2 class="text-4xl font-bold text-cardinal mb-4 text-center" data-i18n="minecraft.pageTitle">Minecraft Server</h2>
+                <p class="text-lg text-manatee mb-12 text-center" data-i18n="minecraft.pageSubtitle">Join our Minecraft server and build with us!</p>
 
-                <div class="relative pl-8">
-                    <div class="content-section bg-white p-8 rounded-lg shadow-md mb-12 transform hover:translate-x-2 transition-transform duration-300">
-                        <h3 class="text-2xl font-bold text-cardinal mb-4" data-i18n="politics.government.title">Government System</h3>
-                        <p class="text-lg" data-i18n="politics.government.executive.description">Structure and operation of the executive branch.</p>
+                <div class="grid md:grid-cols-2 gap-12 items-center mb-12">
+                    <div class="text-left">
+                        <h3 class="text-2xl font-bold text-cardinal mb-4" data-i18n="minecraft.description.title">Description</h3>
+                        <p class="text-lg" data-i18n="minecraft.description.content">Our Minecraft server is a place where you can build, explore, and have fun with our community. We have a variety of plugins and a friendly staff to help you get started. Whether you are a seasoned player or new to the game, you will find a home on our server.</p>
                     </div>
-
-                    <div class="content-section bg-white p-8 rounded-lg shadow-md mb-12 transform hover:translate-x-2 transition-transform duration-300">
-                        <h3 class="text-2xl font-bold text-cardinal mb-4" data-i18n="politics.government.judicial.title">Judicial Power</h3>
-                        <p class="text-lg" data-i18n="politics.government.judicial.description">The justice system.</p>
+                    <div>
+                        <img src="../IMG/preview.png" alt="Minecraft Server Preview" class="rounded-lg shadow-lg">
                     </div>
+                </div>
 
-                    <div class="content-section bg-white p-8 rounded-lg shadow-md mb-12 transform hover:translate-x-2 transition-transform duration-300">
-                        <h3 class="text-2xl font-bold text-cardinal mb-4" data-i18n="politics.government.legislative.title">Legislature</h3>
-                        <p class="text-lg" data-i18n="politics.government.legislative.description">The legislative process and organization.</p>
+                <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+                    <h3 class="text-2xl font-bold text-cardinal mb-4" data-i18n="minecraft.status.title">Server Status</h3>
+                    <div class="grid grid-cols-2 gap-8">
+                        <div>
+                            <p class="text-lg"><strong data-i18n="minecraft.status.ip">Server IP:</strong> <span id="server-ip">ujfurnvaros.aternos.me</span></p>
+                            <p class="text-lg"><strong data-i18n="minecraft.status.version">Version:</strong> <span id="server-version">1.20.1</span></p>
+                        </div>
+                        <div>
+                            <p class="text-lg"><strong data-i18n="minecraft.status.status">Status:</strong> <span id="server-status" class="text-gray-500">Loading...</span></p>
+                            <p class="text-lg"><strong data-i18n="minecraft.status.players">Players:</strong> <span id="server-players">Loading...</span></p>
+                        </div>
                     </div>
+                </div>
 
-                    <div class="content-section bg-white p-8 rounded-lg shadow-md mb-12 transform hover:translate-x-2 transition-transform duration-300">
-                        <h3 class="text-2xl font-bold text-cardinal mb-4" data-i18n="politics.structure.title">Political Structure</h3>
-                        <p class="text-lg" data-i18n="politics.structure.federation.description">Structure and principles of the Federation.</p>
-                    </div>
-
-                    <div class="content-section bg-white p-8 rounded-lg shadow-md mb-12 transform hover:translate-x-2 transition-transform duration-300">
-                        <h3 class="text-2xl font-bold text-cardinal mb-4" data-i18n="politics.structure.local.title">Local Governments</h3>
-                        <p class="text-lg" data-i18n="politics.structure.local.description">System and duties of local administration.</p>
-                    </div>
-
-                    <div class="content-section bg-white p-8 rounded-lg shadow-md mb-12 transform hover:translate-x-2 transition-transform duration-300">
-                        <h3 class="text-2xl font-bold text-cardinal mb-4" data-i18n="politics.foreign.title">Foreign Relations</h3>
-                        <p class="text-lg" data-i18n="politics.foreign.allies.description">Our diplomatic relations and allies.</p>
-                    </div>
-
-                    <div class="content-section bg-white p-8 rounded-lg shadow-md mb-12 transform hover:translate-x-2 transition-transform duration-300">
-                        <h3 class="text-2xl font-bold text-cardinal mb-4" data-i18n="politics.foreign.international.title">International Relations</h3>
-                        <p class="text-lg" data-i18n="politics.foreign.international.description">Our participation in the international community.</p>
+                <div>
+                    <h3 class="text-2xl font-bold text-cardinal mb-4" data-i18n="minecraft.gallery.title">Gallery</h3>
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <img src="../IMG/zaszlo.png" alt="Gallery Image 1" class="rounded-lg shadow-lg">
+                        <img src="../IMG/preview.png" alt="Gallery Image 2" class="rounded-lg shadow-lg">
+                        <img src="../IMG/banner.png" alt="Gallery Image 3" class="rounded-lg shadow-lg">
                     </div>
                 </div>
             </div>

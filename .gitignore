@@ -25,3 +25,4 @@ secret.txt
 *.bak
 
 note.txt
+node_modules/

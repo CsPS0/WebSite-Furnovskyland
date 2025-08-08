@@ -2,6 +2,7 @@ const translations = {
     hu: {
         nav: {
             home: 'Főoldal',
+            minecraft: 'Minecraft',
             history: 'Történelem',
             politics: 'Politika',
             culture: 'Kultúra',
@@ -190,6 +191,24 @@ const translations = {
                 }
             }
         },
+        minecraft: {
+            pageTitle: 'Minecraft Szerver',
+            pageSubtitle: 'Csatlakozz Minecraft szerverünkhöz és építs velünk!',
+            description: {
+                title: 'Leírás',
+                content: 'Minecraft szerverünk egy hely, ahol építhetsz, felfedezhetsz és szórakozhatsz közösségünkkel. Különféle bővítményeink és barátságos személyzetünk van, hogy segítsen a kezdésben. Akár tapasztalt játékos vagy, akár új vagy a játékban, szerverünkön otthonra találsz.'
+            },
+            status: {
+                title: 'Szerver állapot',
+                ip: 'Szerver IP:',
+                version: 'Verzió:',
+                status: 'Állapot:',
+                players: 'Játékosok:'
+            },
+            gallery: {
+                title: 'Galéria'
+            }
+        },
         footer: {
             contact: {
                 title: 'Kapcsolat',
@@ -215,6 +234,7 @@ const translations = {
     en: {
         nav: {
             home: 'Home',
+            minecraft: 'Minecraft',
             history: 'History',
             politics: 'Politics',
             culture: 'Culture',
@@ -405,6 +425,24 @@ const translations = {
                 }
             }
         },
+        minecraft: {
+            pageTitle: 'Minecraft Server',
+            pageSubtitle: 'Join our Minecraft server and build with us!',
+            description: {
+                title: 'Description',
+                content: 'Our Minecraft server is a place where you can build, explore, and have fun with our community. We have a variety of plugins and a friendly staff to help you get started. Whether you are a seasoned player or new to the game, you will find a home on our server.'
+            },
+            status: {
+                title: 'Server Status',
+                ip: 'Server IP:',
+                version: 'Version:',
+                status: 'Status:',
+                players: 'Players:'
+            },
+            gallery: {
+                title: 'Gallery'
+            }
+        },
         footer: {
             contact: {
                 title: 'Contact',
@@ -430,6 +468,7 @@ const translations = {
     de: {
         nav: {
             home: 'Startseite',
+            minecraft: 'Minecraft',
             history: 'Geschichte',
             politics: 'Politik',
             culture: 'Kultur',
@@ -474,7 +513,7 @@ const translations = {
                 },
                 expansion: {
                     title: 'Expansion und Kriege',
-                    content: 'Wir erhielten viele Länder während einer Kriegsperiode, die fast einen Monat dauerte. Im Januar 2019 gewannen wir den Großen Schneeweltkrieg und erhielten die südöstliche Ecke, einige östliche, nördliche und südwestliche Gebiete von den Nachbarn. Danach wurden wir sehr gute Partner mit der benachbarten Deutsch-Ungarischen Monarchie, jetzt Deutsch-Slowakisch. Ab 2020 stehen wir auch in guter Beziehung zum Diamondboy-Anwesen (jetzt Land der Deadbringers) und gewannen deren westlichen Teil der Insel für Furnovskyland.'
+                    content: 'Wir erhielten viele Länder während einer Kriegsperiode, die fast einen Monat dauerte. Im Januar 2019 gewannen wir den Großen Schneeweltkrieg und erhielten die südöstliche Ecke, sowie einige östliche, nördliche und südwestliche Gebiete von den Nachbarn. Danach wurden wir sehr gute Partner mit der benachbarten Deutsch-Ungarischen Monarchie, jetzt Deutsch-Slowakisch. Ab 2020 stehen wir auch in guter Beziehung zum Diamondboy-Anwesen (jetzt Land der Deadbringers) und gewannen deren westlichen Teil der Insel für Furnovskyland.'
                 },
                 modernEra: {
                     title: 'Moderne Ära',
@@ -618,6 +657,24 @@ const translations = {
                 }
             }
         },
+        minecraft: {
+            pageTitle: 'Minecraft Server',
+            pageSubtitle: 'Treten Sie unserem Minecraft-Server bei und bauen Sie mit uns!',
+            description: {
+                title: 'Beschreibung',
+                content: 'Unser Minecraft-Server ist ein Ort, an dem Sie bauen, erkunden und Spaß mit unserer Community haben können. Wir haben eine Vielzahl von Plugins und ein freundliches Personal, das Ihnen den Einstieg erleichtert. Egal, ob Sie ein erfahrener Spieler oder neu im Spiel sind, auf unserem Server finden Sie ein Zuhause.'
+            },
+            status: {
+                title: 'Serverstatus',
+                ip: 'Server-IP:',
+                version: 'Version:',
+                status: 'Status:',
+                players: 'Spieler:'
+            },
+            gallery: {
+                title: 'Galerie'
+            }
+        },
         footer: {
             contact: {
                 title: 'Kontakt',
@@ -640,4 +697,4 @@ const translations = {
             copyright: '© 2024 Nationales Föderationsreich Furnovskyland'
         }
     }
-}; 
+};
