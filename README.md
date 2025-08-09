@@ -65,6 +65,23 @@ Furnovskyland is a unique sovereign political entity, characterized by its rich 
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
+## 🔧 Development
+
+To install dependencies, run:
+```bash
+npm install
+```
+
+To start the development server with live reloading, run:
+```bash
+npm start
+```
+
+To build the CSS for production, run:
+```bash
+npm run build:css
+```
+
 ## 🖼️ Preview
 
 <div align="center">

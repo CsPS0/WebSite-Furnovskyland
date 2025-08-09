@@ -149,6 +149,87 @@ const translations = {
                 }
             }
         },
+        culturalDays: {
+            pageTitle: 'Kulturtage und Feiertage',
+            pageSubtitle: 'Entdecken Sie den reichen Kulturkalender von Furnovskyland',
+            jan: {
+                '1': { name: 'Jan. 1.', desc: 'Neujahr (Feiertag, Besuchstag)' },
+                '6': { name: 'Jan. 6.', desc: 'Heilige Drei Könige' },
+                '7-13': { name: 'Jan. 7-13.', desc: 'Januar-Partywoche (Feiertag)' }
+            },
+            feb: {
+                movable: { name: 'Beweglicher Feiertag', desc: 'Karneval, Kostümball (Feiertag)' },
+                '26-28': { name: 'Febr. 26-28.', desc: 'Februar-Partytage (Feiertag)' }
+            },
+            mar: {
+                '1': { name: 'März 1.', desc: 'Frühlings- und St. David\'s Tag (Feiertag in britisch geprägten Gebieten, Besuchstag)' },
+                '15': { name: 'März 15.', desc: 'Feiertag der Revolution von 1848 (Feiertag in ungarisch geprägten Gebieten, Besuchstag)' },
+                '17': { name: 'März 17.', desc: 'St. Patrick\'s Day' },
+                '23': { name: 'März 23.', desc: 'Tag der Blumen (Besuchstag)' }
+            },
+            'mar-apr': {
+                movable: { name: 'Beweglicher Feiertag', desc: 'Karfreitag, Ostersonntag, Ostermontag (Feiertag, Besuchstag)' }
+            },
+            apr: {
+                '15': { name: 'April 15.', desc: 'Tag der Nationalen Föderation (Feiertag, Besuchstag, NATIONALFEIERTAG)' },
+                '23': { name: 'April 23.', desc: 'St. Georg\'s-Tag (Feiertag in britisch geprägten Gebieten)' }
+            },
+            may: {
+                mothers: { name: 'Beweglicher Feiertag', desc: 'Muttertag (erster Sonntag im Mai)' },
+                '1': { name: 'Mai 1.', desc: 'Tag der Arbeit (Feiertag, Besuchstag)' },
+                '8': { name: 'Mai 8.', desc: 'Feiertag des Sieges der Slowakei über den Faschismus (Feiertag in slowakisch geprägten Gebieten, Besuchstag)' },
+                '17-23': { name: 'Mai 17-23.', desc: 'Kinderwoche (Schulferien)' },
+                '24-30': { name: 'Mai 24-30.', desc: 'Elternwoche (arbeitsfreier Tag, Besuchstag)' },
+                '31': { name: 'Mai 31.', desc: 'Tag der Bäume (Besuchstag)' }
+            },
+            'may-jun': {
+                movable: { name: 'Beweglicher Feiertag', desc: 'Pfingstsonntag, Pfingstmontag (Feiertag, Besuchstag)' }
+            },
+            jun: {
+                '1': { name: 'Juni 1.', desc: 'Sommertag, Beginn der Sommerferien (Besuchstag)' },
+                '4': { name: 'Juni 4.', desc: 'Tag des nationalen Zusammenhalts (Feiertag in ungarisch geprägten Gebieten, Besuchstag)' },
+                '15': { name: 'Juni 15.', desc: 'Parlamentstag (Feiertag, Besuchstag, NATIONALFEIERTAG)' },
+                fathers: { name: 'Beweglicher Feiertag', desc: 'Vatertag (dritter Sonntag im Juni)' }
+            },
+            jul: {
+                '4': { name: 'Juli 4.', desc: 'Amerikanischer Unabhängigkeitstag (Feiertag in amerikanisch geprägten Gebieten, Besuchstag)' },
+                '5': { name: 'Juli 5.', desc: 'Tag der Heiligen Kyrill und Method (Feiertag in slowakisch geprägten Gebieten)' },
+                festival: { name: 'Beweglicher Feiertag', desc: 'Festivaltag (letzter Sonntag im Juli, Feiertag, Besuchstag)' }
+            },
+            aug: {
+                '5': { name: 'Aug. 5.', desc: 'Tag der Hymne (Feiertag, Besuchstag, NATIONALFEIERTAG)' },
+                '20': { name: 'Aug. 20.', desc: 'St. Stephanstag (Feiertag in ungarisch geprägten Gebieten)' },
+                '23': { name: 'Aug. 23.', desc: 'I. Furnovsky\'s Tag (Geburtstagsfeiertag, Besuchstag, NATIONALFEIERTAG)' },
+                '29': { name: 'Aug. 29.', desc: 'Jahrestag des Slowakischen Nationalaufstands (Feiertag in slowakisch geprägten Gebieten, Besuchstag)' }
+            },
+            sep: {
+                '1': { name: 'Sep. 1.', desc: 'Tag des Herbstes, der Schule und der Verfassung der Slowakischen Republik (Feiertag in slowakisch geprägten Gebieten, Besuchstag)' },
+                '15': { name: 'Sep. 15.', desc: 'Tag der Sieben Schmerzen Mariens (Feiertag in slowakisch geprägten Gebieten)' }
+            },
+            oct: {
+                '3': { name: 'Okt. 3.', desc: 'Tag der Deutschen Einheit (Feiertag in deutsch geprägten Gebieten, Besuchstag)' },
+                '6': { name: 'Okt. 6.', desc: 'Gedenktag der Märtyrer von Arad (Feiertag in ungarisch geprägten Gebieten, Besuchstag)' },
+                '23': { name: 'Okt. 23.', desc: 'Jahrestag der ungarischen Revolution von 1956 und der Ausrufung der Dritten Ungarischen Republik (Feiertag in ungarisch geprägten Gebieten, Geburtstagsfeiertag, Besuchstag)' },
+                '31': { name: 'Okt. 31.', desc: 'Halloween und Tag der Staatsgründung (Feiertag, Besuchstag, NATIONALFEIERTAG)' }
+            },
+            nov: {
+                '1': { name: 'Nov. 1.', desc: 'Allerheiligen (Feiertag, Besuchstag)' },
+                '11': { name: 'Nov. 11.', desc: 'Veterans Day (Feiertag, Besuchstag)' },
+                '17': { name: 'Nov. 17.', desc: 'Feiertag des Kampfes der Slowakei für Freiheit und Demokratie (Feiertag in slowakisch geprägten Gebieten, Besuchstag)' },
+                '30': { name: 'Nov. 30.', desc: 'St. Andreas-Tag (Feiertag in britisch geprägten Gebieten)' },
+                thanksgiving: { name: 'Beweglicher Feiertag', desc: 'Thanksgiving Day (letzter Donnerstag im November, Feiertag in amerikanisch geprägten Gebieten, Besuchstag)' }
+            },
+            'nov-dec': {
+                advent: { name: 'Beweglicher Feiertag', desc: '1.-4. Advent (vom 1. bis 4. Sonntag nach St. Andreas-Tag)' }
+            },
+            dec: {
+                '1': { name: 'Dez. 1.', desc: 'Tag des Winters (Besuchstag)' },
+                '16': { name: 'Dez. 16.', desc: 'Geburtstagsfeiertag (Geburtstagsfeiertag, Besuchstag)' },
+                '24': { name: 'Dez. 24.', desc: 'Heiligabend (Besuchstag)' },
+                '25-26': { name: 'Dez. 25-26.', desc: 'Weihnachten (Feiertag, Besuchstag)' },
+                '31': { name: 'Dez. 31.', desc: 'Silvester (Besuchstag)' }
+            }
+        },
         other: {
             pageTitle: 'Egyéb információk',
             pageSubtitle: 'További hasznos információk Furnovskyföldről',
@@ -213,8 +294,8 @@ const translations = {
             contact: {
                 title: 'Kapcsolat',
                 email: 'info@furnovskyland.com',
-                discord: 'Discord',
-                facebook: 'Facebook'
+                discord: '@furnovsky963',
+                facebook: 'bence.bagosi.666'
             },
             quickLinks: {
                 title: 'Gyorslinkek',
@@ -224,9 +305,9 @@ const translations = {
             },
             openingHours: {
                 title: 'Nyitvatartás',
-                weekdays: 'Hétfő - Péntek: 9:00 - 17:00',
-                saturday: 'Szombat: 10:00 - 14:00',
-                sunday: 'Vasárnap: Zárva'
+                weekdays: 'Hétfő - Péntek: N/A',
+                saturday: 'Szombat: N/A',
+                sunday: 'Vasárnap: N/A'
             },
             copyright: '© 2024 Furnovskyland Nemzetszövetségének Birodalma'
         }
@@ -447,8 +528,8 @@ const translations = {
             contact: {
                 title: 'Contact',
                 email: 'info@furnovskyland.com',
-                discord: 'Discord',
-                facebook: 'Facebook'
+                discord: '@furnovsky963',
+                facebook: 'bence.bagosi.666'
             },
             quickLinks: {
                 title: 'Quick Links',
@@ -458,9 +539,9 @@ const translations = {
             },
             openingHours: {
                 title: 'Opening Hours',
-                weekdays: 'Monday - Friday: 9:00 - 17:00',
-                saturday: 'Saturday: 10:00 - 14:00',
-                sunday: 'Sunday: Closed'
+                weekdays: 'Monday - Friday: N/A',
+                saturday: 'Saturday: N/A',
+                sunday: 'Sunday: N/A'
             },
             copyright: '© 2024 National Federation Empire of Furnovskyland'
         }
@@ -679,8 +760,8 @@ const translations = {
             contact: {
                 title: 'Kontakt',
                 email: 'info@furnovskyland.com',
-                discord: 'Discord',
-                facebook: 'Facebook'
+                discord: '@furnovsky963',
+                facebook: 'bence.bagosi.666'
             },
             quickLinks: {
                 title: 'Schnelllinks',
@@ -690,9 +771,9 @@ const translations = {
             },
             openingHours: {
                 title: 'Öffnungszeiten',
-                weekdays: 'Montag - Freitag: 9:00 - 17:00',
-                saturday: 'Samstag: 10:00 - 14:00',
-                sunday: 'Sonntag: Geschlossen'
+                weekdays: 'Montag - Freitag: N/A',
+                saturday: 'Samstag: N/A',
+                sunday: 'Sonntag: N/A'
             },
             copyright: '© 2024 Nationales Föderationsreich Furnovskyland'
         }
