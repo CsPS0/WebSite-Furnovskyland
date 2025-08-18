@@ -104,3 +104,31 @@ Interested in contributing to Furnovskyland's digital infrastructure? Check our 
 <div align="center">
 <a href="#top">🔝 Return to Top</a>
 </div>
+
+## 🤖 Discord Population Tracker Setup
+
+To display the live Discord server population on the homepage, a small Node.js backend server is required.
+
+### Backend Setup
+
+1.  **Navigate to the `backend` directory:**
+    ```bash
+    cd backend
+    ```
+2.  **Install Dependencies:**
+    ```bash
+    npm install
+    ```
+3.  **Configure Bot Token and Server ID:**
+    Open `server.js` in the `backend` directory and replace `'YOUR_BOT_TOKEN'` and `'YOUR_SERVER_ID'` with your actual Discord bot token and server ID.
+    *   **Bot Token:** Obtain this from the [Discord Developer Portal](https://discord.com/developers/applications) after creating a bot.
+    *   **Server ID (Guild ID):** Right-click on your server icon in Discord and select "Copy Server ID" (Developer Mode might need to be enabled in Discord settings: User Settings > Advanced > Developer Mode).
+4.  **Start the Backend Server:**
+    ```bash
+    npm start
+    ```
+    This will start the server on `http://localhost:3000`.
+
+### Frontend Integration
+
+The `docs/index.html` file has already been updated to fetch data from `http://localhost:3000/api/discord-stats` and display it in the "Population" section. Ensure your backend server is running for the population count to update correctly on the website.

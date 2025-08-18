@@ -22,7 +22,5 @@ config/local.json
 personal_script.sh
 secret.txt
 
-*.bak
-
 note.txt
-node_modules/
+backend/server.js

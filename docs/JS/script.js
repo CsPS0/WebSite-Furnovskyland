@@ -194,4 +194,10 @@ document.addEventListener('DOMContentLoaded', () => {
         contactForm.action = 'https://formspree.io/f/YOUR_FORMSPREE_ENDPOINT'; // REPLACE WITH YOUR ACTUAL FORMSPREE ENDPOINT
         contactForm.method = 'POST';
     }
+
+    // Set current year for copyright
+    const currentYearElement = document.getElementById('current-year');
+    if (currentYearElement) {
+        currentYearElement.textContent = new Date().getFullYear();
+    }
 });

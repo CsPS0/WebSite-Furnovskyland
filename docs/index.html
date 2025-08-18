@@ -46,7 +46,7 @@
                 <li><a href="./pages/tortenelem.html" data-i18n="nav.history" class="flex items-center text-outer-space hover:text-cardinal"><i class="fas fa-book-open mr-2"></i> <span>History</span></a></li>
                 <li><a href="./pages/politika.html" data-i18n="nav.politics" class="flex items-center text-outer-space hover:text-cardinal"><i class="fas fa-landmark mr-2"></i> <span>Politics</span></a></li>
                 <li><a href="./pages/kultura.html" data-i18n="nav.culture" class="flex items-center text-outer-space hover:text-cardinal"><i class="fas fa-theater-masks mr-2"></i> <span>Culture</span></a></li>
-                <li><a href="./pages/egyeb.html" data-i18n="nav.other" class="flex items-center text-outer-space hover:text-cardinal"><i class="fas fa-ellipsis-h mr-2"></i> <span>Other</span></a></li>
+                <li><a href="./egyeb.html" data-i18n="nav.other" class="flex items-center text-outer-space hover:text-cardinal"><i class="fas fa-ellipsis-h mr-2"></i> <span>Other</span></a></li>
                 <li class="relative dropdown">
                     <a href="#nyelv" data-i18n="nav.language" class="flex items-center text-outer-space hover:text-cardinal"><i class="fas fa-globe mr-2"></i> <span>Language</span></a>
                     <div class="dropdown-content absolute hidden bg-white-rock shadow-lg rounded-md mt-2 py-2 w-36">
@@ -65,7 +65,7 @@
         <a href="./pages/tortenelem.html" data-i18n="nav.history" class="text-white text-2xl mb-8">History</a>
         <a href="./pages/politika.html" data-i18n="nav.politics" class="text-white text-2xl mb-8">Politics</a>
         <a href="./pages/kultura.html" data-i18n="nav.culture" class="text-white text-2xl mb-8">Culture</a>
-        <a href="./pages/egyeb.html" data-i18n="nav.other" class="text-white text-2xl mb-8">Other</a>
+        <a href="./egyeb.html" data-i18n="nav.other" class="text-white text-2xl mb-8">Other</a>
     </div>
 
     <main class="mt-20">
@@ -82,7 +82,7 @@
                         <div class="bg-akaroa p-8 rounded-lg text-center">
                             <i class="fas fa-users text-4xl mb-4"></i>
                             <h3 class="text-xl font-bold" data-i18n="intro.stats.population">Population</h3>
-                            <p class="text-2xl">128</p>
+                            <p id="population-count" class="text-2xl">Loading...</p>
                         </div>
                         <div class="bg-akaroa p-8 rounded-lg text-center">
                             <i class="fas fa-map-marked-alt text-4xl mb-4"></i>
@@ -107,7 +107,7 @@
                         <i class="fas fa-cube text-5xl text-cardinal mb-6"></i>
                         <h3 class="text-2xl font-bold mb-4" data-i18n="join.minecraft.title">Minecraft Server</h3>
                         <p class="text-lg mb-6" data-i18n="join.minecraft.description">Build our cities with us</p>
-                        <a href="#" class="inline-block bg-cardinal text-white-rock px-8 py-3 rounded-md font-bold hover:bg-oriental-pink transition-colors duration-300" data-i18n="join.minecraft.button">Connect</a>
+                        <a href="pages/minecraft.html" class="inline-block bg-cardinal text-white-rock px-8 py-3 rounded-md font-bold hover:bg-oriental-pink transition-colors duration-300" data-i18n="join.minecraft.button">Connect</a>
                     </div>
                 </div>
             </div>
@@ -141,10 +141,26 @@
             </div>
         </div>
         <div class="text-center mt-12 pt-8 border-t border-manatee">
-            <p data-i18n="footer.copyright">© 2024 National Federation Empire of Furnovskyland</p>
+            <p data-i18n="footer.copyright">© <span id="current-year"></span> National Federation Empire of Furnovskyland</p>
         </div>
     </footer>
     <script src="./JS/translations.js"></script>
     <script src="./JS/script.js"></script>
+    <script>
+        async function fetchDiscordStats() {
+            try {
+                const response = await fetch('http://localhost:3000/api/discord-stats');
+                const data = await response.json();
+                const populationElement = document.getElementById('population-count');
+                populationElement.textContent = `${data.onlineMembers} Online / ${data.totalMembers} Total`;
+            } catch (error) {
+                console.error('Error fetching Discord stats:', error);
+                const populationElement = document.getElementById('population-count');
+                populationElement.textContent = 'Error';
+            }
+        }
+
+        fetchDiscordStats();
+    </script>
 </body>
 </html>

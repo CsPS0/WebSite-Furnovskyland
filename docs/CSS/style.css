@@ -653,6 +653,17 @@ footer {
     margin-bottom: 8px;
 }
 
+.flag-preview::before {
+    content: '';
+    position: absolute;
+    left: -1.5rem;
+    top: 0;
+    bottom: -3rem;
+    width: 2px;
+    background-color: var(--manatee);
+    z-index: -1;
+}
+
 .flag-preview::after {
     content: '';
     position: absolute;
