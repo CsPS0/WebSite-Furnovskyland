@@ -70,6 +70,61 @@ const translations = {
         politics: {
             pageTitle: 'Politika',
             pageSubtitle: 'Ismerje meg Furnovskyföld politikai rendszerét',
+            state_structure: {
+                title: 'Államszerkezet',
+                content: 'Az állam a Furnovskyföldi NEMZETSZÖVETSÉG, egy alkotmányos monarchia, 4 tagrésszel (Furnovskyföld az egyik) a Nemzetszövetségben, ez itt nem fontos mostanában. Van jelenleg Kormány, Szenátus (a kettő vegyesen törvényhozó és végrehajtó is) és bíróság, Legfelsőbb Bíróság. Parlament még nincs, az fogja funkcióiban a Szenátust cserélni, amikor az Alkotmány át lesz dolgozva.'
+            },
+            legislative_process: {
+                title: 'Törvényhozási folyamat',
+                intro: 'A törvényhozás szakaszai a következők:',
+                organic_law: '<strong>Organikus Törvény:</strong> Fontos szerv vagy intézmény létrehozása, működésének részletes leírása.',
+                bill: '<strong>Törvényjavaslat:</strong> Kevésbé fontos intézmény vagy koncepció, kisebb működési leírással.',
+                act: '<strong>Törvény:</strong> Egy specifikus, egyszeri helyzetet szabályoz.',
+                decree: '<strong>Rendelet:</strong> Csak a császártól vagy a kormánytól eredhet, bármelyik fentebbi törvénytípus formájában, szavazás nélkül. A Szenátus azonban bármikor dönthet annak hatályon kívül helyezéséről.',
+                act_submit: 'Csak törvényt nyújthat be bármely lakos, a felette lévő kettőt csak a hatalmi ágak egyikébe választott személy nyújthatja be.',
+                step1: 'A Szenátus megkapja a törvényjavaslatot, ami után a Szenátor kiír egy 24 órás megbeszélési időt, majd annak vége után egy (remélhetőleg) 24 órás szavazást, amely a törvények nagy részében általában egyszerű többséggel kell, hogy végződjön a továbbjutáshoz.',
+                step2: 'Ha a Szenátus elfogadja, a Kormányhoz kerül, ahol ha nem fogadják el egyszerű többséggel, visszakerül a Szenátushoz átdolgozásra vagy elfogadásra egy bizonyos időn belül (nem tudom most mennyi, az Alkotmányban benne van).',
+                step3: 'Ha a Kormány elfogadja, hozzám kerül, hogy vagy megvétózzam és visszakerül a Kormányhoz, vagy aláírom és törvénybe lép.'
+            },
+            senate: {
+                title: 'A Szenátus',
+                p1: 'A Szenátust 3 hónapra, minden évszak végén választjuk, Single Transferable Vote rendszerrel, a top 3 jelölt kerül be, az 1. helyezett lesz a Szenátor, a maradék 2 hely a szavazati arányok lehető legközelebbi tartásával vannak elosztva. Minden új évszak első teljes hetében lépnek hivatalba. A Legfelsőbb Bíró nem indulhat. A Szenátus basically a legelső "akadály", amin át kell mennie egy törvénynek, meg a saját működésükről szóló törvényeket szavazzák meg, azok egyértelműen nem mennek át máshova, valamint szavaz a kormánylistának az elfogadásáról. 5 tagos, mindegyikük egy-egy Megfigyelő (a Szenátor is, ő alapértelmezetten Discord belügyes) a jelenleg elérhető pozíciókkal:',
+                affairs: {
+                    internal: 'Discord belügy (Szenátor alapértelmezetten)',
+                    foreign: 'Discord külügy',
+                    minecraft: 'Minecraft ügy',
+                    constitutional: 'Alkotmányügy',
+                    recruitment: 'Toborzási ügy (tagok behozása a szerverre stb)'
+                },
+                p2: 'A Szenátor az, aki kiírja a megbeszélési és szavazási időket (tud szavazni is), rögzíti a megszavazott törvényeket egy adott fórumcsatornába, hivatalosan ő rendezi el, ki milyen Megfigyelő lesz (a sajátján kívül), kinevez helyettest és képviseli a Szenátust az államfőnél vagy a kormánynál. Egy consecutive ciklusra újraválasztható, utána 6 hónapig nem választható Szenátornak. A Megfigyelők tudnak hozzászólni egy beterjesztett törvényhez a megbeszélési időben, szavazni róluk, és a hozzájuk legközelebb álló minisztériumokkal együttműködnek.'
+            },
+            government: {
+                title: 'A Kormány',
+                p1: 'A Kormányt 6 hónapra, február és augusztus közepe fele választjuk, sima simple majoritys vote rendszerrel (FPTP), a nyertesnek viszont el kell érnie a 2/3-os többséghez, vagy koalíciós kormányt kell alakítania. Március és szeptember első teljes hetében lép hivatalba. A Legfelsőbb Bíró és párttól Független személy nem indulhat. A Kormány szavaz a saját vagy eléjük beterjesztett törvényekről. A miniszterelnök alakítja úgy a Kormányt és a Minisztériumokat, ahogyan akarja, csak azt a Szenátusnak is el kell fogadnia. Egyszer újraválasztható, utána 6 hó szünet.'
+            },
+            supreme_court: {
+                title: 'A Legfelsőbb Bíróság',
+                content: 'A Legfelsőbb Bíróság dönt az Alkotmányosság dolgairól, meg ilyenek, érted. A tagjai a Miniszterelnök, az igazságügyi miniszter, az alkotmányügyekért felelős megfigyelő és egy 4. személy, az épp létező bírák listájából a miniszterelnök által választva, általam kinevezve, és a Szenátus által 2/3-os többséggel elfogadva.'
+            },
+            current_gov: {
+                title: 'Jelenlegi Kormány',
+                table: {
+                    role: 'Szerepkör',
+                    name: 'Név',
+                    responsibilities: 'Feladatkörök'
+                }
+            },
+            current_senate: {
+                title: 'Jelenlegi Szenátus',
+                table: {
+                    role: 'Szerepkör',
+                    name: 'Név'
+                }
+            },
+            current_supreme_court: {
+                title: 'Jelenlegi Legfelsőbb Bíróság',
+                content: 'Nincs'
+            },
             government: {
                 title: 'Kormányzati rendszer',
                 executive: {
@@ -150,84 +205,112 @@ const translations = {
             }
         },
         culturalDays: {
-            pageTitle: 'Kulturtage und Feiertage',
-            pageSubtitle: 'Entdecken Sie den reichen Kulturkalender von Furnovskyland',
+            pageTitle: 'Kultúrnapok és Ünnepek',
+            pageSubtitle: 'Fedezze fel Furnovskyföld gazdag kulturális naptárát',
+            months: {
+                january: 'Január',
+                february: 'Február',
+                march: 'Március',
+                april: 'Április',
+                may: 'Május',
+                june: 'Június',
+                july: 'Július',
+                august: 'Augusztus',
+                september: 'Szeptember',
+                october: 'Október',
+                november: 'November',
+                december: 'December'
+            },
+            months: {
+                january: 'Január',
+                february: 'Február',
+                march: 'Március',
+                april: 'Április',
+                may: 'Május',
+                june: 'Június',
+                july: 'Július',
+                august: 'Augusztus',
+                september: 'Szeptember',
+                october: 'Október',
+                november: 'November',
+                december: 'December'
+            },
             jan: {
-                '1': { name: 'Jan. 1.', desc: 'Neujahr (Feiertag, Besuchstag)' },
-                '6': { name: 'Jan. 6.', desc: 'Heilige Drei Könige' },
-                '7-13': { name: 'Jan. 7-13.', desc: 'Januar-Partywoche (Feiertag)' }
+                '1': { name: 'Jan. 1.', desc: 'Újév (ünnep, látogatási nap)' },
+                '6': { name: 'Jan. 6.', desc: 'Vízkereszt' },
+                '7-13': { name: 'Jan. 7-13.', desc: 'Januári Party Hét (ünnep)' }
             },
             feb: {
-                movable: { name: 'Beweglicher Feiertag', desc: 'Karneval, Kostümball (Feiertag)' },
-                '26-28': { name: 'Febr. 26-28.', desc: 'Februar-Partytage (Feiertag)' }
+                movable: { name: 'Mozgó ünnep', desc: 'Karnevál, jelmezbál (ünnep)' },
+                '26-28': { name: 'Febr. 26-28.', desc: 'Februári Party Napok (ünnep)' }
             },
             mar: {
-                '1': { name: 'März 1.', desc: 'Frühlings- und St. David\'s Tag (Feiertag in britisch geprägten Gebieten, Besuchstag)' },
-                '15': { name: 'März 15.', desc: 'Feiertag der Revolution von 1848 (Feiertag in ungarisch geprägten Gebieten, Besuchstag)' },
-                '17': { name: 'März 17.', desc: 'St. Patrick\'s Day' },
-                '23': { name: 'März 23.', desc: 'Tag der Blumen (Besuchstag)' }
+                '1': { name: 'Már. 1.', desc: 'Tavasz és Szent Dávid napja (ünnep brit többségű területeken, látogatási nap)' },
+                '15': { name: 'Már. 15.', desc: '1848-as Forradalom Ünnepe (ünnep magyar többségű területeken, látogatási nap)' },
+                '17': { name: 'Már. 17.', desc: 'Szent Patrik napja' },
+                '23': { name: 'Már. 23.', desc: 'A Virágok Napja (látogatási nap)' }
             },
             'mar-apr': {
-                movable: { name: 'Beweglicher Feiertag', desc: 'Karfreitag, Ostersonntag, Ostermontag (Feiertag, Besuchstag)' }
+                movable: { name: 'Mozgó ünnep', desc: 'Nagypéntek, Húsvétvasárnap, Húsvéthétfő (ünnep, látogatási nap)' }
             },
             apr: {
-                '15': { name: 'April 15.', desc: 'Tag der Nationalen Föderation (Feiertag, Besuchstag, NATIONALFEIERTAG)' },
-                '23': { name: 'April 23.', desc: 'St. Georg\'s-Tag (Feiertag in britisch geprägten Gebieten)' }
+                '15': { name: 'Ápr. 15.', desc: 'Nemzeti Föderáció Napja (ünnep, látogatási nap, NEMZETI ÜNNEP)' },
+                '23': { name: 'Ápr. 23.', desc: 'Szent György napja (ünnep brit többségű területeken)' }
             },
             may: {
-                mothers: { name: 'Beweglicher Feiertag', desc: 'Muttertag (erster Sonntag im Mai)' },
-                '1': { name: 'Mai 1.', desc: 'Tag der Arbeit (Feiertag, Besuchstag)' },
-                '8': { name: 'Mai 8.', desc: 'Feiertag des Sieges der Slowakei über den Faschismus (Feiertag in slowakisch geprägten Gebieten, Besuchstag)' },
-                '17-23': { name: 'Mai 17-23.', desc: 'Kinderwoche (Schulferien)' },
-                '24-30': { name: 'Mai 24-30.', desc: 'Elternwoche (arbeitsfreier Tag, Besuchstag)' },
-                '31': { name: 'Mai 31.', desc: 'Tag der Bäume (Besuchstag)' }
+                mothers: { name: 'Mozgó ünnep', desc: 'Anyák napja (május első vasárnapja)' },
+                '1': { name: 'Máj. 1.', desc: 'Munka ünnepe (ünnep, látogatási nap)' },
+                '8': { name: 'Máj. 8.', desc: 'Szlovákia Győzelme a Fasizmus Felett (ünnep szlovák többségű területeken, látogatási nap)' },
+                '17-23': { name: 'Máj. 17-23.', desc: 'Gyermekhét (iskolai szünnap)' },
+                '24-30': { name: 'Máj. 24-30.', desc: 'Szülői Hét (munkaszüneti nap, látogatási nap)' },
+                '31': { name: 'Máj. 31.', desc: 'A Fák Napja (látogatási nap)' }
             },
             'may-jun': {
-                movable: { name: 'Beweglicher Feiertag', desc: 'Pfingstsonntag, Pfingstmontag (Feiertag, Besuchstag)' }
+                movable: { name: 'Mozgó ünnep', desc: 'Pünkösdvasárnap, Pünkösdhétfő (ünnep, látogatási nap)' }
             },
             jun: {
-                '1': { name: 'Juni 1.', desc: 'Sommertag, Beginn der Sommerferien (Besuchstag)' },
-                '4': { name: 'Juni 4.', desc: 'Tag des nationalen Zusammenhalts (Feiertag in ungarisch geprägten Gebieten, Besuchstag)' },
-                '15': { name: 'Juni 15.', desc: 'Parlamentstag (Feiertag, Besuchstag, NATIONALFEIERTAG)' },
-                fathers: { name: 'Beweglicher Feiertag', desc: 'Vatertag (dritter Sonntag im Juni)' }
+                '1': { name: 'Jún. 1.', desc: 'Nyár napja, nyári szünet kezdete (látogatási nap)' },
+                '4': { name: 'Jún. 4.', desc: 'Nemzeti Összetartozás Napja (ünnep magyar többségű területeken, látogatási nap)' },
+                '15': { name: 'Jún. 15.', desc: 'Parlament Napja (ünnep, látogatási nap, NEMZETI ÜNNEP)' },
+                fathers: { name: 'Mozgó ünnep', desc: 'Apák napja (június harmadik vasárnapja)' }
             },
             jul: {
-                '4': { name: 'Juli 4.', desc: 'Amerikanischer Unabhängigkeitstag (Feiertag in amerikanisch geprägten Gebieten, Besuchstag)' },
-                '5': { name: 'Juli 5.', desc: 'Tag der Heiligen Kyrill und Method (Feiertag in slowakisch geprägten Gebieten)' },
-                festival: { name: 'Beweglicher Feiertag', desc: 'Festivaltag (letzter Sonntag im Juli, Feiertag, Besuchstag)' }
+                '4': { name: 'Júl. 4.', desc: 'Amerikai Függetlenség Napja (ünnep amerikai többségű területeken, látogatási nap)' },
+                '5': { name: 'Júl. 5.', desc: 'Szent Cirill és Metód napja (ünnep szlovák többségű területeken)' },
+                festival: { name: 'Mozgó ünnep', desc: 'Fesztivál napja (július utolsó vasárnapja, ünnep, látogatási nap)' }
             },
             aug: {
-                '5': { name: 'Aug. 5.', desc: 'Tag der Hymne (Feiertag, Besuchstag, NATIONALFEIERTAG)' },
-                '20': { name: 'Aug. 20.', desc: 'St. Stephanstag (Feiertag in ungarisch geprägten Gebieten)' },
-                '23': { name: 'Aug. 23.', desc: 'I. Furnovsky\'s Tag (Geburtstagsfeiertag, Besuchstag, NATIONALFEIERTAG)' },
-                '29': { name: 'Aug. 29.', desc: 'Jahrestag des Slowakischen Nationalaufstands (Feiertag in slowakisch geprägten Gebieten, Besuchstag)' }
+                '5': { name: 'Aug. 5.', desc: 'Himnusz Napja (ünnep, látogatási nap, NEMZETI ÜNNEP)' },
+                '20': { name: 'Aug. 20.', desc: 'Szent István napja (ünnep magyar többségű területeken)' },
+                '23': { name: 'Aug. 23.', desc: 'I. Furnovsky Napja (születésnapi ünnep, látogatási nap, NEMZETI ÜNNEP)' },
+                '29': { name: 'Aug. 29.', desc: 'Szlovák Nemzeti Felkelés Évfordulója (ünnep szlovák többségű területeken, látogatási nap)' }
             },
             sep: {
-                '1': { name: 'Sep. 1.', desc: 'Tag des Herbstes, der Schule und der Verfassung der Slowakischen Republik (Feiertag in slowakisch geprägten Gebieten, Besuchstag)' },
-                '15': { name: 'Sep. 15.', desc: 'Tag der Sieben Schmerzen Mariens (Feiertag in slowakisch geprägten Gebieten)' }
+                '1': { name: 'Szept. 1.', desc: 'Ősz, Iskola és a Szlovák Köztársaság Alkotmányának Napja (ünnep szlovák többségű területeken, látogatási nap)' },
+                '15': { name: 'Szept. 15.', desc: 'Fájdalmas Szűzanya Napja (ünnep szlovák többségű területeken)' }
             },
             oct: {
-                '3': { name: 'Okt. 3.', desc: 'Tag der Deutschen Einheit (Feiertag in deutsch geprägten Gebieten, Besuchstag)' },
-                '6': { name: 'Okt. 6.', desc: 'Gedenktag der Märtyrer von Arad (Feiertag in ungarisch geprägten Gebieten, Besuchstag)' },
-                '23': { name: 'Okt. 23.', desc: 'Jahrestag der ungarischen Revolution von 1956 und der Ausrufung der Dritten Ungarischen Republik (Feiertag in ungarisch geprägten Gebieten, Geburtstagsfeiertag, Besuchstag)' },
-                '31': { name: 'Okt. 31.', desc: 'Halloween und Tag der Staatsgründung (Feiertag, Besuchstag, NATIONALFEIERTAG)' }
+                '3': { name: 'Okt. 3.', desc: 'Német Egység Napja (ünnep német többségű területeken, látogatási nap)' },
+                '6': { name: 'Okt. 6.', desc: 'Aradi Vértanúk Emléknapja (ünnep magyar többségű területeken, látogatási nap)' },
+                '23': { name: 'Okt. 23.', desc: '1956-os Magyar Forradalom és a Harmadik Magyar Köztársaság Kikiáltásának Évfordulója (ünnep magyar többségű területeken, születésnapi ünnep, látogatási nap)' },
+                '31': { name: 'Okt. 31.', desc: 'Halloween és Államalapítás Napja (ünnep, látogatási nap, NEMZETI ÜNNEP)' }
             },
             nov: {
-                '1': { name: 'Nov. 1.', desc: 'Allerheiligen (Feiertag, Besuchstag)' },
-                '11': { name: 'Nov. 11.', desc: 'Veterans Day (Feiertag, Besuchstag)' },
-                '17': { name: 'Nov. 17.', desc: 'Feiertag des Kampfes der Slowakei für Freiheit und Demokratie (Feiertag in slowakisch geprägten Gebieten, Besuchstag)' },
-                '30': { name: 'Nov. 30.', desc: 'St. Andreas-Tag (Feiertag in britisch geprägten Gebieten)' },
-                thanksgiving: { name: 'Beweglicher Feiertag', desc: 'Thanksgiving Day (letzter Donnerstag im November, Feiertag in amerikanisch geprägten Gebieten, Besuchstag)' }
+                '1': { name: 'Nov. 1.', desc: 'Mindenszentek (ünnep, látogatási nap)' },
+                '11': { name: 'Nov. 11.', desc: 'Veteránok Napja (ünnep, látogatási nap)' },
+                '17': { name: 'Nov. 17.', desc: 'Szlovákia Szabadságért és Demokráciáért Vívoott Harcának Napja (ünnep szlovák többségű területeken, látogatási nap)' },
+                '30': { name: 'Nov. 30.', desc: 'Szent András napja (ünnep brit többségű területeken)' },
+                thanksgiving: { name: 'Mozgó ünnep', desc: 'Hálaadás napja (november utolsó csütörtökje, ünnep amerikai többségű területeken, látogatási nap)' }
             },
             'nov-dec': {
-                advent: { name: 'Beweglicher Feiertag', desc: '1.-4. Advent (vom 1. bis 4. Sonntag nach St. Andreas-Tag)' }
+                advent: { name: 'Mozgó ünnep', desc: '1.-4. Advent (Szent András napja utáni 1. és 4. vasárnap)' }
             },
             dec: {
-                '1': { name: 'Dez. 1.', desc: 'Tag des Winters (Besuchstag)' },
-                '16': { name: 'Dez. 16.', desc: 'Geburtstagsfeiertag (Geburtstagsfeiertag, Besuchstag)' },
-                '24': { name: 'Dez. 24.', desc: 'Heiligabend (Besuchstag)' },
-                '25-26': { name: 'Dez. 25-26.', desc: 'Weihnachten (Feiertag, Besuchstag)' },
-                '31': { name: 'Dez. 31.', desc: 'Silvester (Besuchstag)' }
+                '1': { name: 'Dec. 1.', desc: 'Tél Napja (látogatási nap)' },
+                '16': { name: 'Dec. 16.', desc: 'Születésnapi ünnep (születésnapi ünnep, látogatási nap)' },
+                '24': { name: 'Dec. 24.', desc: 'Szenteste (látogatási nap)' },
+                '25-26': { name: 'Dec. 25-26.', desc: 'Karácsony (ünnep, látogatási nap)' },
+                '31': { name: 'Dec. 31.', desc: 'Szilveszter (látogatási nap)' }
             }
         },
         other: {
@@ -352,33 +435,31 @@ const translations = {
         history: {
             pageTitle: 'History',
             pageSubtitle: 'Discover the rich historical heritage of Furnovskyland',
-            timeline: {
-                title: 'Timeline Overview',
-                founding: {
-                    date: '2023',
+            welcome: 'Welcome to our Empire! If you are interested, please read this message!',
+            sections: {
+                foundation: {
                     title: 'Foundation',
-                    description: 'The founding of Furnovskyland and establishment of first settlements.'
+                    content: 'The Kingdom of Furnovskyland was founded by my coronation on October 31, 2018 at 3pm GMT+2. It was a small city-state, the city of Furnotinyvillage.'
                 },
                 expansion: {
-                    date: 'Summer 2023',
-                    title: 'Expansion',
-                    description: 'Expansion of the empire\'s territory and founding of new cities.'
+                    title: 'Expansion and Wars',
+                    content: 'We gained a lot of land during a war period that lasted for almost a month. In January 2019, we won the Great Snow World War and gained the south-east corner, some eastern, northern, and south-western areas from the neighbors. After that, we became very good partners with the neighboring German-Hungarian Monarchy, now German-Slovak. From 2020, we are also in a good relationship with the Diamondboy estate (now Land of the Deadbringers) and won their western part of the island for Furnovskyland.'
                 },
-                federation: {
-                    date: 'Autumn 2023',
-                    title: 'Federation',
-                    description: 'Proclamation of the National Federation Empire.'
-                }
-            },
-            figures: {
-                title: 'Historical Figures',
-                founder: {
-                    name: 'Founder',
-                    description: 'The first leader who founded Furnovskyland.'
+                modernEra: {
+                    title: 'Modern Era',
+                    content: 'We started a very lucky year. Although we had COVID-19, we are now very rich and the economy is growing. On April 15, 2021, for the flag of the Commonwealth, I decided to rename the country to The Empire of the Commonwealth of Furnovskyland and the next government to I. Federal Government of Furnovskyland.'
                 },
-                leader: {
-                    name: 'Leader',
-                    description: 'The first leader of the National Federation.'
+                geography: {
+                    title: 'Geography',
+                    content: 'We are very rich, but we are in dire need of exports. We have only a small number of hills, only one mountain in the south-east of the country\'s border with the German-Slovak Monarchy.'
+                },
+                government: {
+                    title: 'Government',
+                    content: 'We have a large district system, currently with 36 and 2 border regions, which are shown on the map. Every major city is divided into 9 parts. Our postcodes are as follows: 1019. This is the postcode of the city centre of the capital. The first 1 is the 1st district. The 01 is the most important city of the district, and 9 is the 9th region of the city.'
+                },
+                flag: {
+                    title: 'Flag',
+                    content: 'The original was a Hungarian flag (red-white-green tricolor) with an orange dot in the middle. Later it was replaced by a yellow one.'
                 }
             }
         },
@@ -776,6 +857,319 @@ const translations = {
                 sunday: 'Sonntag: N/A'
             },
             copyright: '© 2024 Nationales Föderationsreich Furnovskyland'
+        }
+    },
+    sk: {
+        nav: {
+            home: 'Domov',
+            minecraft: 'Minecraft',
+            history: 'História',
+            politics: 'Pravidlá',
+            culture: 'Kultúra',
+            other: 'Ostatné',
+            language: 'Jazyk'
+        },
+        hero: {
+            welcome: 'Vitajte vo Furnovskyland!',
+            discover: 'Objavte bohatú históriu a kultúru nášho národa',
+            learnMore: 'Zistite viac'
+        },
+        intro: {
+            title: 'Úvod',
+            description: 'Vitajte na oficiálnej webovej stránke Národnej federatívnej ríše Furnovskyland! Tu sa dozviete, ako sa pripojiť k našim serverom Discord a Minecraft, a dozviete sa o našej histórii, kultúre, politike a oveľa viac!',
+            stats: {
+                population: 'Obyvateľstvo',
+                area: 'Rozloha',
+                areaValue: '200 chunkov'
+            }
+        },
+        join: {
+            title: 'Pripojte sa k našej komunite',
+            discord: {
+                title: 'Discord Server',
+                description: 'Pripojte sa k našej aktívnej komunite',
+                button: 'Pripojiť sa'
+            },
+            minecraft: {
+                title: 'Minecraft Server',
+                description: 'Stavajte s nami naše mestá',
+                button: 'Pripojiť'
+            }
+        },
+        history: {
+            pageTitle: 'História',
+            pageSubtitle: 'Objavte bohaté historické dedičstvo Furnovskylandu',
+            welcome: 'Vitajte v našej ríši! Ak máte záujem, prečítajte si túto správu!',
+            sections: {
+                foundation: {
+                    title: 'Založenie',
+                    content: 'Kráľovstvo Furnovskyland bolo založené mojou korunováciou 31. októbra 2018 o 15:00 GMT+2. Bol to malý mestský štát, mesto Furnotinyvillage.'
+                },
+                expansion: {
+                    title: 'Expanzia a vojny',
+                    content: 'Počas vojnového obdobia, ktoré trvalo takmer mesiac, sme získali veľa územia. V januári 2019 sme vyhrali Veľkú snehovú svetovú vojnu a od susedov sme získali juhovýchodný roh, niektoré východné, severné a juhozápadné oblasti. Potom sme sa stali veľmi dobrými partnermi so susednou Nemecko-Uhorskou monarchiou, teraz Nemecko-Slovenskou. Od roku 2020 máme tiež dobré vzťahy s panstvom Diamondboy (teraz Krajina nositeľov smrti) a pre Furnovskyland sme vyhrali ich západnú časť ostrova.'
+                },
+                modernEra: {
+                    title: 'Moderná éra',
+                    content: 'Začali sme veľmi šťastný rok. Hoci sme mali COVID-19, teraz sme veľmi bohatí a ekonomika rastie. 15. apríla 2021 som sa pre vlajku Spoločenstva rozhodol premenovať krajinu na Ríšu Spoločenstva Furnovskyland a ďalšiu vládu na I. federálnu vládu Furnovskylandu.'
+                },
+                geography: {
+                    title: 'Geografia',
+                    content: 'Sme veľmi bohatí, ale nutne potrebujeme export. Máme len malý počet kopcov, iba jednu horu na juhovýchode hranice krajiny s Nemecko-Slovenskou monarchiou.'
+                },
+                government: {
+                    title: 'Vláda',
+                    content: 'Máme veľký okresný systém, v súčasnosti s 36 a 2 hraničnými regiónmi, ktoré sú zobrazené na mape. Každé väčšie mesto je rozdelené na 9 častí. Naše poštové smerovacie čísla sú nasledovné: 1019. Toto je poštové smerovacie číslo centra hlavného mesta. Prvá 1 je 1. okres. 01 je najdôležitejšie mesto okresu a 9 je 9. región mesta.'
+                },
+                flag: {
+                    title: 'Vlajka',
+                    content: 'Pôvodná bola maďarská vlajka (červeno-bielo-zelená trikolóra) s oranžovou bodkou v strede. Neskôr bola nahradená žltou.'
+                }
+            }
+        },
+        politics: {
+            pageTitle: 'Pravidlá',
+            pageSubtitle: 'Zoznámte sa s politickým systémom Furnovskylandu',
+            government: {
+                title: 'Vládny systém',
+                executive: {
+                    title: 'Výkonná moc',
+                    description: 'Štruktúra a fungovanie výkonnej moci.'
+                },
+                judicial: {
+                    title: 'Súdna moc',
+                    description: 'Systém súdnictva.'
+                },
+                legislative: {
+                    title: 'Zákonodarná moc',
+                    description: 'Zákonodarný proces a organizácia.'
+                }
+            },
+            structure: {
+                title: 'Politická štruktúra',
+                federation: {
+                    title: 'Federálny systém',
+                    description: 'Štruktúra a princípy Federácie.'
+                },
+                local: {
+                    title: 'Miestne samosprávy',
+                    description: 'Systém a povinnosti miestnej správy.'
+                }
+            },
+            foreign: {
+                title: 'Zahraničné vzťahy',
+                allies: {
+                    title: 'Spojenci',
+                    description: 'Naše diplomatické vzťahy a spojenci.'
+                },
+                international: {
+                    title: 'Medzinárodné vzťahy',
+                    description: 'Naša účasť v medzinárodnom spoločenstve.'
+                }
+            }
+        },
+        culture: {
+            pageTitle: 'Kultúra',
+            pageSubtitle: 'Objavte bohaté kultúrne dedičstvo Furnovskylandu',
+            traditions: {
+                title: 'Tradície',
+                festivals: {
+                    title: 'Festivaly',
+                    description: 'Naše každoročné podujatia a oslavy.'
+                },
+                music: {
+                    title: 'Hudba',
+                    description: 'Hudobné tradície a moderné interpretácie.'
+                },
+                cuisine: {
+                    title: 'Kuchyňa',
+                    description: 'Charakteristické jedlá a nápoje.'
+                }
+            },
+            arts: {
+                title: 'Umenie',
+                visual: {
+                    title: 'Vizuálne umenie',
+                    description: 'Maliarstvo, sochárstvo a moderné umelecké formy.'
+                },
+                literature: {
+                    title: 'Literatúra',
+                    description: 'Poézia, próza a dráma.'
+                }
+            },
+            modern: {
+                title: 'Moderná kultúra',
+                gaming: {
+                    title: 'Hranie hier',
+                    description: 'E-športy a herné komunity.'
+                },
+                media: {
+                    title: 'Médiá',
+                    description: 'Film, televízia a digitálny obsah.'
+                }
+            }
+        },
+        culturalDays: {
+            pageTitle: 'Kultúrne dni a sviatky',
+            pageSubtitle: 'Preskúmajte bohatý kultúrny kalendár Furnovskylandu',
+            jan: {
+                '1': { name: '1. jan.', desc: 'Nový rok (sviatok, návštevný deň)' },
+                '6': { name: '6. jan.', desc: 'Zjavenie Pána' },
+                '7-13': { name: '7.-13. jan.', desc: 'Januárový týždeň večierkov (sviatok)' }
+            },
+            feb: {
+                movable: { name: 'Pohyblivý sviatok', desc: 'Karneval, maškarný ples (sviatok)' },
+                '26-28': { name: '26.-28. feb.', desc: 'Februárové dni večierkov (sviatok)' }
+            },
+            mar: {
+                '1': { name: '1. mar.', desc: 'Deň jari a sv. Dávida (sviatok v oblastiach s britskou väčšinou, návštevný deň)' },
+                '15': { name: '15. mar.', desc: 'Sviatok revolúcie 1848 (sviatok v oblastiach s maďarskou väčšinou, návštevný deň)' },
+                '17': { name: '17. mar.', desc: 'Deň sv. Patrika' },
+                '23': { name: '23. mar.', desc: 'Deň kvetov (návštevný deň)' }
+            },
+            'mar-apr': {
+                movable: { name: 'Pohyblivý sviatok', desc: 'Veľký piatok, Veľkonočná nedeľa, Veľkonočný pondelok (sviatok, návštevný deň)' }
+            },
+            apr: {
+                '15': { name: '15. apr.', desc: 'Deň Národnej federácie (sviatok, návštevný deň, NÁRODNÝ SVIATOK)' },
+                '23': { name: '23. apr.', desc: 'Deň sv. Juraja (sviatok v oblastiach s britskou väčšinou)' }
+            },
+            may: {
+                mothers: { name: 'Pohyblivý sviatok', desc: 'Deň matiek (prvá nedeľa v máji)' },
+                '1': { name: '1. máj', desc: 'Sviatok práce (sviatok, návštevný deň)' },
+                '8': { name: '8. máj', desc: 'Deň víťazstva nad fašizmom (sviatok v oblastiach so slovenskou väčšinou, návštevný deň)' },
+                '17-23': { name: '17.-23. máj', desc: 'Týždeň detí (školské prázdniny)' },
+                '24-30': { name: '24.-30. máj', desc: 'Týždeň rodičov (deň pracovného pokoja, návštevný deň)' },
+                '31': { name: '31. máj', desc: 'Deň stromov (návštevný deň)' }
+            },
+            'may-jun': {
+                movable: { name: 'Pohyblivý sviatok', desc: 'Turíčna nedeľa, Turíčne pondelok (sviatok, návštevny deň)' }
+            },
+            jun: {
+                '1': { name: '1. jún', desc: 'Deň leta, začiatok letných prázdnin (návštevný deň)' },
+                '4': { name: '4. jún', desc: 'Deň národnej súdržnosti (sviatok v oblastiach s maďarskou väčšinou, návštevný deň)' },
+                '15': { name: '15. jún', desc: 'Deň parlamentu (sviatok, návštevný deň, NÁRODNÝ SVIATOK)' },
+                fathers: { name: 'Pohyblivý sviatok', desc: 'Deň otcov (tretia nedeľa v júni)' }
+            },
+            jul: {
+                '4': { name: '4. júl', desc: 'Deň nezávislosti USA (sviatok v oblastiach s americkou väčšinou, návštevný deň)' },
+                '5': { name: '5. júl', desc: 'Sviatok svätého Cyrila a Metoda (sviatok v oblastiach so slovenskou väčšinou)' },
+                festival: { name: 'Pohyblivý sviatok', desc: 'Deň festivalu (posledná nedeľa v júli, sviatok, návštevný deň)' }
+            },
+            aug: {
+                '5': { name: '5. aug.', desc: 'Deň hymny (sviatok, návštevný deň, NÁRODNÝ SVIATOK)' },
+                '20': { name: '20. aug.', desc: 'Deň sv. Štefana (sviatok v oblastiach s maďarskou väčšinou)' },
+                '23': { name: '23. aug.', desc: 'Deň I. Furnovského (narodeninový sviatok, návštevný deň, NÁRODNÝ SVIATOK)' },
+                '29': { name: '29. aug.', desc: 'Výročie Slovenského národného povstania (sviatok v oblastiach so slovenskou väčšinou, návštevný deň)' }
+            },
+            sep: {
+                '1': { name: '1. sep.', desc: 'Deň jesene, školy a Ústavy Slovenskej republiky (sviatok v oblastiach so slovenskou väčšinou, návštevný deň)' },
+                '15': { name: '15. sep.', desc: 'Sviatok Panny Márie Sedembolestnej (sviatok v oblastiach so slovenskou väčšinou)' }
+            },
+            oct: {
+                '3': { name: '3. okt.', desc: 'Deň nemeckej jednoty (sviatok v oblastiach s nemeckou väčšinou, návštevný deň)' },
+                '6': { name: '6. okt.', desc: 'Pamätný deň aradských mučeníkov (sviatok v oblastiach s maďarskou väčšinou, návštevný deň)' },
+                '23': { name: '23. okt.', desc: 'Výročie maďarskej revolúcie 1956 a vyhlásenia Tretej maďarskej republiky (sviatok v oblastiach s maďarskou väčšinou, narodeninový sviatok, návštevný deň)' },
+                '31': { name: '31. okt.', desc: 'Halloween a Deň založenia štátu (sviatok, návštevný deň, NÁRODNÝ SVIATOK)' }
+            },
+            nov: {
+                '1': { name: '1. nov.', desc: 'Sviatok všetkých svätých (sviatok, návštevný deň)' },
+                '11': { name: '11. nov.', desc: 'Deň veteránov (sviatok, návštevný deň)' },
+                '17': { name: '17. nov.', desc: 'Deň boja za slobodu a demokraciu (sviatok v oblastiach so slovenskou väčšinou, návštevný deň)' },
+                '30': { name: '30. nov.', desc: 'Deň sv. Ondreja (sviatok v oblastiach s britskou väčšinou)' },
+                thanksgiving: { name: 'Pohyblivý sviatok', desc: 'Deň vďakyvzdania (posledný štvrtok v novembri, sviatok v oblastiach s americkou väčšinou, návštevný deň)' }
+            },
+            'nov-dec': {
+                advent: { name: 'Pohyblivý sviatok', desc: '1.-4. advent (od 1. do 4. nedele po dni sv. Ondreja)' }
+            },
+            dec: {
+                '1': { name: '1. dec.', desc: 'Deň zimy (návštevný deň)' },
+                '16': { name: '16. dec.', desc: 'Narodeninový sviatok (narodeninový sviatok, návštevný deň)' },
+                '24': { name: '24. dec.', desc: 'Štedrý večer (návštevný deň)' },
+                '25-26': { name: '25.-26. dec.', desc: 'Vianoce (sviatok, návštevný deň)' },
+                '31': { name: '31. dec.', desc: 'Silvester (návštevný deň)' }
+            }
+        },
+        other: {
+            pageTitle: 'Ostatné informácie',
+            pageSubtitle: 'Ďalšie užitočné informácie o Furnovskyland',
+            faq: {
+                title: 'Často kladené otázky',
+                join: {
+                    question: 'Ako sa môžem pripojiť k Furnovskylandu?',
+                    answer: 'Podrobné informácie o procese pripojenia a požiadavkách.'
+                },
+                citizenship: {
+                    question: 'Ako môžem získať občianstvo?',
+                    answer: 'Podmienky a proces získania občianstva.'
+                },
+                visit: {
+                    question: 'Ako môžem navštíviť Furnovskyland?',
+                    answer: 'Informácie o návšteve a potrebných povoleniach.'
+                }
+            },
+            resources: {
+                title: 'Užitočné zdroje',
+                documents: {
+                    title: 'Dokumenty',
+                    description: 'Oficiálne dokumenty a formuláre.',
+                    link: 'Stiahnuť'
+                },
+                guides: {
+                    title: 'Príručky',
+                    description: 'Podrobné príručky a manuály.',
+                    link: 'Čítať'
+                }
+            },
+            contact: {
+                title: 'Kontaktujte nás',
+                form: {
+                    name: 'Meno:',
+                    email: 'E-mail:',
+                    subject: 'Predmet:',
+                    message: 'Správa:',
+                    submit: 'Odoslať'
+                }
+            }
+        },
+        minecraft: {
+            pageTitle: 'Minecraft Server',
+            pageSubtitle: 'Pripojte sa k nášmu Minecraft serveru a stavajte s nami!',
+            description: {
+                title: 'Popis',
+                content: 'Náš Minecraft server je miesto, kde môžete stavať, objavovať a baviť sa s našou komunitou. Máme rôzne pluginy a priateľský personál, ktorý vám pomôže začať. Či už ste skúsený hráč alebo nový v hre, na našom serveri nájdete domov.'
+            },
+            status: {
+                title: 'Stav servera',
+                ip: 'IP servera:',
+                version: 'Verzia:',
+                status: 'Stav:',
+                players: 'Hráči:'
+            },
+            gallery: {
+                title: 'Galéria'
+            }
+        },
+        footer: {
+            contact: {
+                title: 'Kontakt',
+                email: 'info@furnovskyland.com',
+                discord: '@furnovsky963',
+                facebook: 'bence.bagosi.666'
+            },
+            quickLinks: {
+                title: 'Rýchle odkazy',
+                privacy: 'Ochrana osobných údajov',
+                imprint: 'Impresum',
+                contact: 'Kontakt'
+            },
+            openingHours: {
+                title: 'Otváracie hodiny',
+                weekdays: 'Pondelok - Piatok: N/A',
+                saturday: 'Sobota: N/A',
+                sunday: 'Nedeľa: N/A'
+            },
+            copyright: '© 2024 Národná federatívna ríša Furnovskyland'
         }
     }
 };

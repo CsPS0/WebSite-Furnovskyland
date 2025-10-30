@@ -53,6 +53,7 @@
                         <a href="#" data-lang="hu" class="block px-4 py-2 text-outer-space hover:bg-gray-200">Magyar</a>
                         <a href="#" data-lang="en" class="block px-4 py-2 text-outer-space hover:bg-gray-200">English</a>
                         <a href="#" data-lang="de" class="block px-4 py-2 text-outer-space hover:bg-gray-200">Deutsch</a>
+                        <a href="#" data-lang="sk" class="block px-4 py-2 text-outer-space hover:bg-gray-200">Slovenčina</a>
                     </div>
                 </li>
             </ul>
@@ -74,59 +75,58 @@
                 <h2 class="text-4xl font-bold text-cardinal mb-12 text-center" data-i18n="politics.pageTitle">Politics of Furnovskyland</h2>
 
                 <div class="bg-white p-8 rounded-lg shadow-md mb-8">
-                    <h3 class="text-2xl font-bold text-outer-space mb-4">State Structure</h3>
-                    <p class="text-lg text-outer-space">The state is the Furnovskyland NATIONAL FEDERATION, a constitutional monarchy, with 4 member parts (Furnovskyland is one of them) in the National Federation, this is not important here at the moment. There is currently a Government, a Senate (the two are mixed legislative and executive) and a court, the Supreme Court. There is no parliament yet, it will replace the Senate in its functions when the Constitution is revised.</p>
+                    <h3 class="text-2xl font-bold text-outer-space mb-4" data-i18n="politics.state_structure.title">State Structure</h3>
+                    <p class="text-lg text-outer-space" data-i18n="politics.state_structure.content">The state is the Furnovskyland NATIONAL FEDERATION, a constitutional monarchy, with 4 member parts (Furnovskyland is one of them) in the National Federation, this is not important here at the moment. There is currently a Government, a Senate (the two are mixed legislative and executive) and a court, the Supreme Court. There is no parliament yet, it will replace the Senate in its functions when the Constitution is revised.</p>
                 </div>
 
                 <div class="bg-white p-8 rounded-lg shadow-md mb-8">
-                    <h3 class="text-2xl font-bold text-outer-space mb-4">Legislative Process</h3>
-                    <p class="text-lg text-outer-space mb-2">The stages of legislation are as follows:</p>
+                    <h3 class="text-2xl font-bold text-outer-space mb-4" data-i18n="politics.legislative_process.title">Legislative Process</h3>
+                    <p class="text-lg text-outer-space mb-2" data-i18n="politics.legislative_process.intro">The stages of legislation are as follows:</p>
                     <ul class="list-disc list-inside text-lg text-outer-space">
-                        <li><strong>Organic Law:</strong> Creation of an important body or institution, detailed description of its operation.</li>
-                        <li><strong>Bill:</strong> A less important institution or concept, with a smaller operational description.</li>
-                        <li><strong>Act:</strong> Governs a specific, one-off situation.</li>
-                        <li><strong>Decree:</strong> Can only originate from the Emperor or the government, in the form of any of the above types of law, without the need for a vote. However, the Senate can decide to repeal it at any time.</li>
+                        <li data-i18n="politics.legislative_process.organic_law"><strong>Organic Law:</strong> Creation of an important body or institution, detailed description of its operation.</li>
+                        <li data-i18n="politics.legislative_process.bill"><strong>Bill:</strong> A less important institution or concept, with a smaller operational description.</li>
+                        <li data-i18n="politics.legislative_process.act"><strong>Act:</strong> Governs a specific, one-off situation.</li>
+                        <li data-i18n="politics.legislative_process.decree"><strong>Decree:</strong> Can only originate from the Emperor or the government, in the form of any of the above types of law, without the need for a vote. However, the Senate can decide to repeal it at any time.</li>
                     </ul>
-                    <p class="text-lg text-outer-space mt-4">Only an Act can be submitted by any resident, the 2 above it can only be submitted by a person elected to one of the branches of power.</p>
+                    <p class="text-lg text-outer-space mt-4" data-i18n="politics.legislative_process.act_submit">Only an Act can be submitted by any resident, the 2 above it can only be submitted by a person elected to one of the branches of power.</p>
                     <ol class="list-decimal list-inside text-lg text-outer-space mt-4">
-                        <li>The Senate receives the bill, after which the Senator sets a 24-hour discussion period, and after its end a (hopefully) 24-hour vote, which in most cases should end with a simple majority to proceed.</li>
-                        <li>If it is accepted in the Senate, it goes to the Government, where if it is not accepted by a simple majority, it goes back to the Senate to be revised or accepted within a certain time (idk how much now, it's in the Constitution).</li>
-                        <li>If the Government accepts it, it goes to me to either veto it and it goes back to the Government or I sign it and it becomes law.</li>
+                        <li data-i18n="politics.legislative_process.step1">The Senate receives the bill, after which the Senator sets a 24-hour discussion period, and after its end a (hopefully) 24-hour vote, which in most cases should end with a simple majority to proceed.</li>
+                        <li data-i18n="politics.legislative_process.step2">If it is accepted in the Senate, it goes to the Government, where if it is not accepted by a simple majority, it goes back to the Senate to be revised or accepted within a certain time (idk how much now, it's in the Constitution).</li>
+                        <li data-i18n="politics.legislative_process.step3">If the Government accepts it, it goes to me to either veto it and it goes back to the Government or I sign it and it becomes law.</li>
                     </ol>
                 </div>
 
                 <div class="bg-white p-8 rounded-lg shadow-md mb-8">
-                    <h3 class="text-2xl font-bold text-outer-space mb-4">The Senate</h3>
-                    <p class="text-lg text-outer-space">The Senate is elected for 3 months, at the end of each season, with the Single Transferable Vote system, the top 3 candidates are elected, the 1st place becomes the Senator, the remaining 2 places are distributed with the closest possible keeping of the vote proportions. They take office in the first full week of each new season. The Chief Justice cannot run. The Senate is basically the very first "hurdle" that a law has to go through, and they vote on the laws on their own functioning, they clearly do not go elsewhere, and they vote on the approval of the government list. It has 5 members, each of them is an Observer (the Senator is by default an internal Discord affairs) with the currently available positions:
+                    <h3 class="text-2xl font-bold text-outer-space mb-4" data-i18n="politics.senate.title">The Senate</h3>
+                    <p class="text-lg text-outer-space" data-i18n="politics.senate.p1">The Senate is elected for 3 months, at the end of each season, with the Single Transferable Vote system, the top 3 candidates are elected, the 1st place becomes the Senator, the remaining 2 places are distributed with the closest possible keeping of the vote proportions. They take office in the first full week of each new season. The Chief Justice cannot run. The Senate is basically the very first "hurdle" that a law has to go through, and they vote on the laws on their own functioning, they clearly do not go elsewhere, and they vote on the approval of the government list. It has 5 members, each of them is an Observer (the Senator is by default an internal Discord affairs) with the currently available positions:</p>
                         <ul class="list-disc list-inside text-lg text-outer-space">
-                            <li>Internal Discord Affairs (Senator by default)</li>
-                            <li>Foreign Discord Affairs</li>
-                            <li>Minecraft Affairs</li>
-                            <li>Constitutional Affairs</li>
-                            <li>Recruitment Affairs (bringing members to the server, etc.)</li>
+                            <li data-i18n="politics.senate.affairs.internal">Internal Discord Affairs (Senator by default)</li>
+                            <li data-i18n="politics.senate.affairs.foreign">Foreign Discord Affairs</li>
+                            <li data-i18n="politics.senate.affairs.minecraft">Minecraft Affairs</li>
+                            <li data-i18n="politics.senate.affairs.constitutional">Constitutional Affairs</li>
+                            <li data-i18n="politics.senate.affairs.recruitment">Recruitment Affairs (bringing members to the server, etc.)</li>
                         </ul>
-                        The Senator is the one who sets the discussion and voting times (can also vote), records the voted laws in a specific forum channel, officially arranges who will be which Observer (besides his own), appoints a deputy and represents the Senate to the head of state or the government. He can be re-elected for one consecutive term, after which he cannot be elected Senator for 6 months. The Observers can comment on a submitted law during the discussion period, vote on them, and cooperate with the ministries closest to them.
-                    </p>
+                        <p class="text-lg text-outer-space" data-i18n="politics.senate.p2">The Senator is the one who sets the discussion and voting times (can also vote), records the voted laws in a specific forum channel, officially arranges who will be which Observer (besides his own), appoints a deputy and represents the Senate to the head of state or the government. He can be re-elected for one consecutive term, after which he cannot be elected Senator for 6 months. The Observers can comment on a submitted law during the discussion period, vote on them, and cooperate with the ministries closest to them.</p>
                 </div>
 
                 <div class="bg-white p-8 rounded-lg shadow-md mb-8">
-                    <h3 class="text-2xl font-bold text-outer-space mb-4">The Government</h3>
-                    <p class="text-lg text-outer-space">The Government is elected for 6 months, around the middle of February and August, with a simple majority vote system (FPTP), but the winner must reach a 2/3 majority or form a coalition government. It takes office in the first full week of March and September. The Chief Justice and a person independent of a party cannot run. The Government votes on its own or submitted laws. The Prime Minister forms the Government and the Ministries as he wishes, but this must also be approved by the Senate. He can be re-elected once, then a 6-month break.</p>
+                    <h3 class="text-2xl font-bold text-outer-space mb-4" data-i18n="politics.government.title">The Government</h3>
+                    <p class="text-lg text-outer-space" data-i18n="politics.government.p1">The Government is elected for 6 months, around the middle of February and August, with a simple majority vote system (FPTP), but the winner must reach a 2/3 majority or form a coalition government. It takes office in the first full week of March and September. The Chief Justice and a person independent of a party cannot run. The Government votes on its own or submitted laws. The Prime Minister forms the Government and the Ministries as he wishes, but this must also be approved by the Senate. He can be re-elected once, then a 6-month break.</p>
                 </div>
 
                 <div class="bg-white p-8 rounded-lg shadow-md mb-8">
-                    <h3 class="text-2xl font-bold text-outer-space mb-4">The Supreme Court</h3>
-                    <p class="text-lg text-outer-space">The Supreme Court decides on matters of Constitutionality, and things like that, you know. Its members are the Prime Minister, the Minister of Justice, the Observer for Constitutional Affairs and a 4th person, chosen by the Prime Minister from the list of existing judges, appointed by me, and approved by a 2/3 majority of the Senate.</p>
+                    <h3 class="text-2xl font-bold text-outer-space mb-4" data-i18n="politics.supreme_court.title">The Supreme Court</h3>
+                    <p class="text-lg text-outer-space" data-i18n="politics.supreme_court.content">The Supreme Court decides on matters of Constitutionality, and things like that, you know. Its members are the Prime Minister, the Minister of Justice, the Observer for Constitutional Affairs and a 4th person, chosen by the Prime Minister from the list of existing judges, appointed by me, and approved by a 2/3 majority of the Senate.</p>
                 </div>
 
                 <div class="bg-white p-8 rounded-lg shadow-md mb-8">
-                    <h3 class="text-2xl font-bold text-outer-space mb-4">Current Government</h3>
+                    <h3 class="text-2xl font-bold text-outer-space mb-4" data-i18n="politics.current_gov.title">Current Government</h3>
                     <table class="w-full text-lg text-outer-space">
                         <thead>
                             <tr>
-                                <th class="text-left py-2">Role</th>
-                                <th class="text-left py-2">Name</th>
-                                <th class="text-left py-2">Responsibilities</th>
+                                <th class="text-left py-2" data-i18n="politics.current_gov.table.role">Role</th>
+                                <th class="text-left py-2" data-i18n="politics.current_gov.table.name">Name</th>
+                                <th class="text-left py-2" data-i18n="politics.current_gov.table.responsibilities">Responsibilities</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -170,12 +170,12 @@
                 </div>
 
                 <div class="bg-white p-8 rounded-lg shadow-md mb-8">
-                    <h3 class="text-2xl font-bold text-outer-space mb-4">Current Senate</h3>
+                    <h3 class="text-2xl font-bold text-outer-space mb-4" data-i18n="politics.current_senate.title">Current Senate</h3>
                     <table class="w-full text-lg text-outer-space">
                         <thead>
                             <tr>
-                                <th class="text-left py-2">Role</th>
-                                <th class="text-left py-2">Name</th>
+                                <th class="text-left py-2" data-i18n="politics.current_senate.table.role">Role</th>
+                                <th class="text-left py-2" data-i18n="politics.current_senate.table.name">Name</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -212,8 +212,8 @@
                 </div>
 
                 <div class="bg-white p-8 rounded-lg shadow-md">
-                    <h3 class="text-2xl font-bold text-outer-space mb-4">Current Supreme Court</h3>
-                    <p class="text-lg text-outer-space">None</p>
+                    <h3 class="text-2xl font-bold text-outer-space mb-4" data-i18n="politics.current_supreme_court.title">Current Supreme Court</h3>
+                    <p class="text-lg text-outer-space" data-i18n="politics.current_supreme_court.content">None</p>
                 </div>
 
             </div>
