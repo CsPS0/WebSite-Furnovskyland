@@ -1,140 +1,257 @@
 <!DOCTYPE html>
-<html lang="hu">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Politika - Furnovskyland</title>
-    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Politics - Furnovskyland</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/source.css">
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'cardinal': '#c61e2c',
+            'old-gold': '#c6a11e',
+            'manatee': '#8e8e9c',
+            'outer-space': '#2e3440',
+            'white-rock': '#eceff4',
+            'oriental-pink': '#c69c9c',
+            'brink-pink': '#fc6484',
+            'akaroa': '#d5c9a2',
+            'nobel': '#bbb8b8',
+            'laser': '#cdbb74',
+          }
+        }
+      }
+    }
+    </script>
 </head>
-<body>
-    <header class="main-header">
-        <nav class="navbar">
-            <div class="logo">
-                <img src="../IMG/banner.png" alt="Furnovskyföld Embléma">
-                <h1 class="cim">Furnovskyland</h1>
+<body class="bg-white-rock text-outer-space font-sans leading-normal">
+    <header class="bg-white-rock shadow-md fixed w-full top-0 z-50 transition-transform duration-300 ease-in-out">
+        <nav class="container mx-auto flex justify-between items-center p-4">
+            <div class="flex items-center">
+                <img src="../IMG/banner.png" alt="Furnovskyland Emblem" class="h-12 mr-4">
+                <h1 class="text-cardinal text-2xl">Furnovskyland</h1>
             </div>
-            <div class="menu-toggle" id="mobile-menu">
-                <span></span>
-                <span></span>
-                <span></span>
+            <div class="menu-toggle md:hidden" id="mobile-menu">
+                <span class="block w-6 h-0.5 bg-outer-space mb-1"></span>
+                <span class="block w-6 h-0.5 bg-outer-space mb-1"></span>
+                <span class="block w-6 h-0.5 bg-outer-space"></span>
             </div>
-            <ul class="nav-links">
-                <li><a href="../index.html" data-i18n="nav.home"><i class="fas fa-home"></i> <span>Főoldal</span></a></li>
-                <li><a href="./tortenelem.html" data-i18n="nav.history"><i class="fas fa-book-open"></i> <span>Történelem</span></a></li>
-                <li><a href="./politika.html" data-i18n="nav.politics"><i class="fas fa-landmark"></i> <span>Politika</span></a></li>
-                <li><a href="./kultura.html" data-i18n="nav.culture"><i class="fas fa-theater-masks"></i> <span>Kultúra</span></a></li>
-                <li><a href="./egyeb.html" data-i18n="nav.other"><i class="fas fa-ellipsis-h"></i> <span>Egyéb</span></a></li>
-                <li class="dropdown">
-                    <a href="#nyelv" data-i18n="nav.language"><i class="fas fa-globe"></i> <span>Nyelv</span></a>
-                    <div class="dropdown-content">
-                        <a href="#" data-lang="hu">Magyar</a>
-                        <a href="#" data-lang="en">English</a>
-                        <a href="#" data-lang="de">Deutsch</a>
+            <ul class="nav-links hidden md:flex items-center space-x-8">
+                <li><a href="../index.html" data-i18n="nav.home" class="flex items-center text-outer-space hover:text-cardinal"><i class="fas fa-home mr-2"></i> <span>Home</span></a></li>
+                <li><a href="./minecraft.html" data-i18n="nav.minecraft" class="flex items-center text-outer-space hover:text-cardinal"><i class="fas fa-cube mr-2"></i> <span>Minecraft</span></a></li>
+                <li><a href="./tortenelem.html" data-i18n="nav.history" class="flex items-center text-outer-space hover:text-cardinal"><i class="fas fa-book-open mr-2"></i> <span>History</span></a></li>
+                <li><a href="./politika.html" data-i18n="nav.politics" class="flex items-center text-outer-space hover:text-cardinal"><i class="fas fa-landmark mr-2"></i> <span>Politics</span></a></li>
+                <li><a href="./kultura.html" data-i18n="nav.culture" class="flex items-center text-outer-space hover:text-cardinal"><i class="fas fa-theater-masks mr-2"></i> <span>Culture</span></a></li>
+                <li><a href="./egyeb.html" data-i18n="nav.other" class="flex items-center text-outer-space hover:text-cardinal"><i class="fas fa-ellipsis-h mr-2"></i> <span>Other</span></a></li>
+                <li class="relative dropdown">
+                    <a href="#nyelv" data-i18n="nav.language" class="flex items-center text-outer-space hover:text-cardinal"><i class="fas fa-globe mr-2"></i> <span>Language</span></a>
+                    <div class="dropdown-content absolute hidden bg-white-rock shadow-lg rounded-md mt-2 py-2 w-36">
+                        <a href="#" data-lang="hu" class="block px-4 py-2 text-outer-space hover:bg-gray-200">Magyar</a>
+                        <a href="#" data-lang="en" class="block px-4 py-2 text-outer-space hover:bg-gray-200">English</a>
+                        <a href="#" data-lang="de" class="block px-4 py-2 text-outer-space hover:bg-gray-200">Deutsch</a>
+                        <a href="#" data-lang="sk" class="block px-4 py-2 text-outer-space hover:bg-gray-200">Slovenčina</a>
                     </div>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section id="hero" class="page-hero">
-            <div class="hero-content">
-                <h1 data-i18n="politics.pageTitle">Politika</h1>
-                <p data-i18n="politics.pageSubtitle">Ismerje meg Furnovskyföld politikai rendszerét</p>
-            </div>
-        </section>
+    <div id="mobile-nav" class="hidden fixed top-0 left-0 w-full h-full bg-black bg-opacity-90 z-40 flex flex-col justify-center items-center">
+        <a href="../index.html" data-i18n="nav.home" class="text-white text-2xl mb-8">Home</a>
+        <a href="./minecraft.html" data-i18n="nav.minecraft" class="text-white text-2xl mb-8">Minecraft</a>
+        <a href="./tortenelem.html" data-i18n="nav.history" class="text-white text-2xl mb-8">History</a>
+        <a href="./politika.html" data-i18n="nav.politics" class="text-white text-2xl mb-8">Politics</a>
+        <a href="./kultura.html" data-i18n="nav.culture" class="text-white text-2xl mb-8">Culture</a>
+        <a href="./egyeb.html" data-i18n="nav.other" class="text-white text-2xl mb-8">Other</a>
+    </div>
 
-        <section id="government" class="section-padding">
-            <div class="container">
-                <h2 class="section-title" data-i18n="politics.government.title">Kormányzati rendszer</h2>
-                <div class="government-grid">
-                    <div class="gov-card">
-                        <i class="fas fa-crown"></i>
-                        <h3 data-i18n="politics.government.executive.title">Végrehajtó hatalom</h3>
-                        <p data-i18n="politics.government.executive.description">A végrehajtó hatalom felépítése és működése.</p>
-                    </div>
-                    <div class="gov-card">
-                        <i class="fas fa-balance-scale"></i>
-                        <h3 data-i18n="politics.government.judicial.title">Bírói hatalom</h3>
-                        <p data-i18n="politics.government.judicial.description">Az igazságszolgáltatás rendszere.</p>
-                    </div>
-                    <div class="gov-card">
-                        <i class="fas fa-scroll"></i>
-                        <h3 data-i18n="politics.government.legislative.title">Törvényhozás</h3>
-                        <p data-i18n="politics.government.legislative.description">A törvényhozás folyamata és szervezete.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <main class="mt-20">
+        <section id="politics-content" class="py-20">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold text-cardinal mb-12 text-center" data-i18n="politics.pageTitle">Politics of Furnovskyland</h2>
 
-        <section id="political-structure" class="section-padding">
-            <div class="container">
-                <h2 class="section-title" data-i18n="politics.structure.title">Politikai felépítés</h2>
-                <div class="structure-content">
-                    <div class="structure-item">
-                        <h3 data-i18n="politics.structure.federation.title">Nemzetszövetségi rendszer</h3>
-                        <p data-i18n="politics.structure.federation.description">A Nemzetszövetség felépítése és működési elvei.</p>
-                    </div>
-                    <div class="structure-item">
-                        <h3 data-i18n="politics.structure.local.title">Helyi önkormányzatok</h3>
-                        <p data-i18n="politics.structure.local.description">A helyi közigazgatás rendszere és feladatai.</p>
-                    </div>
+                <div class="bg-white p-8 rounded-lg shadow-md mb-8">
+                    <h3 class="text-2xl font-bold text-outer-space mb-4" data-i18n="politics.state_structure.title">State Structure</h3>
+                    <p class="text-lg text-outer-space" data-i18n="politics.state_structure.content">The state is the Furnovskyland NATIONAL FEDERATION, a constitutional monarchy, with 4 member parts (Furnovskyland is one of them) in the National Federation, this is not important here at the moment. There is currently a Government, a Senate (the two are mixed legislative and executive) and a court, the Supreme Court. There is no parliament yet, it will replace the Senate in its functions when the Constitution is revised.</p>
                 </div>
-            </div>
-        </section>
 
-        <section id="foreign-relations" class="section-padding">
-            <div class="container">
-                <h2 class="section-title" data-i18n="politics.foreign.title">Külkapcsolatok</h2>
-                <div class="relations-grid">
-                    <div class="relation-card">
-                        <i class="fas fa-handshake"></i>
-                        <h3 data-i18n="politics.foreign.allies.title">Szövetségesek</h3>
-                        <p data-i18n="politics.foreign.allies.description">Diplomáciai kapcsolataink és szövetségeseink.</p>
-                    </div>
-                    <div class="relation-card">
-                        <i class="fas fa-globe-americas"></i>
-                        <h3 data-i18n="politics.foreign.international.title">Nemzetközi kapcsolatok</h3>
-                        <p data-i18n="politics.foreign.international.description">Részvételünk a nemzetközi közösségben.</p>
-                    </div>
+                <div class="bg-white p-8 rounded-lg shadow-md mb-8">
+                    <h3 class="text-2xl font-bold text-outer-space mb-4" data-i18n="politics.legislative_process.title">Legislative Process</h3>
+                    <p class="text-lg text-outer-space mb-2" data-i18n="politics.legislative_process.intro">The stages of legislation are as follows:</p>
+                    <ul class="list-disc list-inside text-lg text-outer-space">
+                        <li data-i18n="politics.legislative_process.organic_law"><strong>Organic Law:</strong> Creation of an important body or institution, detailed description of its operation.</li>
+                        <li data-i18n="politics.legislative_process.bill"><strong>Bill:</strong> A less important institution or concept, with a smaller operational description.</li>
+                        <li data-i18n="politics.legislative_process.act"><strong>Act:</strong> Governs a specific, one-off situation.</li>
+                        <li data-i18n="politics.legislative_process.decree"><strong>Decree:</strong> Can only originate from the Emperor or the government, in the form of any of the above types of law, without the need for a vote. However, the Senate can decide to repeal it at any time.</li>
+                    </ul>
+                    <p class="text-lg text-outer-space mt-4" data-i18n="politics.legislative_process.act_submit">Only an Act can be submitted by any resident, the 2 above it can only be submitted by a person elected to one of the branches of power.</p>
+                    <ol class="list-decimal list-inside text-lg text-outer-space mt-4">
+                        <li data-i18n="politics.legislative_process.step1">The Senate receives the bill, after which the Senator sets a 24-hour discussion period, and after its end a (hopefully) 24-hour vote, which in most cases should end with a simple majority to proceed.</li>
+                        <li data-i18n="politics.legislative_process.step2">If it is accepted in the Senate, it goes to the Government, where if it is not accepted by a simple majority, it goes back to the Senate to be revised or accepted within a certain time (idk how much now, it's in the Constitution).</li>
+                        <li data-i18n="politics.legislative_process.step3">If the Government accepts it, it goes to me to either veto it and it goes back to the Government or I sign it and it becomes law.</li>
+                    </ol>
                 </div>
+
+                <div class="bg-white p-8 rounded-lg shadow-md mb-8">
+                    <h3 class="text-2xl font-bold text-outer-space mb-4" data-i18n="politics.senate.title">The Senate</h3>
+                    <p class="text-lg text-outer-space" data-i18n="politics.senate.p1">The Senate is elected for 3 months, at the end of each season, with the Single Transferable Vote system, the top 3 candidates are elected, the 1st place becomes the Senator, the remaining 2 places are distributed with the closest possible keeping of the vote proportions. They take office in the first full week of each new season. The Chief Justice cannot run. The Senate is basically the very first "hurdle" that a law has to go through, and they vote on the laws on their own functioning, they clearly do not go elsewhere, and they vote on the approval of the government list. It has 5 members, each of them is an Observer (the Senator is by default an internal Discord affairs) with the currently available positions:</p>
+                        <ul class="list-disc list-inside text-lg text-outer-space">
+                            <li data-i18n="politics.senate.affairs.internal">Internal Discord Affairs (Senator by default)</li>
+                            <li data-i18n="politics.senate.affairs.foreign">Foreign Discord Affairs</li>
+                            <li data-i18n="politics.senate.affairs.minecraft">Minecraft Affairs</li>
+                            <li data-i18n="politics.senate.affairs.constitutional">Constitutional Affairs</li>
+                            <li data-i18n="politics.senate.affairs.recruitment">Recruitment Affairs (bringing members to the server, etc.)</li>
+                        </ul>
+                        <p class="text-lg text-outer-space" data-i18n="politics.senate.p2">The Senator is the one who sets the discussion and voting times (can also vote), records the voted laws in a specific forum channel, officially arranges who will be which Observer (besides his own), appoints a deputy and represents the Senate to the head of state or the government. He can be re-elected for one consecutive term, after which he cannot be elected Senator for 6 months. The Observers can comment on a submitted law during the discussion period, vote on them, and cooperate with the ministries closest to them.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow-md mb-8">
+                    <h3 class="text-2xl font-bold text-outer-space mb-4" data-i18n="politics.government.title">The Government</h3>
+                    <p class="text-lg text-outer-space" data-i18n="politics.government.p1">The Government is elected for 6 months, around the middle of February and August, with a simple majority vote system (FPTP), but the winner must reach a 2/3 majority or form a coalition government. It takes office in the first full week of March and September. The Chief Justice and a person independent of a party cannot run. The Government votes on its own or submitted laws. The Prime Minister forms the Government and the Ministries as he wishes, but this must also be approved by the Senate. He can be re-elected once, then a 6-month break.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow-md mb-8">
+                    <h3 class="text-2xl font-bold text-outer-space mb-4" data-i18n="politics.supreme_court.title">The Supreme Court</h3>
+                    <p class="text-lg text-outer-space" data-i18n="politics.supreme_court.content">The Supreme Court decides on matters of Constitutionality, and things like that, you know. Its members are the Prime Minister, the Minister of Justice, the Observer for Constitutional Affairs and a 4th person, chosen by the Prime Minister from the list of existing judges, appointed by me, and approved by a 2/3 majority of the Senate.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow-md mb-8">
+                    <h3 class="text-2xl font-bold text-outer-space mb-4" data-i18n="politics.current_gov.title">Current Government</h3>
+                    <table class="w-full text-lg text-outer-space">
+                        <thead>
+                            <tr>
+                                <th class="text-left py-2" data-i18n="politics.current_gov.table.role">Role</th>
+                                <th class="text-left py-2" data-i18n="politics.current_gov.table.name">Name</th>
+                                <th class="text-left py-2" data-i18n="politics.current_gov.table.responsibilities">Responsibilities</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="py-2">Prime Minister</td>
+                                <td class="py-2">Honorary Baron & PM XVDX</td>
+                                <td class="py-2">Government Activity & Efficiency, Internal Affairs</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2">Deputy Prime Minister</td>
+                                <td class="py-2">DPM.I. Hafiz Yahaya A.E.K, D.E.A</td>
+                                <td class="py-2">Finance, Justice, Work and Infrastructure</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2">Deputy Prime Minister</td>
+                                <td class="py-2">Deputy PM Seneca (from May 7)</td>
+                                <td class="py-2">Defense & Security</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2">Minister</td>
+                                <td class="py-2">H.R.H. Prince Rupitu</td>
+                                <td class="py-2">Educational and Healthcare Affairs, Welfare</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2">Minister</td>
+                                <td class="py-2">Marquess Dunaújvárosi Dexter</td>
+                                <td class="py-2">Foreign Affairs</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2">Minister</td>
+                                <td class="py-2">Minister Opra Melinda</td>
+                                <td class="py-2">Culture</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2">Minister</td>
+                                <td class="py-2">pchugs_1 (banned on July 15)/@unknown-user (July 15-28)</td>
+                                <td class="py-2">Communication</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow-md mb-8">
+                    <h3 class="text-2xl font-bold text-outer-space mb-4" data-i18n="politics.current_senate.title">Current Senate</h3>
+                    <table class="w-full text-lg text-outer-space">
+                        <thead>
+                            <tr>
+                                <th class="text-left py-2" data-i18n="politics.current_senate.table.role">Role</th>
+                                <th class="text-left py-2" data-i18n="politics.current_senate.table.name">Name</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="py-2">Senator</td>
+                                <td class="py-2">Marquess & Senator Edgeworth</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2">Deputy Senator</td>
+                                <td class="py-2">Acél Elvtárs (left on June 9)/@『🔴』Deputy Senator Yesko (from June 9)</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2">Observer for Internal Discord Affairs</td>
+                                <td class="py-2">Marquess & Senator Edgeworth</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2">Observer for Foreign Discord Affairs</td>
+                                <td class="py-2">Metal Crusader</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2">Observer for Minecraft Affairs</td>
+                                <td class="py-2">Observer Proud Hungarian</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2">Observer for Constitutional Affairs</td>
+                                <td class="py-2">Acél Elvtárs (left on June 9)/@『🔴』Deputy Senator Yesko (from June 9)</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2">Observer for Recruitment Affairs</td>
+                                <td class="py-2">Observer Aljoot Lichtensvon</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold text-outer-space mb-4" data-i18n="politics.current_supreme_court.title">Current Supreme Court</h3>
+                    <p class="text-lg text-outer-space" data-i18n="politics.current_supreme_court.content">None</p>
+                </div>
+
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3 data-i18n="footer.contact.title">Kapcsolat</h3>
+    <footer class="bg-outer-space text-white-rock py-16">
+        <div class="container mx-auto grid md:grid-cols-3 gap-12">
+            <div>
+                <h3 class="text-xl font-bold mb-6 text-old-gold" data-i18n="footer.contact.title">Contact</h3>
                 <ul>
-                    <li><i class="fas fa-envelope"></i> <span data-i18n="footer.contact.email">info@furnovskyland.com</span></li>
-                    <li><i class="fab fa-discord"></i> <span data-i18n="footer.contact.discord">Discord</span></li>
-                    <li><i class="fab fa-facebook"></i> <span data-i18n="footer.contact.facebook">Facebook</span></li>
+                    <li class="mb-3"><i class="fas fa-envelope mr-3"></i> <span data-i18n="footer.contact.email">info@furnovskyland.com</span></li>
+                    <li class="mb-3"><i class="fab fa-discord mr-3"></i> <span data-i18n="footer.contact.discord">Discord @furnovsky963</span></li>
+                    <li class="mb-3"><i class="fab fa-facebook mr-3"></i> <span data-i18n="footer.contact.facebook">Facebook</span></li>
                 </ul>
             </div>
-            <div class="footer-section">
-                <h3 data-i18n="footer.quickLinks.title">Gyorslinkek</h3>
+            <div>
+                <h3 class="text-xl font-bold mb-6 text-old-gold" data-i18n="footer.quickLinks.title">Quick Links</h3>
                 <ul>
-                    <li><a href="#adatvedelem" data-i18n="footer.quickLinks.privacy">Adatvédelem</a></li>
-                    <li><a href="#impresszum" data-i18n="footer.quickLinks.imprint">Impresszum</a></li>
-                    <li><a href="#kapcsolat" data-i18n="footer.quickLinks.contact">Kapcsolat</a></li>
+                    <li class="mb-3"><a href="#adatvedelem" class="hover:text-old-gold" data-i18n="footer.quickLinks.privacy">Privacy Policy</a></li>
+                    <li class="mb-3"><a href="#impresszum" class="hover:text-old-gold" data-i18n="footer.quickLinks.imprint">Imprint</a></li>
+                    <li class="mb-3"><a href="#kapcsolat" class="hover:text-old-gold" data-i18n="footer.quickLinks.contact">Contact</a></li>
                 </ul>
             </div>
-            <div class="footer-section">
-                <h3 data-i18n="footer.openingHours.title">Nyitvatartás</h3>
+            <div>
+                <h3 class="text-xl font-bold mb-6 text-old-gold" data-i18n="footer.openingHours.title">Opening Hours</h3>
                 <ul>
-                    <li data-i18n="footer.openingHours.weekdays">Hétfő - Péntek: 9:00 - 17:00</li>
-                    <li data-i18n="footer.openingHours.saturday">Szombat: 10:00 - 14:00</li>
-                    <li data-i18n="footer.openingHours.sunday">Vasárnap: Zárva</li>
+                    <li class="mb-3" data-i18n="footer.openingHours.weekdays">Hétfő - Péntek: N/A</li>
+                    <li class="mb-3" data-i18n="footer.openingHours.saturday">Szombat: N/A</li>
+                    <li class="mb-3" data-i18n="footer.openingHours.sunday">Vasárnap: N/A</li>
                 </ul>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p data-i18n="footer.copyright">© 2024 Furnovskyland Nemzetszövetségének Birodalma</p>
+        <div class="text-center mt-12 pt-8 border-t border-manatee">
+            <p data-i18n="footer.copyright">© <span id="current-year"></span> National Federation Empire of Furnovskyland</p>
         </div>
     </footer>
     <script src="../JS/translations.js"></script>
     <script src="../JS/script.js"></script>
 </body>
-</html> 
+</html>

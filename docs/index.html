@@ -1,128 +1,141 @@
 <!DOCTYPE html>
-<html lang="hu">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Főoldal</title>
-    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./CSS/source.css">
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'cardinal': '#c61e2c',
+            'old-gold': '#c6a11e',
+            'manatee': '#8e8e9c',
+            'outer-space': '#2e3440',
+            'white-rock': '#eceff4',
+            'oriental-pink': '#c69c9c',
+            'brink-pink': '#fc6484',
+            'akaroa': '#d5c9a2',
+            'nobel': '#bbb8b8',
+            'laser': '#cdbb74',
+          }
+        }
+      }
+    }
+    </script>
 </head>
-<body>
-    <header class="main-header">
-        <nav class="navbar">
-            <div class="logo">
-                <img src="./IMG/banner.png" alt="Furnovskyföld Embléma">
-                <h1 class="cim">Furnovskyland</h1>
+<body class="bg-white-rock text-outer-space font-sans leading-normal">
+    <header class="bg-white-rock shadow-md fixed w-full top-0 z-50 transition-transform duration-300 ease-in-out">
+        <nav class="container mx-auto flex justify-between items-center p-4">
+            <div class="flex items-center">
+                <img src="./IMG/banner.png" alt="Furnovskyland Emblem" class="h-12 mr-4">
+                <h1 class="text-cardinal text-2xl">Furnovskyland</h1>
             </div>
-            <div class="menu-toggle" id="mobile-menu">
-                <span></span>
-                <span></span>
-                <span></span>
+            <div class="menu-toggle md:hidden" id="mobile-menu">
+                <span class="block w-6 h-0.5 bg-outer-space mb-1"></span>
+                <span class="block w-6 h-0.5 bg-outer-space mb-1"></span>
+                <span class="block w-6 h-0.5 bg-outer-space"></span>
             </div>
-            <ul class="nav-links">
-                <li><a href="index.html" data-i18n="nav.home"><i class="fas fa-home"></i> <span>Főoldal</span></a></li>
-                <li><a href="./pages/tortenelem.html" data-i18n="nav.history"><i class="fas fa-book-open"></i> <span>Történelem</span></a></li>
-                <li><a href="./pages/politika.html" data-i18n="nav.politics"><i class="fas fa-landmark"></i> <span>Politika</span></a></li>
-                <li><a href="./pages/kultura.html" data-i18n="nav.culture"><i class="fas fa-theater-masks"></i> <span>Kultúra</span></a></li>
-                <li><a href="./pages/egyeb.html" data-i18n="nav.other"><i class="fas fa-ellipsis-h"></i> <span>Egyéb</span></a></li>
-                <li class="dropdown">
-                    <a href="#nyelv" data-i18n="nav.language"><i class="fas fa-globe"></i> <span>Nyelv</span></a>
-                    <div class="dropdown-content">
-                        <a href="#" data-lang="hu">Magyar</a>
-                        <a href="#" data-lang="en">English</a>
-                        <a href="#" data-lang="de">Deutsch</a>
+            <ul class="nav-links hidden md:flex items-center space-x-8">
+                <li><a href="index.html" data-i18n="nav.home" class="flex items-center text-outer-space hover:text-cardinal"><i class="fas fa-home mr-2"></i> <span>Home</span></a></li>
+                <li><a href="./pages/minecraft.html" data-i18n="nav.minecraft" class="flex items-center text-outer-space hover:text-cardinal"><i class="fas fa-cube mr-2"></i> <span>Minecraft</span></a></li>
+                <li><a href="./pages/tortenelem.html" data-i18n="nav.history" class="flex items-center text-outer-space hover:text-cardinal"><i class="fas fa-book-open mr-2"></i> <span>History</span></a></li>
+                <li><a href="./pages/politika.html" data-i18n="nav.politics" class="flex items-center text-outer-space hover:text-cardinal"><i class="fas fa-landmark mr-2"></i> <span>Politics</span></a></li>
+                <li><a href="./pages/kultura.html" data-i18n="nav.culture" class="flex items-center text-outer-space hover:text-cardinal"><i class="fas fa-theater-masks mr-2"></i> <span>Culture</span></a></li>
+                <li><a href="./egyeb.html" data-i18n="nav.other" class="flex items-center text-outer-space hover:text-cardinal"><i class="fas fa-ellipsis-h mr-2"></i> <span>Other</span></a></li>
+                <li class="relative dropdown">
+                    <a href="#nyelv" data-i18n="nav.language" class="flex items-center text-outer-space hover:text-cardinal"><i class="fas fa-globe mr-2"></i> <span>Language</span></a>
+                    <div class="dropdown-content absolute hidden bg-white-rock shadow-lg rounded-md mt-2 py-2 w-36">
+                        <a href="#" data-lang="hu" class="block px-4 py-2 text-outer-space hover:bg-gray-200">Magyar</a>
+                        <a href="#" data-lang="en" class="block px-4 py-2 text-outer-space hover:bg-gray-200">English</a>
+                        <a href="#" data-lang="de" class="block px-4 py-2 text-outer-space hover:bg-gray-200">Deutsch</a>
+                        <a href="#" data-lang="sk" class="block px-4 py-2 text-outer-space hover:bg-gray-200">Slovenčina</a>
                     </div>
                 </li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section id="hero">
-            <div class="hero-content">
-                <h1 data-i18n="hero.welcome">Üdvözöljük Furnovskyföldön!</h1>
-                <p data-i18n="hero.discover">Fedezze fel nemzetünk gazdag történelmét és kultúráját</p>
-                <a href="#bemutatkozas" class="cta-button" data-i18n="hero.learnMore">Tudj meg többet</a>
-            </div>
-        </section>
-        <section id="bemutatkozas" class="section-padding">
-            <div class="container">
-                <h2 class="section-title" data-i18n="intro.title">Bemutatkozás</h2>
-                <div class="intro-grid">
-                    <div class="intro-text">
-                        <p data-i18n="intro.description">
-                            Üdvözlünk Furnovskyföld Nemzetszövetségi Birodalmának hivatalos oldalán!
-                            Itt megtudhatod, hogyan csatlakozhatsz Discord, illetve Minecraft
-                            szervereinkhez, valamint tanulhatsz a történelmünkről, kultúránkról,
-                            politikánkról és még sok egyébről!
+
+    <div id="mobile-nav" class="hidden fixed top-0 left-0 w-full h-full bg-black bg-opacity-90 z-40 flex flex-col justify-center items-center">
+        <a href="index.html" data-i18n="nav.home" class="text-white text-2xl mb-8">Home</a>
+        <a href="./pages/minecraft.html" data-i18n="nav.minecraft" class="text-white text-2xl mb-8">Minecraft</a>
+        <a href="./pages/tortenelem.html" data-i18n="nav.history" class="text-white text-2xl mb-8">History</a>
+        <a href="./pages/politika.html" data-i18n="nav.politics" class="text-white text-2xl mb-8">Politics</a>
+        <a href="./pages/kultura.html" data-i18n="nav.culture" class="text-white text-2xl mb-8">Culture</a>
+        <a href="./egyeb.html" data-i18n="nav.other" class="text-white text-2xl mb-8">Other</a>
+    </div>
+
+    <main class="mt-20">
+        <section id="bemutatkozas" class="py-20">
+            <div class="container mx-auto text-center">
+                <h2 class="text-4xl font-bold text-cardinal mb-12" data-i18n="intro.title">Introduction</h2>
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="text-left">
+                        <p class="text-lg" data-i18n="intro.description">
+                            Welcome to the official website of the National Federation Empire of Furnovskyland! Here you can learn how to join our Discord and Minecraft servers, and learn about our history, culture, politics, and much more!
                         </p>
                     </div>
-                    <div class="intro-stats">
-                        <div class="stat-card">
-                            <i class="fas fa-users"></i>
-                            <h3 data-i18n="intro.stats.population">Lakosság</h3>
-                            <p>128</p>
-                        </div>
-                        <div class="stat-card">
-                            <i class="fas fa-map-marked-alt"></i>
-                            <h3 data-i18n="intro.stats.area">Terület</h3>
-                            <p data-i18n="intro.stats.areaValue">200 Chunk</p>
-                        </div>
-                    </div>
+                    <iframe src="https://discord.com/widget?id=836271168977764363&theme=dark" class="w-full h-[500px]" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
                 </div>
             </div>
         </section>
-        <section id="csatlakozas" class="section-padding">
-            <div class="container">
-                <h2 class="section-title" data-i18n="join.title">Csatlakozz Közösségünkhöz</h2>
-                <div class="join-grid">
-                    <div class="join-card">
-                        <i class="fab fa-discord"></i>
-                        <h3 data-i18n="join.discord.title">Discord Szerver</h3>
-                        <p data-i18n="join.discord.description">Csatlakozz aktív közösségünkhöz</p>
-                        <a href="https://discord.gg/UjcUnNhNfk" class="join-button" target="_blank" data-i18n="join.discord.button">Csatlakozás</a>
+        <section id="csatlakozas" class="py-20 bg-gray-100">
+            <div class="container mx-auto text-center">
+                <h2 class="text-4xl font-bold text-cardinal mb-12" data-i18n="join.title">Join Our Community</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white p-8 rounded-lg shadow-md text-center transform hover:-translate-y-2 transition-transform duration-300">
+                        <i class="fab fa-discord text-5xl text-cardinal mb-6"></i>
+                        <h3 class="text-2xl font-bold mb-4" data-i18n="join.discord.title">Discord Server</h3>
+                        <p class="text-lg mb-6" data-i18n="join.discord.description">Join our active community</p>
+                        <a href="https://discord.gg/UjcUnNhNfk" class="inline-block bg-cardinal text-white-rock px-8 py-3 rounded-md font-bold hover:bg-oriental-pink transition-colors duration-300" target="_blank" data-i18n="join.discord.button">Join</a>
                     </div>
-                    <div class="join-card">
-                        <i class="fas fa-cube"></i>
-                        <h3 data-i18n="join.minecraft.title">Minecraft Szerver</h3>
-                        <p data-i18n="join.minecraft.description">Építsd velünk városainkat</p>
-                        <a href="#" class="join-button" data-i18n="join.minecraft.button">Kapcsolódás</a>
+                    <div class="bg-white p-8 rounded-lg shadow-md text-center transform hover:-translate-y-2 transition-transform duration-300">
+                        <i class="fas fa-cube text-5xl text-cardinal mb-6"></i>
+                        <h3 class="text-2xl font-bold mb-4" data-i18n="join.minecraft.title">Minecraft Server</h3>
+                        <p class="text-lg mb-6" data-i18n="join.minecraft.description">Build our cities with us</p>
+                        <a href="pages/minecraft.html" class="inline-block bg-cardinal text-white-rock px-8 py-3 rounded-md font-bold hover:bg-oriental-pink transition-colors duration-300" data-i18n="join.minecraft.button">Connect</a>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3 data-i18n="footer.contact.title">Kapcsolat</h3>
+    <footer class="bg-outer-space text-white-rock py-16">
+        <div class="container mx-auto grid md:grid-cols-3 gap-12">
+            <div>
+                <h3 class="text-xl font-bold mb-6 text-old-gold" data-i18n="footer.contact.title">Contact</h3>
                 <ul>
-                    <li><i class="fas fa-envelope"></i> <span data-i18n="footer.contact.email">info@furnovskyland.com</span></li>
-                    <li><i class="fab fa-discord"></i> <span data-i18n="footer.contact.discord">Discord</span></li>
-                    <li><i class="fab fa-facebook"></i> <span data-i18n="footer.contact.facebook">Facebook</span></li>
+                    <li class="mb-3"><i class="fas fa-envelope mr-3"></i> <span data-i18n="footer.contact.email">info@furnovskyland.com</span></li>
+                    <li class="mb-3"><i class="fab fa-discord mr-3"></i> <span data-i18n="footer.contact.discord">Discord @furnovsky963</span></li>
+                    <li class="mb-3"><i class="fab fa-facebook mr-3"></i> <span data-i18n="footer.contact.facebook">Facebook bence.bagosi.666</span></li>
                 </ul>
             </div>
-            <div class="footer-section">
-                <h3 data-i18n="footer.quickLinks.title">Gyorslinkek</h3>
+            <div>
+                <h3 class="text-xl font-bold mb-6 text-old-gold" data-i18n="footer.quickLinks.title">Quick Links</h3>
                 <ul>
-                    <li><a href="#adatvedelem" data-i18n="footer.quickLinks.privacy">Adatvédelem</a></li>
-                    <li><a href="#impresszum" data-i18n="footer.quickLinks.imprint">Impresszum</a></li>
-                    <li><a href="#kapcsolat" data-i18n="footer.quickLinks.contact">Kapcsolat</a></li>
+                    <li class="mb-3"><a href="#adatvedelem" class="hover:text-old-gold" data-i18n="footer.quickLinks.privacy">Privacy Policy</a></li>
+                    <li class="mb-3"><a href="#impresszum" class="hover:text-old-gold" data-i18n="footer.quickLinks.imprint">Imprint</a></li>
+                    <li class="mb-3"><a href="#kapcsolat" class="hover:text-old-gold" data-i18n="footer.quickLinks.contact">Contact</a></li>
                 </ul>
             </div>
-            <div class="footer-section">
-                <h3 data-i18n="footer.openingHours.title">Nyitvatartás</h3>
+            <div>
+                <h3 class="text-xl font-bold mb-6 text-old-gold" data-i18n="footer.openingHours.title">Opening Hours</h3>
                 <ul>
-                    <li data-i18n="footer.openingHours.weekdays">Hétfő - Péntek: 9:00 - 17:00</li>
-                    <li data-i18n="footer.openingHours.saturday">Szombat: 10:00 - 14:00</li>
-                    <li data-i18n="footer.openingHours.sunday">Vasárnap: Zárva</li>
+                    <li class="mb-3" data-i18n="footer.openingHours.weekdays">Hétfő - Péntek: N/A</li>
+                    <li class="mb-3" data-i18n="footer.openingHours.saturday">Szombat: N/A</li>
+                    <li class="mb-3" data-i18n="footer.openingHours.sunday">Vasárnap: N/A</li>
                 </ul>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p data-i18n="footer.copyright">© 2024 Furnovskyland Nemzetszövetségének Birodalma</p>
+        <div class="text-center mt-12 pt-8 border-t border-manatee">
+            <p data-i18n="footer.copyright">© <span id="current-year"></span> National Federation Empire of Furnovskyland</p>
         </div>
     </footer>
     <script src="./JS/translations.js"></script>
     <script src="./JS/script.js"></script>
+    
 </body>
 </html>

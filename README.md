@@ -65,10 +65,27 @@ Furnovskyland is a unique sovereign political entity, characterized by its rich 
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
+## 🔧 Development
+
+To install dependencies, run:
+```bash
+npm install
+```
+
+To start the development server with live reloading, run:
+```bash
+npm start
+```
+
+To build the CSS for production, run:
+```bash
+npm run build:css
+```
+
 ## 🖼️ Preview
 
 <div align="center">
-  <img src="/forras/img/preview.png" alt="Website Preview">
+  <img src="/docs/IMG/preview.png" alt="Website Preview">
 </div>
 
 ## 📝 License
@@ -87,3 +104,31 @@ Interested in contributing to Furnovskyland's digital infrastructure? Check our 
 <div align="center">
 <a href="#top">🔝 Return to Top</a>
 </div>
+
+## 🤖 Discord Population Tracker Setup
+
+To display the live Discord server population on the homepage, a small Node.js backend server is required.
+
+### Backend Setup
+
+1.  **Navigate to the `backend` directory:**
+    ```bash
+    cd backend
+    ```
+2.  **Install Dependencies:**
+    ```bash
+    npm install
+    ```
+3.  **Configure Bot Token and Server ID:**
+    Open `server.js` in the `backend` directory and replace `'YOUR_BOT_TOKEN'` and `'YOUR_SERVER_ID'` with your actual Discord bot token and server ID.
+    *   **Bot Token:** Obtain this from the [Discord Developer Portal](https://discord.com/developers/applications) after creating a bot.
+    *   **Server ID (Guild ID):** Right-click on your server icon in Discord and select "Copy Server ID" (Developer Mode might need to be enabled in Discord settings: User Settings > Advanced > Developer Mode).
+4.  **Start the Backend Server:**
+    ```bash
+    npm start
+    ```
+    This will start the server on `http://localhost:3000`.
+
+### Frontend Integration
+
+The `docs/index.html` file has already been updated to fetch data from `http://localhost:3000/api/discord-stats` and display it in the "Population" section. Ensure your backend server is running for the population count to update correctly on the website.

@@ -1,148 +1,169 @@
 <!DOCTYPE html>
-<html lang="hu">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Egyéb - Furnovskyland</title>
-    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Other - Furnovskyland</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/source.css">
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'cardinal': '#c61e2c',
+            'old-gold': '#c6a11e',
+            'manatee': '#8e8e9c',
+            'outer-space': '#2e3440',
+            'white-rock': '#eceff4',
+            'oriental-pink': '#c69c9c',
+            'brink-pink': '#fc6484',
+            'akaroa': '#d5c9a2',
+            'nobel': '#bbb8b8',
+            'laser': '#cdbb74',
+          }
+        }
+      }
+    }
+    </script>
 </head>
-<body>
-    <header class="main-header">
-        <nav class="navbar">
-            <div class="logo">
-                <img src="../IMG/banner.png" alt="Furnovskyföld Embléma">
-                <h1 class="cim">Furnovskyland</h1>
+<body class="bg-white-rock text-outer-space font-sans leading-normal">
+    <header class="bg-white-rock shadow-md fixed w-full top-0 z-50 transition-transform duration-300 ease-in-out">
+        <nav class="container mx-auto flex justify-between items-center p-4">
+            <div class="flex items-center">
+                <img src="../IMG/banner.png" alt="Furnovskyland Emblem" class="h-12 mr-4">
+                <h1 class="text-cardinal text-2xl">Furnovskyland</h1>
             </div>
-            <div class="menu-toggle" id="mobile-menu">
-                <span></span>
-                <span></span>
-                <span></span>
+            <div class="menu-toggle md:hidden" id="mobile-menu">
+                <span class="block w-6 h-0.5 bg-outer-space mb-1"></span>
+                <span class="block w-6 h-0.5 bg-outer-space mb-1"></span>
+                <span class="block w-6 h-0.5 bg-outer-space"></span>
             </div>
-            <ul class="nav-links">
-                <li><a href="../index.html" data-i18n="nav.home"><i class="fas fa-home"></i> <span>Főoldal</span></a></li>
-                <li><a href="./tortenelem.html" data-i18n="nav.history"><i class="fas fa-book-open"></i> <span>Történelem</span></a></li>
-                <li><a href="./politika.html" data-i18n="nav.politics"><i class="fas fa-landmark"></i> <span>Politika</span></a></li>
-                <li><a href="./kultura.html" data-i18n="nav.culture"><i class="fas fa-theater-masks"></i> <span>Kultúra</span></a></li>
-                <li><a href="./egyeb.html" data-i18n="nav.other"><i class="fas fa-ellipsis-h"></i> <span>Egyéb</span></a></li>
-                <li class="dropdown">
-                    <a href="#nyelv" data-i18n="nav.language"><i class="fas fa-globe"></i> <span>Nyelv</span></a>
-                    <div class="dropdown-content">
-                        <a href="#" data-lang="hu">Magyar</a>
-                        <a href="#" data-lang="en">English</a>
-                        <a href="#" data-lang="de">Deutsch</a>
+            <ul class="nav-links hidden md:flex items-center space-x-8">
+                <li><a href="../index.html" data-i18n="nav.home" class="flex items-center text-outer-space hover:text-cardinal"><i class="fas fa-home mr-2"></i> <span>Home</span></a></li>
+                <li><a href="./minecraft.html" data-i18n="nav.minecraft" class="flex items-center text-outer-space hover:text-cardinal"><i class="fas fa-cube mr-2"></i> <span>Minecraft</span></a></li>
+                <li><a href="./tortenelem.html" data-i18n="nav.history" class="flex items-center text-outer-space hover:text-cardinal"><i class="fas fa-book-open mr-2"></i> <span>History</span></a></li>
+                <li><a href="./politika.html" data-i18n="nav.politics" class="flex items-center text-outer-space hover:text-cardinal"><i class="fas fa-landmark mr-2"></i> <span>Politics</span></a></li>
+                <li><a href="./kultura.html" data-i18n="nav.culture" class="flex items-center text-outer-space hover:text-cardinal"><i class="fas fa-theater-masks mr-2"></i> <span>Culture</span></a></li>
+                <li><a href="./egyeb.html" data-i18n="nav.other" class="flex items-center text-outer-space hover:text-cardinal"><i class="fas fa-ellipsis-h mr-2"></i> <span>Other</span></a></li>
+                <li class="relative dropdown">
+                    <a href="#nyelv" data-i18n="nav.language" class="flex items-center text-outer-space hover:text-cardinal"><i class="fas fa-globe mr-2"></i> <span>Language</span></a>
+                    <div class="dropdown-content absolute hidden bg-white-rock shadow-lg rounded-md mt-2 py-2 w-36">
+                        <a href="#" data-lang="hu" class="block px-4 py-2 text-outer-space hover:bg-gray-200">Magyar</a>
+                        <a href="#" data-lang="en" class="block px-4 py-2 text-outer-space hover:bg-gray-200">English</a>
+                        <a href="#" data-lang="de" class="block px-4 py-2 text-outer-space hover:bg-gray-200">Deutsch</a>
+                        <a href="#" data-lang="sk" class="block px-4 py-2 text-outer-space hover:bg-gray-200">Slovenčina</a>
                     </div>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section id="hero" class="page-hero">
-            <div class="hero-content">
-                <h1 data-i18n="other.pageTitle">Egyéb információk</h1>
-                <p data-i18n="other.pageSubtitle">További hasznos információk Furnovskyföldről</p>
-            </div>
-        </section>
+    <div id="mobile-nav" class="hidden fixed top-0 left-0 w-full h-full bg-black bg-opacity-90 z-40 flex flex-col justify-center items-center">
+        <a href="../index.html" data-i18n="nav.home" class="text-white text-2xl mb-8">Home</a>
+        <a href="./minecraft.html" data-i18n="nav.minecraft" class="text-white text-2xl mb-8">Minecraft</a>
+        <a href="./tortenelem.html" data-i18n="nav.history" class="text-white text-2xl mb-8">History</a>
+        <a href="./politika.html" data-i18n="nav.politics" class="text-white text-2xl mb-8">Politics</a>
+        <a href="./kultura.html" data-i18n="nav.culture" class="text-white text-2xl mb-8">Culture</a>
+        <a href="./egyeb.html" data-i18n="nav.other" class="text-white text-2xl mb-8">Other</a>
+    </div>
 
-        <section id="faq" class="section-padding">
-            <div class="container">
-                <h2 class="section-title" data-i18n="other.faq.title">Gyakran Ismételt Kérdések</h2>
-                <div class="faq-list">
-                    <div class="faq-item">
-                        <h3 data-i18n="other.faq.join.question">Hogyan csatlakozhatok Furnovskyföldhez?</h3>
-                        <p data-i18n="other.faq.join.answer">Részletes információk a csatlakozási folyamatról és követelményekről.</p>
+    <main class="mt-20">
+        <section id="other" class="py-20">
+            <div class="container mx-auto">
+                <h2 class="text-4xl font-bold text-cardinal mb-4 text-center" data-i18n="other.pageTitle">Other Information</h2>
+                <p class="text-lg text-manatee mb-12 text-center" data-i18n="other.pageSubtitle">Additional useful information about Furnovskyland</p>
+
+                <div class="relative pl-8">
+                    <div class="content-section bg-white p-8 rounded-lg shadow-md mb-12 transform transition-transform duration-300">
+                        <h3 class="text-2xl font-bold text-cardinal mb-4" data-i18n="other.faq.title">Frequently Asked Questions</h3>
+                        <p class="text-lg font-bold" data-i18n="other.faq.join.question">How can I join Furnovskyland?</p>
+                        <p class="text-lg" data-i18n="other.faq.join.answer">Detailed information about the joining process and requirements.</p>
                     </div>
-                    <div class="faq-item">
-                        <h3 data-i18n="other.faq.citizenship.question">Hogyan szerezhetek állampolgárságot?</h3>
-                        <p data-i18n="other.faq.citizenship.answer">Az állampolgárság megszerzésének feltételei és folyamata.</p>
+
+                    <div class="content-section bg-white p-8 rounded-lg shadow-md mb-12 transform transition-transform duration-300">
+                        <p class="text-lg font-bold" data-i18n="other.faq.citizenship.question">How can I obtain citizenship?</p>
+                        <p class="text-lg" data-i18n="other.faq.citizenship.answer">Conditions and process for obtaining citizenship.</p>
                     </div>
-                    <div class="faq-item">
-                        <h3 data-i18n="other.faq.visit.question">Hogyan látogathatok el Furnovskyföldre?</h3>
-                        <p data-i18n="other.faq.visit.answer">Információk a látogatásról és a szükséges engedélyekről.</p>
+
+                    <div class="content-section bg-white p-8 rounded-lg shadow-md mb-12 transform transition-transform duration-300">
+                        <p class="text-lg font-bold" data-i18n="other.faq.visit.question">How can I visit Furnovskyland?</p>
+                        <p class="text-lg" data-i18n="other.faq.visit.answer">Information about visiting and required permits.</p>
                     </div>
+
+                    <div class="content-section bg-white p-8 rounded-lg shadow-md mb-12 transform transition-transform duration-300">
+                        <h3 class="text-2xl font-bold text-cardinal mb-4" data-i18n="other.resources.title">Useful Resources</h3>
+                        <p class="text-lg" data-i18n="other.resources.documents.description">Official documents and forms.</p>
+                        <a href="#" class="text-cardinal" data-i18n="other.resources.documents.link">Download</a>
+                    </div>
+
+                    <div class="content-section bg-white p-8 rounded-lg shadow-md mb-12 transform transition-transform duration-300">
+                        <h3 class="text-2xl font-bold text-cardinal mb-4" data-i18n="other.resources.guides.title">Guides</h3>
+                        <p class="text-lg" data-i18n="other.resources.guides.description">Detailed guides and manuals.</p>
+                        <a href="#" class="text-cardinal" data-i18n="other.resources.guides.link">Read</a>
+                    </div>
+<!--
+                    <div class="content-section bg-white p-8 rounded-lg shadow-md mb-12 transform transition-transform duration-300">
+                        <h3 class="text-2xl font-bold text-cardinal mb-4" data-i18n="other.contact.title">Contact Us</h3>
+                        <form class="contact-form">
+                            <div class="mb-4">
+                                <label for="name" class="block text-lg font-bold mb-2" data-i18n="other.contact.form.name">Name:</label>
+                                <input type="text" id="name" name="name" required class="w-full px-4 py-2 border rounded-md">
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="block text-lg font-bold mb-2" data-i18n="other.contact.form.email">Email:</label>
+                                <input type="email" id="email" name="email" required class="w-full px-4 py-2 border rounded-md">
+                            </div>
+                            <div class="mb-4">
+                                <label for="subject" class="block text-lg font-bold mb-2" data-i18n="other.contact.form.subject">Subject:</label>
+                                <input type="text" id="subject" name="subject" required class="w-full px-4 py-2 border rounded-md">
+                            </div>
+                            <div class="mb-4">
+                                <label for="message" class="block text-lg font-bold mb-2" data-i18n="other.contact.form.message">Message:</label>
+                                <textarea id="message" name="message" required class="w-full px-4 py-2 border rounded-md"></textarea>
+                            </div>
+                            <button type="submit" class="bg-cardinal text-white-rock px-8 py-3 rounded-md font-bold" data-i18n="other.contact.form.submit">Send</button>
+                        </form>
+                    </div>
+-->
                 </div>
-            </div>
-        </section>
-
-        <section id="resources" class="section-padding">
-            <div class="container">
-                <h2 class="section-title" data-i18n="other.resources.title">Hasznos források</h2>
-                <div class="resources-grid">
-                    <div class="resource-card">
-                        <i class="fas fa-file-pdf"></i>
-                        <h3 data-i18n="other.resources.documents.title">Dokumentumok</h3>
-                        <p data-i18n="other.resources.documents.description">Hivatalos dokumentumok és űrlapok.</p>
-                        <a href="#" class="resource-link" data-i18n="other.resources.documents.link">Letöltés</a>
-                    </div>
-                    <div class="resource-card">
-                        <i class="fas fa-book"></i>
-                        <h3 data-i18n="other.resources.guides.title">Útmutatók</h3>
-                        <p data-i18n="other.resources.guides.description">Részletes útmutatók és kézikönyvek.</p>
-                        <a href="#" class="resource-link" data-i18n="other.resources.guides.link">Olvasás</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact-form" class="section-padding">
-            <div class="container">
-                <h2 class="section-title" data-i18n="other.contact.title">Kapcsolatfelvétel</h2>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <label for="name" data-i18n="other.contact.form.name">Név:</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email" data-i18n="other.contact.form.email">E-mail:</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="subject" data-i18n="other.contact.form.subject">Tárgy:</label>
-                        <input type="text" id="subject" name="subject" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message" data-i18n="other.contact.form.message">Üzenet:</label>
-                        <textarea id="message" name="message" required></textarea>
-                    </div>
-                    <button type="submit" data-i18n="other.contact.form.submit">Küldés</button>
-                </form>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3 data-i18n="footer.contact.title">Kapcsolat</h3>
+    <footer class="bg-outer-space text-white-rock py-16">
+        <div class="container mx-auto grid md:grid-cols-3 gap-12">
+            <div>
+                <h3 class="text-xl font-bold mb-6 text-old-gold" data-i18n="footer.contact.title">Contact</h3>
                 <ul>
-                    <li><i class="fas fa-envelope"></i> <span data-i18n="footer.contact.email">info@furnovskyland.com</span></li>
-                    <li><i class="fab fa-discord"></i> <span data-i18n="footer.contact.discord">Discord</span></li>
-                    <li><i class="fab fa-facebook"></i> <span data-i18n="footer.contact.facebook">Facebook</span></li>
+                    <li class="mb-3"><i class="fas fa-envelope mr-3"></i> <span data-i18n="footer.contact.email">info@furnovskyland.com</span></li>
+                    <li class="mb-3"><i class="fab fa-discord mr-3"></i> <span data-i18n="footer.contact.discord">Discord @furnovsky963</span></li>
+                    <li class="mb-3"><i class="fab fa-facebook mr-3"></i> <span data-i18n="footer.contact.facebook">Facebook</span></li>
                 </ul>
             </div>
-            <div class="footer-section">
-                <h3 data-i18n="footer.quickLinks.title">Gyorslinkek</h3>
+            <div>
+                <h3 class="text-xl font-bold mb-6 text-old-gold" data-i18n="footer.quickLinks.title">Quick Links</h3>
                 <ul>
-                    <li><a href="#adatvedelem" data-i18n="footer.quickLinks.privacy">Adatvédelem</a></li>
-                    <li><a href="#impresszum" data-i18n="footer.quickLinks.imprint">Impresszum</a></li>
-                    <li><a href="#kapcsolat" data-i18n="footer.quickLinks.contact">Kapcsolat</a></li>
+                    <li class="mb-3"><a href="#adatvedelem" class="hover:text-old-gold" data-i18n="footer.quickLinks.privacy">Privacy Policy</a></li>
+                    <li class="mb-3"><a href="#impresszum" class="hover:text-old-gold" data-i18n="footer.quickLinks.imprint">Imprint</a></li>
+                    <li class="mb-3"><a href="#kapcsolat" class="hover:text-old-gold" data-i18n="footer.quickLinks.contact">Contact</a></li>
                 </ul>
             </div>
-            <div class="footer-section">
-                <h3 data-i18n="footer.openingHours.title">Nyitvatartás</h3>
+            <div>
+                <h3 class="text-xl font-bold mb-6 text-old-gold" data-i18n="footer.openingHours.title">Opening Hours</h3>
                 <ul>
-                    <li data-i18n="footer.openingHours.weekdays">Hétfő - Péntek: 9:00 - 17:00</li>
-                    <li data-i18n="footer.openingHours.saturday">Szombat: 10:00 - 14:00</li>
-                    <li data-i18n="footer.openingHours.sunday">Vasárnap: Zárva</li>
+                    <li class="mb-3" data-i18n="footer.openingHours.weekdays">Hétfő - Péntek: N/A</li>
+                    <li class="mb-3" data-i18n="footer.openingHours.saturday">Saturday: 10:00 - 14:00</li>
+                    <li class="mb-3" data-i18n="footer.openingHours.sunday">Vasárnap: N/A</li>
                 </ul>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p data-i18n="footer.copyright">© 2024 Furnovskyland Nemzetszövetségének Birodalma</p>
+        <div class="text-center mt-12 pt-8 border-t border-manatee">
+            <p data-i18n="footer.copyright">© <span id="current-year"></span> National Federation Empire of Furnovskyland</p>
         </div>
     </footer>
     <script src="../JS/translations.js"></script>
     <script src="../JS/script.js"></script>
 </body>
-</html> 
+</html>

@@ -1,0 +1,27 @@
+Az állam a Furnovskyföldi NEMZETSZÖVETSÉG, egy alkotmányos monarchia, 4 tagrésszel (Furnovskyföld az egyik) a Nemzetszövetségben, ez itt nem fontos mostanában.
+Van jelenleg Kormány, Szenátus (a kettő vegyesen törvényhozó és végrehajtó is) és bíróság, Legfelsőbb Bíróság. Parlament még nincs, az fogja funkcióiban a Szenátust cserélni, amikor az Alkotmány át lesz dolgozva.
+
+A törvényhozás fokozatai, lépései:
+A törvények 4 kategóriába vannak sorolva, csökkenő fontossági sorrendben:
+-Organic Law (talán sarkalatos törvények, de nem ennyire kötött): Egy fontos szerv vagy intézmény létrehozása, működésének részletes leírása
+-Bill: Egy kevésbé fontos intézmény vagy koncepció, kisebb működési leírással
+-Act: Egy specifikus, egyszeri helyzetről rendelkezik
+-Decree (rendelet): Csak a császártól vagy a kormánytól eredhet, bármelyik fentebbi törvénytípus formájában, megszavazás szüksége nélkül. Viszont a Szenátus bármikor dönthet ennek a hatályon kívül helyezéséről
+A fentebbiek közül csak Actot lehet bármely lakosnak beküldenie, a 2 felette levőnek csak valamelyik hatalmi ágba megválasztott személy tud beterjeszteni.
+-A Szenátus megkapja a törvényjavaslatot, ami után a Szenátor kiír egy 24 órás megbeszélési időt, majd annak a vége után egy (remélhetőleg) 24 órás szavazást, amely a törvények nagy részében általában simple majorityvel kéne végződjön, hogy továbbmehessen.
+-Ha el lett fogadva a Szenátusban, megy a Kormányba, ahol ha nem fogadják el simple majorityvel, megy vissza a Szenátusnak, hogy valamennyi időn belül (idk most mennyi, Alkotmányban ott van) átdolgozzák, vagy elfogadják
+-Ha a Kormány elfogadja, megy hozzám, hogy vagy vétózzam és megy vissza a Kormánynak vagy aláírom és törvénybe kerül
+A Szenátust 3 hónapra, minden évszak végén választjuk, Single Transferable Vote rendszerrel (https://youtu.be/l8XOZJkozfI?si=z1UrB6Uo96qTtpvl az értelmezéshez), a top 3 jelölt kerül be, az 1. helyezett lesz a Szenátor, a maradék 2 hely a szavazati arányok lehető legközelebbi tartásával vannak elosztva. Minden új évszak első teljes hetében lépnek hivatalba. A Legfelsőbb Bíró nem indulhat.
+A Szenátus basically a legelső "akadály", amin át kell mennie egy törvénynek, meg a saját működésükről szóló törvényeket szavazzák meg, azok egyértelműen nem mennek át máshova, valamint szavaz a kormánylistának az elfogadásáról. 5 tagos, mindegyikük egy-egy Megfigyelő (a Szenátor is, ő alapértelmezetten Discord belügyes) a jelenleg elérhető pozíciókkal:
+-Discord belügy (Szenátor alapértelmezetten)
+-Discord külügy
+-Minecraft ügy
+-Alkotmányügy
+-Toborzási ügy (tagok behozása a szerverre stb)
+A Szenátor az, aki kiírja a megbeszélési és szavazási időket (tud szavazni is), rögzíti a megszavazott törvényeket egy adott fórumcsatornába, hivatalosan ő rendezi el, ki milyen Megfigyelő lesz (a sajátján kívül), kinevez helyettest és képviseli a Szenátust az államfőnél vagy a kormánynál. Egy consecutive ciklusra újraválasztható, utána 6 hónapig nem választható Szenátornak.
+A Megfigyelők tudnak hozzászólni egy beterjesztett törvényhez a megbeszélési időben, szavazni róluk, és a hozzájuk legközelebb álló minisztériumokkal együttműködnek.
+
+A Kormányt 6 hónapra, február és augusztus közepe fele választjuk, sima simple majoritys vote rendszerrel (FPTP), a nyertesnek viszont el kell érnie a 2/3-os többséghez, vagy koalíciós kormányt kell alakítania. Március és szeptember első teljes hetében lép hivatalba. A Legfelsőbb Bíró és párttól Független személy nem indulhat. 
+A Kormány szavaz a saját vagy eléjük beterjesztett törvényekről. A miniszterelnök alakítja úgy a Kormányt és a Minisztériumokat, ahogyan akarja, csak azt a Szenátusnak is el kell fogadnia. Egyszer újraválasztható, utána 6 hó szünet.
+A Legfelsőbb Bíróság dönt az Alkotmányosság dolgairól, meg ilyenek, érted.
+A tagjai a Miniszterelnök, az igazságügyi miniszter, az alkotmányügyekért felelős megfigyelő és egy 4. személy, az épp létező bírák listájából a miniszterelnök által választva, általam kinevezve, és a Szenátus által 2/3-os többséggel elfogadva

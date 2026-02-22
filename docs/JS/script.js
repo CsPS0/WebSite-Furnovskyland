@@ -1,42 +1,9 @@
-"use strict"
+'use strict';
 
 document.addEventListener('DOMContentLoaded', () => {
-    /*
-    // Element selections
-    const darkModeToggle = document.getElementById('dark-mode-toggle');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const navLinks = document.querySelector('.nav-links');
-    const header = document.querySelector('.main-header');
-
-    // Dark Mode functionality
-    const enableDarkMode = () => {
-        document.body.classList.add('dark-mode');
-        localStorage.setItem('darkMode', 'enabled');
-        darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
-    };
-
-    const disableDarkMode = () => {
-        document.body.classList.remove('dark-mode');
-        localStorage.setItem('darkMode', 'disabled');
-        darkModeToggle.innerHTML = '<i class="fas fa-moon"></i>';
-    };
-
-    // Check for saved dark mode preference
-    if (localStorage.getItem('darkMode') === 'enabled') {
-        enableDarkMode();
-    }
-
-    darkModeToggle.addEventListener('click', () => {
-        if (document.body.classList.contains('dark-mode')) {
-            disableDarkMode();
-        } else {
-            enableDarkMode();
-        }
-    });
-    */
 
     // Language handling
-    const defaultLanguage = 'hu';
+    const defaultLanguage = 'en';
     let currentLanguage = localStorage.getItem('selectedLanguage') || defaultLanguage;
 
     // Function to update text content based on translation key
@@ -84,33 +51,29 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Mobile Menu Toggle
     const mobileMenu = document.getElementById('mobile-menu');
-    const navLinks = document.querySelector('.nav-links');
+    const mobileNav = document.getElementById('mobile-nav');
 
-    mobileMenu.addEventListener('click', () => {
-        mobileMenu.classList.toggle('active');
-        navLinks.classList.toggle('active');
-
-        // Toggle animation classes for menu icon
-        if (mobileMenu.classList.contains('active')) {
-            mobileMenu.children[0].style.transform = 'rotate(45deg) translate(6px, 6px)';
-            mobileMenu.children[1].style.opacity = '0';
-            mobileMenu.children[2].style.transform = 'rotate(-45deg) translate(5px, -5px)';
-        } else {
-            mobileMenu.children[0].style.transform = 'none';
-            mobileMenu.children[1].style.opacity = '1';
-            mobileMenu.children[2].style.transform = 'none';
-        }
+    mobileMenu.addEventListener('click', (e) => {
+        e.stopPropagation();
+        mobileMenu.classList.toggle('open');
+        mobileNav.classList.toggle('hidden');
     });
 
-    // Close mobile menu when clicking outside
-    document.addEventListener('click', (e) => {
-        if (!mobileMenu.contains(e.target) && !navLinks.contains(e.target)) {
-            mobileMenu.classList.remove('active');
-            navLinks.classList.remove('active');
-            // Reset menu icon
-            mobileMenu.children[0].style.transform = 'none';
-            mobileMenu.children[1].style.opacity = '1';
-            mobileMenu.children[2].style.transform = 'none';
+    // Language Dropdown
+    const dropdown = document.querySelector('.dropdown');
+    const dropdownContent = document.querySelector('.dropdown-content');
+    const dropdownTrigger = dropdown.querySelector('a[data-i18n="nav.language"]');
+
+    dropdownTrigger.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        dropdownContent.classList.toggle('hidden');
+    });
+
+    // Close dropdowns when clicking outside
+    document.addEventListener('click', () => {
+        if (!dropdownContent.classList.contains('hidden')) {
+            dropdownContent.classList.add('hidden');
         }
     });
 
@@ -120,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             const target = document.querySelector(this.getAttribute('href'));
             if (target) {
-                const headerOffset = document.querySelector('.main-header').offsetHeight;
+                const headerOffset = document.querySelector('header').offsetHeight;
                 const elementPosition = target.offsetTop;
                 const offsetPosition = elementPosition - headerOffset;
 
@@ -130,15 +93,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
 
                 // Close mobile menu after clicking a link
-                mobileMenu.classList.remove('active');
-                navLinks.classList.remove('active');
+                if (!mobileNav.classList.contains('hidden')) {
+                    mobileMenu.classList.remove('open');
+                    mobileNav.classList.add('hidden');
+                }
             }
         });
     });
 
     // Header scroll effect
     let lastScroll = 0;
-    const header = document.querySelector('.main-header');
+    const header = document.querySelector('header');
     
     window.addEventListener('scroll', () => {
         const currentScroll = window.pageYOffset;
@@ -159,27 +124,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         lastScroll = currentScroll;
     });
-    /*
-    // Add some animation to stat numbers
-    const animateStats = () => {
-        const stats = document.querySelectorAll('.stat-card p');
-        stats.forEach(stat => {
-            const target = parseInt(stat.textContent);
-            let current = 0;
-            const increment = target / 50;
-            const updateCount = () => {
-                if (current < target) {
-                    current += increment;
-                    stat.textContent = Math.ceil(current).toLocaleString();
-                    requestAnimationFrame(updateCount);
-                } else {
-                    stat.textContent = target.toLocaleString();
-                }
-            };
-            updateCount();
-        });
-    };
-    */
 
     // Intersection Observer for animations
     const observerOptions = {
@@ -199,4 +143,61 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.join-card, .stat-card, .section-title').forEach(el => {
         observer.observe(el);
     });
+
+    // Minecraft Server Status
+    const serverIpElement = document.getElementById('server-ip');
+    if (serverIpElement) {
+        const serverIp = serverIpElement.textContent;
+        const serverStatusElement = document.getElementById('server-status');
+        const serverPlayersElement = document.getElementById('server-players');
+        const serverVersionElement = document.getElementById('server-version');
+
+        // Set initial loading state
+        serverStatusElement.textContent = 'Loading...';
+        serverStatusElement.classList.remove('text-green-500', 'text-red-500');
+        serverStatusElement.classList.add('text-gray-500');
+        serverPlayersElement.textContent = 'Loading...';
+        serverVersionElement.textContent = 'Loading...';
+
+        fetch(`https://api.mcsrvstat.us/2/${serverIp}`)
+            .then(response => response.json())
+            .then(data => {
+                console.log('Minecraft API Response:', data); // Log the full response
+
+                if (data.online) {
+                    serverStatusElement.textContent = 'Online';
+                    serverStatusElement.classList.remove('text-gray-500', 'text-red-500');
+                    serverStatusElement.classList.add('text-green-500');
+                    serverPlayersElement.textContent = `${data.players.online}/${data.players.max}`;
+                    serverVersionElement.textContent = data.version ? data.version : 'N/A'; // Use N/A if version is missing or empty
+                } else {
+                    serverStatusElement.textContent = 'Offline';
+                    serverStatusElement.classList.remove('text-gray-500', 'text-green-500');
+                    serverStatusElement.classList.add('text-red-500');
+                    serverPlayersElement.textContent = 'N/A';
+                    serverVersionElement.textContent = 'N/A';
+                }
+            })
+            .catch(error => {
+                console.error('Error fetching Minecraft server status:', error);
+                serverStatusElement.textContent = 'Error';
+                serverStatusElement.classList.remove('text-gray-500', 'text-green-500');
+                serverStatusElement.classList.add('text-red-500');
+                serverPlayersElement.textContent = 'N/A';
+                serverVersionElement.textContent = 'N/A';
+            });
+    }
+
+    // Contact Form (Formspree)
+    const contactForm = document.querySelector('.contact-form');
+    if (contactForm) {
+        contactForm.action = 'https://formspree.io/f/YOUR_FORMSPREE_ENDPOINT'; // REPLACE WITH YOUR ACTUAL FORMSPREE ENDPOINT
+        contactForm.method = 'POST';
+    }
+
+    // Set current year for copyright
+    const currentYearElement = document.getElementById('current-year');
+    if (currentYearElement) {
+        currentYearElement.textContent = new Date().getFullYear();
+    }
 });

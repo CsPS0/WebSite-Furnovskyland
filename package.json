@@ -1,0 +1,28 @@
+{
+  "name": "website-furnovskyland",
+  "version": "1.0.0",
+  "description": "[![Political Status](https://img.shields.io/badge/Status-Sovereign%20State-darkgreen?style=for-the-badge)](STATUS)\r [![Government Type](https://img.shields.io/badge/Government-Imperial%20Senate-purple?style=for-the-badge)](GOVERNMENT)\r [![Constitution](https://img.shields.io/badge/Constitution-Ratified-blue?style=for-the-badge)](CONSTITUTION)",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "live-server docs",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "tailwindcss -i .\\docs\\CSS\\source.css -o .\\docs\\CSS\\style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CsPS0/WebSite-Furnovskyland.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CsPS0/WebSite-Furnovskyland/issues"
+  },
+  "homepage": "https://github.com/CsPS0/WebSite-Furnovskyland#readme",
+  "devDependencies": {
+    "tailwindcss": "^4.1.11"
+  }
+}

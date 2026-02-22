@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Minecraft - Furnovskyland</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/source.css">
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'cardinal': '#c61e2c',
+            'old-gold': '#c6a11e',
+            'manatee': '#8e8e9c',
+            'outer-space': '#2e3440',
+            'white-rock': '#eceff4',
+            'oriental-pink': '#c69c9c',
+            'brink-pink': '#fc6484',
+            'akaroa': '#d5c9a2',
+            'nobel': '#bbb8b8',
+            'laser': '#cdbb74',
+          }
+        }
+      }
+    }
+    </script>
+</head>
+<body class="bg-white-rock text-outer-space font-sans leading-normal">
+    <header class="bg-white-rock shadow-md fixed w-full top-0 z-50 transition-transform duration-300 ease-in-out">
+        <nav class="container mx-auto flex justify-between items-center p-4">
+            <div class="flex items-center">
+                <img src="../IMG/banner.png" alt="Furnovskyland Emblem" class="h-12 mr-4">
+                <h1 class="text-cardinal text-2xl">Furnovskyland</h1>
+            </div>
+            <div class="menu-toggle md:hidden" id="mobile-menu">
+                <span class="block w-6 h-0.5 bg-outer-space mb-1"></span>
+                <span class="block w-6 h-0.5 bg-outer-space mb-1"></span>
+                <span class="block w-6 h-0.5 bg-outer-space"></span>
+            </div>
+            <ul class="nav-links hidden md:flex items-center space-x-8">
+                <li><a href="../index.html" data-i18n="nav.home" class="flex items-center text-outer-space hover:text-cardinal"><i class="fas fa-home mr-2"></i> <span>Home</span></a></li>
+                <li><a href="./minecraft.html" data-i18n="nav.minecraft" class="flex items-center text-outer-space hover:text-cardinal"><i class="fas fa-cube mr-2"></i> <span>Minecraft</span></a></li>
+                <li><a href="./tortenelem.html" data-i18n="nav.history" class="flex items-center text-outer-space hover:text-cardinal"><i class="fas fa-book-open mr-2"></i> <span>History</span></a></li>
+                <li><a href="./politika.html" data-i18n="nav.politics" class="flex items-center text-outer-space hover:text-cardinal"><i class="fas fa-landmark mr-2"></i> <span>Politics</span></a></li>
+                <li><a href="./kultura.html" data-i18n="nav.culture" class="flex items-center text-outer-space hover:text-cardinal"><i class="fas fa-theater-masks mr-2"></i> <span>Culture</span></a></li>
+                <li><a href="./egyeb.html" data-i18n="nav.other" class="flex items-center text-outer-space hover:text-cardinal"><i class="fas fa-ellipsis-h mr-2"></i> <span>Other</span></a></li>
+                <li class="relative dropdown">
+                    <a href="#nyelv" data-i18n="nav.language" class="flex items-center text-outer-space hover:text-cardinal"><i class="fas fa-globe mr-2"></i> <span>Language</span></a>
+                    <div class="dropdown-content absolute hidden bg-white-rock shadow-lg rounded-md mt-2 py-2 w-36">
+                        <a href="#" data-lang="hu" class="block px-4 py-2 text-outer-space hover:bg-gray-200">Magyar</a>
+                        <a href="#" data-lang="en" class="block px-4 py-2 text-outer-space hover:bg-gray-200">English</a>
+                        <a href="#" data-lang="de" class="block px-4 py-2 text-outer-space hover:bg-gray-200">Deutsch</a>
+                        <a href="#" data-lang="sk" class="block px-4 py-2 text-outer-space hover:bg-gray-200">Slovenčina</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="mobile-nav" class="hidden fixed top-0 left-0 w-full h-full bg-black bg-opacity-90 z-40 flex flex-col justify-center items-center">
+        <a href="../index.html" data-i18n="nav.home" class="text-white text-2xl mb-8">Home</a>
+        <a href="./minecraft.html" data-i18n="nav.minecraft" class="text-white text-2xl mb-8">Minecraft</a>
+        <a href="./tortenelem.html" data-i18n="nav.history" class="text-white text-2xl mb-8">History</a>
+        <a href="./politika.html" data-i18n="nav.politics" class="text-white text-2xl mb-8">Politics</a>
+        <a href="./kultura.html" data-i18n="nav.culture" class="text-white text-2xl mb-8">Culture</a>
+        <a href="./egyeb.html" data-i18n="nav.other" class="text-white text-2xl mb-8">Other</a>
+    </div>
+
+    <main class="mt-20">
+        <section id="minecraft" class="py-20">
+            <div class="container mx-auto">
+                <h2 class="text-4xl font-bold text-cardinal mb-4 text-center" data-i18n="minecraft.pageTitle">Minecraft Server</h2>
+                <p class="text-lg text-manatee mb-12 text-center" data-i18n="minecraft.pageSubtitle">Join our Minecraft server and build with us!</p>
+
+                <div class="grid md:grid-cols-2 gap-12 items-center mb-12">
+                    <div class="text-left">
+                        <h3 class="text-2xl font-bold text-cardinal mb-4" data-i18n="minecraft.description.title">Description</h3>
+                        <p class="text-lg" data-i18n="minecraft.description.content">Our Minecraft server is a place where you can build, explore, and have fun with our community. We have a variety of plugins and a friendly staff to help you get started. Whether you are a seasoned player or new to the game, you will find a home on our server.</p>
+                    </div>
+                    <div>
+                        <img src="../IMG/mc/banner.png" alt="Minecraft Server Preview" class="rounded-lg shadow-lg">
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+                    <h3 class="text-2xl font-bold text-cardinal mb-4" data-i18n="minecraft.status.title">Server Status</h3>
+                    <div class="grid grid-cols-2 gap-8">
+                        <div>
+                            <p class="text-lg"><strong data-i18n="minecraft.status.ip">Server IP:</strong> <span id="server-ip">ujfurnvaros.aternos.me</span></p>
+                            <!--<p class="text-lg"><strong data-i18n="minecraft.status.version">Version:</strong><span id="server-version">1.20.1</span></p>-->
+                            <p class="text-lg"><strong data-i18n="minecraft.status.version">Version:</strong><span>1.21.x</span></p>
+                        </div>
+                        <div>
+                            <p class="text-lg"><strong data-i18n="minecraft.status.status">Status:</strong> <span id="server-status" class="text-gray-500">Loading...</span></p>
+                            <p class="text-lg"><strong data-i18n="minecraft.status.players">Players:</strong> <span id="server-players">Loading...</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-bold text-cardinal mb-4" data-i18n="minecraft.gallery.title">Gallery</h3>
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <img src="../IMG/mc/statue.png" alt="Gallery Image 1" class="rounded-lg shadow-lg">
+                        <img src="../IMG/mc/stadium.png" alt="Gallery Image 2" class="rounded-lg shadow-lg">
+                        <img src="../IMG/mc/royal.png" alt="Gallery Image 3" class="rounded-lg shadow-lg">
+                        <img src="../IMG/mc/church.png" alt="Gallery Image 4" class="rounded-lg shadow-lg">
+                        <img src="../IMG/mc/square.png" alt="Gallery Image 5" class="rounded-lg shadow-lg">
+                        <img src="../IMG/mc/malasian.png" alt="Gallery Image 6" class="rounded-lg shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-outer-space text-white-rock py-16">
+        <div class="container mx-auto grid md:grid-cols-3 gap-12">
+            <div>
+                <h3 class="text-xl font-bold mb-6 text-old-gold" data-i18n="footer.contact.title">Contact</h3>
+                <ul>
+                    <li class="mb-3"><i class="fas fa-envelope mr-3"></i> <span data-i18n="footer.contact.email">info@furnovskyland.com</span></li>
+                    <li class="mb-3"><i class="fab fa-discord mr-3"></i> <span data-i18n="footer.contact.discord">Discord @furnovsky963</span></li>
+                    <li class="mb-3"><i class="fab fa-facebook mr-3"></i> <span data-i18n="footer.contact.facebook">Facebook bence.bagosi.666</span></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-6 text-old-gold" data-i18n="footer.quickLinks.title">Quick Links</h3>
+                <ul>
+                    <li class="mb-3"><a href="#adatvedelem" class="hover:text-old-gold" data-i18n="footer.quickLinks.privacy">Privacy Policy</a></li>
+                    <li class="mb-3"><a href="#impresszum" class="hover:text-old-gold" data-i18n="footer.quickLinks.imprint">Imprint</a></li>
+                    <li class="mb-3"><a href="#kapcsolat" class="hover:text-old-gold" data-i18n="footer.quickLinks.contact">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-6 text-old-gold" data-i18n="footer.openingHours.title">Opening Hours</h3>
+                <ul>
+                    <li class="mb-3" data-i18n="footer.openingHours.weekdays">Hétfő - Péntek: N/A</li>
+                    <li class="mb-3" data-i18n="footer.openingHours.saturday">Saturday: 10:00 - 14:00</li>
+                    <li class="mb-3" data-i18n="footer.openingHours.sunday">Vasárnap: N/A</li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center mt-12 pt-8 border-t border-manatee">
+            <p data-i18n="footer.copyright">© <span id="current-year"></span> National Federation Empire of Furnovskyland</p>
+        </div>
+    </footer>
+    <script src="../JS/translations.js"></script>
+    <script src="../JS/script.js"></script>
+</body>
+</html>

@@ -17,11 +17,11 @@ Desktop.ini    # Windows
 
 .env
 .env.local
+process.env
 
 config/local.json
 personal_script.sh
 secret.txt
 
-*.bak
-
 note.txt
+backend/server.js
