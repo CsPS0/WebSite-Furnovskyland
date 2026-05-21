@@ -1,0 +1,52 @@
+<header>
+    <nav class="container nav-container">
+        <div class="logo">
+            <img src="{{ base }}/IMG/banner.webp" alt="Furnovskyland Emblem">
+            <span class="logo-text">Furnovskyland</span>
+        </div>
+        <div class="mobile-controls" style="display: flex; align-items: center; gap: 1.5rem;">
+            <!-- Mobile Dark Mode Toggle (hidden on desktop via CSS) -->
+            <a href="#" class="nav-link theme-toggle mobile-theme-toggle" title="Toggle Dark Mode">
+                <i class="fas fa-moon"></i>
+            </a>
+            <button class="menu-toggle" id="mobile-menu" aria-expanded="false" aria-controls="mobile-nav" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li class="nav-item"><a href="{{ base }}/{{ lang }}/" class="nav-link"><i class="fas fa-home"></i> <span>{{ translations[lang].nav.home | safe }}</span></a></li>
+            <li class="nav-item"><a href="{{ base }}/{{ lang }}/minecraft/" class="nav-link"><i class="fas fa-cube"></i> <span>{{ translations[lang].nav.minecraft | safe }}</span></a></li>
+            <li class="nav-item"><a href="{{ base }}/{{ lang }}/tortenelem/" class="nav-link"><i class="fas fa-book-open"></i> <span>{{ translations[lang].nav.history | safe }}</span></a></li>
+            <li class="nav-item"><a href="{{ base }}/{{ lang }}/politika/" class="nav-link"><i class="fas fa-landmark"></i> <span>{{ translations[lang].nav.politics | safe }}</span></a></li>
+            <li class="nav-item"><a href="{{ base }}/{{ lang }}/kultura/" class="nav-link"><i class="fas fa-theater-masks"></i> <span>{{ translations[lang].nav.culture | safe }}</span></a></li>
+            <li class="nav-item"><a href="{{ base }}/{{ lang }}/egyeb/" class="nav-link"><i class="fas fa-ellipsis-h"></i> <span>{{ translations[lang].nav.other | safe }}</span></a></li>
+            
+            <li class="nav-item dropdown">
+                <button class="nav-link dropdown-trigger" aria-expanded="false" aria-haspopup="true" style="background: none; border: none; cursor: pointer; font-family: inherit; font-size: inherit;"><i class="fas fa-globe"></i> <span>{{ translations[lang].nav.language | safe }}</span></button>
+                <div class="dropdown-content">
+                    <a href="{{ base }}/en{% if page.fileSlug %}/{{ page.fileSlug }}{% endif %}/" class="dropdown-item">English</a>
+                    <a href="{{ base }}/hu{% if page.fileSlug %}/{{ page.fileSlug }}{% endif %}/" class="dropdown-item">Magyar</a>
+                    <a href="{{ base }}/de{% if page.fileSlug %}/{{ page.fileSlug }}{% endif %}/" class="dropdown-item">Deutsch</a>
+                    <a href="{{ base }}/sk{% if page.fileSlug %}/{{ page.fileSlug }}{% endif %}/" class="dropdown-item">Slovenčina</a>
+                </div>
+            </li>
+            <!-- Dark mode toggle -->
+            <li class="nav-item">
+                <a href="#" class="nav-link theme-toggle" title="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<div id="mobile-nav" class="mobile-nav">
+    <a href="{{ base }}/{{ lang }}/" class="nav-link"><i class="fas fa-home"></i> <span>{{ translations[lang].nav.home | safe }}</span></a>
+    <a href="{{ base }}/{{ lang }}/minecraft/" class="nav-link"><i class="fas fa-cube"></i> <span>{{ translations[lang].nav.minecraft | safe }}</span></a>
+    <a href="{{ base }}/{{ lang }}/tortenelem/" class="nav-link"><i class="fas fa-book-open"></i> <span>{{ translations[lang].nav.history | safe }}</span></a>
+    <a href="{{ base }}/{{ lang }}/politika/" class="nav-link"><i class="fas fa-landmark"></i> <span>{{ translations[lang].nav.politics | safe }}</span></a>
+    <a href="{{ base }}/{{ lang }}/kultura/" class="nav-link"><i class="fas fa-theater-masks"></i> <span>{{ translations[lang].nav.culture | safe }}</span></a>
+    <a href="{{ base }}/{{ lang }}/egyeb/" class="nav-link"><i class="fas fa-ellipsis-h"></i> <span>{{ translations[lang].nav.other | safe }}</span></a>
+</div>

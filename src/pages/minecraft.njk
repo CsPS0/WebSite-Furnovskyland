@@ -1,0 +1,54 @@
+---
+
+pagination:
+  data: languages
+  size: 1
+  alias: lang
+permalink: "/{{ lang }}{% if page.fileSlug != 'index' %}/{{ page.fileSlug }}{% endif %}/"
+layout: layout.njk
+title: Minecraft
+base: ../..
+---
+
+<section id="minecraft" class="section" style="margin-top: 5rem;">
+            <div class="container">
+                <h2 class="section-title" >{{ translations[lang].minecraft.pageTitle | safe }}</h2>
+                <p class="section-subtitle" >{{ translations[lang].minecraft.pageSubtitle | safe }}</p>
+
+                <div class="grid-2 mb-4">
+                    <div class="text-left">
+                        <h3 class="mb-2" >{{ translations[lang].minecraft.description.title | safe }}</h3>
+                        <p class="mb-4" >{{ translations[lang].minecraft.description.content | safe }}</p>
+                    </div>
+                    <div>
+                        <img src="{{ base }}/IMG/mc/banner.webp" alt="Minecraft Server Preview" style="border-radius: 1rem; box-shadow: var(--shadow-lg);">
+                    </div>
+                </div>
+
+                <div class="card mb-4" style="text-align: left;">
+                    <h3 class="mb-2"  style="text-align: center;">{{ translations[lang].minecraft.status.title | safe }}</h3>
+                    <div class="grid-2">
+                        <div>
+                            <p class="mb-1"><strong >{{ translations[lang].minecraft.status.ip | safe }}</strong> <span id="server-ip">ujfurnvaros.aternos.me</span></p>
+                            <p class="mb-1"><strong >{{ translations[lang].minecraft.status.version | safe }}</strong> <span>1.21.x</span></p>
+                        </div>
+                        <div>
+                            <p class="mb-1"><strong >{{ translations[lang].minecraft.status.status | safe }}</strong> <span id="server-status" class="text-gray">Loading...</span></p>
+                            <p class="mb-1"><strong >{{ translations[lang].minecraft.status.players | safe }}</strong> <span id="server-players">Loading...</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="section-title"  style="margin-top: 4rem;">{{ translations[lang].minecraft.gallery.title | safe }}</h3>
+                    <div class="gallery">
+                        <img src="{{ base }}/IMG/mc/statue.webp" alt="Gallery Image 1" loading="lazy">
+                        <img src="{{ base }}/IMG/mc/stadium.webp" alt="Gallery Image 2" loading="lazy">
+                        <img src="{{ base }}/IMG/mc/royal.webp" alt="Gallery Image 3" loading="lazy">
+                        <img src="{{ base }}/IMG/mc/church.webp" alt="Gallery Image 4" loading="lazy">
+                        <img src="{{ base }}/IMG/mc/square.webp" alt="Gallery Image 5" loading="lazy">
+                        <img src="{{ base }}/IMG/mc/malasian.webp" alt="Gallery Image 6" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>

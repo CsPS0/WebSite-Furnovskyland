@@ -1,0 +1,164 @@
+---
+
+pagination:
+  data: languages
+  size: 1
+  alias: lang
+permalink: "/{{ lang }}{% if page.fileSlug != 'index' %}/{{ page.fileSlug }}{% endif %}/"
+layout: layout.njk
+title: Politics
+base: ../..
+---
+
+<section id="politics-content" class="section" style="margin-top: 5rem;">
+            <div class="container">
+                <h2 class="section-title" >{{ translations[lang].politics.pageTitle | safe }}</h2>
+
+                <div class="card mb-4" style="text-align: left;">
+                    <h3 class="mb-2" >{{ translations[lang].politics.state_structure.title | safe }}</h3>
+                    <p >{{ translations[lang].politics.state_structure.content | safe }}</p>
+                </div>
+
+                <div class="card mb-4" style="text-align: left;">
+                    <h3 class="mb-2" >{{ translations[lang].politics.legislative_process.title | safe }}</h3>
+                    <p class="mb-3" >{{ translations[lang].politics.legislative_process.intro | safe }}</p>
+                    <ul style="margin-left: 2rem; margin-bottom: 1rem;">
+                        <li data-i18n="politics.legislative_process.organic_law"><strong>Organic Law:</strong> Creation of an important body or institution, detailed description of its operation.</li>
+                        <li data-i18n="politics.legislative_process.bill"><strong>Bill:</strong> A less important institution or concept, with a smaller operational description.</li>
+                        <li data-i18n="politics.legislative_process.act"><strong>Act:</strong> Governs a specific, one-off situation.</li>
+                        <li data-i18n="politics.legislative_process.decree"><strong>Decree:</strong> Can only originate from the Emperor or the government, in the form of any of the above types of law, without the need for a vote. However, the Senate can decide to repeal it at any time.</li>
+                    </ul>
+                    <p class="mb-3" >{{ translations[lang].politics.legislative_process.act_submit | safe }}</p>
+                    <ol style="margin-left: 2rem;">
+                        <li >{{ translations[lang].politics.legislative_process.step1 | safe }}</li>
+                        <li >{{ translations[lang].politics.legislative_process.step2 | safe }}</li>
+                        <li >{{ translations[lang].politics.legislative_process.step3 | safe }}</li>
+                    </ol>
+                </div>
+
+                <div class="card mb-4" style="text-align: left;">
+                    <h3 class="mb-2" >{{ translations[lang].politics.senate.title | safe }}</h3>
+                    <p class="mb-3" >{{ translations[lang].politics.senate.p1 | safe }}</p>
+                    <ul style="margin-left: 2rem; margin-bottom: 1rem;">
+                        <li >{{ translations[lang].politics.senate.affairs.internal | safe }}</li>
+                        <li >{{ translations[lang].politics.senate.affairs.foreign | safe }}</li>
+                        <li >{{ translations[lang].politics.senate.affairs.minecraft | safe }}</li>
+                        <li >{{ translations[lang].politics.senate.affairs.constitutional | safe }}</li>
+                        <li >{{ translations[lang].politics.senate.affairs.recruitment | safe }}</li>
+                    </ul>
+                    <p >{{ translations[lang].politics.senate.p2 | safe }}</p>
+                </div>
+
+                <div class="card mb-4" style="text-align: left;">
+                    <h3 class="mb-2" >{{ translations[lang].politics.government.title | safe }}</h3>
+
+                </div>
+
+                <div class="card mb-4" style="text-align: left;">
+                    <h3 class="mb-2" >{{ translations[lang].politics.supreme_court.title | safe }}</h3>
+                    <p >{{ translations[lang].politics.supreme_court.content | safe }}</p>
+                </div>
+
+                <div class="card mb-4" style="text-align: left;">
+                    <h3 class="mb-2" >{{ translations[lang].politics.current_gov.title | safe }}</h3>
+                    <div style="overflow-x: auto;">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th >{{ translations[lang].politics.current_gov.table.role | safe }}</th>
+                                    <th >{{ translations[lang].politics.current_gov.table.name | safe }}</th>
+                                    <th >{{ translations[lang].politics.current_gov.table.responsibilities | safe }}</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Prime Minister</td>
+                                    <td>Honorary Baron & PM XVDX</td>
+                                    <td>Government Activity & Efficiency, Internal Affairs</td>
+                                </tr>
+                                <tr>
+                                    <td>Deputy Prime Minister</td>
+                                    <td>DPM.I. Hafiz Yahaya A.E.K, D.E.A</td>
+                                    <td>Finance, Justice, Work and Infrastructure</td>
+                                </tr>
+                                <tr>
+                                    <td>Deputy Prime Minister</td>
+                                    <td>Deputy PM Seneca (from May 7)</td>
+                                    <td>Defense & Security</td>
+                                </tr>
+                                <tr>
+                                    <td>Minister</td>
+                                    <td>H.R.H. Prince Rupitu</td>
+                                    <td>Educational and Healthcare Affairs, Welfare</td>
+                                </tr>
+                                <tr>
+                                    <td>Minister</td>
+                                    <td>Marquess Dunaújvárosi Dexter</td>
+                                    <td>Foreign Affairs</td>
+                                </tr>
+                                <tr>
+                                    <td>Minister</td>
+                                    <td>Minister Opra Melinda</td>
+                                    <td>Culture</td>
+                                </tr>
+                                <tr>
+                                    <td>Minister</td>
+                                    <td>pchugs_1 (banned on July 15)/@unknown-user (July 15-28)</td>
+                                    <td>Communication</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="card mb-4" style="text-align: left;">
+                    <h3 class="mb-2" >{{ translations[lang].politics.current_senate.title | safe }}</h3>
+                    <div style="overflow-x: auto;">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th >{{ translations[lang].politics.current_senate.table.role | safe }}</th>
+                                    <th >{{ translations[lang].politics.current_senate.table.name | safe }}</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Senator</td>
+                                    <td>Marquess & Senator Edgeworth</td>
+                                </tr>
+                                <tr>
+                                    <td>Deputy Senator</td>
+                                    <td>Acél Elvtárs (left on June 9)/@『🔴』Deputy Senator Yesko (from June 9)</td>
+                                </tr>
+                                <tr>
+                                    <td>Observer for Internal Discord Affairs</td>
+                                    <td>Marquess & Senator Edgeworth</td>
+                                </tr>
+                                <tr>
+                                    <td>Observer for Foreign Discord Affairs</td>
+                                    <td>Metal Crusader</td>
+                                </tr>
+                                <tr>
+                                    <td>Observer for Minecraft Affairs</td>
+                                    <td>Observer Proud Hungarian</td>
+                                </tr>
+                                <tr>
+                                    <td>Observer for Constitutional Affairs</td>
+                                    <td>Acél Elvtárs (left on June 9)/@『🔴』Deputy Senator Yesko (from June 9)</td>
+                                </tr>
+                                <tr>
+                                    <td>Observer for Recruitment Affairs</td>
+                                    <td>Observer Aljoot Lichtensvon</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="card mb-4" style="text-align: left;">
+                    <h3 class="mb-2" >{{ translations[lang].politics.current_supreme_court.title | safe }}</h3>
+                    <p >{{ translations[lang].politics.current_supreme_court.content | safe }}</p>
+                </div>
+
+            </div>
+        </section>

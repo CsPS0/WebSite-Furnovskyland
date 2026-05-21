@@ -1,0 +1,158 @@
+---
+
+pagination:
+  data: languages
+  size: 1
+  alias: lang
+permalink: "/{{ lang }}{% if page.fileSlug != 'index' %}/{{ page.fileSlug }}{% endif %}/"
+layout: layout.njk
+title: Culture
+base: ../..
+---
+
+<section id="cultural-days" class="section" style="margin-top: 5rem;">
+            <div class="container">
+                <h2 class="section-title" >{{ translations[lang].culturalDays.pageTitle | safe }}</h2>
+                <p class="section-subtitle" >{{ translations[lang].culturalDays.pageSubtitle | safe }}</p>
+
+                <div class="grid-3">
+                    <!-- January -->
+                    <div class="card" style="text-align: left;">
+                        <h3 class="mb-2" >{{ translations[lang].culturalDays.months.january | safe }}</h3>
+                        <ul style="margin-left: 1rem;">
+                            <li class="mb-1"><strong >{{ translations[lang].culturalDays.jan['1'].name | safe }}</strong> - <span >{{ translations[lang].culturalDays.jan['1'].desc | safe }}</span></li>
+                            <li class="mb-1"><strong >{{ translations[lang].culturalDays.jan['6'].name | safe }}</strong> - <span >{{ translations[lang].culturalDays.jan['6'].desc | safe }}</span></li>
+                            <li class="mb-1"><strong >{{ translations[lang].culturalDays.jan['7-13'].name | safe }}</strong> - <span >{{ translations[lang].culturalDays.jan['7-13'].desc | safe }}</span></li>
+                        </ul>
+                    </div>
+                    <!-- February -->
+                    <div class="card" style="text-align: left;">
+                        <h3 class="mb-2" >{{ translations[lang].culturalDays.months.february | safe }}</h3>
+                        <ul style="margin-left: 1rem;">
+                            <li class="mb-1"><strong >{{ translations[lang].culturalDays.feb.movable.name | safe }}</strong> - <span >{{ translations[lang].culturalDays.feb.movable.desc | safe }}</span></li>
+                            <li class="mb-1"><strong >{{ translations[lang].culturalDays.feb['26-28'].name | safe }}</strong> - <span >{{ translations[lang].culturalDays.feb['26-28'].desc | safe }}</span></li>
+                        </ul>
+                    </div>
+                    <!-- March -->
+                    <div class="card" style="text-align: left;">
+                        <h3 class="mb-2" >{{ translations[lang].culturalDays.months.march | safe }}</h3>
+                        <ul style="margin-left: 1rem;">
+                            <li class="mb-1"><strong >{{ translations[lang].culturalDays.mar['1'].name | safe }}</strong> - <span >{{ translations[lang].culturalDays.mar['1'].desc | safe }}</span></li>
+                            <li class="mb-1"><strong >{{ translations[lang].culturalDays.mar['15'].name | safe }}</strong> - <span >{{ translations[lang].culturalDays.mar['15'].desc | safe }}</span></li>
+                            <li class="mb-1"><strong >{{ translations[lang].culturalDays.mar['17'].name | safe }}</strong> - <span >{{ translations[lang].culturalDays.mar['17'].desc | safe }}</span></li>
+                            <li class="mb-1"><strong >{{ translations[lang].culturalDays.mar['23'].name | safe }}</strong> - <span >{{ translations[lang].culturalDays.mar['23'].desc | safe }}</span></li>
+                        </ul>
+                    </div>
+                    <!-- March-April -->
+                    <div class="card" style="text-align: left;">
+                        <h3 class="mb-2">March-April</h3>
+                        <ul style="margin-left: 1rem;">
+                            <li class="mb-1"><strong >{{ translations[lang].culturalDays['mar-apr'].movable.name | safe }}</strong> - <span >{{ translations[lang].culturalDays['mar-apr'].movable.desc | safe }}</span></li>
+                        </ul>
+                    </div>
+                    <!-- April -->
+                    <div class="card" style="text-align: left;">
+                        <h3 class="mb-2" >{{ translations[lang].culturalDays.months.april | safe }}</h3>
+                        <ul style="margin-left: 1rem;">
+                            <li class="mb-1"><strong >{{ translations[lang].culturalDays.apr['15'].name | safe }}</strong> - <span >{{ translations[lang].culturalDays.apr['15'].desc | safe }}</span></li>
+                            <li class="mb-1"><strong >{{ translations[lang].culturalDays.apr['23'].name | safe }}</strong> - <span >{{ translations[lang].culturalDays.apr['23'].desc | safe }}</span></li>
+                        </ul>
+                    </div>
+                    <!-- May -->
+                    <div class="card" style="text-align: left;">
+                        <h3 class="mb-2" >{{ translations[lang].culturalDays.months.may | safe }}</h3>
+                        <ul style="margin-left: 1rem;">
+                            <li class="mb-1"><strong >{{ translations[lang].culturalDays.may.mothers.name | safe }}</strong> - <span >{{ translations[lang].culturalDays.may.mothers.desc | safe }}</span></li>
+                            <li class="mb-1"><strong >{{ translations[lang].culturalDays.may['1'].name | safe }}</strong> - <span >{{ translations[lang].culturalDays.may['1'].desc | safe }}</span></li>
+                            <li class="mb-1"><strong >{{ translations[lang].culturalDays.may['8'].name | safe }}</strong> - <span >{{ translations[lang].culturalDays.may['8'].desc | safe }}</span></li>
+                            <li class="mb-1"><strong >{{ translations[lang].culturalDays.may['17-23'].name | safe }}</strong> - <span >{{ translations[lang].culturalDays.may['17-23'].desc | safe }}</span></li>
+                            <li class="mb-1"><strong >{{ translations[lang].culturalDays.may['24-30'].name | safe }}</strong> - <span >{{ translations[lang].culturalDays.may['24-30'].desc | safe }}</span></li>
+                            <li class="mb-1"><strong >{{ translations[lang].culturalDays.may['31'].name | safe }}</strong> - <span >{{ translations[lang].culturalDays.may['31'].desc | safe }}</span></li>
+                        </ul>
+                    </div>
+                    <!-- May-June -->
+                    <div class="card" style="text-align: left;">
+                        <h3 class="mb-2">May-June</h3>
+                        <ul style="margin-left: 1rem;">
+                            <li class="mb-1"><strong >{{ translations[lang].culturalDays['may-jun'].movable.name | safe }}</strong> - <span >{{ translations[lang].culturalDays['may-jun'].movable.desc | safe }}</span></li>
+                        </ul>
+                    </div>
+                    <!-- June -->
+                    <div class="card" style="text-align: left;">
+                        <h3 class="mb-2" >{{ translations[lang].culturalDays.months.june | safe }}</h3>
+                        <ul style="margin-left: 1rem;">
+                            <li class="mb-1"><strong >{{ translations[lang].culturalDays.jun['1'].name | safe }}</strong> - <span >{{ translations[lang].culturalDays.jun['1'].desc | safe }}</span></li>
+                            <li class="mb-1"><strong >{{ translations[lang].culturalDays.jun['4'].name | safe }}</strong> - <span >{{ translations[lang].culturalDays.jun['4'].desc | safe }}</span></li>
+                            <li class="mb-1"><strong >{{ translations[lang].culturalDays.jun['15'].name | safe }}</strong> - <span >{{ translations[lang].culturalDays.jun['15'].desc | safe }}</span></li>
+                            <li class="mb-1"><strong >{{ translations[lang].culturalDays.jun.fathers.name | safe }}</strong> - <span >{{ translations[lang].culturalDays.jun.fathers.desc | safe }}</span></li>
+                        </ul>
+                    </div>
+                    <!-- July -->
+                    <div class="card" style="text-align: left;">
+                        <h3 class="mb-2" >{{ translations[lang].culturalDays.months.july | safe }}</h3>
+                        <ul style="margin-left: 1rem;">
+                            <li class="mb-1"><strong >{{ translations[lang].culturalDays.jul['4'].name | safe }}</strong> - <span >{{ translations[lang].culturalDays.jul['4'].desc | safe }}</span></li>
+                            <li class="mb-1"><strong >{{ translations[lang].culturalDays.jul['5'].name | safe }}</strong> - <span >{{ translations[lang].culturalDays.jul['5'].desc | safe }}</span></li>
+                            <li class="mb-1"><strong >{{ translations[lang].culturalDays.jul.festival.name | safe }}</strong> - <span >{{ translations[lang].culturalDays.jul.festival.desc | safe }}</span></li>
+                        </ul>
+                    </div>
+                    <!-- August -->
+                    <div class="card" style="text-align: left;">
+                        <h3 class="mb-2" >{{ translations[lang].culturalDays.months.august | safe }}</h3>
+                        <ul style="margin-left: 1rem;">
+                            <li class="mb-1"><strong >{{ translations[lang].culturalDays.aug['5'].name | safe }}</strong> - <span >{{ translations[lang].culturalDays.aug['5'].desc | safe }}</span></li>
+                            <li class="mb-1"><strong >{{ translations[lang].culturalDays.aug['20'].name | safe }}</strong> - <span >{{ translations[lang].culturalDays.aug['20'].desc | safe }}</span></li>
+                            <li class="mb-1"><strong >{{ translations[lang].culturalDays.aug['23'].name | safe }}</strong> - <span >{{ translations[lang].culturalDays.aug['23'].desc | safe }}</span></li>
+                            <li class="mb-1"><strong >{{ translations[lang].culturalDays.aug['29'].name | safe }}</strong> - <span >{{ translations[lang].culturalDays.aug['29'].desc | safe }}</span></li>
+                        </ul>
+                    </div>
+                    <!-- September -->
+                    <div class="card" style="text-align: left;">
+                        <h3 class="mb-2" >{{ translations[lang].culturalDays.months.september | safe }}</h3>
+                        <ul style="margin-left: 1rem;">
+                            <li class="mb-1"><strong >{{ translations[lang].culturalDays.sep['1'].name | safe }}</strong> - <span >{{ translations[lang].culturalDays.sep['1'].desc | safe }}</span></li>
+                            <li class="mb-1"><strong >{{ translations[lang].culturalDays.sep['15'].name | safe }}</strong> - <span >{{ translations[lang].culturalDays.sep['15'].desc | safe }}</span></li>
+                        </ul>
+                    </div>
+                    <!-- October -->
+                    <div class="card" style="text-align: left;">
+                        <h3 class="mb-2" >{{ translations[lang].culturalDays.months.october | safe }}</h3>
+                        <ul style="margin-left: 1rem;">
+                            <li class="mb-1"><strong >{{ translations[lang].culturalDays.oct['3'].name | safe }}</strong> - <span >{{ translations[lang].culturalDays.oct['3'].desc | safe }}</span></li>
+                            <li class="mb-1"><strong >{{ translations[lang].culturalDays.oct['6'].name | safe }}</strong> - <span >{{ translations[lang].culturalDays.oct['6'].desc | safe }}</span></li>
+                            <li class="mb-1"><strong >{{ translations[lang].culturalDays.oct['23'].name | safe }}</strong> - <span >{{ translations[lang].culturalDays.oct['23'].desc | safe }}</span></li>
+                            <li class="mb-1"><strong >{{ translations[lang].culturalDays.oct['31'].name | safe }}</strong> - <span >{{ translations[lang].culturalDays.oct['31'].desc | safe }}</span></li>
+                        </ul>
+                    </div>
+                    <!-- November -->
+                    <div class="card" style="text-align: left;">
+                        <h3 class="mb-2" >{{ translations[lang].culturalDays.months.november | safe }}</h3>
+                        <ul style="margin-left: 1rem;">
+                            <li class="mb-1"><strong >{{ translations[lang].culturalDays.nov['1'].name | safe }}</strong> - <span >{{ translations[lang].culturalDays.nov['1'].desc | safe }}</span></li>
+                            <li class="mb-1"><strong >{{ translations[lang].culturalDays.nov['11'].name | safe }}</strong> - <span >{{ translations[lang].culturalDays.nov['11'].desc | safe }}</span></li>
+                            <li class="mb-1"><strong >{{ translations[lang].culturalDays.nov['17'].name | safe }}</strong> - <span >{{ translations[lang].culturalDays.nov['17'].desc | safe }}</span></li>
+                            <li class="mb-1"><strong >{{ translations[lang].culturalDays.nov['30'].name | safe }}</strong> - <span >{{ translations[lang].culturalDays.nov['30'].desc | safe }}</span></li>
+                            <li class="mb-1"><strong >{{ translations[lang].culturalDays.nov.thanksgiving.name | safe }}</strong> - <span >{{ translations[lang].culturalDays.nov.thanksgiving.desc | safe }}</span></li>
+                        </ul>
+                    </div>
+                    <!-- November-December -->
+                    <div class="card" style="text-align: left;">
+                        <h3 class="mb-2">November-December</h3>
+                        <ul style="margin-left: 1rem;">
+                            <li class="mb-1"><strong >{{ translations[lang].culturalDays['nov-dec'].advent.name | safe }}</strong> - <span >{{ translations[lang].culturalDays['nov-dec'].advent.desc | safe }}</span></li>
+                        </ul>
+                    </div>
+                    <!-- December -->
+                    <div class="card" style="text-align: left;">
+                        <h3 class="mb-2" >{{ translations[lang].culturalDays.months.december | safe }}</h3>
+                        <ul style="margin-left: 1rem;">
+                            <li class="mb-1"><strong >{{ translations[lang].culturalDays.dec['1'].name | safe }}</strong> - <span >{{ translations[lang].culturalDays.dec['1'].desc | safe }}</span></li>
+                            <li class="mb-1"><strong >{{ translations[lang].culturalDays.dec['16'].name | safe }}</strong> - <span >{{ translations[lang].culturalDays.dec['16'].desc | safe }}</span></li>
+                            <li class="mb-1"><strong >{{ translations[lang].culturalDays.dec['24'].name | safe }}</strong> - <span >{{ translations[lang].culturalDays.dec['24'].desc | safe }}</span></li>
+                            <li class="mb-1"><strong >{{ translations[lang].culturalDays.dec['25-26'].name | safe }}</strong> - <span >{{ translations[lang].culturalDays.dec['25-26'].desc | safe }}</span></li>
+                            <li class="mb-1"><strong >{{ translations[lang].culturalDays.dec['31'].name | safe }}</strong> - <span >{{ translations[lang].culturalDays.dec['31'].desc | safe }}</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>

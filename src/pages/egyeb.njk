@@ -1,0 +1,42 @@
+---
+
+pagination:
+  data: languages
+  size: 1
+  alias: lang
+permalink: "/{{ lang }}{% if page.fileSlug != 'index' %}/{{ page.fileSlug }}{% endif %}/"
+layout: layout.njk
+title: Other
+base: ../..
+---
+
+<section id="other" class="section" style="margin-top: 5rem;">
+            <div class="container">
+                <h2 class="section-title" >{{ translations[lang].other.pageTitle | safe }}</h2>
+                <p class="section-subtitle" >{{ translations[lang].other.pageSubtitle | safe }}</p>
+
+                <div class="timeline">
+                    <div class="content-section">
+                        <h3 >{{ translations[lang].other.faq.title | safe }}</h3>
+                        <p class="mb-1"><strong >{{ translations[lang].other.faq.join.question | safe }}</strong></p>
+                        <p class="mb-3" >{{ translations[lang].other.faq.join.answer | safe }}</p>
+
+                        <p class="mb-1"><strong >{{ translations[lang].other.faq.citizenship.question | safe }}</strong></p>
+                        <p class="mb-3" >{{ translations[lang].other.faq.citizenship.answer | safe }}</p>
+
+                        <p class="mb-1"><strong >{{ translations[lang].other.faq.visit.question | safe }}</strong></p>
+                        <p >{{ translations[lang].other.faq.visit.answer | safe }}</p>
+                    </div>
+
+                    <div class="content-section">
+                        <h3 >{{ translations[lang].other.resources.title | safe }}</h3>
+                        <p class="mb-2" >{{ translations[lang].other.resources.documents.description | safe }}</p>
+                        <a href="#" class="btn btn-outline mb-4" >{{ translations[lang].other.resources.documents.link | safe }}</a>
+
+                        <h3 >{{ translations[lang].other.resources.guides.title | safe }}</h3>
+                        <p class="mb-2" >{{ translations[lang].other.resources.guides.description | safe }}</p>
+                        <a href="#" class="btn btn-outline" >{{ translations[lang].other.resources.guides.link | safe }}</a>
+                    </div>
+                </div>
+            </div>
+        </section>

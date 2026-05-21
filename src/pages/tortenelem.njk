@@ -1,0 +1,50 @@
+---
+
+pagination:
+  data: languages
+  size: 1
+  alias: lang
+permalink: "/{{ lang }}{% if page.fileSlug != 'index' %}/{{ page.fileSlug }}{% endif %}/"
+layout: layout.njk
+title: History
+base: ../..
+---
+
+<section id="timeline" class="section" style="margin-top: 5rem;">
+            <div class="container">
+                <h2 class="section-title" >{{ translations[lang].history.pageTitle | safe }}</h2>
+                <p class="section-subtitle" >{{ translations[lang].history.pageSubtitle | safe }}</p>
+                
+                <div class="timeline">
+                    <div class="content-section">
+                        <h3 >{{ translations[lang].history.sections.foundation.title | safe }}</h3>
+                        <p >{{ translations[lang].history.sections.foundation.content | safe }}</p>
+                    </div>
+
+                    <div class="content-section">
+                        <h3 >{{ translations[lang].history.sections.expansion.title | safe }}</h3>
+                        <p >{{ translations[lang].history.sections.expansion.content | safe }}</p>
+                    </div>
+
+                    <div class="content-section">
+                        <h3 >{{ translations[lang].history.sections.modernEra.title | safe }}</h3>
+                        <p >{{ translations[lang].history.sections.modernEra.content | safe }}</p>
+                    </div>
+
+                    <div class="content-section">
+                        <h3 >{{ translations[lang].history.sections.geography.title | safe }}</h3>
+                        <p >{{ translations[lang].history.sections.geography.content | safe }}</p>
+                    </div>
+
+                    <div class="content-section">
+                        <h3 >{{ translations[lang].history.sections.government.title | safe }}</h3>
+                        <p >{{ translations[lang].history.sections.government.content | safe }}</p>
+                    </div>
+
+                    <div class="content-section">
+                        <h3 >{{ translations[lang].history.sections.flag.title | safe }}</h3>
+                        <p >{{ translations[lang].history.sections.flag.content | safe }}</p>
+                    </div>
+                </div>
+            </div>
+        </section>

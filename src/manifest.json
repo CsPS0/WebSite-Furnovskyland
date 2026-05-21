@@ -1,0 +1,15 @@
+{
+  "name": "Furnovskyland",
+  "short_name": "Furnovsky",
+  "start_url": "/en/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#1e40af",
+  "icons": [
+    {
+      "src": "/IMG/banner.webp",
+      "sizes": "512x512",
+      "type": "image/webp"
+    }
+  ]
+}

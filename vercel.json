@@ -1,0 +1,12 @@
+{
+  "buildCommand": "bun run build",
+  "outputDirectory": "docs",
+  "framework": "eleventy",
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/en/",
+      "permanent": true
+    }
+  ]
+}

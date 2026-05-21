@@ -1,0 +1,33 @@
+<footer>
+    <div class="container grid-3">
+        <div>
+            <h3 >{{ translations[lang].footer.contact.title | safe }}</h3>
+            <ul>
+                <li><i class="fas fa-envelope"></i> <span >{{ translations[lang].footer.contact.email | safe }}</span></li>
+                <li><i class="fab fa-discord"></i> <span >{{ translations[lang].footer.contact.discord | safe }}</span></li>
+                <li><i class="fab fa-facebook"></i> <span >{{ translations[lang].footer.contact.facebook | safe }}</span></li>
+            </ul>
+        </div>
+        <div>
+            <h3 >{{ translations[lang].footer.quickLinks.title | safe }}</h3>
+            <ul>
+                <li><a href="#adatvedelem" >{{ translations[lang].footer.quickLinks.privacy | safe }}</a></li>
+                <li><a href="#impresszum" >{{ translations[lang].footer.quickLinks.imprint | safe }}</a></li>
+                <li><a href="#kapcsolat" >{{ translations[lang].footer.quickLinks.contact | safe }}</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3 >{{ translations[lang].footer.openingHours.title | safe }}</h3>
+            <ul>
+                <li><span >{{ translations[lang].footer.openingHours.weekdays | safe }}</span></li>
+                <li><span >{{ translations[lang].footer.openingHours.saturday | safe }}</span></li>
+                <li><span >{{ translations[lang].footer.openingHours.sunday | safe }}</span></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; <span id="current-year"></span> <span >{{ translations[lang].footer.copyright | safe }}</span></p>
+    </div>
+</footer>
+
+<script src="{{ base }}/JS/script.js"></script>

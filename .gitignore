@@ -25,3 +25,14 @@ secret.txt
 
 note.txt
 backend/server.js
+
+# Eleventy and Build Artifacts
+.eleventy_cache/
+.cache/
+docs/
+
+# Scripts and Temporary Workspace
+scratch/
+migrate.js
+migrate-i18n.js
+optimize.js

@@ -1,0 +1,55 @@
+---
+
+pagination:
+  data: languages
+  size: 1
+  alias: lang
+permalink: "/{{ lang }}{% if page.fileSlug != 'index' %}/{{ page.fileSlug }}{% endif %}/"
+layout: layout.njk
+title: Home
+description: Welcome to the official website of the National Federation Empire of Furnovskyland!
+base: ..
+---
+
+<section id="hero" class="hero">
+    <div class="container">
+        <h2 >{{ translations[lang].hero.welcome | safe }}</h2>
+        <p >{{ translations[lang].hero.discover | safe }}</p>
+        <a href="#bemutatkozas" class="btn btn-outline" >{{ translations[lang].hero.learnMore | safe }}</a>
+    </div>
+</section>
+
+<section id="bemutatkozas" class="section">
+    <div class="container">
+        <h2 class="section-title" >{{ translations[lang].intro.title | safe }}</h2>
+        <div class="grid-2">
+            <div>
+                <p class="mb-4" >{{ translations[lang].intro.description | safe }}</p>
+            </div>
+            <div class="card discord-status-card" style="text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center; border: 1px solid rgba(88, 101, 242, 0.3);">
+                <div class="skeleton-loader discord-skeleton"></div>
+                <p style="font-size: 1.5rem; font-weight: bold;"><span id="discord-online-count" style="color: var(--cardinal);">...</span> <span >{{ translations[lang].intro.discordStatus.members | safe }}</span></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="csatlakozas" class="section section-bg-alt">
+    <div class="container">
+        <h2 class="section-title" >{{ translations[lang].join.title | safe }}</h2>
+        <div class="grid-2">
+            <div class="card">
+                <i class="fab fa-discord card-icon"></i>
+                <h3 class="card-title" >{{ translations[lang].join.discord.title | safe }}</h3>
+                <p class="card-desc" >{{ translations[lang].join.discord.description | safe }}</p>
+                <a href="https://discord.gg/UjcUnNhNfk" class="btn btn-primary" target="_blank" >{{ translations[lang].join.discord.button | safe }}</a>
+            </div>
+            <div class="card">
+                <i class="fas fa-cube card-icon"></i>
+                <h3 class="card-title" >{{ translations[lang].join.minecraft.title | safe }}</h3>
+                <p class="card-desc" >{{ translations[lang].join.minecraft.description | safe }}</p>
+                <a href="pages/minecraft.html" class="btn btn-primary" >{{ translations[lang].join.minecraft.button | safe }}</a>
+            </div>
+        </div>
+    </div>
+</section>
