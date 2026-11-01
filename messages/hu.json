@@ -1,0 +1,682 @@
+{
+  "nav": {
+    "home": "Főoldal",
+    "minecraft": "Minecraft",
+    "history": "Történelem",
+    "politics": "Politika",
+    "culture": "Kultúra",
+    "other": "Egyéb",
+    "language": "Nyelv",
+    "votes": "Szavazások",
+    "login": "Belépés",
+    "logout": "Kilépés",
+    "admin": "Admin",
+    "menu": "Menü",
+    "theme": "Sötét mód váltása"
+  },
+  "hero": {
+    "welcome": "Üdvözöljük Furnovskyföldön!",
+    "discover": "Fedezze fel nemzetünk gazdag történelmét és kultúráját",
+    "learnMore": "Tudj meg többet"
+  },
+  "intro": {
+    "title": "Bemutatkozás",
+    "description": "Üdvözlünk Furnovskyföld Nemzetszövetségi Birodalmának hivatalos oldalán! Itt megtudhatod, hogyan csatlakozhatsz Discord, illetve Minecraft szervereinkhez, valamint tanulhatsz a történelmünkről, kultúránkról, politikánkról és még sok egyébről!",
+    "stats": {
+      "population": "Lakosság",
+      "area": "Terület",
+      "areaValue": "200 Chunk"
+    },
+    "discordStatus": {
+      "title": "Discord Szerver",
+      "members": "Online tag"
+    }
+  },
+  "join": {
+    "title": "Csatlakozz Közösségünkhöz",
+    "discord": {
+      "title": "Discord Szerver",
+      "description": "Csatlakozz aktív közösségünkhöz",
+      "button": "Csatlakozás"
+    },
+    "minecraft": {
+      "title": "Minecraft Szerver",
+      "description": "Építsd velünk városainkat",
+      "button": "Kapcsolódás"
+    }
+  },
+  "history": {
+    "pageTitle": "Történelem",
+    "pageSubtitle": "Fedezze fel Furnovskyföld gazdag történelmi örökségét",
+    "welcome": "Üdvözöljük Birodalmunkban! Ha érdekli, kérjük olvassa el ezt az üzenetet!",
+    "sections": {
+      "foundation": {
+        "title": "Alapítás",
+        "content": "Furnovskyföld Királyságát 2018. október 31-én délután 3 órakor (GMT+2) alapították meg a koronázásommal. Kezdetben egy apró városállam volt, Furnokisfaludi városa."
+      },
+      "expansion": {
+        "title": "Terjeszkedés és Háborúk",
+        "content": "Sok területet szereztünk egy közel egy hónapig tartó háborús időszak alatt. 2019 januárjában megnyertük a Nagy Havas Világháborút, és megszereztük a délkeleti sarkot, valamint néhány keleti, északi és délnyugati területet a szomszédoktól. Ezután nagyon jó partneri kapcsolatot alakítottunk ki a szomszédos Német-Magyar Monarchiával, amely ma már Német-Szlovák. 2020-tól jó kapcsolatban állunk a The Diamondboy birtokkal (ma Land of the Deadbringers) is, és megszereztük szigetük nyugati részét Furnovskyföld számára."
+      },
+      "modernEra": {
+        "title": "Modern Korszak",
+        "content": "Egy nagyon szerencsés évet kezdtünk. Bár volt COVID-19, most nagyon gazdagok vagyunk, és a gazdaság növekszik. 2021. április 15-én a Nemzetközösség zászlajára való tekintettel úgy döntöttem, hogy az országot átnevezem Furnovskyföld Nemzetközösségi Birodalomra, a következő kormányt pedig Furnovskyföld I. Szövetségi Kormányára."
+      },
+      "geography": {
+        "title": "Földrajz",
+        "content": "Nagyon gazdagok vagyunk, de szükségünk van az export növelésére. Csak kis mennyiségű dombunk van, egyetlen hegyünk a délkeleti országhatáron található a Német-Szlovák Monarchiával."
+      },
+      "government": {
+        "title": "Kormányzás",
+        "content": "Nagy kerületi rendszerünk van, jelenleg 36 kerülettel és 2 határrégióval, amelyek a térképen láthatók. Minden nagyváros 9 részre van osztva. Az irányítószámaink így néznek ki: 1019. Ez a főváros központjának irányítószáma. Az első 1 az 1. kerület. A 01 a kerület legfontosabb városa, a 9 pedig a város 9. régiója."
+      },
+      "flag": {
+        "title": "Zászló",
+        "content": "Az eredeti egy magyar zászló volt (piros-fehér-zöld trikolór) egy narancssárga ponttal középen. Később ezt sárgára cserélték."
+      }
+    }
+  },
+  "politics": {
+    "pageTitle": "Politika",
+    "pageSubtitle": "Ismerje meg Furnovskyföld politikai rendszerét",
+    "state_structure": {
+      "title": "Államszerkezet",
+      "content": "Az állam a Furnovskyföldi NEMZETSZÖVETSÉG, egy alkotmányos monarchia, 4 tagrésszel (Furnovskyföld az egyik) a Nemzetszövetségben, ez itt nem fontos mostanában. Van jelenleg Kormány, Szenátus (a kettő vegyesen törvényhozó és végrehajtó is) és bíróság, Legfelsőbb Bíróság. Parlament még nincs, az fogja funkcióiban a Szenátust cserélni, amikor az Alkotmány át lesz dolgozva."
+    },
+    "legislative_process": {
+      "title": "Törvényhozási folyamat",
+      "intro": "A törvényhozás szakaszai a következők:",
+      "organic_law": "<strong>Organikus Törvény:</strong> Fontos szerv vagy intézmény létrehozása, működésének részletes leírása.",
+      "bill": "<strong>Törvényjavaslat:</strong> Kevésbé fontos intézmény vagy koncepció, kisebb működési leírással.",
+      "act": "<strong>Törvény:</strong> Egy specifikus, egyszeri helyzetet szabályoz.",
+      "decree": "<strong>Rendelet:</strong> Csak a császártól vagy a kormánytól eredhet, bármelyik fentebbi törvénytípus formájában, szavazás nélkül. A Szenátus azonban bármikor dönthet annak hatályon kívül helyezéséről.",
+      "act_submit": "Csak törvényt nyújthat be bármely lakos, a felette lévő kettőt csak a hatalmi ágak egyikébe választott személy nyújthatja be.",
+      "step1": "A Szenátus megkapja a törvényjavaslatot, ami után a Szenátor kiír egy 24 órás megbeszélési időt, majd annak vége után egy (remélhetőleg) 24 órás szavazást, amely a törvények nagy részében általában egyszerű többséggel kell, hogy végződjön a továbbjutáshoz.",
+      "step2": "Ha a Szenátus elfogadja, a Kormányhoz kerül, ahol ha nem fogadják el egyszerű többséggel, visszakerül a Szenátushoz átdolgozásra vagy elfogadásra egy bizonyos időn belül (nem tudom most mennyi, az Alkotmányban benne van).",
+      "step3": "Ha a Kormány elfogadja, hozzám kerül, hogy vagy megvétózzam és visszakerül a Kormányhoz, vagy aláírom és törvénybe lép."
+    },
+    "senate": {
+      "title": "A Szenátus",
+      "p1": "A Szenátust 3 hónapra, minden évszak végén választjuk, Single Transferable Vote rendszerrel, a top 3 jelölt kerül be, az 1. helyezett lesz a Szenátor, a maradék 2 hely a szavazati arányok lehető legközelebbi tartásával vannak elosztva. Minden új évszak első teljes hetében lépnek hivatalba. A Legfelsőbb Bíró nem indulhat. A Szenátus basically a legelső \"akadály\", amin át kell mennie egy törvénynek, meg a saját működésükről szóló törvényeket szavazzák meg, azok egyértelműen nem mennek át máshova, valamint szavaz a kormánylistának az elfogadásáról. 5 tagos, mindegyikük egy-egy Megfigyelő (a Szenátor is, ő alapértelmezetten Discord belügyes) a jelenleg elérhető pozíciókkal:",
+      "affairs": {
+        "internal": "Discord belügy (Szenátor alapértelmezetten)",
+        "foreign": "Discord külügy",
+        "minecraft": "Minecraft ügy",
+        "constitutional": "Alkotmányügy",
+        "recruitment": "Toborzási ügy (tagok behozása a szerverre stb)"
+      },
+      "p2": "A Szenátor az, aki kiírja a megbeszélési és szavazási időket (tud szavazni is), rögzíti a megszavazott törvényeket egy adott fórumcsatornába, hivatalosan ő rendezi el, ki milyen Megfigyelő lesz (a sajátján kívül), kinevez helyettest és képviseli a Szenátust az államfőnél vagy a kormánynál. Egy consecutive ciklusra újraválasztható, utána 6 hónapig nem választható Szenátornak. A Megfigyelők tudnak hozzászólni egy beterjesztett törvényhez a megbeszélési időben, szavazni róluk, és a hozzájuk legközelebb álló minisztériumokkal együttműködnek."
+    },
+    "government": {
+      "title": "Kormányzati rendszer",
+      "executive": {
+        "title": "Végrehajtó hatalom",
+        "description": "A végrehajtó hatalom felépítése és működése."
+      },
+      "judicial": {
+        "title": "Bírói hatalom",
+        "description": "Az igazságszolgáltatás rendszere."
+      },
+      "legislative": {
+        "title": "Törvényhozás",
+        "description": "A törvényhozás folyamata és szervezete."
+      }
+    },
+    "supreme_court": {
+      "title": "A Legfelsőbb Bíróság",
+      "content": "A Legfelsőbb Bíróság dönt az Alkotmányosság dolgairól, meg ilyenek, érted. A tagjai a Miniszterelnök, az igazságügyi miniszter, az alkotmányügyekért felelős megfigyelő és egy 4. személy, az épp létező bírák listájából a miniszterelnök által választva, általam kinevezve, és a Szenátus által 2/3-os többséggel elfogadva."
+    },
+    "current_gov": {
+      "title": "Jelenlegi Kormány",
+      "table": {
+        "role": "Szerepkör",
+        "name": "Név",
+        "responsibilities": "Feladatkörök"
+      }
+    },
+    "current_senate": {
+      "title": "Jelenlegi Szenátus",
+      "table": {
+        "role": "Szerepkör",
+        "name": "Név"
+      }
+    },
+    "current_supreme_court": {
+      "title": "Jelenlegi Legfelsőbb Bíróság",
+      "content": "Nincs"
+    },
+    "structure": {
+      "title": "Politikai felépítés",
+      "federation": {
+        "title": "Nemzetszövetségi rendszer",
+        "description": "A Nemzetszövetség felépítése és működési elvei."
+      },
+      "local": {
+        "title": "Helyi önkormányzatok",
+        "description": "A helyi közigazgatás rendszere és feladatai."
+      }
+    },
+    "foreign": {
+      "title": "Külkapcsolatok",
+      "allies": {
+        "title": "Szövetségesek",
+        "description": "Diplomáciai kapcsolataink és szövetségeseink."
+      },
+      "international": {
+        "title": "Nemzetközi kapcsolatok",
+        "description": "Részvételünk a nemzetközi közösségben."
+      }
+    },
+    "roles": {
+      "prime_minister": "Miniszterelnök",
+      "deputy_pm": "Miniszterelnök-helyettes",
+      "minister": "Miniszter",
+      "senator": "Szenátor",
+      "deputy_senator": "Alszenátor",
+      "observer_internal": "Belső Discord-ügyek megfigyelője",
+      "observer_foreign": "Külső Discord-ügyek megfigyelője",
+      "observer_minecraft": "Minecraft-ügyek megfigyelője",
+      "observer_constitutional": "Alkotmányügyek megfigyelője",
+      "observer_recruitment": "Toborzási ügyek megfigyelője"
+    },
+    "duties": {
+      "efficiency_internal": "Kormányzati tevékenység és hatékonyság, belügyek",
+      "finance_justice_infra": "Pénzügy, igazságügy, munka és infrastruktúra",
+      "defense": "Védelem és biztonság",
+      "education_health_welfare": "Oktatás- és egészségügy, jólét",
+      "foreign": "Külügyek",
+      "culture": "Kultúra",
+      "communication": "Kommunikáció"
+    }
+  },
+  "culture": {
+    "pageTitle": "Kultúra",
+    "pageSubtitle": "Fedezze fel Furnovskyföld gazdag kulturális örökségét",
+    "traditions": {
+      "title": "Hagyományok",
+      "festivals": {
+        "title": "Fesztiválok",
+        "description": "Éves rendezvényeink és ünnepségeink."
+      },
+      "music": {
+        "title": "Zene",
+        "description": "Zenei hagyományaink és modern interpretációk."
+      },
+      "cuisine": {
+        "title": "Gasztronómia",
+        "description": "Jellegzetes ételek és italok."
+      }
+    },
+    "arts": {
+      "title": "Művészetek",
+      "visual": {
+        "title": "Vizuális művészetek",
+        "description": "Festészet, szobrászat és modern művészeti formák."
+      },
+      "literature": {
+        "title": "Irodalom",
+        "description": "Költészet, próza és dráma."
+      }
+    },
+    "modern": {
+      "title": "Modern kultúra",
+      "gaming": {
+        "title": "Gaming",
+        "description": "E-sport és gaming közösségek."
+      },
+      "media": {
+        "title": "Média",
+        "description": "Film, televízió és digitális tartalom."
+      }
+    }
+  },
+  "culturalDays": {
+    "pageTitle": "Kultúrnapok és Ünnepek",
+    "pageSubtitle": "Fedezze fel Furnovskyföld gazdag kulturális naptárát",
+    "months": {
+      "january": "Január",
+      "february": "Február",
+      "march": "Március",
+      "april": "Április",
+      "may": "Május",
+      "june": "Június",
+      "july": "Július",
+      "august": "Augusztus",
+      "september": "Szeptember",
+      "october": "Október",
+      "november": "November",
+      "december": "December",
+      "march_april": "Március–április",
+      "may_june": "Május–június",
+      "november_december": "November–december"
+    },
+    "jan": {
+      "1": {
+        "name": "Jan. 1.",
+        "desc": "Újév (ünnep, látogatási nap)"
+      },
+      "6": {
+        "name": "Jan. 6.",
+        "desc": "Vízkereszt"
+      },
+      "7-13": {
+        "name": "Jan. 7-13.",
+        "desc": "Januári Party Hét (ünnep)"
+      }
+    },
+    "feb": {
+      "movable": {
+        "name": "Mozgó ünnep",
+        "desc": "Karnevál, jelmezbál (ünnep)"
+      },
+      "26-28": {
+        "name": "Febr. 26-28.",
+        "desc": "Februári Party Napok (ünnep)"
+      }
+    },
+    "mar": {
+      "1": {
+        "name": "Már. 1.",
+        "desc": "Tavasz és Szent Dávid napja (ünnep brit többségű területeken, látogatási nap)"
+      },
+      "15": {
+        "name": "Már. 15.",
+        "desc": "1848-as Forradalom Ünnepe (ünnep magyar többségű területeken, látogatási nap)"
+      },
+      "17": {
+        "name": "Már. 17.",
+        "desc": "Szent Patrik napja"
+      },
+      "23": {
+        "name": "Már. 23.",
+        "desc": "A Virágok Napja (látogatási nap)"
+      }
+    },
+    "mar-apr": {
+      "movable": {
+        "name": "Mozgó ünnep",
+        "desc": "Nagypéntek, Húsvétvasárnap, Húsvéthétfő (ünnep, látogatási nap)"
+      }
+    },
+    "apr": {
+      "15": {
+        "name": "Ápr. 15.",
+        "desc": "Nemzeti Föderáció Napja (ünnep, látogatási nap, NEMZETI ÜNNEP)"
+      },
+      "23": {
+        "name": "Ápr. 23.",
+        "desc": "Szent György napja (ünnep brit többségű területeken)"
+      }
+    },
+    "may": {
+      "1": {
+        "name": "Máj. 1.",
+        "desc": "Munka ünnepe (ünnep, látogatási nap)"
+      },
+      "8": {
+        "name": "Máj. 8.",
+        "desc": "Szlovákia Győzelme a Fasizmus Felett (ünnep szlovák többségű területeken, látogatási nap)"
+      },
+      "31": {
+        "name": "Máj. 31.",
+        "desc": "A Fák Napja (látogatási nap)"
+      },
+      "mothers": {
+        "name": "Mozgó ünnep",
+        "desc": "Anyák napja (május első vasárnapja)"
+      },
+      "17-23": {
+        "name": "Máj. 17-23.",
+        "desc": "Gyermekhét (iskolai szünnap)"
+      },
+      "24-30": {
+        "name": "Máj. 24-30.",
+        "desc": "Szülői Hét (munkaszüneti nap, látogatási nap)"
+      }
+    },
+    "may-jun": {
+      "movable": {
+        "name": "Mozgó ünnep",
+        "desc": "Pünkösdvasárnap, Pünkösdhétfő (ünnep, látogatási nap)"
+      }
+    },
+    "jun": {
+      "1": {
+        "name": "Jún. 1.",
+        "desc": "Nyár napja, nyári szünet kezdete (látogatási nap)"
+      },
+      "4": {
+        "name": "Jún. 4.",
+        "desc": "Nemzeti Összetartozás Napja (ünnep magyar többségű területeken, látogatási nap)"
+      },
+      "15": {
+        "name": "Jún. 15.",
+        "desc": "Parlament Napja (ünnep, látogatási nap, NEMZETI ÜNNEP)"
+      },
+      "fathers": {
+        "name": "Mozgó ünnep",
+        "desc": "Apák napja (június harmadik vasárnapja)"
+      }
+    },
+    "jul": {
+      "4": {
+        "name": "Júl. 4.",
+        "desc": "Amerikai Függetlenség Napja (ünnep amerikai többségű területeken, látogatási nap)"
+      },
+      "5": {
+        "name": "Júl. 5.",
+        "desc": "Szent Cirill és Metód napja (ünnep szlovák többségű területeken)"
+      },
+      "festival": {
+        "name": "Mozgó ünnep",
+        "desc": "Fesztivál napja (július utolsó vasárnapja, ünnep, látogatási nap)"
+      }
+    },
+    "aug": {
+      "5": {
+        "name": "Aug. 5.",
+        "desc": "Himnusz Napja (ünnep, látogatási nap, NEMZETI ÜNNEP)"
+      },
+      "20": {
+        "name": "Aug. 20.",
+        "desc": "Szent István napja (ünnep magyar többségű területeken)"
+      },
+      "23": {
+        "name": "Aug. 23.",
+        "desc": "I. Furnovsky Napja (születésnapi ünnep, látogatási nap, NEMZETI ÜNNEP)"
+      },
+      "29": {
+        "name": "Aug. 29.",
+        "desc": "Szlovák Nemzeti Felkelés Évfordulója (ünnep szlovák többségű területeken, látogatási nap)"
+      }
+    },
+    "sep": {
+      "1": {
+        "name": "Szept. 1.",
+        "desc": "Ősz, Iskola és a Szlovák Köztársaság Alkotmányának Napja (ünnep szlovák többségű területeken, látogatási nap)"
+      },
+      "15": {
+        "name": "Szept. 15.",
+        "desc": "Fájdalmas Szűzanya Napja (ünnep szlovák többségű területeken)"
+      }
+    },
+    "oct": {
+      "3": {
+        "name": "Okt. 3.",
+        "desc": "Német Egység Napja (ünnep német többségű területeken, látogatási nap)"
+      },
+      "6": {
+        "name": "Okt. 6.",
+        "desc": "Aradi Vértanúk Emléknapja (ünnep magyar többségű területeken, látogatási nap)"
+      },
+      "23": {
+        "name": "Okt. 23.",
+        "desc": "1956-os Magyar Forradalom és a Harmadik Magyar Köztársaság Kikiáltásának Évfordulója (ünnep magyar többségű területeken, születésnapi ünnep, látogatási nap)"
+      },
+      "31": {
+        "name": "Okt. 31.",
+        "desc": "Halloween és Államalapítás Napja (ünnep, látogatási nap, NEMZETI ÜNNEP)"
+      }
+    },
+    "nov": {
+      "1": {
+        "name": "Nov. 1.",
+        "desc": "Mindenszentek (ünnep, látogatási nap)"
+      },
+      "11": {
+        "name": "Nov. 11.",
+        "desc": "Veteránok Napja (ünnep, látogatási nap)"
+      },
+      "17": {
+        "name": "Nov. 17.",
+        "desc": "Szlovákia Szabadságért és Demokráciáért Vívoott Harcának Napja (ünnep szlovák többségű területeken, látogatási nap)"
+      },
+      "30": {
+        "name": "Nov. 30.",
+        "desc": "Szent András napja (ünnep brit többségű területeken)"
+      },
+      "thanksgiving": {
+        "name": "Mozgó ünnep",
+        "desc": "Hálaadás napja (november utolsó csütörtökje, ünnep amerikai többségű területeken, látogatási nap)"
+      }
+    },
+    "nov-dec": {
+      "advent": {
+        "name": "Mozgó ünnep",
+        "desc": "1.-4. Advent (Szent András napja utáni 1. és 4. vasárnap)"
+      }
+    },
+    "dec": {
+      "1": {
+        "name": "Dec. 1.",
+        "desc": "Tél Napja (látogatási nap)"
+      },
+      "16": {
+        "name": "Dec. 16.",
+        "desc": "Születésnapi ünnep (születésnapi ünnep, látogatási nap)"
+      },
+      "24": {
+        "name": "Dec. 24.",
+        "desc": "Szenteste (látogatási nap)"
+      },
+      "31": {
+        "name": "Dec. 31.",
+        "desc": "Szilveszter (látogatási nap)"
+      },
+      "25-26": {
+        "name": "Dec. 25-26.",
+        "desc": "Karácsony (ünnep, látogatási nap)"
+      }
+    }
+  },
+  "other": {
+    "pageTitle": "Egyéb információk",
+    "pageSubtitle": "További hasznos információk Furnovskyföldről",
+    "faq": {
+      "title": "Gyakran Ismételt Kérdések",
+      "join": {
+        "question": "Hogyan csatlakozhatok Furnovskyföldhez?",
+        "answer": "Részletes információk a csatlakozási folyamatról és követelményekről."
+      },
+      "citizenship": {
+        "question": "Hogyan szerezhetek állampolgárságot?",
+        "answer": "Az állampolgárság megszerzésének feltételei és folyamata."
+      },
+      "visit": {
+        "question": "Hogyan látogathatok el Furnovskyföldre?",
+        "answer": "Információk a látogatásról és a szükséges engedélyekről."
+      }
+    },
+    "resources": {
+      "title": "Hasznos források",
+      "documents": {
+        "title": "Dokumentumok",
+        "description": "Hivatalos dokumentumok és űrlapok.",
+        "link": "Letöltés"
+      },
+      "guides": {
+        "title": "Útmutatók",
+        "description": "Részletes útmutatók és kézikönyvek.",
+        "link": "Olvasás"
+      }
+    },
+    "contact": {
+      "title": "Kapcsolatfelvétel",
+      "form": {
+        "name": "Név:",
+        "email": "E-mail:",
+        "subject": "Tárgy:",
+        "message": "Üzenet:",
+        "submit": "Küldés"
+      }
+    }
+  },
+  "minecraft": {
+    "pageTitle": "Minecraft Szerver",
+    "pageSubtitle": "Csatlakozz Minecraft szerverünkhöz és építs velünk!",
+    "description": {
+      "title": "Leírás",
+      "content": "Minecraft szerverünk egy hely, ahol építhetsz, felfedezhetsz és szórakozhatsz közösségünkkel. Különféle bővítményeink és barátságos személyzetünk van, hogy segítsen a kezdésben. Akár tapasztalt játékos vagy, akár új vagy a játékban, szerverünkön otthonra találsz."
+    },
+    "status": {
+      "title": "Szerver állapot",
+      "ip": "Szerver IP:",
+      "version": "Verzió:",
+      "status": "Állapot:",
+      "players": "Játékosok:",
+      "online": "Elérhető",
+      "offline": "Nem elérhető",
+      "unknown": "Ismeretlen"
+    },
+    "gallery": {
+      "title": "Galéria"
+    }
+  },
+  "footer": {
+    "contact": {
+      "title": "Kapcsolat",
+      "email": "info@furnovskyland.com",
+      "discord": "@furnovsky963",
+      "facebook": "bence.bagosi.666"
+    },
+    "quickLinks": {
+      "title": "Gyorslinkek",
+      "privacy": "Adatvédelem",
+      "imprint": "Impresszum",
+      "contact": "Kapcsolat"
+    },
+    "openingHours": {
+      "title": "Nyitvatartás",
+      "weekdays": "Hétfő - Péntek: N/A",
+      "saturday": "Szombat: N/A",
+      "sunday": "Vasárnap: N/A"
+    },
+    "copyright": "Furnovskyland Nemzetszövetségének Birodalma"
+  },
+  "vote": {
+    "pageTitle": "Szavazások",
+    "pageSubtitle": "Furnovskyland választásai és törvényszavazásai",
+    "open": "Most nyitva",
+    "upcoming": "Hamarosan",
+    "past": "Korábbi szavazások",
+    "none": "Még nincs itt semmi.",
+    "opens": "Kezdés",
+    "closes": "Zárás",
+    "closed": "Lezárva",
+    "types": {
+      "law": "Törvényszavazás",
+      "single": "Választás",
+      "multi": "Választás (legfeljebb {n})",
+      "ranked": "Rangsoroló választás"
+    },
+    "yes": "Igen",
+    "no": "Nem",
+    "abstain": "Tartózkodom",
+    "submit": "Szavazok",
+    "change": "Szavazat módosítása",
+    "voted": "A szavazatod rögzítettük. A zárásig módosíthatod.",
+    "loginToVote": "Lépj be Discorddal a szavazáshoz",
+    "notEligible": "Erről csak bizonyos rangok szavazhatnak.",
+    "notMember": "A szavazáshoz a Furnovskyland Discord-szerver tagjának kell lenned.",
+    "notOpen": "Ez a szavazás nincs nyitva.",
+    "invalid": "Ez a szavazat érvénytelen. Ellenőrizd a választásaidat.",
+    "error": "Hiba történt. Próbáld újra.",
+    "pickHint": "Legfeljebb {n} választható.",
+    "rankHint": "Számozd meg a lehetőségeket sorrendben (1 = első választás). Néhányat üresen hagyhatsz.",
+    "secret": "A szavazás titkos: csak az összesítés nyilvános.",
+    "results": "Eredmény",
+    "resultsHidden": "Az eredmény a zárás után látható.",
+    "ballots": "{n} szavazat",
+    "elected": "Megválasztva",
+    "round": "{n}. forduló",
+    "exhausted": "Nincs további preferencia",
+    "outcome": {
+      "passed": "Elfogadva",
+      "failed": "Elutasítva",
+      "quorum_failed": "Érvénytelen: nem volt határozatképes",
+      "tie": "Döntetlen",
+      "veto_window": "Elfogadva, a Császár jóváhagyására vár (vétó {date}-ig lehetséges)",
+      "vetoed": "A Császár megvétózta",
+      "final": "Végleges",
+      "cancelled": "Visszavonva"
+    },
+    "eligibility": {
+      "everyone": "Minden szervertag szavazhat",
+      "roles": "Csak bizonyos rangok szavazhatnak"
+    },
+    "majority": {
+      "simple": "Egyszerű többség",
+      "two_thirds": "Kétharmados többség"
+    },
+    "quorum": "Határozatképesség: {n} szavazat",
+    "announce": {
+      "opened": "🗳️ Új szavazás: {title}",
+      "result": "📊 Eredmény: {title}",
+      "vetoed": "⛔ Megvétózva: {title}",
+      "final": "✅ Végleges: {title}"
+    }
+  },
+  "admin": {
+    "title": "Admin",
+    "notAdmin": "Ehhez az oldalhoz admin rang kell.",
+    "newVote": "Új szavazás",
+    "votes": "Összes szavazás",
+    "edit": "Szerkesztés",
+    "fields": {
+      "title": "Cím",
+      "description": "Leírás",
+      "type": "Típus",
+      "options": "Lehetőségek (soronként egy)",
+      "maxPicks": "Hány választható",
+      "roles": "Kik szavazhatnak (üresen: mindenki)",
+      "opensAt": "Kezdés",
+      "closesAt": "Zárás",
+      "majority": "Szükséges többség",
+      "quorum": "Minimum szavazatszám (üresen: nincs)",
+      "vetoHours": "Császári vétóidő órában (0 = nincs)"
+    },
+    "saveDraft": "Piszkozat mentése",
+    "publish": "Közzététel",
+    "publishConfirm": "A közzététel után a szavazás nem szerkeszthető, csak visszavonható. Folytatod?",
+    "cancel": "Szavazás visszavonása",
+    "cancelConfirm": "Végleg visszavonod ezt a szavazást?",
+    "deleteDraft": "Piszkozat törlése",
+    "status": {
+      "draft": "Piszkozat",
+      "scheduled": "Ütemezve",
+      "open": "Nyitva",
+      "closed": "Lezárva",
+      "veto_window": "Vétóidő",
+      "final": "Végleges",
+      "vetoed": "Megvétózva",
+      "cancelled": "Visszavonva"
+    },
+    "voters": "Szavazók",
+    "noVoters": "Még nincs szavazat.",
+    "flags": "Figyelmeztetések",
+    "flag": {
+      "same_device": "Ugyanaz az eszköz, mint egy másik szavazónál",
+      "same_ip": "Ugyanaz az internetkapcsolat, mint egy másik szavazónál",
+      "new_account": "30 napnál fiatalabb Discord-fiók",
+      "new_member": "Kevesebb mint 7 napja lépett be a szerverre"
+    },
+    "void": "Szavazat érvénytelenítése",
+    "voidReason": "Indoklás",
+    "voided": "Érvénytelenítve",
+    "restore": "Visszaállítás",
+    "veto": "Törvény megvétózása",
+    "vetoConfirm": "Megvétózod ezt a törvényt? Ez nem vonható vissza.",
+    "saved": "Mentve.",
+    "errors": {
+      "title": "A cím kötelező.",
+      "options": "Adj meg legalább két lehetőséget.",
+      "dates": "A zárásnak a kezdés után és a jövőben kell lennie.",
+      "maxPicks": "A választható darabszám 1 és a lehetőségek száma között legyen.",
+      "locked": "Ez a szavazás már közzé van téve, nem szerkeszthető.",
+      "quorum": "A minimum szavazatszám 0-nál nagyobb egész szám legyen."
+    }
+  },
+  "auth": {
+    "loginError": "A belépés nem sikerült. Próbáld újra."
+  }
+}

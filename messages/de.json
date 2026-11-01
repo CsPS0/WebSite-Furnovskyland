@@ -1,0 +1,682 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "minecraft": "Minecraft",
+    "history": "Geschichte",
+    "politics": "Politik",
+    "culture": "Kultur",
+    "other": "Sonstiges",
+    "language": "Sprache",
+    "votes": "Abstimmungen",
+    "login": "Anmelden",
+    "logout": "Abmelden",
+    "admin": "Admin",
+    "menu": "Menü",
+    "theme": "Dunkelmodus umschalten"
+  },
+  "hero": {
+    "welcome": "Willkommen in Furnovskyland!",
+    "discover": "Entdecken Sie die reiche Geschichte und Kultur unserer Nation",
+    "learnMore": "Mehr erfahren"
+  },
+  "intro": {
+    "title": "Einführung",
+    "description": "Willkommen auf der offiziellen Website des Nationalen Föderationsreiches Furnovskyland! Hier erfahren Sie, wie Sie unseren Discord- und Minecraft-Servern beitreten können und lernen mehr über unsere Geschichte, Kultur, Politik und vieles mehr!",
+    "stats": {
+      "population": "Bevölkerung",
+      "area": "Fläche",
+      "areaValue": "200 Chunks"
+    },
+    "discordStatus": {
+      "title": "Discord Server",
+      "members": "Mitglieder online"
+    }
+  },
+  "join": {
+    "title": "Treten Sie unserer Gemeinschaft bei",
+    "discord": {
+      "title": "Discord Server",
+      "description": "Treten Sie unserer aktiven Gemeinschaft bei",
+      "button": "Beitreten"
+    },
+    "minecraft": {
+      "title": "Minecraft Server",
+      "description": "Bauen Sie mit uns unsere Städte",
+      "button": "Verbinden"
+    }
+  },
+  "history": {
+    "pageTitle": "Geschichte",
+    "pageSubtitle": "Entdecken Sie das reiche historische Erbe von Furnovskyland",
+    "welcome": "Willkommen in unserem Reich! Wenn Sie interessiert sind, lesen Sie bitte diese Nachricht!",
+    "sections": {
+      "foundation": {
+        "title": "Gründung",
+        "content": "Das Königreich Furnovskyland wurde durch meine Krönung am 31. Oktober 2018 um 15 Uhr GMT+2 gegründet. Es war ein kleiner Stadtstaat, die Stadt Furnotinyvillage."
+      },
+      "expansion": {
+        "title": "Expansion und Kriege",
+        "content": "Wir erhielten viele Länder während einer Kriegsperiode, die fast einen Monat dauerte. Im Januar 2019 gewannen wir den Großen Schneeweltkrieg und erhielten die südöstliche Ecke, sowie einige östliche, nördliche und südwestliche Gebiete von den Nachbarn. Danach wurden wir sehr gute Partner mit der benachbarten Deutsch-Ungarischen Monarchie, jetzt Deutsch-Slowakisch. Ab 2020 stehen wir auch in guter Beziehung zum Diamondboy-Anwesen (jetzt Land der Deadbringers) und gewannen deren westlichen Teil der Insel für Furnovskyland."
+      },
+      "modernEra": {
+        "title": "Moderne Ära",
+        "content": "Wir begannen ein sehr glückliches Jahr. Obwohl wir COVID-19 hatten, sind wir jetzt sehr reich und die Wirtschaft wächst. Am 15. April 2021 beschloss ich für die Flagge des Commonwealth, das Land in Das Reich des Commonwealth von Furnovskyland umzubenennen und die nächste Regierung in I. Bundesregierung von Furnovskyland."
+      },
+      "geography": {
+        "title": "Geographie",
+        "content": "Wir sind sehr reich, brauchen aber dringend Exporte. Wir haben nur eine kleine Anzahl von Hügeln, nur einen Berg im Südosten der Landesgrenze mit der Deutsch-Slowakischen Monarchie."
+      },
+      "government": {
+        "title": "Regierung",
+        "content": "Wir haben ein großes Bezirkssystem, derzeit mit 36 und 2 Grenzregionen, die auf der Karte gezeigt werden. Jede große Stadt ist in 9 Teile unterteilt. Unsere Postleitzahlen sind wie folgt: 1019. Dies ist die Postleitzahl des Stadtzentrums der Hauptstadt. Die erste 1 ist der 1. Bezirk. Die 01 ist die wichtigste Stadt des Bezirks, und 9 ist die 9. Region der Stadt."
+      },
+      "flag": {
+        "title": "Flagge",
+        "content": "Die ursprüngliche war eine ungarische Flagge (rot-weiß-grüne Trikolore) mit einem orangen Punkt in der Mitte. Später wurde sie durch eine gelbe ersetzt."
+      }
+    }
+  },
+  "politics": {
+    "pageTitle": "Politik",
+    "pageSubtitle": "Erfahre mehr über das politische System von Furnovskyland",
+    "state_structure": {
+      "title": "Staatsstruktur",
+      "content": "Der Staat ist der Furnovskyland COMMONWEALTH, eine konstitutionelle Monarchie mit 4 Mitgliedern (Furnovskyland ist eines davon) im Commonwealth, das ist im Moment nicht so wichtig. Derzeit gibt es eine Regierung, einen Senat (beide sind eine Mischung aus Legislative und Exekutive) und ein Gericht, den Obersten Gerichtshof. Es gibt noch kein Parlament, es wird die Funktionen des Senats übernehmen, wenn die Verfassung überarbeitet wird."
+    },
+    "legislative_process": {
+      "title": "Gesetzgebungsprozess",
+      "intro": "Die Phasen der Gesetzgebung sind wie folgt:",
+      "organic_law": "<strong>Organgesetz:</strong> Schaffung eines wichtigen Organs oder einer Institution, detaillierte Beschreibung seiner Arbeitsweise.",
+      "bill": "<strong>Gesetzentwurf:</strong> Eine weniger wichtige Institution oder ein Konzept mit einer kleineren operativen Beschreibung.",
+      "act": "<strong>Gesetz:</strong> Regelt eine spezifische, einmalige Situation.",
+      "decree": "<strong>Dekret:</strong> Kann nur vom Kaiser oder der Regierung ausgehen, in Form eines der oben genannten Gesetzestypen, ohne Abstimmung. Der Senat kann jedoch jederzeit beschließen, es aufzuheben.",
+      "act_submit": "Nur ein Gesetz kann von jedem Einwohner eingereicht werden, die beiden oberen können nur von einer in einen der Machtzweige gewählten Person eingereicht werden.",
+      "step1": "Der Senat erhält den Gesetzentwurf, danach kündigt der Senator eine 24-stündige Diskussionszeit an, gefolgt von einer (hoffentlich) 24-stündigen Abstimmung, die für die meisten Gesetze normalerweise eine einfache Mehrheit erfordert.",
+      "step2": "Wenn der Senat es akzeptiert, geht es an die Regierung, wo es, wenn es nicht mit einfacher Mehrheit angenommen wird, innerhalb einer bestimmten Zeit zur Überarbeitung oder Annahme an den Senat zurückgeht.",
+      "step3": "Wenn die Regierung es akzeptiert, kommt es zu mir, um es entweder ein Veto einzulegen und es geht an die Regierung zurück, oder ich unterschreibe es und es wird Gesetz."
+    },
+    "senate": {
+      "title": "Der Senat",
+      "p1": "Der Senat wird für 3 Monate, am Ende jeder Jahreszeit, mit einem Single-Transferable-Vote-System gewählt, die Top 3 Kandidaten kommen hinein, der Erstplatzierte wird der Senator, die restlichen 2 Sitze werden so verteilt, dass die Stimmenverhältnisse so nah wie möglich beibehalten werden. Sie treten in der ersten vollen Woche jeder neuen Jahreszeit ihr Amt an. Der Oberste Richter kann nicht kandidieren. Der Senat ist im Grunde das erste \"Hindernis\", das ein Gesetz passieren muss. Er hat 5 Mitglieder, jeder von ihnen ist ein Beobachter mit derzeit verfügbaren Positionen:",
+      "affairs": {
+        "internal": "Discord Innere Angelegenheiten",
+        "foreign": "Discord Auswärtige Angelegenheiten",
+        "minecraft": "Minecraft Angelegenheiten",
+        "constitutional": "Verfassungsangelegenheiten",
+        "recruitment": "Rekrutierungsangelegenheiten"
+      },
+      "p2": "Der Senator ist derjenige, der die Diskussions- und Abstimmungszeiten ankündigt (kann auch abstimmen), die verabschiedeten Gesetze in einem bestimmten Forumskanal aufzeichnet, offiziell festlegt, wer welcher Beobachter sein wird, einen Stellvertreter ernennt und den Senat beim Staatsoberhaupt oder der Regierung vertritt. Beobachter können sich zu einem eingereichten Gesetz äußern, darüber abstimmen und mit den Ministerien zusammenarbeiten."
+    },
+    "government": {
+      "title": "Regierungssystem",
+      "executive": {
+        "title": "Exekutive Macht",
+        "description": "Struktur und Funktion der Exekutive."
+      },
+      "judicial": {
+        "title": "Judikative Macht",
+        "description": "Das Justizsystem."
+      },
+      "legislative": {
+        "title": "Legislative Macht",
+        "description": "Der Gesetzgebungsprozess."
+      }
+    },
+    "supreme_court": {
+      "title": "Der Oberste Gerichtshof",
+      "content": "Der Oberste Gerichtshof entscheidet über Fragen der Verfassungsmäßigkeit. Seine Mitglieder sind der Premierminister, der Justizminister, der für Verfassungsfragen zuständige Beobachter und eine 4. Person."
+    },
+    "current_gov": {
+      "title": "Aktuelle Regierung",
+      "table": {
+        "role": "Rolle",
+        "name": "Name",
+        "responsibilities": "Verantwortlichkeiten"
+      }
+    },
+    "current_senate": {
+      "title": "Aktueller Senat",
+      "table": {
+        "role": "Rolle",
+        "name": "Name"
+      }
+    },
+    "current_supreme_court": {
+      "title": "Aktueller Oberster Gerichtshof",
+      "content": "Keiner"
+    },
+    "structure": {
+      "title": "Politische Struktur",
+      "federation": {
+        "title": "Föderales System",
+        "description": "Struktur und Prinzipien der Föderation."
+      },
+      "local": {
+        "title": "Lokale Regierungen",
+        "description": "System und Aufgaben der lokalen Verwaltung."
+      }
+    },
+    "foreign": {
+      "title": "Auswärtige Beziehungen",
+      "allies": {
+        "title": "Verbündete",
+        "description": "Unsere diplomatischen Beziehungen und Verbündeten."
+      },
+      "international": {
+        "title": "Internationale Beziehungen",
+        "description": "Unsere Teilnahme an der internationalen Gemeinschaft."
+      }
+    },
+    "roles": {
+      "prime_minister": "Premierminister",
+      "deputy_pm": "Stellvertretender Premierminister",
+      "minister": "Minister",
+      "senator": "Senator",
+      "deputy_senator": "Stellvertretender Senator",
+      "observer_internal": "Beobachter für interne Discord-Angelegenheiten",
+      "observer_foreign": "Beobachter für externe Discord-Angelegenheiten",
+      "observer_minecraft": "Beobachter für Minecraft-Angelegenheiten",
+      "observer_constitutional": "Beobachter für Verfassungsangelegenheiten",
+      "observer_recruitment": "Beobachter für Rekrutierung"
+    },
+    "duties": {
+      "efficiency_internal": "Regierungstätigkeit & Effizienz, Inneres",
+      "finance_justice_infra": "Finanzen, Justiz, Arbeit und Infrastruktur",
+      "defense": "Verteidigung & Sicherheit",
+      "education_health_welfare": "Bildung und Gesundheit, Soziales",
+      "foreign": "Auswärtiges",
+      "culture": "Kultur",
+      "communication": "Kommunikation"
+    }
+  },
+  "culture": {
+    "pageTitle": "Kultur",
+    "pageSubtitle": "Entdecken Sie das reiche kulturelle Erbe von Furnovskyland",
+    "traditions": {
+      "title": "Traditionen",
+      "festivals": {
+        "title": "Festivals",
+        "description": "Unsere jährlichen Veranstaltungen und Feiern."
+      },
+      "music": {
+        "title": "Musik",
+        "description": "Musikalische Traditionen und moderne Interpretationen."
+      },
+      "cuisine": {
+        "title": "Küche",
+        "description": "Charakteristische Speisen und Getränke."
+      }
+    },
+    "arts": {
+      "title": "Künste",
+      "visual": {
+        "title": "Bildende Künste",
+        "description": "Malerei, Bildhauerei und moderne Kunstformen."
+      },
+      "literature": {
+        "title": "Literatur",
+        "description": "Poesie, Prosa und Drama."
+      }
+    },
+    "modern": {
+      "title": "Moderne Kultur",
+      "gaming": {
+        "title": "Gaming",
+        "description": "E-Sport und Gaming-Communities."
+      },
+      "media": {
+        "title": "Medien",
+        "description": "Film, Fernsehen und digitale Inhalte."
+      }
+    }
+  },
+  "other": {
+    "pageTitle": "Weitere Informationen",
+    "pageSubtitle": "Zusätzliche nützliche Informationen über Furnovskyland",
+    "faq": {
+      "title": "Häufig gestellte Fragen",
+      "join": {
+        "question": "Wie kann ich Furnovskyland beitreten?",
+        "answer": "Detaillierte Informationen zum Beitrittsprozess und den Anforderungen."
+      },
+      "citizenship": {
+        "question": "Wie kann ich die Staatsbürgerschaft erhalten?",
+        "answer": "Bedingungen und Prozess für den Erhalt der Staatsbürgerschaft."
+      },
+      "visit": {
+        "question": "Wie kann ich Furnovskyland besuchen?",
+        "answer": "Informationen über Besuche und erforderliche Genehmigungen."
+      }
+    },
+    "resources": {
+      "title": "Nützliche Ressourcen",
+      "documents": {
+        "title": "Dokumente",
+        "description": "Offizielle Dokumente und Formulare.",
+        "link": "Herunterladen"
+      },
+      "guides": {
+        "title": "Anleitungen",
+        "description": "Detaillierte Anleitungen und Handbücher.",
+        "link": "Lesen"
+      }
+    },
+    "contact": {
+      "title": "Kontakt",
+      "form": {
+        "name": "Name:",
+        "email": "E-Mail:",
+        "subject": "Betreff:",
+        "message": "Nachricht:",
+        "submit": "Senden"
+      }
+    }
+  },
+  "minecraft": {
+    "pageTitle": "Minecraft Server",
+    "pageSubtitle": "Treten Sie unserem Minecraft-Server bei und bauen Sie mit uns!",
+    "description": {
+      "title": "Beschreibung",
+      "content": "Unser Minecraft-Server ist ein Ort, an dem Sie bauen, erkunden und Spaß mit unserer Community haben können. Wir haben eine Vielzahl von Plugins und ein freundliches Personal, das Ihnen den Einstieg erleichtert. Egal, ob Sie ein erfahrener Spieler oder neu im Spiel sind, auf unserem Server finden Sie ein Zuhause."
+    },
+    "status": {
+      "title": "Serverstatus",
+      "ip": "Server-IP:",
+      "version": "Version:",
+      "status": "Status:",
+      "players": "Spieler:",
+      "online": "Online",
+      "offline": "Offline",
+      "unknown": "Unbekannt"
+    },
+    "gallery": {
+      "title": "Galerie"
+    }
+  },
+  "footer": {
+    "contact": {
+      "title": "Kontakt",
+      "email": "info@furnovskyland.com",
+      "discord": "@furnovsky963",
+      "facebook": "bence.bagosi.666"
+    },
+    "quickLinks": {
+      "title": "Schnelllinks",
+      "privacy": "Datenschutz",
+      "imprint": "Impressum",
+      "contact": "Kontakt"
+    },
+    "openingHours": {
+      "title": "Öffnungszeiten",
+      "weekdays": "Montag - Freitag: N/A",
+      "saturday": "Samstag: N/A",
+      "sunday": "Sonntag: N/A"
+    },
+    "copyright": "Nationales Föderationsreich Furnovskyland"
+  },
+  "culturalDays": {
+    "pageTitle": "Kulturtage und Feiertage",
+    "pageSubtitle": "Entdecken Sie den reichen Kulturkalender von Furnovskyland",
+    "months": {
+      "january": "Januar",
+      "february": "Februar",
+      "march": "März",
+      "april": "April",
+      "may": "Mai",
+      "june": "Juni",
+      "july": "Juli",
+      "august": "August",
+      "september": "September",
+      "october": "Oktober",
+      "november": "November",
+      "december": "Dezember",
+      "march_april": "März–April",
+      "may_june": "Mai–Juni",
+      "november_december": "November–Dezember"
+    },
+    "jan": {
+      "1": {
+        "name": "1. Jan.",
+        "desc": "Neujahr (Feiertag, Besuchstag)"
+      },
+      "6": {
+        "name": "6. Jan.",
+        "desc": "Dreikönigsfest"
+      },
+      "7-13": {
+        "name": "7.-13. Jan.",
+        "desc": "Januar Partywoche (Feiertag)"
+      }
+    },
+    "feb": {
+      "movable": {
+        "name": "Bewegliches Fest",
+        "desc": "Karneval, Maskenball (Feiertag)"
+      },
+      "26-28": {
+        "name": "26.-28. Feb.",
+        "desc": "Februar Partytage (Feiertag)"
+      }
+    },
+    "mar": {
+      "1": {
+        "name": "1. Mär.",
+        "desc": "Frühling und St. David's Day (Feiertag in britischen Gebieten, Besuchstag)"
+      },
+      "15": {
+        "name": "15. Mär.",
+        "desc": "Feiertag der Revolution von 1848 (Feiertag in ungarischen Gebieten, Besuchstag)"
+      },
+      "17": {
+        "name": "17. Mär.",
+        "desc": "St. Patrick's Day"
+      },
+      "23": {
+        "name": "23. Mär.",
+        "desc": "Tag der Blumen (Besuchstag)"
+      }
+    },
+    "mar-apr": {
+      "movable": {
+        "name": "Bewegliches Fest",
+        "desc": "Karfreitag, Ostersonntag, Ostermontag (Feiertag, Besuchstag)"
+      }
+    },
+    "apr": {
+      "15": {
+        "name": "15. Apr.",
+        "desc": "Nationaler Föderationstag (Feiertag, Besuchstag, NATIONALFEIERTAG)"
+      },
+      "23": {
+        "name": "23. Apr.",
+        "desc": "St. George's Day (Feiertag in britischen Gebieten)"
+      }
+    },
+    "may": {
+      "1": {
+        "name": "1. Mai",
+        "desc": "Tag der Arbeit (Feiertag, Besuchstag)"
+      },
+      "8": {
+        "name": "8. Mai",
+        "desc": "Sieg der Slowakei über den Faschismus (Feiertag in slowakischen Gebieten, Besuchstag)"
+      },
+      "31": {
+        "name": "31. Mai",
+        "desc": "Tag der Bäume (Besuchstag)"
+      },
+      "mothers": {
+        "name": "Bewegliches Fest",
+        "desc": "Muttertag (erster Sonntag im Mai)"
+      },
+      "17-23": {
+        "name": "17.-23. Mai",
+        "desc": "Kinderwoche (Schulferien)"
+      },
+      "24-30": {
+        "name": "24.-30. Mai",
+        "desc": "Elternwoche (Feiertag, Besuchstag)"
+      }
+    },
+    "may-jun": {
+      "movable": {
+        "name": "Bewegliches Fest",
+        "desc": "Pfingstsonntag, Pfingstmontag (Feiertag, Besuchstag)"
+      }
+    },
+    "jun": {
+      "1": {
+        "name": "1. Jun.",
+        "desc": "Sommertag, Beginn der Sommerferien (Besuchstag)"
+      },
+      "4": {
+        "name": "4. Jun.",
+        "desc": "Tag des Nationalen Zusammenhalts (Feiertag in ungarischen Gebieten, Besuchstag)"
+      },
+      "15": {
+        "name": "15. Jun.",
+        "desc": "Parlamentstag (Feiertag, Besuchstag, NATIONALFEIERTAG)"
+      },
+      "fathers": {
+        "name": "Bewegliches Fest",
+        "desc": "Vatertag (dritter Sonntag im Juni)"
+      }
+    },
+    "jul": {
+      "4": {
+        "name": "4. Jul.",
+        "desc": "Amerikanischer Unabhängigkeitstag (Feiertag in amerikanischen Gebieten, Besuchstag)"
+      },
+      "5": {
+        "name": "5. Jul.",
+        "desc": "Tag der Heiligen Kyrill und Method (Feiertag in slowakischen Gebieten)"
+      },
+      "festival": {
+        "name": "Bewegliches Fest",
+        "desc": "Festivaltag (letzter Sonntag im Juli, Feiertag, Besuchstag)"
+      }
+    },
+    "aug": {
+      "5": {
+        "name": "5. Aug.",
+        "desc": "Hymnentag (Feiertag, Besuchstag, NATIONALFEIERTAG)"
+      },
+      "20": {
+        "name": "20. Aug.",
+        "desc": "St. Stephans Tag (Feiertag in ungarischen Gebieten)"
+      },
+      "23": {
+        "name": "23. Aug.",
+        "desc": "Tag von Furnovsky I. (Geburtstagsfeiertag, Besuchstag, NATIONALFEIERTAG)"
+      },
+      "29": {
+        "name": "29. Aug.",
+        "desc": "Jahrestag des Slowakischen Nationalaufstands (Feiertag in slowakischen Gebieten, Besuchstag)"
+      }
+    },
+    "sep": {
+      "1": {
+        "name": "1. Sep.",
+        "desc": "Herbst, Schul- und Verfassungstag der Slowakischen Republik (Feiertag in slowakischen Gebieten, Besuchstag)"
+      },
+      "15": {
+        "name": "15. Sep.",
+        "desc": "Tag der Schmerzhaften Muttergottes (Feiertag in slowakischen Gebieten)"
+      }
+    },
+    "oct": {
+      "3": {
+        "name": "3. Okt.",
+        "desc": "Tag der Deutschen Einheit (Feiertag in deutschen Gebieten, Besuchstag)"
+      },
+      "6": {
+        "name": "6. Okt.",
+        "desc": "Gedenktag der Märtyrer von Arad (Feiertag in ungarischen Gebieten, Besuchstag)"
+      },
+      "23": {
+        "name": "23. Okt.",
+        "desc": "Jahrestag der ungarischen Revolution von 1956 (Feiertag in ungarischen Gebieten, Geburtstagsfeiertag, Besuchstag)"
+      },
+      "31": {
+        "name": "31. Okt.",
+        "desc": "Halloween und Staatsgründungstag (Feiertag, Besuchstag, NATIONALFEIERTAG)"
+      }
+    },
+    "nov": {
+      "1": {
+        "name": "1. Nov.",
+        "desc": "Allerheiligen (Feiertag, Besuchstag)"
+      },
+      "11": {
+        "name": "11. Nov.",
+        "desc": "Veteranstag (Feiertag, Besuchstag)"
+      },
+      "17": {
+        "name": "17. Nov.",
+        "desc": "Tag des Kampfes für Freiheit und Demokratie in der Slowakei (Feiertag in slowakischen Gebieten, Besuchstag)"
+      },
+      "30": {
+        "name": "30. Nov.",
+        "desc": "St. Andrew's Day (Feiertag in britischen Gebieten)"
+      },
+      "thanksgiving": {
+        "name": "Bewegliches Fest",
+        "desc": "Thanksgiving (letzter Donnerstag im November, Feiertag in amerikanischen Gebieten, Besuchstag)"
+      }
+    },
+    "nov-dec": {
+      "advent": {
+        "name": "Bewegliches Fest",
+        "desc": "1.-4. Advent (1. und 4. Sonntag nach St. Andrew's Day)"
+      }
+    },
+    "dec": {
+      "1": {
+        "name": "1. Dez.",
+        "desc": "Wintertag (Besuchstag)"
+      },
+      "16": {
+        "name": "16. Dez.",
+        "desc": "Geburtstagsfeiertag (Geburtstagsfeiertag, Besuchstag)"
+      },
+      "24": {
+        "name": "24. Dez.",
+        "desc": "Heiligabend (Besuchstag)"
+      },
+      "31": {
+        "name": "31. Dez.",
+        "desc": "Silvester (Besuchstag)"
+      },
+      "25-26": {
+        "name": "25.-26. Dez.",
+        "desc": "Weihnachten (Feiertag, Besuchstag)"
+      }
+    }
+  },
+  "vote": {
+    "pageTitle": "Abstimmungen",
+    "pageSubtitle": "Wahlen und Gesetzesabstimmungen in Furnovskyland",
+    "open": "Jetzt offen",
+    "upcoming": "Demnächst",
+    "past": "Frühere Abstimmungen",
+    "none": "Noch nichts hier.",
+    "opens": "Beginn",
+    "closes": "Ende",
+    "closed": "Geschlossen",
+    "types": {
+      "law": "Gesetzesabstimmung",
+      "single": "Wahl",
+      "multi": "Wahl (bis zu {n})",
+      "ranked": "Präferenzwahl"
+    },
+    "yes": "Ja",
+    "no": "Nein",
+    "abstain": "Enthaltung",
+    "submit": "Stimme abgeben",
+    "change": "Stimme ändern",
+    "voted": "Deine Stimme wurde gespeichert. Du kannst sie bis zum Ende ändern.",
+    "loginToVote": "Mit Discord anmelden, um abzustimmen",
+    "notEligible": "Hierüber dürfen nur bestimmte Ränge abstimmen.",
+    "notMember": "Du musst Mitglied des Furnovskyland-Discord-Servers sein, um abzustimmen.",
+    "notOpen": "Diese Abstimmung ist nicht offen.",
+    "invalid": "Dieser Stimmzettel ist ungültig. Bitte prüfe deine Auswahl.",
+    "error": "Etwas ist schiefgelaufen. Bitte versuche es erneut.",
+    "pickHint": "Wähle bis zu {n}.",
+    "rankHint": "Nummeriere die Optionen nach Präferenz (1 = erste Wahl). Einige darfst du leer lassen.",
+    "secret": "Die Abstimmung ist geheim: Nur die Summen werden veröffentlicht.",
+    "results": "Ergebnis",
+    "resultsHidden": "Das Ergebnis wird nach dem Ende angezeigt.",
+    "ballots": "{n} Stimmen",
+    "elected": "Gewählt",
+    "round": "Runde {n}",
+    "exhausted": "Keine weitere Präferenz",
+    "outcome": {
+      "passed": "Angenommen",
+      "failed": "Abgelehnt",
+      "quorum_failed": "Ungültig: Quorum nicht erreicht",
+      "tie": "Gleichstand",
+      "veto_window": "Angenommen, wartet auf den Kaiser (Veto bis {date} möglich)",
+      "vetoed": "Vom Kaiser abgelehnt (Veto)",
+      "final": "Endgültig",
+      "cancelled": "Abgesagt"
+    },
+    "eligibility": {
+      "everyone": "Offen für alle Servermitglieder",
+      "roles": "Nur bestimmte Ränge"
+    },
+    "majority": {
+      "simple": "Einfache Mehrheit",
+      "two_thirds": "Zweidrittelmehrheit"
+    },
+    "quorum": "Quorum: {n} Stimmen",
+    "announce": {
+      "opened": "🗳️ Neue Abstimmung: {title}",
+      "result": "📊 Ergebnis: {title}",
+      "vetoed": "⛔ Veto: {title}",
+      "final": "✅ Endgültig: {title}"
+    }
+  },
+  "admin": {
+    "title": "Admin",
+    "notAdmin": "Für diese Seite brauchst du einen Admin-Rang.",
+    "newVote": "Neue Abstimmung",
+    "votes": "Alle Abstimmungen",
+    "edit": "Bearbeiten",
+    "fields": {
+      "title": "Titel",
+      "description": "Beschreibung",
+      "type": "Art",
+      "options": "Optionen (eine pro Zeile)",
+      "maxPicks": "Wie viele wählbar sind",
+      "roles": "Wer abstimmen darf (leer = alle)",
+      "opensAt": "Beginn",
+      "closesAt": "Ende",
+      "majority": "Benötigte Mehrheit",
+      "quorum": "Mindestanzahl an Stimmen (leer = keine)",
+      "vetoHours": "Veto-Frist des Kaisers in Stunden (0 = keine)"
+    },
+    "saveDraft": "Entwurf speichern",
+    "publish": "Veröffentlichen",
+    "publishConfirm": "Nach dem Veröffentlichen ist die Abstimmung gesperrt und kann nur noch abgesagt werden. Fortfahren?",
+    "cancel": "Abstimmung absagen",
+    "cancelConfirm": "Diese Abstimmung endgültig absagen?",
+    "deleteDraft": "Entwurf löschen",
+    "status": {
+      "draft": "Entwurf",
+      "scheduled": "Geplant",
+      "open": "Offen",
+      "closed": "Geschlossen",
+      "veto_window": "Veto-Frist",
+      "final": "Endgültig",
+      "vetoed": "Veto",
+      "cancelled": "Abgesagt"
+    },
+    "voters": "Abstimmende",
+    "noVoters": "Noch keine Stimmen.",
+    "flags": "Warnungen",
+    "flag": {
+      "same_device": "Gleiches Gerät wie ein anderer Abstimmender",
+      "same_ip": "Gleiche Internetverbindung wie ein anderer Abstimmender",
+      "new_account": "Discord-Konto jünger als 30 Tage",
+      "new_member": "Vor weniger als 7 Tagen dem Server beigetreten"
+    },
+    "void": "Stimme annullieren",
+    "voidReason": "Grund",
+    "voided": "Annulliert",
+    "restore": "Wiederherstellen",
+    "veto": "Veto gegen dieses Gesetz",
+    "vetoConfirm": "Veto gegen dieses Gesetz einlegen? Das kann nicht rückgängig gemacht werden.",
+    "saved": "Gespeichert.",
+    "errors": {
+      "title": "Ein Titel ist erforderlich.",
+      "options": "Mindestens zwei Optionen angeben.",
+      "dates": "Das Ende muss nach dem Beginn und in der Zukunft liegen.",
+      "maxPicks": "Die Anzahl muss zwischen 1 und der Anzahl der Optionen liegen.",
+      "locked": "Diese Abstimmung ist veröffentlicht und kann nicht mehr bearbeitet werden.",
+      "quorum": "Die Mindestanzahl an Stimmen muss eine ganze Zahl über 0 sein."
+    }
+  },
+  "auth": {
+    "loginError": "Anmeldung fehlgeschlagen. Bitte erneut versuchen."
+  }
+}

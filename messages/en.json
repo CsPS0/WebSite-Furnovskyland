@@ -1,0 +1,682 @@
+{
+  "nav": {
+    "home": "Home",
+    "minecraft": "Minecraft",
+    "history": "History",
+    "politics": "Politics",
+    "culture": "Culture",
+    "other": "Other",
+    "language": "Language",
+    "votes": "Votes",
+    "login": "Log in",
+    "logout": "Log out",
+    "admin": "Admin",
+    "menu": "Menu",
+    "theme": "Toggle dark mode"
+  },
+  "hero": {
+    "welcome": "Welcome to Furnovskyland!",
+    "discover": "Discover our nation's rich history and culture",
+    "learnMore": "Learn More"
+  },
+  "intro": {
+    "title": "Introduction",
+    "description": "Welcome to the official website of the National Federation Empire of Furnovskyland! Here you can learn how to join our Discord and Minecraft servers, and learn about our history, culture, politics, and much more!",
+    "stats": {
+      "population": "Population",
+      "area": "Area",
+      "areaValue": "200 Chunks"
+    },
+    "discordStatus": {
+      "title": "Discord Server",
+      "members": "Members Online"
+    }
+  },
+  "join": {
+    "title": "Join Our Community",
+    "discord": {
+      "title": "Discord Server",
+      "description": "Join our active community",
+      "button": "Join"
+    },
+    "minecraft": {
+      "title": "Minecraft Server",
+      "description": "Build our cities with us",
+      "button": "Connect"
+    }
+  },
+  "history": {
+    "pageTitle": "History",
+    "pageSubtitle": "Discover the rich historical heritage of Furnovskyland",
+    "welcome": "Welcome to our Empire! If you are interested, please read this message!",
+    "sections": {
+      "foundation": {
+        "title": "Foundation",
+        "content": "The Kingdom of Furnovskyland was founded by my coronation on October 31, 2018 at 3pm GMT+2. It was a small city-state, the city of Furnotinyvillage."
+      },
+      "expansion": {
+        "title": "Expansion and Wars",
+        "content": "We gained a lot of land during a war period that lasted for almost a month. In January 2019, we won the Great Snow World War and gained the south-east corner, some eastern, northern, and south-western areas from the neighbors. After that, we became very good partners with the neighboring German-Hungarian Monarchy, now German-Slovak. From 2020, we are also in a good relationship with the Diamondboy estate (now Land of the Deadbringers) and won their western part of the island for Furnovskyland."
+      },
+      "modernEra": {
+        "title": "Modern Era",
+        "content": "We started a very lucky year. Although we had COVID-19, we are now very rich and the economy is growing. On April 15, 2021, for the flag of the Commonwealth, I decided to rename the country to The Empire of the Commonwealth of Furnovskyland and the next government to I. Federal Government of Furnovskyland."
+      },
+      "geography": {
+        "title": "Geography",
+        "content": "We are very rich, but we are in dire need of exports. We have only a small number of hills, only one mountain in the south-east of the country's border with the German-Slovak Monarchy."
+      },
+      "government": {
+        "title": "Government",
+        "content": "We have a large district system, currently with 36 and 2 border regions, which are shown on the map. Every major city is divided into 9 parts. Our postcodes are as follows: 1019. This is the postcode of the city centre of the capital. The first 1 is the 1st district. The 01 is the most important city of the district, and 9 is the 9th region of the city."
+      },
+      "flag": {
+        "title": "Flag",
+        "content": "The original was a Hungarian flag (red-white-green tricolor) with an orange dot in the middle. Later it was replaced by a yellow one."
+      }
+    }
+  },
+  "politics": {
+    "pageTitle": "Politics",
+    "pageSubtitle": "Learn about the political system of Furnovskyland",
+    "state_structure": {
+      "title": "State Structure",
+      "content": "The state is the Furnovskyland COMMONWEALTH, a constitutional monarchy, with 4 members (Furnovskyland being one) in the Commonwealth, this is not important right now. Currently there is a Government, Senate (both are a mix of legislative and executive) and a court, the Supreme Court. There is no Parliament yet, it will replace the Senate's functions when the Constitution is revised."
+    },
+    "legislative_process": {
+      "title": "Legislative Process",
+      "intro": "The stages of legislation are the following:",
+      "organic_law": "<strong>Organic Law:</strong> Creation of an important body or institution, detailed description of its operation.",
+      "bill": "<strong>Bill:</strong> A less important institution or concept, with a minor operational description.",
+      "act": "<strong>Act:</strong> Regulates a specific, one-time situation.",
+      "decree": "<strong>Decree:</strong> Can only originate from the Emperor or the Government, in the form of any of the above law types, without a vote. However, the Senate may decide to repeal it at any time.",
+      "act_submit": "Only an Act can be submitted by any resident, the top two can only be submitted by a person elected to one of the branches of power.",
+      "step1": "The Senate receives the bill, after which the Senator announces a 24-hour discussion period, followed by a (hopefully) 24-hour voting period, which for most laws usually requires a simple majority to pass.",
+      "step2": "If the Senate accepts it, it goes to the Government, where if it is not accepted by a simple majority, it goes back to the Senate for revision or acceptance within a certain time (I don't know how much now, it's in the Constitution).",
+      "step3": "If the Government accepts it, it comes to me to either veto it and it goes back to the Government, or I sign it and it becomes law."
+    },
+    "senate": {
+      "title": "The Senate",
+      "p1": "The Senate is elected for 3 months, at the end of every season, with a Single Transferable Vote system, the top 3 candidates get in, the 1st place becomes the Senator, the remaining 2 seats are distributed keeping the vote ratios as close as possible. They take office in the first full week of every new season. The Supreme Judge cannot run. The Senate is basically the first \"obstacle\" a law has to pass through, and they vote on laws about their own operation, those obviously don't go anywhere else, and they vote on the acceptance of the government list. It has 5 members, each of them is an Observer (the Senator too, they are by default the Discord internal affairs) with currently available positions:",
+      "affairs": {
+        "internal": "Discord internal affairs (Senator by default)",
+        "foreign": "Discord foreign affairs",
+        "minecraft": "Minecraft affairs",
+        "constitutional": "Constitutional affairs",
+        "recruitment": "Recruitment affairs (bringing members to the server etc)"
+      },
+      "p2": "The Senator is the one who announces the discussion and voting times (can vote too), records the passed laws in a specific forum channel, officially arranges who will be what Observer (besides their own), appoints a deputy and represents the Senate to the head of state or the government. They can be re-elected for one consecutive term, after that they cannot be elected Senator for 6 months. Observers can comment on a submitted law during the discussion time, vote on them, and cooperate with the ministries closest to them."
+    },
+    "government": {
+      "title": "Government System",
+      "executive": {
+        "title": "Executive Power",
+        "description": "Structure and operation of the executive branch."
+      },
+      "judicial": {
+        "title": "Judicial Power",
+        "description": "The justice system."
+      },
+      "legislative": {
+        "title": "Legislative Power",
+        "description": "The legislative process and organization."
+      }
+    },
+    "supreme_court": {
+      "title": "The Supreme Court",
+      "content": "The Supreme Court decides on matters of Constitutionality, and things like that, you know. Its members are the Prime Minister, the Minister of Justice, the observer responsible for constitutional affairs and a 4th person, chosen by the prime minister from the list of currently existing judges, appointed by me, and accepted by the Senate with a 2/3 majority."
+    },
+    "current_gov": {
+      "title": "Current Government",
+      "table": {
+        "role": "Role",
+        "name": "Name",
+        "responsibilities": "Responsibilities"
+      }
+    },
+    "current_senate": {
+      "title": "Current Senate",
+      "table": {
+        "role": "Role",
+        "name": "Name"
+      }
+    },
+    "current_supreme_court": {
+      "title": "Current Supreme Court",
+      "content": "None"
+    },
+    "structure": {
+      "title": "Political Structure",
+      "federation": {
+        "title": "Federal System",
+        "description": "Structure and principles of the Federation."
+      },
+      "local": {
+        "title": "Local Governments",
+        "description": "System and duties of local administration."
+      }
+    },
+    "foreign": {
+      "title": "Foreign Relations",
+      "allies": {
+        "title": "Allies",
+        "description": "Our diplomatic relations and allies."
+      },
+      "international": {
+        "title": "International Relations",
+        "description": "Our participation in the international community."
+      }
+    },
+    "roles": {
+      "prime_minister": "Prime Minister",
+      "deputy_pm": "Deputy Prime Minister",
+      "minister": "Minister",
+      "senator": "Senator",
+      "deputy_senator": "Deputy Senator",
+      "observer_internal": "Observer for Internal Discord Affairs",
+      "observer_foreign": "Observer for Foreign Discord Affairs",
+      "observer_minecraft": "Observer for Minecraft Affairs",
+      "observer_constitutional": "Observer for Constitutional Affairs",
+      "observer_recruitment": "Observer for Recruitment Affairs"
+    },
+    "duties": {
+      "efficiency_internal": "Government Activity & Efficiency, Internal Affairs",
+      "finance_justice_infra": "Finance, Justice, Work and Infrastructure",
+      "defense": "Defense & Security",
+      "education_health_welfare": "Educational and Healthcare Affairs, Welfare",
+      "foreign": "Foreign Affairs",
+      "culture": "Culture",
+      "communication": "Communication"
+    }
+  },
+  "culture": {
+    "pageTitle": "Culture",
+    "pageSubtitle": "Explore the rich cultural heritage of Furnovskyland",
+    "traditions": {
+      "title": "Traditions",
+      "festivals": {
+        "title": "Festivals",
+        "description": "Our annual events and celebrations."
+      },
+      "music": {
+        "title": "Music",
+        "description": "Musical traditions and modern interpretations."
+      },
+      "cuisine": {
+        "title": "Cuisine",
+        "description": "Characteristic foods and beverages."
+      }
+    },
+    "arts": {
+      "title": "Arts",
+      "visual": {
+        "title": "Visual Arts",
+        "description": "Painting, sculpture, and modern art forms."
+      },
+      "literature": {
+        "title": "Literature",
+        "description": "Poetry, prose, and drama."
+      }
+    },
+    "modern": {
+      "title": "Modern Culture",
+      "gaming": {
+        "title": "Gaming",
+        "description": "E-sports and gaming communities."
+      },
+      "media": {
+        "title": "Media",
+        "description": "Film, television, and digital content."
+      }
+    }
+  },
+  "other": {
+    "pageTitle": "Other Information",
+    "pageSubtitle": "Additional useful information about Furnovskyland",
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "join": {
+        "question": "How can I join Furnovskyland?",
+        "answer": "Detailed information about the joining process and requirements."
+      },
+      "citizenship": {
+        "question": "How can I obtain citizenship?",
+        "answer": "Conditions and process for obtaining citizenship."
+      },
+      "visit": {
+        "question": "How can I visit Furnovskyland?",
+        "answer": "Information about visiting and required permits."
+      }
+    },
+    "resources": {
+      "title": "Useful Resources",
+      "documents": {
+        "title": "Documents",
+        "description": "Official documents and forms.",
+        "link": "Download"
+      },
+      "guides": {
+        "title": "Guides",
+        "description": "Detailed guides and manuals.",
+        "link": "Read"
+      }
+    },
+    "contact": {
+      "title": "Contact Us",
+      "form": {
+        "name": "Name:",
+        "email": "Email:",
+        "subject": "Subject:",
+        "message": "Message:",
+        "submit": "Send"
+      }
+    }
+  },
+  "minecraft": {
+    "pageTitle": "Minecraft Server",
+    "pageSubtitle": "Join our Minecraft server and build with us!",
+    "description": {
+      "title": "Description",
+      "content": "Our Minecraft server is a place where you can build, explore, and have fun with our community. We have a variety of plugins and a friendly staff to help you get started. Whether you are a seasoned player or new to the game, you will find a home on our server."
+    },
+    "status": {
+      "title": "Server Status",
+      "ip": "Server IP:",
+      "version": "Version:",
+      "status": "Status:",
+      "players": "Players:",
+      "online": "Online",
+      "offline": "Offline",
+      "unknown": "Unknown"
+    },
+    "gallery": {
+      "title": "Gallery"
+    }
+  },
+  "footer": {
+    "contact": {
+      "title": "Contact",
+      "email": "info@furnovskyland.com",
+      "discord": "@furnovsky963",
+      "facebook": "bence.bagosi.666"
+    },
+    "quickLinks": {
+      "title": "Quick Links",
+      "privacy": "Privacy Policy",
+      "imprint": "Imprint",
+      "contact": "Contact"
+    },
+    "openingHours": {
+      "title": "Opening Hours",
+      "weekdays": "Monday - Friday: N/A",
+      "saturday": "Saturday: N/A",
+      "sunday": "Sunday: N/A"
+    },
+    "copyright": "National Federation Empire of Furnovskyland"
+  },
+  "culturalDays": {
+    "pageTitle": "Cultural Days and Holidays",
+    "pageSubtitle": "Discover the rich cultural calendar of Furnovskyland",
+    "months": {
+      "january": "January",
+      "february": "February",
+      "march": "March",
+      "april": "April",
+      "may": "May",
+      "june": "June",
+      "july": "July",
+      "august": "August",
+      "september": "September",
+      "october": "October",
+      "november": "November",
+      "december": "December",
+      "march_april": "March–April",
+      "may_june": "May–June",
+      "november_december": "November–December"
+    },
+    "jan": {
+      "1": {
+        "name": "Jan. 1.",
+        "desc": "New Year (holiday, visitation day)"
+      },
+      "6": {
+        "name": "Jan. 6.",
+        "desc": "Epiphany"
+      },
+      "7-13": {
+        "name": "Jan. 7-13.",
+        "desc": "January Party Week (holiday)"
+      }
+    },
+    "feb": {
+      "movable": {
+        "name": "Movable Feast",
+        "desc": "Carnival, masquerade ball (holiday)"
+      },
+      "26-28": {
+        "name": "Feb. 26-28.",
+        "desc": "February Party Days (holiday)"
+      }
+    },
+    "mar": {
+      "1": {
+        "name": "Mar. 1.",
+        "desc": "Spring and Saint David's Day (holiday in British majority areas, visitation day)"
+      },
+      "15": {
+        "name": "Mar. 15.",
+        "desc": "1848 Revolution Holiday (holiday in Hungarian majority areas, visitation day)"
+      },
+      "17": {
+        "name": "Mar. 17.",
+        "desc": "Saint Patrick's Day"
+      },
+      "23": {
+        "name": "Mar. 23.",
+        "desc": "Day of Flowers (visitation day)"
+      }
+    },
+    "mar-apr": {
+      "movable": {
+        "name": "Movable Feast",
+        "desc": "Good Friday, Easter Sunday, Easter Monday (holiday, visitation day)"
+      }
+    },
+    "apr": {
+      "15": {
+        "name": "Apr. 15.",
+        "desc": "National Federation Day (holiday, visitation day, NATIONAL HOLIDAY)"
+      },
+      "23": {
+        "name": "Apr. 23.",
+        "desc": "Saint George's Day (holiday in British majority areas)"
+      }
+    },
+    "may": {
+      "1": {
+        "name": "May. 1.",
+        "desc": "Labor Day (holiday, visitation day)"
+      },
+      "8": {
+        "name": "May. 8.",
+        "desc": "Slovakia's Victory Over Fascism (holiday in Slovak majority areas, visitation day)"
+      },
+      "31": {
+        "name": "May. 31.",
+        "desc": "Day of Trees (visitation day)"
+      },
+      "mothers": {
+        "name": "Movable Feast",
+        "desc": "Mother's Day (first Sunday of May)"
+      },
+      "17-23": {
+        "name": "May. 17-23.",
+        "desc": "Children's Week (school holiday)"
+      },
+      "24-30": {
+        "name": "May. 24-30.",
+        "desc": "Parents' Week (public holiday, visitation day)"
+      }
+    },
+    "may-jun": {
+      "movable": {
+        "name": "Movable Feast",
+        "desc": "Pentecost Sunday, Pentecost Monday (holiday, visitation day)"
+      }
+    },
+    "jun": {
+      "1": {
+        "name": "Jun. 1.",
+        "desc": "Summer Day, start of summer break (visitation day)"
+      },
+      "4": {
+        "name": "Jun. 4.",
+        "desc": "Day of National Cohesion (holiday in Hungarian majority areas, visitation day)"
+      },
+      "15": {
+        "name": "Jun. 15.",
+        "desc": "Parliament Day (holiday, visitation day, NATIONAL HOLIDAY)"
+      },
+      "fathers": {
+        "name": "Movable Feast",
+        "desc": "Father's Day (third Sunday of June)"
+      }
+    },
+    "jul": {
+      "4": {
+        "name": "Jul. 4.",
+        "desc": "American Independence Day (holiday in American majority areas, visitation day)"
+      },
+      "5": {
+        "name": "Jul. 5.",
+        "desc": "Saints Cyril and Methodius Day (holiday in Slovak majority areas)"
+      },
+      "festival": {
+        "name": "Movable Feast",
+        "desc": "Festival Day (last Sunday of July, holiday, visitation day)"
+      }
+    },
+    "aug": {
+      "5": {
+        "name": "Aug. 5.",
+        "desc": "Anthem Day (holiday, visitation day, NATIONAL HOLIDAY)"
+      },
+      "20": {
+        "name": "Aug. 20.",
+        "desc": "Saint Stephen's Day (holiday in Hungarian majority areas)"
+      },
+      "23": {
+        "name": "Aug. 23.",
+        "desc": "Furnovsky I's Day (birthday holiday, visitation day, NATIONAL HOLIDAY)"
+      },
+      "29": {
+        "name": "Aug. 29.",
+        "desc": "Slovak National Uprising Anniversary (holiday in Slovak majority areas, visitation day)"
+      }
+    },
+    "sep": {
+      "1": {
+        "name": "Sep. 1.",
+        "desc": "Autumn, School and Constitution Day of the Slovak Republic (holiday in Slovak majority areas, visitation day)"
+      },
+      "15": {
+        "name": "Sep. 15.",
+        "desc": "Our Lady of Sorrows Day (holiday in Slovak majority areas)"
+      }
+    },
+    "oct": {
+      "3": {
+        "name": "Oct. 3.",
+        "desc": "German Unity Day (holiday in German majority areas, visitation day)"
+      },
+      "6": {
+        "name": "Oct. 6.",
+        "desc": "Memorial Day of the Martyrs of Arad (holiday in Hungarian majority areas, visitation day)"
+      },
+      "23": {
+        "name": "Oct. 23.",
+        "desc": "1956 Hungarian Revolution and Declaration of the Third Hungarian Republic Anniversary (holiday in Hungarian majority areas, birthday holiday, visitation day)"
+      },
+      "31": {
+        "name": "Oct. 31.",
+        "desc": "Halloween and State Foundation Day (holiday, visitation day, NATIONAL HOLIDAY)"
+      }
+    },
+    "nov": {
+      "1": {
+        "name": "Nov. 1.",
+        "desc": "All Saints' Day (holiday, visitation day)"
+      },
+      "11": {
+        "name": "Nov. 11.",
+        "desc": "Veterans Day (holiday, visitation day)"
+      },
+      "17": {
+        "name": "Nov. 17.",
+        "desc": "Struggle for Freedom and Democracy Day in Slovakia (holiday in Slovak majority areas, visitation day)"
+      },
+      "30": {
+        "name": "Nov. 30.",
+        "desc": "Saint Andrew's Day (holiday in British majority areas)"
+      },
+      "thanksgiving": {
+        "name": "Movable Feast",
+        "desc": "Thanksgiving Day (last Thursday of November, holiday in American majority areas, visitation day)"
+      }
+    },
+    "nov-dec": {
+      "advent": {
+        "name": "Movable Feast",
+        "desc": "1st-4th Advent (1st and 4th Sunday after St. Andrew's Day)"
+      }
+    },
+    "dec": {
+      "1": {
+        "name": "Dec. 1.",
+        "desc": "Winter Day (visitation day)"
+      },
+      "16": {
+        "name": "Dec. 16.",
+        "desc": "Birthday Holiday (birthday holiday, visitation day)"
+      },
+      "24": {
+        "name": "Dec. 24.",
+        "desc": "Christmas Eve (visitation day)"
+      },
+      "31": {
+        "name": "Dec. 31.",
+        "desc": "New Year's Eve (visitation day)"
+      },
+      "25-26": {
+        "name": "Dec. 25-26.",
+        "desc": "Christmas (holiday, visitation day)"
+      }
+    }
+  },
+  "vote": {
+    "pageTitle": "Votes",
+    "pageSubtitle": "Elections and law votes of Furnovskyland",
+    "open": "Open now",
+    "upcoming": "Upcoming",
+    "past": "Past votes",
+    "none": "Nothing here yet.",
+    "opens": "Opens",
+    "closes": "Closes",
+    "closed": "Closed",
+    "types": {
+      "law": "Law vote",
+      "single": "Election",
+      "multi": "Election (up to {n})",
+      "ranked": "Ranked election"
+    },
+    "yes": "Yes",
+    "no": "No",
+    "abstain": "Abstain",
+    "submit": "Cast vote",
+    "change": "Change vote",
+    "voted": "Your vote is recorded. You can change it until the vote closes.",
+    "loginToVote": "Log in with Discord to vote",
+    "notEligible": "Only certain ranks can vote on this.",
+    "notMember": "You need to be a member of the Furnovskyland Discord server to vote.",
+    "notOpen": "This vote is not open.",
+    "invalid": "That ballot is not valid. Please check your choices.",
+    "error": "Something went wrong. Please try again.",
+    "pickHint": "Pick up to {n}.",
+    "rankHint": "Number the options in order of preference (1 = first choice). You can leave some blank.",
+    "secret": "Votes are secret: only the totals are published.",
+    "results": "Results",
+    "resultsHidden": "Results are shown when the vote closes.",
+    "ballots": "{n} ballots",
+    "elected": "Elected",
+    "round": "Round {n}",
+    "exhausted": "No further preference",
+    "outcome": {
+      "passed": "Passed",
+      "failed": "Rejected",
+      "quorum_failed": "Invalid: quorum not reached",
+      "tie": "Tie",
+      "veto_window": "Passed, waiting for the Emperor (veto possible until {date})",
+      "vetoed": "Vetoed by the Emperor",
+      "final": "Final",
+      "cancelled": "Cancelled"
+    },
+    "eligibility": {
+      "everyone": "Open to all server members",
+      "roles": "Restricted to certain ranks"
+    },
+    "majority": {
+      "simple": "Simple majority",
+      "two_thirds": "Two-thirds majority"
+    },
+    "quorum": "Quorum: {n} ballots",
+    "announce": {
+      "opened": "🗳️ New vote: {title}",
+      "result": "📊 Result: {title}",
+      "vetoed": "⛔ Vetoed: {title}",
+      "final": "✅ Final: {title}"
+    }
+  },
+  "admin": {
+    "title": "Admin",
+    "notAdmin": "You need an admin rank to see this page.",
+    "newVote": "New vote",
+    "votes": "All votes",
+    "edit": "Edit",
+    "fields": {
+      "title": "Title",
+      "description": "Description",
+      "type": "Type",
+      "options": "Options (one per line)",
+      "maxPicks": "How many can be picked",
+      "roles": "Who can vote (leave empty for everyone)",
+      "opensAt": "Opens at",
+      "closesAt": "Closes at",
+      "majority": "Majority needed",
+      "quorum": "Minimum number of ballots (empty = none)",
+      "vetoHours": "Emperor veto window in hours (0 = none)"
+    },
+    "saveDraft": "Save draft",
+    "publish": "Publish",
+    "publishConfirm": "Publishing locks the vote. It can only be cancelled afterwards. Continue?",
+    "cancel": "Cancel vote",
+    "cancelConfirm": "Cancel this vote for good?",
+    "deleteDraft": "Delete draft",
+    "status": {
+      "draft": "Draft",
+      "scheduled": "Scheduled",
+      "open": "Open",
+      "closed": "Closed",
+      "veto_window": "Veto window",
+      "final": "Final",
+      "vetoed": "Vetoed",
+      "cancelled": "Cancelled"
+    },
+    "voters": "Voters",
+    "noVoters": "No ballots yet.",
+    "flags": "Warnings",
+    "flag": {
+      "same_device": "Same device as another voter",
+      "same_ip": "Same internet connection as another voter",
+      "new_account": "Discord account younger than 30 days",
+      "new_member": "Joined the server less than 7 days ago"
+    },
+    "void": "Void ballot",
+    "voidReason": "Reason",
+    "voided": "Voided",
+    "restore": "Restore",
+    "veto": "Veto this law",
+    "vetoConfirm": "Veto this law? This cannot be undone.",
+    "saved": "Saved.",
+    "errors": {
+      "title": "A title is required.",
+      "options": "Add at least two options.",
+      "dates": "Closing must be after opening and still in the future.",
+      "maxPicks": "The number of picks must be between 1 and the number of options.",
+      "locked": "This vote is published and can no longer be edited.",
+      "quorum": "The minimum number of ballots must be a whole number above 0."
+    }
+  },
+  "auth": {
+    "loginError": "Login failed. Please try again."
+  }
+}

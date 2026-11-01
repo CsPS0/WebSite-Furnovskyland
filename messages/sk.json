@@ -1,0 +1,682 @@
+{
+  "nav": {
+    "home": "Domov",
+    "minecraft": "Minecraft",
+    "history": "História",
+    "politics": "Pravidlá",
+    "culture": "Kultúra",
+    "other": "Ostatné",
+    "language": "Jazyk",
+    "votes": "Hlasovania",
+    "login": "Prihlásiť sa",
+    "logout": "Odhlásiť sa",
+    "admin": "Admin",
+    "menu": "Menu",
+    "theme": "Prepnúť tmavý režim"
+  },
+  "hero": {
+    "welcome": "Vitajte vo Furnovskyland!",
+    "discover": "Objavte bohatú históriu a kultúru nášho národa",
+    "learnMore": "Zistite viac"
+  },
+  "intro": {
+    "title": "Úvod",
+    "description": "Vitajte na oficiálnej webovej stránke Národnej federatívnej ríše Furnovskyland! Tu sa dozviete, ako sa pripojiť k našim serverom Discord a Minecraft, a dozviete sa o našej histórii, kultúre, politike a oveľa viac!",
+    "stats": {
+      "population": "Obyvateľstvo",
+      "area": "Rozloha",
+      "areaValue": "200 chunkov"
+    },
+    "discordStatus": {
+      "title": "Discord Server",
+      "members": "Členovia online"
+    }
+  },
+  "join": {
+    "title": "Pripojte sa k našej komunite",
+    "discord": {
+      "title": "Discord Server",
+      "description": "Pripojte sa k našej aktívnej komunite",
+      "button": "Pripojiť sa"
+    },
+    "minecraft": {
+      "title": "Minecraft Server",
+      "description": "Stavajte s nami naše mestá",
+      "button": "Pripojiť"
+    }
+  },
+  "history": {
+    "pageTitle": "História",
+    "pageSubtitle": "Objavte bohaté historické dedičstvo Furnovskylandu",
+    "welcome": "Vitajte v našej ríši! Ak máte záujem, prečítajte si túto správu!",
+    "sections": {
+      "foundation": {
+        "title": "Založenie",
+        "content": "Kráľovstvo Furnovskyland bolo založené mojou korunováciou 31. októbra 2018 o 15:00 GMT+2. Bol to malý mestský štát, mesto Furnotinyvillage."
+      },
+      "expansion": {
+        "title": "Expanzia a vojny",
+        "content": "Počas vojnového obdobia, ktoré trvalo takmer mesiac, sme získali veľa územia. V januári 2019 sme vyhrali Veľkú snehovú svetovú vojnu a od susedov sme získali juhovýchodný roh, niektoré východné, severné a juhozápadné oblasti. Potom sme sa stali veľmi dobrými partnermi so susednou Nemecko-Uhorskou monarchiou, teraz Nemecko-Slovenskou. Od roku 2020 máme tiež dobré vzťahy s panstvom Diamondboy (teraz Krajina nositeľov smrti) a pre Furnovskyland sme vyhrali ich západnú časť ostrova."
+      },
+      "modernEra": {
+        "title": "Moderná éra",
+        "content": "Začali sme veľmi šťastný rok. Hoci sme mali COVID-19, teraz sme veľmi bohatí a ekonomika rastie. 15. apríla 2021 som sa pre vlajku Spoločenstva rozhodol premenovať krajinu na Ríšu Spoločenstva Furnovskyland a ďalšiu vládu na I. federálnu vládu Furnovskylandu."
+      },
+      "geography": {
+        "title": "Geografia",
+        "content": "Sme veľmi bohatí, ale nutne potrebujeme export. Máme len malý počet kopcov, iba jednu horu na juhovýchode hranice krajiny s Nemecko-Slovenskou monarchiou."
+      },
+      "government": {
+        "title": "Vláda",
+        "content": "Máme veľký okresný systém, v súčasnosti s 36 a 2 hraničnými regiónmi, ktoré sú zobrazené na mape. Každé väčšie mesto je rozdelené na 9 častí. Naše poštové smerovacie čísla sú nasledovné: 1019. Toto je poštové smerovacie číslo centra hlavného mesta. Prvá 1 je 1. okres. 01 je najdôležitejšie mesto okresu a 9 je 9. región mesta."
+      },
+      "flag": {
+        "title": "Vlajka",
+        "content": "Pôvodná bola maďarská vlajka (červeno-bielo-zelená trikolóra) s oranžovou bodkou v strede. Neskôr bola nahradená žltou."
+      }
+    }
+  },
+  "politics": {
+    "pageTitle": "Politika",
+    "pageSubtitle": "Spoznajte politický systém Furnovskylandu",
+    "state_structure": {
+      "title": "Štruktúra štátu",
+      "content": "Štát je Furnovskylandské SPOLOČENSTVO, konštitučná monarchia so 4 členmi v Spoločenstve. V súčasnosti existuje Vláda, Senát a Najvyšší súd."
+    },
+    "legislative_process": {
+      "title": "Legislatívny proces",
+      "intro": "Fázy legislatívy sú nasledujúce:",
+      "organic_law": "<strong>Organický zákon:</strong> Vytvorenie dôležitého orgánu alebo inštitúcie.",
+      "bill": "<strong>Návrh zákona:</strong> Menej dôležitá inštitúcia alebo koncept.",
+      "act": "<strong>Zákon:</strong> Upravuje špecifickú, jednorazovú situáciu.",
+      "decree": "<strong>Dekrét:</strong> Môže pochádzať iba od cisára alebo vlády bez hlasovania.",
+      "act_submit": "Iba zákon môže podať každý obyvateľ.",
+      "step1": "Senát prijme návrh zákona, po ktorom nasleduje diskusia a hlasovanie.",
+      "step2": "Ak ho Senát prijme, ide do Vlády.",
+      "step3": "Ak ho Vláda prijme, príde ku mne na podpis."
+    },
+    "senate": {
+      "title": "Senát",
+      "p1": "Senát je volený na 3 mesiace. Senát je prvou prekážkou, ktorú musí zákon prekonať. Má 5 členov:",
+      "affairs": {
+        "internal": "Vnútorné záležitosti Discordu",
+        "foreign": "Zahraničné záležitosti Discordu",
+        "minecraft": "Záležitosti Minecraftu",
+        "constitutional": "Ústavné záležitosti",
+        "recruitment": "Záležitosti náboru"
+      },
+      "p2": "Senátor oznamuje časy diskusií a hlasovania, zatiaľ čo pozorovatelia môžu hlasovať a spolupracovať s ministerstvami."
+    },
+    "government": {
+      "title": "Vládny systém",
+      "executive": {
+        "title": "Výkonná moc",
+        "description": "Štruktúra a fungovanie výkonnej moci."
+      },
+      "judicial": {
+        "title": "Súdna moc",
+        "description": "Súdny systém."
+      },
+      "legislative": {
+        "title": "Zákonodarná moc",
+        "description": "Zákonodarný proces a organizácia."
+      }
+    },
+    "supreme_court": {
+      "title": "Najvyšší súd",
+      "content": "Najvyšší súd rozhoduje o otázkach ústavnosti."
+    },
+    "current_gov": {
+      "title": "Súčasná Vláda",
+      "table": {
+        "role": "Úloha",
+        "name": "Meno",
+        "responsibilities": "Zodpovednosti"
+      }
+    },
+    "current_senate": {
+      "title": "Súčasný Senát",
+      "table": {
+        "role": "Úloha",
+        "name": "Meno"
+      }
+    },
+    "current_supreme_court": {
+      "title": "Súčasný Najvyšší súd",
+      "content": "Žiadny"
+    },
+    "structure": {
+      "title": "Politická štruktúra",
+      "federation": {
+        "title": "Federálny systém",
+        "description": "Štruktúra a princípy Federácie."
+      },
+      "local": {
+        "title": "Miestne samosprávy",
+        "description": "Systém a úlohy miestnej správy."
+      }
+    },
+    "foreign": {
+      "title": "Zahraničné vzťahy",
+      "allies": {
+        "title": "Spojenci",
+        "description": "Naše diplomatické vzťahy a spojenci."
+      },
+      "international": {
+        "title": "Medzinárodné vzťahy",
+        "description": "Naša účasť v medzinárodnom spoločenstve."
+      }
+    },
+    "roles": {
+      "prime_minister": "Premiér",
+      "deputy_pm": "Podpredseda vlády",
+      "minister": "Minister",
+      "senator": "Senátor",
+      "deputy_senator": "Zástupca senátora",
+      "observer_internal": "Pozorovateľ pre vnútorné záležitosti Discordu",
+      "observer_foreign": "Pozorovateľ pre vonkajšie záležitosti Discordu",
+      "observer_minecraft": "Pozorovateľ pre záležitosti Minecraftu",
+      "observer_constitutional": "Pozorovateľ pre ústavné záležitosti",
+      "observer_recruitment": "Pozorovateľ pre nábor"
+    },
+    "duties": {
+      "efficiency_internal": "Činnosť a efektivita vlády, vnútro",
+      "finance_justice_infra": "Financie, spravodlivosť, práca a infraštruktúra",
+      "defense": "Obrana a bezpečnosť",
+      "education_health_welfare": "Školstvo a zdravotníctvo, sociálne veci",
+      "foreign": "Zahraničné veci",
+      "culture": "Kultúra",
+      "communication": "Komunikácia"
+    }
+  },
+  "culture": {
+    "pageTitle": "Kultúra",
+    "pageSubtitle": "Objavte bohaté kultúrne dedičstvo Furnovskylandu",
+    "traditions": {
+      "title": "Tradície",
+      "festivals": {
+        "title": "Festivaly",
+        "description": "Naše každoročné podujatia a oslavy."
+      },
+      "music": {
+        "title": "Hudba",
+        "description": "Hudobné tradície a moderné interpretácie."
+      },
+      "cuisine": {
+        "title": "Kuchyňa",
+        "description": "Charakteristické jedlá a nápoje."
+      }
+    },
+    "arts": {
+      "title": "Umenie",
+      "visual": {
+        "title": "Vizuálne umenie",
+        "description": "Maliarstvo, sochárstvo a moderné umelecké formy."
+      },
+      "literature": {
+        "title": "Literatúra",
+        "description": "Poézia, próza a dráma."
+      }
+    },
+    "modern": {
+      "title": "Moderná kultúra",
+      "gaming": {
+        "title": "Hranie hier",
+        "description": "E-športy a herné komunity."
+      },
+      "media": {
+        "title": "Médiá",
+        "description": "Film, televízia a digitálny obsah."
+      }
+    }
+  },
+  "culturalDays": {
+    "pageTitle": "Kultúrne Dni a Sviatky",
+    "pageSubtitle": "Objavte bohatý kultúrny kalendár Furnovskylandu",
+    "months": {
+      "january": "Január",
+      "february": "Február",
+      "march": "Marec",
+      "april": "Apríl",
+      "may": "Máj",
+      "june": "Jún",
+      "july": "Júl",
+      "august": "August",
+      "september": "September",
+      "october": "Október",
+      "november": "November",
+      "december": "December",
+      "march_april": "Marec–apríl",
+      "may_june": "Máj–jún",
+      "november_december": "November–december"
+    },
+    "jan": {
+      "1": {
+        "name": "1. Jan.",
+        "desc": "Nový rok (sviatok, návštevný deň)"
+      },
+      "6": {
+        "name": "6. Jan.",
+        "desc": "Traja králi"
+      },
+      "7-13": {
+        "name": "7.-13. Jan.",
+        "desc": "Januárový párty týždeň (sviatok)"
+      }
+    },
+    "feb": {
+      "movable": {
+        "name": "Pohyblivý sviatok",
+        "desc": "Fašiangy, maškarný ples (sviatok)"
+      },
+      "26-28": {
+        "name": "26.-28. Feb.",
+        "desc": "Februárové párty dni (sviatok)"
+      }
+    },
+    "mar": {
+      "1": {
+        "name": "1. Mar.",
+        "desc": "Jar a Deň svätého Dávida (sviatok v britských oblastiach, návštevný deň)"
+      },
+      "15": {
+        "name": "15. Mar.",
+        "desc": "Sviatok revolúcie 1848 (sviatok v maďarských oblastiach, návštevný deň)"
+      },
+      "17": {
+        "name": "17. Mar.",
+        "desc": "Deň svätého Patrika"
+      },
+      "23": {
+        "name": "23. Mar.",
+        "desc": "Deň kvetov (návštevný deň)"
+      }
+    },
+    "mar-apr": {
+      "movable": {
+        "name": "Pohyblivý sviatok",
+        "desc": "Veľký piatok, Veľkonočná nedeľa, Veľkonočný pondelok (sviatok, návštevný deň)"
+      }
+    },
+    "apr": {
+      "15": {
+        "name": "15. Apr.",
+        "desc": "Národný deň federácie (sviatok, návštevný deň, NÁRODNÝ SVIATOK)"
+      },
+      "23": {
+        "name": "23. Apr.",
+        "desc": "Deň svätého Juraja (sviatok v britských oblastiach)"
+      }
+    },
+    "may": {
+      "1": {
+        "name": "1. Máj",
+        "desc": "Sviatok práce (sviatok, návštevný deň)"
+      },
+      "8": {
+        "name": "8. Máj",
+        "desc": "Deň víťazstva nad fašizmom (sviatok v slovenských oblastiach, návštevný deň)"
+      },
+      "31": {
+        "name": "31. Máj",
+        "desc": "Deň stromov (návštevný deň)"
+      },
+      "mothers": {
+        "name": "Pohyblivý sviatok",
+        "desc": "Deň matiek (prvá nedeľa v máji)"
+      },
+      "17-23": {
+        "name": "17.-23. Máj",
+        "desc": "Týždeň detí (školské prázdniny)"
+      },
+      "24-30": {
+        "name": "24.-30. Máj",
+        "desc": "Týždeň rodičov (štátny sviatok, návštevný deň)"
+      }
+    },
+    "may-jun": {
+      "movable": {
+        "name": "Pohyblivý sviatok",
+        "desc": "Svätodušná nedeľa, Svätodušný pondelok (sviatok, návštevný deň)"
+      }
+    },
+    "jun": {
+      "1": {
+        "name": "1. Jún",
+        "desc": "Letný deň, začiatok letných prázdnin (návštevný deň)"
+      },
+      "4": {
+        "name": "4. Jún",
+        "desc": "Deň národnej spolupatričnosti (sviatok v maďarských oblastiach, návštevný deň)"
+      },
+      "15": {
+        "name": "15. Jún",
+        "desc": "Deň parlamentu (sviatok, návštevný deň, NÁRODNÝ SVIATOK)"
+      },
+      "fathers": {
+        "name": "Pohyblivý sviatok",
+        "desc": "Deň otcov (tretia nedeľa v júni)"
+      }
+    },
+    "jul": {
+      "4": {
+        "name": "4. Júl",
+        "desc": "Deň nezávislosti USA (sviatok v amerických oblastiach, návštevný deň)"
+      },
+      "5": {
+        "name": "5. Júl",
+        "desc": "Deň svätých Cyrila a Metoda (sviatok v slovenských oblastiach)"
+      },
+      "festival": {
+        "name": "Pohyblivý sviatok",
+        "desc": "Deň festivalu (posledná nedeľa v júli, sviatok, návštevný deň)"
+      }
+    },
+    "aug": {
+      "5": {
+        "name": "5. Aug.",
+        "desc": "Deň hymny (sviatok, návštevný deň, NÁRODNÝ SVIATOK)"
+      },
+      "20": {
+        "name": "20. Aug.",
+        "desc": "Deň svätého Štefana (sviatok v maďarských oblastiach)"
+      },
+      "23": {
+        "name": "23. Aug.",
+        "desc": "Deň Furnovského I. (narodeninový sviatok, návštevný deň, NÁRODNÝ SVIATOK)"
+      },
+      "29": {
+        "name": "29. Aug.",
+        "desc": "Výročie SNP (sviatok v slovenských oblastiach, návštevný deň)"
+      }
+    },
+    "sep": {
+      "1": {
+        "name": "1. Sep.",
+        "desc": "Jeseň, Deň školy a Ústavy SR (sviatok v slovenských oblastiach, návštevný deň)"
+      },
+      "15": {
+        "name": "15. Sep.",
+        "desc": "Deň Sedembolestnej Panny Márie (sviatok v slovenských oblastiach)"
+      }
+    },
+    "oct": {
+      "3": {
+        "name": "3. Okt.",
+        "desc": "Deň nemeckej jednoty (sviatok v nemeckých oblastiach, návštevný deň)"
+      },
+      "6": {
+        "name": "6. Okt.",
+        "desc": "Pamätný deň aradských mučeníkov (sviatok v maďarských oblastiach, návštevný deň)"
+      },
+      "23": {
+        "name": "23. Okt.",
+        "desc": "Výročie maďarskej revolúcie 1956 (sviatok v maďarských oblastiach, narodeninový sviatok, návštevný deň)"
+      },
+      "31": {
+        "name": "31. Okt.",
+        "desc": "Halloween a Deň založenia štátu (sviatok, návštevný deň, NÁRODNÝ SVIATOK)"
+      }
+    },
+    "nov": {
+      "1": {
+        "name": "1. Nov.",
+        "desc": "Sviatok všetkých svätých (sviatok, návštevný deň)"
+      },
+      "11": {
+        "name": "11. Nov.",
+        "desc": "Deň veteránov (sviatok, návštevný deň)"
+      },
+      "17": {
+        "name": "17. Nov.",
+        "desc": "Deň boja za slobodu a demokraciu na Slovensku (sviatok v slovenských oblastiach, návštevný deň)"
+      },
+      "30": {
+        "name": "30. Nov.",
+        "desc": "Deň svätého Ondreja (sviatok v britských oblastiach)"
+      },
+      "thanksgiving": {
+        "name": "Pohyblivý sviatok",
+        "desc": "Deň vďakyvzdania (posledný štvrtok v novembri, sviatok v amerických oblastiach, návštevný deň)"
+      }
+    },
+    "nov-dec": {
+      "advent": {
+        "name": "Pohyblivý sviatok",
+        "desc": "1.-4. advent (1. a 4. nedeľa po Dni svätého Ondreja)"
+      }
+    },
+    "dec": {
+      "1": {
+        "name": "1. Dec.",
+        "desc": "Zimný deň (návštevný deň)"
+      },
+      "16": {
+        "name": "16. Dec.",
+        "desc": "Narodeninový sviatok (narodeninový sviatok, návštevný deň)"
+      },
+      "24": {
+        "name": "24. Dec.",
+        "desc": "Štedrý deň (návštevný deň)"
+      },
+      "31": {
+        "name": "31. Dec.",
+        "desc": "Silvester (návštevný deň)"
+      },
+      "25-26": {
+        "name": "25.-26. Dec.",
+        "desc": "Vianoce (sviatok, návštevný deň)"
+      }
+    }
+  },
+  "other": {
+    "pageTitle": "Ostatné informácie",
+    "pageSubtitle": "Ďalšie užitočné informácie o Furnovskyland",
+    "faq": {
+      "title": "Často kladené otázky",
+      "join": {
+        "question": "Ako sa môžem pripojiť k Furnovskylandu?",
+        "answer": "Podrobné informácie o procese pripojenia a požiadavkách."
+      },
+      "citizenship": {
+        "question": "Ako môžem získať občianstvo?",
+        "answer": "Podmienky a proces získania občianstva."
+      },
+      "visit": {
+        "question": "Ako môžem navštíviť Furnovskyland?",
+        "answer": "Informácie o návšteve a potrebných povoleniach."
+      }
+    },
+    "resources": {
+      "title": "Užitočné zdroje",
+      "documents": {
+        "title": "Dokumenty",
+        "description": "Oficiálne dokumenty a formuláre.",
+        "link": "Stiahnuť"
+      },
+      "guides": {
+        "title": "Príručky",
+        "description": "Podrobné príručky a manuály.",
+        "link": "Čítať"
+      }
+    },
+    "contact": {
+      "title": "Kontaktujte nás",
+      "form": {
+        "name": "Meno:",
+        "email": "E-mail:",
+        "subject": "Predmet:",
+        "message": "Správa:",
+        "submit": "Odoslať"
+      }
+    }
+  },
+  "minecraft": {
+    "pageTitle": "Minecraft Server",
+    "pageSubtitle": "Pripojte sa k nášmu Minecraft serveru a stavajte s nami!",
+    "description": {
+      "title": "Popis",
+      "content": "Náš Minecraft server je miesto, kde môžete stavať, objavovať a baviť sa s našou komunitou. Máme rôzne pluginy a priateľský personál, ktorý vám pomôže začať. Či už ste skúsený hráč alebo nový v hre, na našom serveri nájdete domov."
+    },
+    "status": {
+      "title": "Stav servera",
+      "ip": "IP servera:",
+      "version": "Verzia:",
+      "status": "Stav:",
+      "players": "Hráči:",
+      "online": "Online",
+      "offline": "Offline",
+      "unknown": "Neznámy"
+    },
+    "gallery": {
+      "title": "Galéria"
+    }
+  },
+  "footer": {
+    "contact": {
+      "title": "Kontakt",
+      "email": "info@furnovskyland.com",
+      "discord": "@furnovsky963",
+      "facebook": "bence.bagosi.666"
+    },
+    "quickLinks": {
+      "title": "Rýchle odkazy",
+      "privacy": "Ochrana osobných údajov",
+      "imprint": "Impresum",
+      "contact": "Kontakt"
+    },
+    "openingHours": {
+      "title": "Otváracie hodiny",
+      "weekdays": "Pondelok - Piatok: N/A",
+      "saturday": "Sobota: N/A",
+      "sunday": "Nedeľa: N/A"
+    },
+    "copyright": "Národná federatívna ríša Furnovskyland"
+  },
+  "vote": {
+    "pageTitle": "Hlasovania",
+    "pageSubtitle": "Voľby a hlasovania o zákonoch vo Furnovskylande",
+    "open": "Práve otvorené",
+    "upcoming": "Pripravované",
+    "past": "Minulé hlasovania",
+    "none": "Zatiaľ tu nič nie je.",
+    "opens": "Začiatok",
+    "closes": "Koniec",
+    "closed": "Uzavreté",
+    "types": {
+      "law": "Hlasovanie o zákone",
+      "single": "Voľby",
+      "multi": "Voľby (najviac {n})",
+      "ranked": "Preferenčné voľby"
+    },
+    "yes": "Áno",
+    "no": "Nie",
+    "abstain": "Zdržiavam sa",
+    "submit": "Hlasovať",
+    "change": "Zmeniť hlas",
+    "voted": "Tvoj hlas je zaznamenaný. Môžeš ho zmeniť až do konca hlasovania.",
+    "loginToVote": "Prihlás sa cez Discord a hlasuj",
+    "notEligible": "O tomto môžu hlasovať len určité hodnosti.",
+    "notMember": "Na hlasovanie musíš byť členom Discord servera Furnovskyland.",
+    "notOpen": "Toto hlasovanie nie je otvorené.",
+    "invalid": "Tento hlasovací lístok je neplatný. Skontroluj svoj výber.",
+    "error": "Niečo sa pokazilo. Skús to znova.",
+    "pickHint": "Vyber najviac {n}.",
+    "rankHint": "Očísluj možnosti podľa preferencie (1 = prvá voľba). Niektoré môžeš nechať prázdne.",
+    "secret": "Hlasovanie je tajné: zverejňujú sa len súčty.",
+    "results": "Výsledky",
+    "resultsHidden": "Výsledky sa zobrazia po skončení hlasovania.",
+    "ballots": "{n} hlasov",
+    "elected": "Zvolení",
+    "round": "{n}. kolo",
+    "exhausted": "Žiadna ďalšia preferencia",
+    "outcome": {
+      "passed": "Schválené",
+      "failed": "Zamietnuté",
+      "quorum_failed": "Neplatné: nedosiahnuté kvórum",
+      "tie": "Remíza",
+      "veto_window": "Schválené, čaká na cisára (veto možné do {date})",
+      "vetoed": "Cisár vetoval",
+      "final": "Konečné",
+      "cancelled": "Zrušené"
+    },
+    "eligibility": {
+      "everyone": "Otvorené pre všetkých členov servera",
+      "roles": "Len pre určité hodnosti"
+    },
+    "majority": {
+      "simple": "Jednoduchá väčšina",
+      "two_thirds": "Dvojtretinová väčšina"
+    },
+    "quorum": "Kvórum: {n} hlasov",
+    "announce": {
+      "opened": "🗳️ Nové hlasovanie: {title}",
+      "result": "📊 Výsledok: {title}",
+      "vetoed": "⛔ Vetované: {title}",
+      "final": "✅ Konečné: {title}"
+    }
+  },
+  "admin": {
+    "title": "Admin",
+    "notAdmin": "Na túto stránku potrebuješ admin hodnosť.",
+    "newVote": "Nové hlasovanie",
+    "votes": "Všetky hlasovania",
+    "edit": "Upraviť",
+    "fields": {
+      "title": "Názov",
+      "description": "Popis",
+      "type": "Typ",
+      "options": "Možnosti (jedna na riadok)",
+      "maxPicks": "Koľko sa dá vybrať",
+      "roles": "Kto môže hlasovať (prázdne = všetci)",
+      "opensAt": "Začiatok",
+      "closesAt": "Koniec",
+      "majority": "Potrebná väčšina",
+      "quorum": "Minimálny počet hlasov (prázdne = žiadny)",
+      "vetoHours": "Lehota na cisárske veto v hodinách (0 = žiadna)"
+    },
+    "saveDraft": "Uložiť koncept",
+    "publish": "Zverejniť",
+    "publishConfirm": "Po zverejnení sa hlasovanie uzamkne a dá sa už len zrušiť. Pokračovať?",
+    "cancel": "Zrušiť hlasovanie",
+    "cancelConfirm": "Natrvalo zrušiť toto hlasovanie?",
+    "deleteDraft": "Odstrániť koncept",
+    "status": {
+      "draft": "Koncept",
+      "scheduled": "Naplánované",
+      "open": "Otvorené",
+      "closed": "Uzavreté",
+      "veto_window": "Lehota na veto",
+      "final": "Konečné",
+      "vetoed": "Vetované",
+      "cancelled": "Zrušené"
+    },
+    "voters": "Hlasujúci",
+    "noVoters": "Zatiaľ žiadne hlasy.",
+    "flags": "Upozornenia",
+    "flag": {
+      "same_device": "Rovnaké zariadenie ako iný hlasujúci",
+      "same_ip": "Rovnaké internetové pripojenie ako iný hlasujúci",
+      "new_account": "Discord účet mladší ako 30 dní",
+      "new_member": "Na server sa pridal pred menej ako 7 dňami"
+    },
+    "void": "Zneplatniť hlas",
+    "voidReason": "Dôvod",
+    "voided": "Zneplatnené",
+    "restore": "Obnoviť",
+    "veto": "Vetovať tento zákon",
+    "vetoConfirm": "Vetovať tento zákon? Nedá sa to vrátiť späť.",
+    "saved": "Uložené.",
+    "errors": {
+      "title": "Názov je povinný.",
+      "options": "Zadaj aspoň dve možnosti.",
+      "dates": "Koniec musí byť po začiatku a ešte v budúcnosti.",
+      "maxPicks": "Počet musí byť medzi 1 a počtom možností.",
+      "locked": "Toto hlasovanie je zverejnené a už sa nedá upravovať.",
+      "quorum": "Minimálny počet hlasov musí byť celé číslo väčšie ako 0."
+    }
+  },
+  "auth": {
+    "loginError": "Prihlásenie zlyhalo. Skús to znova."
+  }
+}

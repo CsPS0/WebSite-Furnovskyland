@@ -1,29 +1,44 @@
 {
   "name": "website-furnovskyland",
-  "version": "1.0.0",
-  "description": "[![Political Status](https://img.shields.io/badge/Status-Sovereign%20State-darkgreen?style=for-the-badge)](STATUS)\r [![Government Type](https://img.shields.io/badge/Government-Imperial%20Senate-purple?style=for-the-badge)](GOVERNMENT)\r [![Constitution](https://img.shields.io/badge/Constitution-Ratified-blue?style=for-the-badge)](CONSTITUTION)",
-  "main": "index.js",
-  "directories": {
-    "doc": "docs"
-  },
+  "version": "2.0.0",
+  "private": true,
   "scripts": {
-    "start": "eleventy --serve",
-    "build": "eleventy",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev",
+    "build": "bun scripts/migrate.ts && next build",
+    "start": "next start",
+    "lint": "eslint",
+    "test": "bun test"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/CsPS0/WebSite-Furnovskyland.git"
+  "packageManager": "bun@1.4.3",
+  "ignoreScripts": [
+    "sharp",
+    "unrs-resolver"
+  ],
+  "trustedDependencies": [
+    "sharp",
+    "unrs-resolver"
+  ],
+  "dependencies": {
+    "@neondatabase/serverless": "^1.2.0",
+    "drizzle-orm": "^0.45.4",
+    "lucide-react": "^1.61.0",
+    "next": "16.4.3",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "server-only": "^0.0.1",
+    "workflow": "^5.2.3"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/CsPS0/WebSite-Furnovskyland/issues"
-  },
-  "homepage": "https://github.com/CsPS0/WebSite-Furnovskyland#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^3.1.5",
-    "sharp": "^0.34.5"
+    "@electric-sql/pglite": "^0.5.11",
+    "@tailwindcss/turbopack": "^4",
+    "@types/bun": "^1.4.4",
+    "@types/node": "^24",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "drizzle-kit": "^0.31.11",
+    "eslint": "^9",
+    "eslint-config-next": "16.4.3",
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }
