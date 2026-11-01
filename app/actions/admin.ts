@@ -81,7 +81,15 @@ export async function deleteDraft(form: FormData) {
   await requireAdmin();
   const db = await getDb();
   await db.delete(elections).where(and(eq(elections.id, Number(form.get("id"))), eq(elections.status, "draft")));
-  redirect(`/${String(form.get("lang"))}/admin/`);
+  redirect(`/${hasLocale(String(form.get("lang"))) ? String(form.get("lang")) : "en"}/admin/`);
+}
+
+export async function deleteVote(form: FormData) {
+  await requireAdmin();
+  const db = await getDb();
+  await db.delete(elections).where(eq(elections.id, Number(form.get("id"))));
+  const lang = String(form.get("lang"));
+  redirect(`/${hasLocale(lang) ? lang : "en"}/admin/`);
 }
 
 export async function cancelVote(form: FormData) {

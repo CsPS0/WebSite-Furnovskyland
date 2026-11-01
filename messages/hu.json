@@ -642,6 +642,8 @@
     "cancel": "Szavazás visszavonása",
     "cancelConfirm": "Végleg visszavonod ezt a szavazást?",
     "deleteDraft": "Piszkozat törlése",
+    "deleteVote": "Szavazás törlése",
+    "deleteConfirm": "Végleg törlöd ezt a szavazást és az összes leadott szavazatot? Ez nem vonható vissza.",
     "status": {
       "draft": "Piszkozat",
       "scheduled": "Ütemezve",

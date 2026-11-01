@@ -642,6 +642,8 @@
     "cancel": "Cancel vote",
     "cancelConfirm": "Cancel this vote for good?",
     "deleteDraft": "Delete draft",
+    "deleteVote": "Delete vote",
+    "deleteConfirm": "Permanently delete this vote and all its ballots? This cannot be undone.",
     "status": {
       "draft": "Draft",
       "scheduled": "Scheduled",

@@ -642,6 +642,8 @@
     "cancel": "Zrušiť hlasovanie",
     "cancelConfirm": "Natrvalo zrušiť toto hlasovanie?",
     "deleteDraft": "Odstrániť koncept",
+    "deleteVote": "Odstrániť hlasovanie",
+    "deleteConfirm": "Natrvalo odstrániť toto hlasovanie a všetky odovzdané hlasy? Tento krok sa nedá vrátiť späť.",
     "status": {
       "draft": "Koncept",
       "scheduled": "Naplánované",

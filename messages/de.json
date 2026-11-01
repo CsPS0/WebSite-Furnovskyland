@@ -642,6 +642,8 @@
     "cancel": "Abstimmung absagen",
     "cancelConfirm": "Diese Abstimmung endgültig absagen?",
     "deleteDraft": "Entwurf löschen",
+    "deleteVote": "Abstimmung löschen",
+    "deleteConfirm": "Diese Abstimmung und alle abgegebenen Stimmen endgültig löschen? Dies kann nicht rückgängig gemacht werden.",
     "status": {
       "draft": "Entwurf",
       "scheduled": "Geplant",

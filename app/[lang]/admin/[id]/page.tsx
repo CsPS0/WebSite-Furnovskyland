@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Suspense } from "react";
 import { notFound } from "next/navigation";
 import { TriangleAlert } from "lucide-react";
-import { cancelVote, deleteDraft, setBallotVoided, veto } from "@/app/actions/admin";
+import { cancelVote, deleteDraft, deleteVote, setBallotVoided, veto } from "@/app/actions/admin";
 import { ConfirmButton } from "@/components/confirm-button";
 import { ElectionForm } from "@/components/election-form";
 import { LocalDate } from "@/components/local-date";
@@ -100,7 +100,14 @@ async function AdminVote({ params }: { params: PageProps<"/[lang]/admin/[id]">["
         {admin.emperor && status === "veto_window" && (
           <form action={veto}>
             <input type="hidden" name="id" value={id} />
-            <ConfirmButton message={t.vetoConfirm} className="btn-primary">{t.veto}</ConfirmButton>
+            <ConfirmButton message={t.vetoConfirm} className="btn-primary">{t.veto}</ConfirmButton></form>)}
+        {canManage && (
+          <form action={deleteVote}>
+            <input type="hidden" name="id" value={id} />
+            <input type="hidden" name="lang" value={locale} />
+            <ConfirmButton message={t.deleteConfirm} className="btn-ghost text-red-600 hover:bg-red-500/10 hover:text-red-600 dark:text-red-400">
+              {t.deleteVote}
+            </ConfirmButton>
           </form>
         )}
       </div>
