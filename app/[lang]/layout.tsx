@@ -16,9 +16,9 @@ export function generateStaticParams() {
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getDictionary();
-  const site = process.env.VERCEL_PROJECT_PRODUCTION_URL;
+  const site = process.env.SITE_URL || (process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` : "http://localhost:3000");
   return {
-    metadataBase: new URL(site ? `https://${site}` : "http://localhost:3000"),
+    metadataBase: new URL(site),
     title: { template: "%s | Furnovskyland", default: "Furnovskyland" },
     description: t.intro.description.replace(/<[^>]+>/g, ""),
     manifest: "/manifest.json",

@@ -8,6 +8,7 @@ import type { TallyResult } from "./tally";
 type Kind = "opened" | "result" | "vetoed" | "final";
 
 export function siteUrl() {
+  if (process.env.SITE_URL) return process.env.SITE_URL.replace(/\/+$/, "");
   const host = process.env.VERCEL_PROJECT_PRODUCTION_URL;
   return host ? `https://${host}` : "http://localhost:3000";
 }
