@@ -6,11 +6,12 @@ import { cancelVote, deleteDraft, deleteVote, setBallotVoided, veto } from "@/ap
 import { ConfirmButton } from "@/components/confirm-button";
 import { ElectionForm } from "@/components/election-form";
 import { LocalDate } from "@/components/local-date";
+import { Results } from "@/components/results";
 import { getAdmin, getVoters } from "@/lib/admin";
 import { getGuildRoles, isAdmin } from "@/lib/discord";
 import { displayStatus, getElection, syncElection } from "@/lib/elections";
 import { getDictionary, getLocale } from "@/lib/i18n";
-import { StatusBadge } from "../../szavazas/status";
+import { optionLabel, StatusBadge } from "../../szavazas/status";
 import { NotAdmin } from "@/components/not-admin";
 
 export const metadata = { title: "Admin", robots: { index: false } };
@@ -74,6 +75,10 @@ async function AdminVote({ params }: { params: PageProps<"/[lang]/admin/[id]">["
   const status = election.status;
   const voters = canManage ? await getVoters(id) : [];
   const editable = (status === "scheduled" || status === "open") && election.closesAt > now;
+  const label = (optionId: number) => {
+    const o = election.options.find((x) => x.id === optionId);
+    return o ? optionLabel(election, o.label, dict.vote) : "?";
+  };
 
   return (
     <div className="space-y-8">
@@ -85,6 +90,7 @@ async function AdminVote({ params }: { params: PageProps<"/[lang]/admin/[id]">["
           </Link>
         </div>
         <h1 className="text-3xl font-bold">{election.title}</h1>
+        {election.description && <p className="mt-3 text-muted whitespace-pre-line">{election.description}</p>}
         <p className="mt-2 text-sm text-muted">
           <LocalDate date={election.opensAt} locale={locale} /> → <LocalDate date={election.closesAt} locale={locale} />
         </p>
@@ -113,6 +119,13 @@ async function AdminVote({ params }: { params: PageProps<"/[lang]/admin/[id]">["
           </form>
         )}
       </div>
+
+      {election.result && (
+        <div className="card">
+          <h2 className="mb-4 text-2xl">{dict.vote.results}</h2>
+          <Results result={election.result} label={label} t={dict.vote} />
+        </div>
+      )}
 
       {canManage && (
         <div className="card overflow-hidden p-0 sm:p-0">
