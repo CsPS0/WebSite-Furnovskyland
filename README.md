@@ -25,6 +25,11 @@ bun run lint
 bun run build   # runs database migrations first when DATABASE_URL is set
 ```
 
+### 🌿 Branching workflow
+
+- **`dev`:** Day-to-day development branch. Commit and push all work in progress here (`git push origin dev`).
+- **`main`:** Production branch deployed to Vercel. Only merge `dev` into `main` when ready to release to production.
+
 ## 🗳️ How voting works
 
 - **Login:** Discord OAuth (`identify` scope). The site's bot reads each voter's roles on the Furnovskyland server every time they vote.
