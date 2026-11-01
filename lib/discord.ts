@@ -8,14 +8,68 @@ export type GuildRole = { id: string; name: string };
 /** Local testing without a Discord app: DEV_FAKE_LOGIN=1 plus DEV_FAKE_ROLES='{"1001":["admin"]}'. Never active in production. */
 export const devFake = process.env.DEV_FAKE_LOGIN === "1" && process.env.NODE_ENV !== "production";
 
-const roleList = (name: string) =>
-  (process.env[name] ?? "").split(",").map((s) => s.trim()).filter(Boolean);
+const roleList = (name: string, defaults: string[] = []) => {
+  const fromEnv = (process.env[name] ?? "").split(",").map((s) => s.trim()).filter(Boolean);
+  return fromEnv.length > 0 ? fromEnv : defaults;
+};
 
-export const isAdmin = (m: Member | null) => !!m && m.roles.some((r) => roleList("ADMIN_ROLE_IDS").includes(r));
-export const isEmperor = (m: Member | null) => !!m && m.roles.some((r) => roleList("EMPEROR_ROLE_IDS").includes(r));
+export const DISCORD_ROLES = {
+  EMPEROR: "836272651814830140",
+  VOTUM_ADMIN: "1135221429164584960",
+  WEBMASTER: "1566045077980053524",
+  MODERATOR: "1033089906001584129",
+  PRIME_MINISTER: "836273968058859581",
+  DEPUTY_PM: "978721383678894091",
+  SPEAKER: "1491734052355444849",
+  MINISTER: "836274885226397726",
+  STATE_SECRETARY: "1564418967441903688",
+  MP: "1490455424812454149",
+  SENATE_PRESIDENT: "983038650449264650",
+  SENATOR: "1006845578270998538",
+  PARTY_LEADER: "891932223169765387",
+  CAMPAIGNING: "999227153415671909",
+  BUREAU_OFFICER: "1564419081405337630",
+  CHIEF_JUSTICE: "1066679871343968396",
+  CONSTITUTIONAL_COURT: "1180863370681909380",
+  CITIZEN: "836275657892954122",
+  QUARANTINE: "879725345677410304",
+  UNVERIFIED: "875780258962505739",
+} as const;
+
+const DEFAULT_EMPEROR_ROLES: string[] = [DISCORD_ROLES.EMPEROR];
+const DEFAULT_ADMIN_ROLES: string[] = [
+  DISCORD_ROLES.EMPEROR,
+  DISCORD_ROLES.VOTUM_ADMIN,
+  DISCORD_ROLES.WEBMASTER,
+  DISCORD_ROLES.MODERATOR,
+];
+const PARLIAMENT_MANAGER_ROLES: string[] = [
+  ...DEFAULT_ADMIN_ROLES,
+  DISCORD_ROLES.PRIME_MINISTER,
+  DISCORD_ROLES.DEPUTY_PM,
+  DISCORD_ROLES.SPEAKER,
+  DISCORD_ROLES.BUREAU_OFFICER,
+];
+const CAMPAIGN_ROLES: string[] = [
+  ...PARLIAMENT_MANAGER_ROLES,
+  DISCORD_ROLES.MINISTER,
+  DISCORD_ROLES.MP,
+  DISCORD_ROLES.PARTY_LEADER,
+  DISCORD_ROLES.CAMPAIGNING,
+];
+
+export const isAdmin = (m: Member | null) =>
+  !!m && m.roles.some((r) => roleList("ADMIN_ROLE_IDS", DEFAULT_ADMIN_ROLES).includes(r));
+export const isEmperor = (m: Member | null) =>
+  !!m && m.roles.some((r) => roleList("EMPEROR_ROLE_IDS", DEFAULT_EMPEROR_ROLES).includes(r));
+export const canManageParliament = (m: Member | null) =>
+  isAdmin(m) || isEmperor(m) || (!!m && m.roles.some((r) => PARLIAMENT_MANAGER_ROLES.includes(r)));
+export const canPublishCampaign = (m: Member | null) =>
+  isAdmin(m) || isEmperor(m) || (!!m && m.roles.some((r) => CAMPAIGN_ROLES.includes(r)));
 export const hasLoginWhitelist = () => roleList("LOGIN_ROLE_IDS").length > 0;
 export const canLogin = (m: Member | null) => {
   if (!m) return false;
+  if (m.roles.includes(DISCORD_ROLES.QUARANTINE) || m.roles.includes(DISCORD_ROLES.UNVERIFIED)) return false;
   const allowed = roleList("LOGIN_ROLE_IDS");
   return allowed.length === 0 || m.roles.some((r) => allowed.includes(r));
 };

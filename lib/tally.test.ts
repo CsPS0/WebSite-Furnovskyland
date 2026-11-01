@@ -1,5 +1,5 @@
 import { describe, expect, test } from "bun:test";
-import { isValidChoice, tally, type TallyInput } from "./tally";
+import { allocateDhondtSeats, isValidChoice, tally, type TallyInput } from "./tally";
 
 const lawOptions = [
   { id: 1, label: "yes" },
@@ -115,5 +115,31 @@ describe("isValidChoice", () => {
     expect(isValidChoice("ranked", 1, ids, [30, 30])).toBe(false);
     expect(isValidChoice("law", 1, ids, [99])).toBe(false);
     expect(isValidChoice("multi", 2, ids, [])).toBe(false);
+  });
+});
+
+describe("allocateDhondtSeats", () => {
+  test("Oct-Nov 2026 Parliamentary Election (29 vs 18 across 15 seats -> 9 vs 6)", () => {
+    const seats = allocateDhondtSeats(
+      [
+        { optionId: 1, votes: 29 },
+        { optionId: 2, votes: 18 },
+      ],
+      15,
+    );
+    expect(seats.get(1)).toBe(9);
+    expect(seats.get(2)).toBe(6);
+  });
+
+  test("Aug 2026 Parliamentary Election (36 vs 21 across 10 seats -> 6 vs 4)", () => {
+    const seats = allocateDhondtSeats(
+      [
+        { optionId: 1, votes: 36 },
+        { optionId: 2, votes: 21 },
+      ],
+      10,
+    );
+    expect(seats.get(1)).toBe(6);
+    expect(seats.get(2)).toBe(4);
   });
 });

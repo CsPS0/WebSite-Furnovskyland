@@ -110,7 +110,7 @@ async function Vote({ params }: { params: PageProps<"/[lang]/szavazas/[id]">["pa
                       ? `${t.outcome.tie}: ${election.result.tied.map(label).join(", ")}`
                       : t.outcome.quorum_failed}
           </p>
-          <Results result={election.result} label={label} t={t} />
+          <Results result={election.result} label={label} t={t} seats={election.seats} />
         </div>
       )}
     </article>

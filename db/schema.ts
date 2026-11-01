@@ -22,6 +22,7 @@ export const elections = pgTable("elections", {
   description: text("description").notNull().default(""),
   type: text("type", { enum: electionTypes }).notNull(),
   maxPicks: integer("max_picks").notNull().default(1),
+  seats: integer("seats").notNull().default(0), // > 0 enables D'Hondt parliamentary seat allocation & hemicycle chart
   eligibleRoleIds: text("eligible_role_ids").array().notNull().default([]), // empty = every server member
   majority: text("majority", { enum: ["simple", "two_thirds"] }).notNull().default("simple"),
   quorum: integer("quorum"),
@@ -65,6 +66,32 @@ export const ballots = pgTable(
   (t) => [unique().on(t.electionId, t.userId)],
 );
 
+export const parliamentSeats = pgTable("parliament_seats", {
+  seatNumber: integer("seat_number").primaryKey(),
+  userId: text("user_id"),
+  memberName: text("member_name").notNull(),
+  party: text("party").notNull(),
+  coalition: text("coalition", { enum: ["government", "opposition"] }).notNull().default("government"),
+  role: text("role").notNull().default("Member of Parliament"),
+  color: text("color").notNull().default("#d60000"),
+  updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
+});
+
+export const campaigns = pgTable("campaigns", {
+  id: serial("id").primaryKey(),
+  electionTitle: text("election_title").notNull(),
+  party: text("party").notNull(),
+  authorId: text("author_id").notNull(),
+  authorName: text("author_name").notNull(),
+  title: text("title").notNull(),
+  body: text("body").notNull().default(""),
+  imageUrl: text("image_url"),
+  color: text("color").notNull().default("#c8102e"),
+  createdAt: createdAt(),
+});
+
 export type Election = typeof elections.$inferSelect;
 export type Option = typeof options.$inferSelect;
 export type Ballot = typeof ballots.$inferSelect;
+export type ParliamentSeat = typeof parliamentSeats.$inferSelect;
+export type Campaign = typeof campaigns.$inferSelect;

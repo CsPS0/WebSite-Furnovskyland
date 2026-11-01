@@ -12,6 +12,7 @@ type Draft = {
   description: string;
   type: "law" | "single" | "multi" | "ranked";
   maxPicks: number;
+  seats?: number;
   eligibleRoleIds: string[];
   majority: "simple" | "two_thirds";
   quorum: number | null;
@@ -97,6 +98,13 @@ export function ElectionForm({ lang, roles, draft, t, types, majorities }: Props
         <label className="block">
           <span className="label">{f.maxPicks}</span>
           <input name="maxPicks" type="number" min={1} required defaultValue={draft?.maxPicks ?? 2} className="input w-32" />
+        </label>
+      )}
+
+      {type !== "law" && (
+        <label className="block">
+          <span className="label">Parliamentary / Senate Seats (D&apos;Hondt hemicycle — 0 for none, e.g. 15 for Parliament)</span>
+          <input name="seats" type="number" min={0} max={50} defaultValue={draft?.seats ?? 0} className="input w-32" />
         </label>
       )}
 

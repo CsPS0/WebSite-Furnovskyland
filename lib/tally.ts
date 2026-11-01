@@ -116,6 +116,34 @@ function tallyRanked(input: TallyInput, total: number, quorumFailed: boolean): R
   return { kind: "ranked", total, rounds, winners: quorumFailed ? [] : winners, tied: quorumFailed ? [] : tied, outcome };
 }
 
+/** Allocates parliamentary seats proportionally using the D'Hondt highest-averages method. */
+export function allocateDhondtSeats(
+  counts: { optionId: number; votes: number }[],
+  totalSeats: number,
+): Map<number, number> {
+  const allocated = new Map<number, number>(counts.map((c) => [c.optionId, 0]));
+  const totalVotes = counts.reduce((sum, c) => sum + c.votes, 0);
+  if (totalSeats <= 0 || totalVotes <= 0 || counts.length === 0) return allocated;
+
+  for (let s = 0; s < totalSeats; s++) {
+    let bestId = counts[0].optionId;
+    let bestQuotient = -1;
+    let bestVotes = -1;
+    for (const c of counts) {
+      if (c.votes <= 0) continue;
+      const currentSeats = allocated.get(c.optionId) ?? 0;
+      const quotient = c.votes / (currentSeats + 1);
+      if (quotient > bestQuotient || (quotient === bestQuotient && c.votes > bestVotes)) {
+        bestQuotient = quotient;
+        bestVotes = c.votes;
+        bestId = c.optionId;
+      }
+    }
+    allocated.set(bestId, (allocated.get(bestId) ?? 0) + 1);
+  }
+  return allocated;
+}
+
 /** Checks a submitted choice against the vote's rules before it is stored. */
 export function isValidChoice(
   type: TallyInput["type"],

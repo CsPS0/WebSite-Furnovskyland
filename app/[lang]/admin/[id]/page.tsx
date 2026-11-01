@@ -123,7 +123,7 @@ async function AdminVote({ params }: { params: PageProps<"/[lang]/admin/[id]">["
       {election.result && (
         <div className="card">
           <h2 className="mb-4 text-2xl">{dict.vote.results}</h2>
-          <Results result={election.result} label={label} t={dict.vote} />
+          <Results result={election.result} label={label} t={dict.vote} seats={election.seats} />
         </div>
       )}
 

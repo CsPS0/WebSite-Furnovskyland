@@ -1,13 +1,28 @@
+import { Suspense } from "react";
+import { connection } from "next/server";
 import { ExternalLink, Globe, Landmark, Scale, ShieldCheck, Users } from "lucide-react";
+import { ParliamentChamber } from "@/components/parliament-chamber";
 import { Rich } from "@/components/rich";
+import { RolePrivilegesTable } from "@/components/role-privileges";
 import { government, senate } from "@/data/government";
 import { nationPortal, politicalParties } from "@/data/nation";
+import { canManageParliament, getMember } from "@/lib/discord";
 import { getDictionary, getLocale } from "@/lib/i18n";
 import { pageMetadata } from "@/lib/metadata";
+import { listParliamentSeats } from "@/lib/parliament";
+import { getSessionUser } from "@/lib/session";
 
 export async function generateMetadata() {
   const t = await getDictionary();
   return pageMetadata("politika/", t.politics.pageTitle, t.politics.pageSubtitle);
+}
+
+async function InteractiveParliamentSection() {
+  await connection();
+  const [seats, user] = await Promise.all([listParliamentSeats(), getSessionUser()]);
+  const member = user ? await getMember(user.id).catch(() => null) : null;
+  const canManage = canManageParliament(member);
+  return <ParliamentChamber seats={seats} canManage={canManage} />;
 }
 
 export default async function PoliticsPage() {
@@ -54,32 +69,15 @@ export default async function PoliticsPage() {
           </div>
         </article>
 
-        <article className="card reveal">
-          <h2 className="mb-2 text-2xl">{extras.parliamentCompositionTitle}</h2>
-          <p className="mb-5 text-sm text-muted">{extras.parliamentCompositionDesc}</p>
-          <div className="mb-4 grid grid-cols-15 gap-1.5" aria-hidden="true">
-            {Array.from({ length: 15 }).map((_, i) => (
-              <div
-                key={i}
-                className={`h-7 rounded-sm border ${
-                  i < 9
-                    ? "border-primary-dark bg-secondary"
-                    : "border-accent bg-accent/80"
-                }`}
-                title={i < 9 ? extras.govSeatsLabel : extras.oppSeatsLabel}
-              />
-            ))}
+        <article className="space-y-4">
+          <div>
+            <p className="eyebrow">III. Federal Parliament · D&apos;Hondt 15-Seat Chamber</p>
+            <h2 className="mb-2 text-2xl">{extras.parliamentCompositionTitle}</h2>
+            <p className="text-sm text-muted">{extras.parliamentCompositionDesc}</p>
           </div>
-          <div className="flex flex-wrap justify-between gap-4 text-sm font-semibold">
-            <div className="flex items-center gap-2">
-              <span className="inline-block size-3.5 rounded-xs bg-secondary" />
-              <span>{extras.govSeatsLabel}</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <span className="inline-block size-3.5 rounded-xs bg-accent" />
-              <span>{extras.oppSeatsLabel}</span>
-            </div>
-          </div>
+          <Suspense fallback={<div className="card h-96 animate-pulse" />}>
+            <InteractiveParliamentSection />
+          </Suspense>
         </article>
 
         <article className="card reveal overflow-hidden p-0 sm:p-0">
@@ -277,6 +275,8 @@ export default async function PoliticsPage() {
             ))}
           </div>
         </article>
+
+        <RolePrivilegesTable />
       </div>
     </section>
   );

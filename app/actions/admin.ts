@@ -32,6 +32,7 @@ export async function saveElection(_prev: SaveState, form: FormData): Promise<Sa
   const opensAt = new Date(String(form.get("opensAt")));
   const closesAt = new Date(String(form.get("closesAt")));
   const maxPicks = type === "multi" ? Number(form.get("maxPicks")) : 1;
+  const seats = type !== "law" ? Math.max(0, Number(form.get("seats") ?? 0)) : 0;
   const quorum = form.get("quorum") ? Number(form.get("quorum")) : null;
   const vetoHours = type === "law" ? Math.max(0, Number(form.get("vetoHours") ?? 0)) : 0;
 
@@ -47,6 +48,7 @@ export async function saveElection(_prev: SaveState, form: FormData): Promise<Sa
     description: String(form.get("description") ?? "").trim(),
     type,
     maxPicks,
+    seats: Number.isInteger(seats) ? seats : 0,
     eligibleRoleIds: form.getAll("roles").map(String),
     majority: form.get("majority") === "two_thirds" ? ("two_thirds" as const) : ("simple" as const),
     quorum,

@@ -20,6 +20,7 @@ type HistoricalPluralityVote = {
   kind: "plurality";
   type?: "single" | "multi";
   maxPicks?: number;
+  seats?: number;
   title: string;
   description: string;
   opensAt: string;
@@ -34,10 +35,258 @@ type HistoricalVote = HistoricalLawVote | HistoricalPluralityVote;
 const EMPEROR_ID = "548177745465704468";
 const EMPEROR_NAME = "Furnovsky I";
 
+export const DEFAULT_PARLIAMENT_SEATS: {
+  seatNumber: number;
+  userId: string;
+  memberName: string;
+  party: string;
+  coalition: "government" | "opposition";
+  role: string;
+  color: string;
+}[] = [
+  {
+    seatNumber: 1,
+    userId: "387777487503097868",
+    memberName: "Levi",
+    party: "Alliance for Furnovskyland",
+    coalition: "government",
+    role: "Prime Minister · Internal Affairs & Work",
+    color: "#d60000",
+  },
+  {
+    seatNumber: 2,
+    userId: "573919463511031808",
+    memberName: "Azurkapro",
+    party: "Alliance for Furnovskyland",
+    coalition: "government",
+    role: "Deputy Prime Minister & Speaker of the House · Justice & Defence",
+    color: "#d60000",
+  },
+  {
+    seatNumber: 3,
+    userId: "900435188079816704",
+    memberName: "Levi444",
+    party: "Alliance for Furnovskyland",
+    coalition: "government",
+    role: "Minister of Infrastructure, Religion & Culture",
+    color: "#d60000",
+  },
+  {
+    seatNumber: 4,
+    userId: "1218963081225441424",
+    memberName: "Szabika",
+    party: "Alliance for Furnovskyland",
+    coalition: "government",
+    role: "Member of Parliament · State Secretary for Configuration",
+    color: "#d60000",
+  },
+  {
+    seatNumber: 5,
+    userId: "1188822166192529418",
+    memberName: "Riccsuka",
+    party: "Alliance for Furnovskyland",
+    coalition: "government",
+    role: "Minister of Foreign Affairs",
+    color: "#d60000",
+  },
+  {
+    seatNumber: 6,
+    userId: "1503006479605829672",
+    memberName: "Marcesz",
+    party: "Alliance for Furnovskyland",
+    coalition: "government",
+    role: "Minister of Media Affairs",
+    color: "#d60000",
+  },
+  {
+    seatNumber: 7,
+    userId: "771375931843543070",
+    memberName: "Szórádi",
+    party: "Alliance for Furnovskyland",
+    coalition: "government",
+    role: "Minister of Finance",
+    color: "#d60000",
+  },
+  {
+    seatNumber: 8,
+    userId: "1492246743570448495",
+    memberName: "Lőrinczi Domokos",
+    party: "Alliance for Furnovskyland",
+    coalition: "government",
+    role: "Minister of Communication",
+    color: "#d60000",
+  },
+  {
+    seatNumber: 9,
+    userId: "1213239635400990861",
+    memberName: "Miss Hatter",
+    party: "Independent (AfF Coalition List)",
+    coalition: "government",
+    role: "Member of Parliament · Former Senator",
+    color: "#d9d9d9",
+  },
+  {
+    seatNumber: 10,
+    userId: "1485353710597968155",
+    memberName: "Dr. Attikasp",
+    party: "Christian-Conservative Party",
+    coalition: "opposition",
+    role: "Leader of the Opposition · Mayor of Értilos",
+    color: "#ffffff",
+  },
+  {
+    seatNumber: 11,
+    userId: "1535625335373168780",
+    memberName: "Happy Kiba",
+    party: "Christian-Conservative Party",
+    coalition: "opposition",
+    role: "Opposition Whip · Former Senator",
+    color: "#ffffff",
+  },
+  {
+    seatNumber: 12,
+    userId: "1155809465480781884",
+    memberName: "ZenithSX_",
+    party: "Christian-Conservative Party",
+    coalition: "opposition",
+    role: "Member of Parliament · Former Senate President",
+    color: "#ffffff",
+  },
+  {
+    seatNumber: 13,
+    userId: "1419740742267572346",
+    memberName: "XEN Mikhail",
+    party: "Christian-Conservative Party",
+    coalition: "opposition",
+    role: "Member of Parliament · Former Senator",
+    color: "#ffffff",
+  },
+  {
+    seatNumber: 14,
+    userId: "1078914108486852628",
+    memberName: "Taiyo das Reichspiel",
+    party: "Christian-Conservative Party",
+    coalition: "opposition",
+    role: "Member of Parliament",
+    color: "#ffffff",
+  },
+  {
+    seatNumber: 15,
+    userId: "1097172477102268457",
+    memberName: "Felix Krovavsky",
+    party: "United Furnovskyland",
+    coalition: "opposition",
+    role: "Member of Parliament · United Furnovskyland Representative",
+    color: "#ff8c00",
+  },
+];
+
+export const DEFAULT_CAMPAIGNS: {
+  electionTitle: string;
+  party: string;
+  authorId: string;
+  authorName: string;
+  title: string;
+  body: string;
+  imageUrl: string | null;
+  color: string;
+  createdAt: string;
+}[] = [
+  {
+    electionTitle: "October–November 2026 Parliamentary Election",
+    party: "Alliance for Furnovskyland (AfF)",
+    authorId: "387777487503097868",
+    authorName: "Prime Minister Levi",
+    title: "Forward with Stability, Constitutional Order, and Active Governance",
+    body: "The Alliance for Furnovskyland stands on a proven record of two consecutive governing terms: enacting the October 2026 Constitution, modernizing the Discord and ministerial administration, and keeping Furnovskyland's institutions active every week. Vote AfF to secure a third term of stable progress.",
+    imageUrl: "/campaigns/aff-oct2026-levi-1.png",
+    color: "#d60000",
+    createdAt: "2026-10-30T20:26:52Z",
+  },
+  {
+    electionTitle: "October–November 2026 Parliamentary Election",
+    party: "Alliance for Furnovskyland (AfF)",
+    authorId: "387777487503097868",
+    authorName: "Prime Minister Levi",
+    title: "Full Candidate Slate of the Alliance for Furnovskyland",
+    body: "Our 15-candidate proportional representation list unites experienced ministers, parliamentarians, and state secretaries: Levi, Azurkapro, Levi444, Szabika, Riccsuka, Marcesz, Szórádi, Lőrinczi Domokos, Miss Hatter, Barakk, Dr. Montevideo, Hasi, thecuriousOat, Rumlibáttya, and UISZTETANTUSZ.",
+    imageUrl: "/campaigns/aff-oct2026-levi-2.png",
+    color: "#d60000",
+    createdAt: "2026-10-30T20:19:56Z",
+  },
+  {
+    electionTitle: "October–November 2026 Parliamentary Election",
+    party: "Alliance for Furnovskyland (AfF)",
+    authorId: "900435188079816704",
+    authorName: "Minister Levi444",
+    title: "Building Infrastructure, Culture, and National Unity",
+    body: "From the FM-03/04 metro safety upgrades to national cultural preservation, the Ministry of Infrastructure and Culture continues to deliver concrete projects across every province of the Empire.",
+    imageUrl: "/campaigns/aff-oct2026-levi444-1.jpg",
+    color: "#d60000",
+    createdAt: "2026-10-28T22:17:50Z",
+  },
+  {
+    electionTitle: "October–November 2026 Parliamentary Election",
+    party: "United Conservative Coalition (CCP–United Furnovskyland)",
+    authorId: "1485353710597968155",
+    authorName: "Dr. Attikasp",
+    title: "Glory to Furnovskyland — Order, Tradition, and Accountability",
+    body: "The Christian-Conservative Party and United Furnovskyland stand united as a principled conservative alternative. Led by Dr. Attikasp, Happy Kiba, ZenithSX_, XEN Mikhail, Taiyo das Reichspiel, and Felix Krovavsky, we pledge strict constitutional oversight, municipal protection, and respect for imperial tradition.",
+    imageUrl: "/campaigns/ucc-oct2026-attikasp.png",
+    color: "#2563eb",
+    createdAt: "2026-10-27T17:40:22Z",
+  },
+  {
+    electionTitle: "September 2026 Olympic and Poseidon Islands Municipal Election",
+    party: "Alliance for Furnovskyland – SDP",
+    authorId: "1336001773243994203",
+    authorName: "MeteorBarni",
+    title: "A New Era for the Olympic and Poseidon Islands",
+    body: "Structured urban planning from day one: a dedicated civic center (Town Hall, Main Square, shops, and community halls), residential and business districts, modern road and pedestrian networks, parks, sports venues, and direct citizen participation (Idea → Plan → Joint Decision → Construction).",
+    imageUrl: null,
+    color: "#d60000",
+    createdAt: "2026-09-17T18:08:39Z",
+  },
+  {
+    electionTitle: "September 2026 Olympic and Poseidon Islands Municipal Election",
+    party: "Independent",
+    authorId: "1322182207305027594",
+    authorName: "Faember4",
+    title: "Experience, Activity, Community — No Chaos, Just Progress",
+    body: "As an experienced Minecraft SMP builder, the 3rd most active citizen of Furnovskyland, and head of the server's most active news outlet, I pledge peaceful, constructive development and active municipal leadership for the Olympic and Poseidon Islands.",
+    imageUrl: null,
+    color: "#64748b",
+    createdAt: "2026-09-16T10:56:31Z",
+  },
+  {
+    electionTitle: "August 2026 Parliamentary & Senatorial Elections",
+    party: "We Continue The Change! (AfF–SDP)",
+    authorId: "573919463511031808",
+    authorName: "Deputy PM Azurkapro",
+    title: "We Continue The Change — Proven Coalition Leadership",
+    body: "The united list of the Alliance for Furnovskyland and the Social Democratic Party brings together Prime Minister Levi, Senate President Koffie, H.R.H. Damian Ramirez, and Deputy PM Azurkapro to deliver legislative reform and active governance in both Houses.",
+    imageUrl: "/campaigns/wctc-aug2026-azurkapro.png",
+    color: "#d60000",
+    createdAt: "2026-08-25T14:30:28Z",
+  },
+  {
+    electionTitle: "August 2026 Parliamentary & Senatorial Elections",
+    party: "United Coalition (CCP–INP–RFMP)",
+    authorId: "1485353710597968155",
+    authorName: "Dr. Attikasp",
+    title: "Your Country Needs You — Vote United Coalition",
+    body: "Uniting the Christian-Conservative Party, Integral Nationalist Party, and Monarchist Party to defend regional autonomy in Értilos, protect server heritage, and restore strong right-wing representation in Parliament and the Senate.",
+    imageUrl: "/campaigns/uc-aug2026-attikasp-2.jpg",
+    color: "#2563eb",
+    createdAt: "2026-08-26T08:37:21Z",
+  },
+];
+
 export const HISTORICAL_VOTES: HistoricalVote[] = [
   {
     kind: "plurality",
     type: "single",
+    seats: 15,
     title: "October–November 2026 Parliamentary Election (III. Federal Parliament)",
     description:
       "First unicameral 15-seat National Assembly election held under the October 24, 2026 Constitution using the D'Hondt proportional representation method (47 ballots cast). Alliance for Furnovskyland (AfF) won 9 seats (61.7%, 29 votes) and formed the XIV. Federal Government under Prime Minister Levi; the United Conservative Coalition (CCP–United Furnovskyland) won 6 seats (38.3%, 18 votes).",
@@ -128,6 +377,7 @@ export const HISTORICAL_VOTES: HistoricalVote[] = [
   {
     kind: "plurality",
     type: "single",
+    seats: 10,
     title: "August 2026 Parliamentary Election (II. Federal Parliament)",
     description:
       "Proportional representation election for the 10-seat II. Federal Parliament (record 57 ballots cast). The governing We Continue The Change! coalition (AfF–SDP, led by Prime Minister Levi) won 6 seats (63.2%, 36 votes) and formed the XIII. Federal Government; the right-wing United Coalition (CCP–INP–RFMP, led by Dr. Attikasp) won 4 seats (36.8%, 21 votes).",
@@ -142,6 +392,7 @@ export const HISTORICAL_VOTES: HistoricalVote[] = [
   {
     kind: "plurality",
     type: "single",
+    seats: 5,
     title: "August 2026 Senatorial Election (XVI. Federal Senate)",
     description:
       "Proportional representation election for the 5-seat XVI. Federal Senate (57 ballots cast). We Continue The Change! (AfF–SDP, led by Senate President Koffie) won 3 seats (66.7%, 38 votes); the United Coalition (CCP–INP–RFMP, led by Happy Kiba) won 2 seats (33.3%, 19 votes).",
@@ -228,6 +479,7 @@ export const HISTORICAL_VOTES: HistoricalVote[] = [
   {
     kind: "plurality",
     type: "single",
+    seats: 10,
     title: "April 2026 Parliamentary Election (I. Federal Parliament)",
     description:
       "First election for the 10-seat I. Federal Parliament under the March 2026 Temporary Constitution (44 ballots cast). AfF–FSP (Levi) won 4 seats (38.6%, 17 votes) and formed a 7-seat grand coalition with SDP–Liberal Party (Damian Ramirez, 3 seats, 34.1%, 15 votes); the National Coalition (Jobbik–CCP, Dr. Attikasp) won 3 seats (27.3%, 12 votes).",
@@ -243,6 +495,7 @@ export const HISTORICAL_VOTES: HistoricalVote[] = [
   {
     kind: "plurality",
     type: "single",
+    seats: 5,
     title: "April 2026 Senatorial Election (XV. Federal Senate)",
     description:
       "Single Transferable Vote election for the 5-seat XV. Federal Senate (44 ballots cast). AfF–FSP won 2 seats (19 first-preference votes), SDP–Liberal Party won 2 seats (13 first-preference votes; Koffie elected President of the Senate with second-choice transfers), and the National Coalition won 1 seat (12 votes).",
@@ -337,6 +590,7 @@ export const HISTORICAL_VOTES: HistoricalVote[] = [
   {
     kind: "plurality",
     type: "single",
+    seats: 5,
     title: "November 2025 Senatorial Election (XIV. Federal Senate)",
     description:
       "Single Transferable Vote election for the 5-seat XIV. Federal Senate (30 ballots cast). Democratic Alliance won 2 seats (9 first-preference votes), Christian-Conservative Party won 1 seat (7 votes), Integral Nationalist Party won 1 seat (7 votes), and Progressive Party won 1 seat (5 votes; Miss Hatter was subsequently elected Senator 3–2).",
@@ -354,6 +608,7 @@ export const HISTORICAL_VOTES: HistoricalVote[] = [
   {
     kind: "plurality",
     type: "single",
+    seats: 5,
     title: "August 2025 Senatorial Election (XIII. Federal Senate)",
     description:
       "Single Transferable Vote election for the 5-seat XIII. Federal Senate (29 ballots cast). Incumbent Senator Edgeworth (Democratic Alliance / FSP) won 3 seats and re-election as Senator (16 first-choice / 17 final votes); Sellout / Guacamole (FPP) won 1 seat (7 first-choice / 12 final votes); UnitedForTheRight (INP) won 1 seat (6 votes).",
@@ -383,6 +638,7 @@ export const HISTORICAL_VOTES: HistoricalVote[] = [
   {
     kind: "plurality",
     type: "single",
+    seats: 5,
     title: "May 2025 Senatorial Election (XII. Federal Senate)",
     description:
       "Single Transferable Vote election for the 5-seat XII. Federal Senate (29 ballots cast). Edgeworth (Furnovskylandic Socialist Party) won 2 seats and was elected Senator with 15 final-round votes against 14 for Prime Minister XVDX (RFMP, 2 seats); Unified Liberal Party won 1 seat (7 first-preference votes).",
@@ -426,6 +682,7 @@ export const HISTORICAL_VOTES: HistoricalVote[] = [
   {
     kind: "plurality",
     type: "single",
+    seats: 5,
     title: "February 2025 Senatorial Election (XI. Federal Senate)",
     description:
       "Single Transferable Vote election for the 5-seat XI. Federal Senate (29 ballots cast). Incumbent Senator CsPS (Independent) won 2 seats and re-election as Senator (7 first-choice / 16 final votes), XVDX (INP) won 2 seats (6 first-choice / 13 final votes), and Ondro (SDP) won 1 seat (9 votes).",
@@ -459,6 +716,7 @@ export const HISTORICAL_VOTES: HistoricalVote[] = [
   {
     kind: "plurality",
     type: "single",
+    seats: 5,
     title: "November 2024 Senatorial Election (X. Federal Senate)",
     description:
       "Single Transferable Vote election for the X. Federal Senate (27 ballots cast). Independent candidate CsPS won the Senatorial runoff with 14 final-round votes against 13 for XVDX (Sloboda Progress Party); Sellout (Progressive Party) placed third.",
@@ -506,6 +764,7 @@ export const HISTORICAL_VOTES: HistoricalVote[] = [
   {
     kind: "plurality",
     type: "single",
+    seats: 5,
     title: "May 2024 Senatorial Election (VIII. Federal Senate)",
     description:
       "Single Transferable Vote election for the VIII. Federal Senate (20 ballots cast). Incumbent Senator John Albertson (Social Democratic Party) won re-election with 9 final-round votes ahead of EricWilson (Independent, 7 final votes) and XVDX (FDMP, 4 votes).",
@@ -521,6 +780,7 @@ export const HISTORICAL_VOTES: HistoricalVote[] = [
   {
     kind: "plurality",
     type: "single",
+    seats: 5,
     title: "February 2024 Senatorial Election (VII. Federal Senate)",
     description:
       "Single Transferable Vote election for the VII. Federal Senate (27 ballots cast). John Albertson (Social Democratic Party) won an outright majority in the first round with 14 votes (51.9%); Selloutcreative (FPP) won Deputy Senator on second-preference transfers.",
@@ -564,6 +824,7 @@ export const HISTORICAL_VOTES: HistoricalVote[] = [
   {
     kind: "plurality",
     type: "single",
+    seats: 5,
     title: "November 2023 Senatorial Election (VI. Federal Senate)",
     description:
       "Election for the VI. Federal Senate (30 ballots cast). Hafiz bin Najmuldin (Integral Nationalist Party) was elected Senator with 14 votes (46.7%), followed by John Albertson (Social Democratic Party, 10 votes, 33.3%) and XVDX (Independent, 6 votes, 20.0%).",
@@ -595,18 +856,66 @@ export const HISTORICAL_VOTES: HistoricalVote[] = [
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export async function seedHistoricalVotes(db: any) {
-  const existingRows: { title: string }[] = await db
-    .select({ title: schema.elections.title })
-    .from(schema.elections);
-  const existingTitles = new Set(existingRows.map((r) => r.title));
-
-  const missing = HISTORICAL_VOTES.filter((v) => !existingTitles.has(v.title));
-  if (missing.length === 0) return 0;
-
   await db
     .insert(schema.users)
     .values({ id: EMPEROR_ID, name: EMPEROR_NAME })
     .onConflictDoNothing();
+
+  // Seed 15 Parliament seats if not yet seeded
+  const existingSeats: { seatNumber: number }[] = await db
+    .select({ seatNumber: schema.parliamentSeats.seatNumber })
+    .from(schema.parliamentSeats);
+  if (existingSeats.length === 0) {
+    await db
+      .insert(schema.parliamentSeats)
+      .values(DEFAULT_PARLIAMENT_SEATS)
+      .onConflictDoNothing();
+  }
+
+  // Seed historical campaign posters/manifestos if not yet seeded
+  const existingCampaigns: { id: number }[] = await db
+    .select({ id: schema.campaigns.id })
+    .from(schema.campaigns);
+  if (existingCampaigns.length === 0) {
+    await db.insert(schema.campaigns).values(
+      DEFAULT_CAMPAIGNS.map((c) => ({
+        electionTitle: c.electionTitle,
+        party: c.party,
+        authorId: c.authorId,
+        authorName: c.authorName,
+        title: c.title,
+        body: c.body,
+        imageUrl: c.imageUrl,
+        color: c.color,
+        createdAt: new Date(c.createdAt),
+      })),
+    );
+  }
+
+  const existingRows: { id: number; title: string; seats: number }[] = await db
+    .select({
+      id: schema.elections.id,
+      title: schema.elections.title,
+      seats: schema.elections.seats,
+    })
+    .from(schema.elections);
+  const existingByTitle = new Map(existingRows.map((r) => [r.title, r]));
+
+  // Backfill `seats` on already-seeded historical elections if needed
+  for (const vote of HISTORICAL_VOTES) {
+    if (vote.kind === "plurality" && vote.seats && vote.seats > 0) {
+      const found = existingByTitle.get(vote.title);
+      if (found && found.seats !== vote.seats) {
+        await db
+          .update(schema.elections)
+          .set({ seats: vote.seats })
+          .where(eq(schema.elections.id, found.id));
+      }
+    }
+  }
+
+  const missing = HISTORICAL_VOTES.filter((v) => !existingByTitle.has(v.title));
+  if (missing.length === 0) return 0;
 
   for (const vote of missing) {
     const opensAt = new Date(vote.opensAt);
@@ -629,6 +938,7 @@ export async function seedHistoricalVotes(db: any) {
           description: vote.description,
           type: "law",
           maxPicks: 1,
+          seats: 0,
           majority: vote.majority ?? "simple",
           eligibleRoleIds: [],
           opensAt,
@@ -656,6 +966,7 @@ export async function seedHistoricalVotes(db: any) {
           description: vote.description,
           type: vote.type ?? "single",
           maxPicks: vote.maxPicks ?? 1,
+          seats: vote.seats ?? 0,
           majority: "simple",
           eligibleRoleIds: [],
           opensAt,
