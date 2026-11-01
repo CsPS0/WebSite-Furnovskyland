@@ -21,7 +21,14 @@ async function minecraftStatus(): Promise<{ online: boolean; players?: string } 
   try {
     const res = await fetch(`https://api.mcsrvstat.us/3/${MC_SERVER}`);
     const data = await res.json();
-    return data.online ? { online: true, players: `${data.players.online}/${data.players.max}` } : { online: false };
+    // Aternos's sleep proxy often replies to pings with online=true, max=0 and version="● Offline".
+    const motd = Array.isArray(data.motd?.clean) ? data.motd.clean.join(" ") : "";
+    const reallyOnline =
+      Boolean(data.online) &&
+      (data.players?.max ?? 0) > 0 &&
+      !/offline/i.test(String(data.version ?? "")) &&
+      !/this server is offline/i.test(motd);
+    return reallyOnline ? { online: true, players: `${data.players.online}/${data.players.max}` } : { online: false };
   } catch {
     return null;
   }
