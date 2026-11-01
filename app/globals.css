@@ -6,31 +6,43 @@
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-serif: var(--font-merriweather), ui-serif, Georgia, serif;
 
-  /* Navy, cardinal red and old gold from the original site */
-  --color-primary: #1e3a5f;
-  --color-primary-dark: #122845;
-  --color-secondary: #c61e2c;
-  --color-secondary-light: #e02f3e;
-  --color-accent: #c6a11e;
-  --color-bg: #f9fbfd;
+  /* Imperial Crimson, Sovereign Burgundy, Crown Gold & Ermine Parchment from the Imperial Banner */
+  --color-primary: #6e1222;
+  --color-primary-dark: #3d0812;
+  --color-secondary: #9e1b32;
+  --color-secondary-light: #b8233d;
+  --color-accent: #c59b27;
+  --color-bg: #f7f4ee;
   --color-surface: #ffffff;
-  --color-text: #2e3440;
-  --color-muted: #6b7280;
-  --color-border: #e5e7eb;
-  --color-heading: #1e3a5f;
-  --color-link: #1e3a5f;
-  --color-glass: rgb(255 255 255 / 0.85);
+  --color-surface-alt: #efeae0;
+  --color-text: #1f1a1c;
+  --color-muted: #615458;
+  --color-border: #dcd2c2;
+  --color-heading: #3d0812;
+  --color-link: #6e1222;
+  --color-glass: rgb(247 244 238 / 0.92);
+}
+
+:root {
+  color-scheme: light;
+  accent-color: var(--color-secondary);
 }
 
 [data-theme="dark"] {
-  --color-bg: #0f172a;
-  --color-surface: #1e293b;
-  --color-text: #f8fafc;
-  --color-muted: #94a3b8;
-  --color-border: #334155;
-  --color-heading: #f8fafc;
-  --color-link: #93c5fd;
-  --color-glass: rgb(30 41 59 / 0.85);
+  --color-primary: #8a182c;
+  --color-primary-dark: #1d090e;
+  --color-secondary: #c92a42;
+  --color-secondary-light: #df3b54;
+  --color-accent: #dfc15d;
+  --color-bg: #110c0f;
+  --color-surface: #1b1317;
+  --color-surface-alt: #261b21;
+  --color-text: #f5f0e6;
+  --color-muted: #b5a6ac;
+  --color-border: #3a2931;
+  --color-heading: #f8f3e9;
+  --color-link: #e5c158;
+  --color-glass: rgb(17 12 15 / 0.92);
   color-scheme: dark;
 }
 
@@ -40,10 +52,10 @@
     scroll-padding-top: 6rem;
   }
   body {
-    @apply bg-bg text-text font-sans leading-relaxed;
+    @apply bg-bg text-text font-sans leading-relaxed antialiased;
   }
   h1, h2, h3, h4 {
-    @apply font-serif text-heading leading-snug;
+    @apply font-serif text-heading leading-snug tracking-tight;
   }
   a {
     @apply text-link transition-colors hover:text-secondary;
@@ -55,7 +67,7 @@
 
 /* A utility rather than a component class so the button variants below can @apply it. */
 @utility btn {
-  @apply inline-flex cursor-pointer items-center justify-center gap-2 rounded-lg px-6 py-3 font-semibold transition disabled:cursor-not-allowed disabled:opacity-50;
+  @apply inline-flex cursor-pointer items-center justify-center gap-2 rounded-lg px-5 py-2.5 font-semibold transition disabled:cursor-not-allowed disabled:opacity-50;
 }
 
 @layer components {
@@ -63,65 +75,78 @@
     @apply mx-auto w-full max-w-6xl px-4 sm:px-6;
   }
   .section {
-    @apply py-16 sm:py-20;
+    @apply py-14 sm:py-20;
   }
   .section-title {
-    @apply relative mb-12 pb-4 text-center text-3xl font-bold sm:text-4xl;
+    @apply relative mb-10 pb-4 text-center text-3xl font-bold sm:text-4xl;
   }
   .section-title::after {
     content: "";
-    @apply absolute bottom-0 left-1/2 h-1 w-16 -translate-x-1/2 rounded-full bg-secondary;
+    @apply absolute bottom-0 left-1/2 h-1 w-20 -translate-x-1/2 rounded-full bg-accent;
   }
   .section-subtitle {
     @apply -mt-6 mb-12 text-center text-lg text-muted;
   }
   .card {
-    @apply rounded-2xl border border-border bg-surface p-6 shadow-md transition sm:p-8;
+    @apply rounded-xl border border-border bg-surface p-6 shadow-sm transition sm:p-8;
   }
   .card-hover {
-    @apply hover:-translate-y-1 hover:border-accent hover:shadow-lg;
+    @apply hover:-translate-y-0.5 hover:border-accent hover:shadow-md;
   }
   .btn-primary {
-    @apply btn bg-secondary text-white hover:bg-secondary-light hover:text-white;
+    @apply btn border border-accent/40 bg-secondary text-white shadow-xs hover:bg-secondary-light hover:text-white;
   }
   .btn-outline {
-    @apply btn border-2 border-secondary text-secondary hover:bg-secondary hover:text-white;
+    @apply btn border-2 border-accent bg-transparent text-accent hover:bg-accent hover:text-primary-dark;
   }
   .btn-ghost {
-    @apply btn border border-border text-text hover:border-secondary hover:text-secondary;
+    @apply btn border border-border bg-surface text-text hover:border-accent hover:text-secondary;
   }
   .input {
-    @apply w-full rounded-lg border border-border bg-bg px-4 py-2.5 text-text focus:border-primary focus:outline-none;
+    @apply w-full rounded-lg border border-border bg-bg px-4 py-2.5 text-text focus:border-accent focus:outline-none;
   }
   .label {
     @apply mb-1.5 block font-semibold text-heading;
   }
+  .table-wrapper {
+    @apply max-w-full overflow-x-auto focus-visible:outline-2 focus-visible:outline-accent;
+    container-type: inline-size;
+  }
   .data-table {
-    @apply w-full border-collapse text-left;
+    @apply w-full border-collapse text-left text-sm sm:text-base;
+  }
+  .data-table thead {
+    @apply sticky top-0 z-10;
   }
   .data-table th {
-    @apply bg-primary px-4 py-3 font-semibold text-white;
+    @apply border-b-2 border-accent/60 bg-primary-dark px-4 py-3.5 font-serif text-xs font-bold tracking-wider text-white uppercase sm:px-6;
   }
   .data-table td {
-    @apply border-b border-border px-4 py-3 align-top;
+    @apply border-b border-border px-4 py-3.5 align-top sm:px-6;
+  }
+  .data-table tbody tr:nth-child(even) {
+    @apply bg-surface-alt/40;
   }
   .rich strong {
     @apply font-semibold text-heading;
   }
   .badge {
-    @apply inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold;
+    @apply inline-flex items-center rounded-md border border-current/20 px-2.5 py-0.5 text-xs font-semibold tracking-wide;
+  }
+  .kicker {
+    @apply mb-2 inline-flex items-center gap-2 text-xs font-bold tracking-widest text-accent uppercase;
   }
 
-  /* Vertical timeline used on History and Other */
+  /* Vertical timeline used on History */
   .timeline {
-    @apply relative mx-auto max-w-3xl border-l-4 border-border pl-6 sm:pl-10;
+    @apply relative mx-auto max-w-4xl border-l-2 border-accent/50 pl-6 sm:pl-10;
   }
   .timeline-item {
-    @apply relative mb-10 rounded-lg border-l-4 border-primary bg-surface p-6 shadow-sm last:mb-0 sm:p-8;
+    @apply relative mb-8 rounded-xl border border-border border-l-4 border-l-primary bg-surface p-6 shadow-xs last:mb-0 sm:p-8;
   }
   .timeline-item::before {
     content: "";
-    @apply absolute top-8 -left-[2.4rem] size-5 rounded-full border-4 border-bg bg-secondary sm:-left-[3.4rem];
+    @apply absolute top-8 -left-[2.15rem] size-4 rounded-full border-2 border-accent bg-primary sm:-left-[3.15rem];
   }
 
   /* Reveal on scroll where the browser supports scroll-driven animations; content is never hidden otherwise. */
@@ -133,6 +158,17 @@
         animation-range: entry 0% entry 40%;
       }
     }
+  }
+}
+
+@media (forced-colors: active) {
+  .card,
+  .timeline-item,
+  .badge {
+    border: 1px solid CanvasText;
+  }
+  .section-title::after {
+    background-color: Highlight;
   }
 }
 

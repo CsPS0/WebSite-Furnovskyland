@@ -100,7 +100,9 @@ async function AdminVote({ params }: { params: PageProps<"/[lang]/admin/[id]">["
         {admin.emperor && status === "veto_window" && (
           <form action={veto}>
             <input type="hidden" name="id" value={id} />
-            <ConfirmButton message={t.vetoConfirm} className="btn-primary">{t.veto}</ConfirmButton></form>)}
+            <ConfirmButton message={t.vetoConfirm} className="btn-primary">{t.veto}</ConfirmButton>
+          </form>
+        )}
         {canManage && (
           <form action={deleteVote}>
             <input type="hidden" name="id" value={id} />
@@ -114,13 +116,13 @@ async function AdminVote({ params }: { params: PageProps<"/[lang]/admin/[id]">["
 
       {canManage && (
         <div className="card overflow-hidden p-0 sm:p-0">
-          <h2 className="p-6 pb-4 text-2xl">
+          <h2 id="voters-table-heading" className="p-6 pb-4 text-2xl">
             {t.voters} ({voters.filter((v) => !v.voided).length})
           </h2>
           {voters.length === 0 ? (
             <p className="px-6 pb-6 text-muted">{t.noVoters}</p>
           ) : (
-            <div className="overflow-x-auto">
+            <div className="table-wrapper" role="region" aria-labelledby="voters-table-heading" tabIndex={0}>
               <table className="data-table">
                 <thead>
                   <tr>

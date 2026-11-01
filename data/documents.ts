@@ -39,6 +39,36 @@ export const laws: ResourceDocument[] = [
     href: "https://docs.google.com/document/d/1UGEAd6c0kdX4_VN558-jPIoLiQGtbMNfubZff1-KdvY/edit?usp=sharing",
   },
   {
+    key: "reconfig_aug_2026",
+    date: "2026-08-04",
+    href: "https://docs.google.com/document/d/1hrvkfVMm4XErnW-yquI_hvjDld6HyPTYttsgFnZKAe4/edit?usp=sharing",
+  },
+  {
+    key: "aurigrad_treaty_2026",
+    date: "2026-07-26",
+    href: "https://docs.google.com/document/d/1XP-9uE_JPB07DZZh4bz20Jg5MePXT0TsGGB8wulfFCo/edit?usp=sharing",
+  },
+  {
+    key: "sanctio_regia_2026",
+    date: "2026-07-16",
+    href: "https://docs.google.com/document/d/1Y5Nu2a9dOaQ4yEruInc2HBLI4Q9j-DvNXYLjpNJOAx4/edit?tab=t.0",
+  },
+  {
+    key: "federal_gazette_2026",
+    date: "2026-07-12",
+    href: "https://docs.google.com/document/d/1WvUQpJftB7eD_8S-qqUewk4VxegGsetQWZOogOdfauY/edit?tab=t.0",
+  },
+  {
+    key: "commonwealth_games_2026",
+    date: "2026-07-12",
+    href: "https://docs.google.com/document/d/12pnsIXUa3We6sbGfiPUF5xtDO5snvyd6ekbVcj1Xn3U/edit?usp=sharing",
+  },
+  {
+    key: "los_charter_2026",
+    date: "2026-03-28",
+    href: "https://docs.google.com/document/d/1AvuMxVbfuevRm6tdAQZIgppKbPgzH_OiQI3u77h6ZrE/preview",
+  },
+  {
     key: "bunker_limitation_2025",
     date: "2025-12-27",
     href: "https://docs.google.com/document/d/12OBsSj_nK_OGXGV2G4TsTkaSkISRzKt1n8Za_R45tBI/edit?usp=sharing",

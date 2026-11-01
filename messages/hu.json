@@ -15,21 +15,21 @@
     "theme": "Sötét mód váltása"
   },
   "hero": {
-    "welcome": "Üdvözöljük Furnovskyföldön!",
-    "discover": "Fedezze fel nemzetünk gazdag történelmét és kultúráját",
-    "learnMore": "Tudj meg többet"
+    "welcome": "Furnovskyföld Nemzetszövetségének Birodalma",
+    "discover": "Az Alkotmányos Parlamentáris Monarchia Hivatalos Állami Portálja — Alapítva: 2018. október 31.",
+    "learnMore": "Nemzeti Névjegy"
   },
   "intro": {
-    "title": "Bemutatkozás",
-    "description": "Üdvözlünk Furnovskyföld Nemzetszövetségi Birodalmának hivatalos oldalán! Itt megtudhatod, hogyan csatlakozhatsz Discord, illetve Minecraft szervereinkhez, valamint tanulhatsz a történelmünkről, kultúránkról, politikánkról és még sok egyébről!",
+    "title": "Állami Áttekintés",
+    "description": "<strong>Furnovskyföld Nemzetszövetségének Birodalma</strong> szuverén, demokratikus parlamentáris monarchia, amely a 2026. október 24-én hatályba lépett Alkotmány alapján működik. Államfője <strong>Őfelsége I. Furnovsky Császár</strong>, végrehajtó szerve a 15 fős egykamarás <strong>Országgyűlésnek</strong> felelős <strong>XIII. Szövetségi Kormány</strong>. Nemzetünk több mint 250 polgárt egyesít négy régióban (Belső-Furnovskyföld, Portlandia, Nyugat-Advena és Kelet-Advena), élénk többpárti demokráciával, a <strong>Furn-Brule (Fß)</strong> nemzeti valután alapuló központi banki és vállalati gazdasággal, szabad sajtóval, valamint platformfüggetlen Minecraft-szerverrel.",
     "stats": {
       "population": "Lakosság",
       "area": "Terület",
-      "areaValue": "200 Chunk"
+      "areaValue": "546 861 km²"
     },
     "discordStatus": {
       "title": "Discord Szerver",
-      "members": "Online tag"
+      "members": "Online polgár"
     }
   },
   "join": {
@@ -527,6 +527,30 @@
           "title": "Regionális Építési Törvény (2026)",
           "desc": "Szabályozza a Minecraft-szerveren történő építkezési előírásokat, településfejlesztést és regionális infrastruktúrát."
         },
+        "reconfig_aug_2026": {
+          "title": "A Discord-átalakítási Bizottság 1. határozata (2026)",
+          "desc": "Kihirdetve 2026. augusztus 4-én az első nyilvános Sanctio Regia ünnepségen Damian Ramirez régens által."
+        },
+        "aurigrad_treaty_2026": {
+          "title": "Kölcsönös Elismerési és Barátsági Szerződés Aurigrad Föderációval (2026)",
+          "desc": "Kétoldalú diplomáciai szerződés, amely kölcsönös elismerést és nagykövetségi kapcsolatokat létesít Aurigraddal."
+        },
+        "sanctio_regia_2026": {
+          "title": "Törvény a Hivatalos Uralkodói Szentesítésről — „Sanctio Regia” Törvény (2026)",
+          "desc": "Szabályozza az Országgyűlés által elfogadott törvények uralkodói szentesítésének és kihirdetésének alkotmányos rendjét."
+        },
+        "federal_gazette_2026": {
+          "title": "Törvény a Szövetségi Közlönyről — Federal Gazette Bill (2026)",
+          "desc": "Létrehozza a hivatalos Szövetségi Közlönyt a törvények, rendeletek, nemzetközi szerződések és közlemények kihirdetésére."
+        },
+        "commonwealth_games_2026": {
+          "title": "Törvény a Nemzetközösségi Játékokról — Commonwealth Games Bill (2026)",
+          "desc": "Megalapítja Furnovskyföld Nemzetszövetségének Birodalma hivatalos sport- és kulturális játékait."
+        },
+        "los_charter_2026": {
+          "title": "A Szerverek Ligája (League of Servers) Alapokmánya (2026)",
+          "desc": "A Szerverek Ligája (LoS) alapító nemzetközi szerződése, amelyet az Alkotmány D) cikke ismer el."
+        },
         "bunker_limitation_2025": {
           "title": "Bunkerkorlátozási Törvény (2025)",
           "desc": "Korlátozásokat és felügyeletet ír elő a földalatti erődítményekre és bunkerekre a Minecraft-szerveren."
@@ -589,11 +613,11 @@
     }
   },
   "minecraft": {
-    "pageTitle": "Minecraft Szerver",
-    "pageSubtitle": "Csatlakozz Minecraft szerverünkhöz és építs velünk!",
+    "pageTitle": "Minecraft Szerver és Települések",
+    "pageSubtitle": "A Nemzetközösség hivatalos építészeti, önkormányzati és gazdasági világa",
     "description": {
-      "title": "Leírás",
-      "content": "Minecraft szerverünk egy hely, ahol építhetsz, felfedezhetsz és szórakozhatsz közösségünkkel. Különféle bővítményeink és barátságos személyzetünk van, hogy segítsen a kezdésben. Akár tapasztalt játékos vagy, akár új vagy a játékban, szerverünkön otthonra találsz."
+      "title": "A Birodalom Fizikai Világa",
+      "content": "A hivatalos Furnovskyland Minecraft-szerver (<code>ujfurnvaros.aternos.me</code>) az a terület, ahol alkotmányos településeink, állami nagyberuházásaink és a <strong>Furn-Brule (Fß)</strong> alapú gazdaságunk életre kel. A <strong>Minecraft 1.21.11</strong> verzión futó szerver <strong>Java és Bedrock</strong> kiadásról (tört klienssel is) egyaránt elérhető, működő járművekkel és repülőgépekkel (<strong>MTVehicles</strong>), földalatti metróhálózattal (<code>FM-01</code>, <code>FM-03</code>, <code>FM-04</code>), nemzeti vasúttal és közvetlenül választott polgármesterekkel."
     },
     "status": {
       "title": "Szerver állapot",

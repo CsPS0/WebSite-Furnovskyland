@@ -15,21 +15,21 @@
     "theme": "Toggle dark mode"
   },
   "hero": {
-    "welcome": "Welcome to Furnovskyland!",
-    "discover": "Discover our nation's rich history and culture",
-    "learnMore": "Learn More"
+    "welcome": "Empire of Furnovskyland's Commonwealth",
+    "discover": "Official State Portal of the Constitutional Parliamentary Monarchy — Founded October 31, 2018",
+    "learnMore": "National Profile"
   },
   "intro": {
-    "title": "Introduction",
-    "description": "Welcome to the official website of the National Federation Empire of Furnovskyland! Here you can learn how to join our Discord and Minecraft servers, and learn about our history, culture, politics, and much more!",
+    "title": "State Overview",
+    "description": "The <strong>Empire of Furnovskyland's Commonwealth</strong> is a sovereign democratic parliamentary monarchy governed under the Constitution of October 24, 2026. Headed by <strong>His Majesty Emperor Furnovsky I</strong> and the <strong>XIII. Federal Government</strong> accountable to the 15-seat unicameral <strong>National Assembly</strong>, our nation unites 250+ citizens across four territories (Inner-Furnovskyland, Portlandia, West-Advena, and East-Advena), an active multi-party parliamentary democracy, a central banking and corporate economy in the national <strong>Furn-Brule (Fß)</strong> currency, independent press agencies, and a cross-platform Minecraft server.",
     "stats": {
       "population": "Population",
       "area": "Area",
-      "areaValue": "200 Chunks"
+      "areaValue": "546,861 km²"
     },
     "discordStatus": {
       "title": "Discord Server",
-      "members": "Members Online"
+      "members": "Citizens Online"
     }
   },
   "join": {
@@ -288,6 +288,30 @@
           "title": "Regional Construction Act (2026)",
           "desc": "Regulates building standards, municipal development, and regional infrastructure on the Minecraft server."
         },
+        "reconfig_aug_2026": {
+          "title": "First Resolution of the Discord Reconfiguration Committee (2026)",
+          "desc": "Enacted on August 4, 2026 during the first public Sanctio Regia ceremony by Regent Damian Ramirez."
+        },
+        "aurigrad_treaty_2026": {
+          "title": "Treaty of Mutual Recognition and Friendship with the Federation of Aurigrad (2026)",
+          "desc": "Bilateral diplomatic treaty establishing mutual recognition, embassies, and cooperation with Aurigrad."
+        },
+        "sanctio_regia_2026": {
+          "title": "Formal Royal Assent Act — \"Sanctio Regia\" Act (2026)",
+          "desc": "Codifies the ceremonial and constitutional protocol for imperial promulgation of laws passed by Parliament."
+        },
+        "federal_gazette_2026": {
+          "title": "The Federal Gazette Bill (2026)",
+          "desc": "Establishes the official Federal Gazette for promulgating acts, decrees, treaties, and constitutional notices."
+        },
+        "commonwealth_games_2026": {
+          "title": "Commonwealth Games Bill (2026)",
+          "desc": "Institutes the official sporting and cultural games of the Empire of Furnovskyland's Commonwealth."
+        },
+        "los_charter_2026": {
+          "title": "Charter of the League of Servers (2026)",
+          "desc": "Foundational inter-server treaty of the League of Servers (LoS), constitutionally recognized under Article D."
+        },
         "bunker_limitation_2025": {
           "title": "Bunker Limitation Act (2025)",
           "desc": "Establishes restrictions and oversight on underground fortifications and bunkers on the Minecraft server."
@@ -350,11 +374,11 @@
     }
   },
   "minecraft": {
-    "pageTitle": "Minecraft Server",
-    "pageSubtitle": "Join our Minecraft server and build with us!",
+    "pageTitle": "Minecraft Server & Settlements",
+    "pageSubtitle": "Official national realm of the Commonwealth — Municipal self-government, economy, and infrastructure",
     "description": {
-      "title": "Description",
-      "content": "Our Minecraft server is a place where you can build, explore, and have fun with our community. We have a variety of plugins and a friendly staff to help you get started. Whether you are a seasoned player or new to the game, you will find a home on our server."
+      "title": "The Physical Realm of the Commonwealth",
+      "content": "The official Furnovskyland Minecraft server (<code>ujfurnvaros.aternos.me</code>) is the physical territory where our constitutional municipalities, national infrastructure, and <strong>Furn-Brule (Fß)</strong> economy come to life. Running on <strong>Minecraft 1.21.11</strong> with full support for both <strong>Java and Bedrock Editions</strong> (including cracked accounts), the server features working cars and aircraft via <strong>MTVehicles</strong>, an underground metro network (<code>FM-01</code>, <code>FM-03</code>, <code>FM-04</code>), the National Railway, and democratically elected Settlement Mayors."
     },
     "status": {
       "title": "Server Status",

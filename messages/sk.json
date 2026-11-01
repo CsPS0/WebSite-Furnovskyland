@@ -15,21 +15,21 @@
     "theme": "Prepnúť tmavý režim"
   },
   "hero": {
-    "welcome": "Vitajte vo Furnovskyland!",
-    "discover": "Objavte bohatú históriu a kultúru nášho národa",
-    "learnMore": "Zistite viac"
+    "welcome": "Cisárstvo Spoločenstva Furnovskyland",
+    "discover": "Oficiálny štátny portál konštitučnej parlamentnej monarchie — Založené 31. októbra 2018",
+    "learnMore": "Profil štátu"
   },
   "intro": {
-    "title": "Úvod",
-    "description": "Vitajte na oficiálnej webovej stránke Národnej federatívnej ríše Furnovskyland! Tu sa dozviete, ako sa pripojiť k našim serverom Discord a Minecraft, a dozviete sa o našej histórii, kultúre, politike a oveľa viac!",
+    "title": "Prehľad štátu",
+    "description": "<strong>Cisárstvo Spoločenstva Furnovskyland</strong> je zvrchovaná demokratická parlamentná monarchia spravovaná podľa Ústavy z 24. októbra 2026. Na čele s hlavou štátu <strong>Jeho Veličenstvom cisárom Furnovským I.</strong> a <strong>XIII. federálnou vládou</strong> zodpovednou 15-člennému jednokomorovému <strong>Národnému zhromaždeniu</strong> náš národ spája viac ako 250 občanov v štyroch teritóriách (Vnútorný Furnovskyland, Portlandia, Západná Advena a Východná Advena) s aktívnou parlamentnou demokraciou, centrálnou bankou a korporátnou ekonomikou v národnej mene <strong>Furn-Brule (Fß)</strong>, slobodnou tlačou a multiplatformovým Minecraft serverom.",
     "stats": {
       "population": "Obyvateľstvo",
       "area": "Rozloha",
-      "areaValue": "200 chunkov"
+      "areaValue": "546 861 km²"
     },
     "discordStatus": {
       "title": "Discord Server",
-      "members": "Členovia online"
+      "members": "Občania online"
     }
   },
   "join": {
@@ -527,6 +527,30 @@
           "title": "Zákon o regionálnej výstavbe (2026)",
           "desc": "Upravuje stavebné normy, rozvoj sídiel a regionálnu infraštruktúru na Minecraft serveri."
         },
+        "reconfig_aug_2026": {
+          "title": "Prvé uznesenie Výboru pre rekonfiguráciu Discordu (2026)",
+          "desc": "Vyhlásené 4. augusta 2026 počas prvej verejnej ceremónie Sanctio Regia regentom Damianom Ramirezom."
+        },
+        "aurigrad_treaty_2026": {
+          "title": "Zmluva o vzájomnom uznaní a priateľstve s Federáciou Aurigrad (2026)",
+          "desc": "Bilaterálna diplomatická zmluva o vzájomnom uznaní, veľvyslanectvách a spolupráci s Aurigradom."
+        },
+        "sanctio_regia_2026": {
+          "title": "Zákon o formálnom kráľovskom súhlase — Zákon „Sanctio Regia“ (2026)",
+          "desc": "Kodifikuje ceremoniálny a ústavný protokol cisárskej promulgácie zákonov schválených Parlamentom."
+        },
+        "federal_gazette_2026": {
+          "title": "Zákon o Federálnom vestníku — The Federal Gazette Bill (2026)",
+          "desc": "Zriaďuje oficiálny Federálny vestník na vyhlasovanie zákonov, dekrétov, zmlúv a ústavných oznámení."
+        },
+        "commonwealth_games_2026": {
+          "title": "Zákon o Hrách Spoločenstva — Commonwealth Games Bill (2026)",
+          "desc": "Ustanovuje oficiálne športové a kultúrne hry Cisárstva Spoločenstva Furnovskyland."
+        },
+        "los_charter_2026": {
+          "title": "Charta Ligy serverov (League of Servers, 2026)",
+          "desc": "Zakladajúca medziserverová zmluva Ligy serverov (LoS), ústavne uznaná podľa článku D."
+        },
         "bunker_limitation_2025": {
           "title": "Zákon o obmedzení bunkrov (2025)",
           "desc": "Stanovuje obmedzenia a dohľad nad podzemnými opevneniami a bunkrami na Minecraft serveri."
@@ -589,11 +613,11 @@
     }
   },
   "minecraft": {
-    "pageTitle": "Minecraft Server",
-    "pageSubtitle": "Pripojte sa k nášmu Minecraft serveru a stavajte s nami!",
+    "pageTitle": "Minecraft Server a Sídla",
+    "pageSubtitle": "Oficiálny národný svet Spoločenstva — Miestna samospráva, ekonomika a infraštruktúra",
     "description": {
-      "title": "Popis",
-      "content": "Náš Minecraft server je miesto, kde môžete stavať, objavovať a baviť sa s našou komunitou. Máme rôzne pluginy a priateľský personál, ktorý vám pomôže začať. Či už ste skúsený hráč alebo nový v hre, na našom serveri nájdete domov."
+      "title": "Fyzický svet Spoločenstva",
+      "content": "Oficiálny Minecraft server Furnovskylandu (<code>ujfurnvaros.aternos.me</code>) je fyzickým územím, kde ožívajú naše ústavné samosprávy, štátna infraštruktúra a ekonomika založená na mene <strong>Furn-Brule (Fß)</strong>. Server beží na verzii <strong>Minecraft 1.21.11</strong> s plnou podporou pre <strong>Java aj Bedrock edíciu</strong> (vrátane neoriginálnych účtov) a ponúka funkčné autá a lietadlá cez <strong>MTVehicles</strong>, podzemnú sieť metra (<code>FM-01</code>, <code>FM-03</code>, <code>FM-04</code>), Národnú železnicu a demokraticky volených starostov sídiel."
     },
     "status": {
       "title": "Stav servera",
