@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, Merriweather } from "next/font/google";
 import { ViewTransition } from "react";
+import { Analytics } from "@vercel/analytics/next";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { getDictionary, getLocale, locales } from "@/lib/i18n";
@@ -43,6 +44,7 @@ export default async function RootLayout({ children }: LayoutProps<"/[lang]">) {
           <ViewTransition>{children}</ViewTransition>
         </main>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
