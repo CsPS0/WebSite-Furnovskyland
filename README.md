@@ -147,7 +147,7 @@ bun run build   # Run database migrations and production build
 
 ## Contributors
 
-- [CsPS](https://github.com/CsPS0)
+- [CsPS](https://yoursit.ee/csps) — Maintainer ([GitHub](https://github.com/CsPS0))
 - [Furnovsky](https://github.com/Furnovsky963)
 
 ## License

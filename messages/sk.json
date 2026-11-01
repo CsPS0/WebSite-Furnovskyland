@@ -551,7 +551,8 @@
       "saturday": "Sobota: N/A",
       "sunday": "Nedeľa: N/A"
     },
-    "copyright": "Národná federatívna ríša Furnovskyland"
+    "copyright": "Národná federatívna ríša Furnovskyland",
+    "maintainedBy": "Spravuje"
   },
   "vote": {
     "pageTitle": "Hlasovania",

@@ -46,9 +46,22 @@ export async function Footer() {
           </ul>
         </div>
       </div>
-      <p className="border-t border-white/10 py-6 text-center text-sm text-white/60">
-        © {year} {t.footer.copyright}
-      </p>
+      <div className="border-t border-white/10 py-6">
+        <div className="page flex flex-col items-center justify-between gap-2 text-center text-sm text-white/60 sm:flex-row">
+          <p>© {year} {t.footer.copyright}</p>
+          <p>
+            {t.footer.maintainedBy}{" "}
+            <a
+              href="https://yoursit.ee/csps"
+              target="_blank"
+              rel="noreferrer"
+              className="font-medium text-white/80 underline decoration-white/30 underline-offset-4 transition hover:text-accent hover:decoration-accent"
+            >
+              CsPS
+            </a>
+          </p>
+        </div>
+      </div>
     </footer>
   );
 }

@@ -312,7 +312,8 @@
       "saturday": "Saturday: N/A",
       "sunday": "Sunday: N/A"
     },
-    "copyright": "National Federation Empire of Furnovskyland"
+    "copyright": "National Federation Empire of Furnovskyland",
+    "maintainedBy": "Maintained by"
   },
   "culturalDays": {
     "pageTitle": "Cultural Days and Holidays",

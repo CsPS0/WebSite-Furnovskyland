@@ -551,7 +551,8 @@
       "saturday": "Szombat: N/A",
       "sunday": "Vasárnap: N/A"
     },
-    "copyright": "Furnovskyland Nemzetszövetségének Birodalma"
+    "copyright": "Furnovskyland Nemzetszövetségének Birodalma",
+    "maintainedBy": "Karbantartja:"
   },
   "vote": {
     "pageTitle": "Szavazások",

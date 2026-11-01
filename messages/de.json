@@ -312,7 +312,8 @@
       "saturday": "Samstag: N/A",
       "sunday": "Sonntag: N/A"
     },
-    "copyright": "Nationales Föderationsreich Furnovskyland"
+    "copyright": "Nationales Föderationsreich Furnovskyland",
+    "maintainedBy": "Betreut von"
   },
   "culturalDays": {
     "pageTitle": "Kulturtage und Feiertage",
