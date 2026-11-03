@@ -22,6 +22,13 @@
       "when": 1793699600000,
       "tag": "0002_channel_and_visibility",
       "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1793750400000,
+      "tag": "0003_app_meta",
+      "breakpoints": true
     }
   ]
 }

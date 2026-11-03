@@ -133,7 +133,7 @@ export function CampaignsSection({
               <span className="label">Poster Image URL (optional)</span>
               <input
                 name="imageUrl"
-                placeholder="https://... or /campaigns/..."
+                placeholder="https://cdn.discordapp.com/... or /campaigns/..."
                 className="input"
               />
             </label>

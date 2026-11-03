@@ -5,6 +5,7 @@ import { refresh } from "next/cache";
 import { getDb } from "@/db";
 import * as schema from "@/db/schema";
 import { canManageParliament, canPublishCampaign, getMember, isAdmin, isEmperor } from "@/lib/discord";
+import { hexColor, isSafeImageUrl } from "@/lib/sanitize";
 import { getSessionUser } from "@/lib/session";
 
 export async function updateParliamentSeat(form: FormData) {
@@ -21,7 +22,7 @@ export async function updateParliamentSeat(form: FormData) {
   const party = String(form.get("party") ?? "").trim();
   const coalition = form.get("coalition") === "opposition" ? ("opposition" as const) : ("government" as const);
   const role = String(form.get("role") ?? "").trim() || "Member of Parliament";
-  const color = String(form.get("color") ?? "#d60000").trim() || "#d60000";
+  const color = hexColor(form.get("color"), "#d60000");
 
   if (!memberName || !party) return;
 
@@ -66,9 +67,10 @@ export async function createCampaign(form: FormData) {
   const body = String(form.get("body") ?? "").trim();
   const imageUrlRaw = String(form.get("imageUrl") ?? "").trim();
   const imageUrl = imageUrlRaw || null;
-  const color = String(form.get("color") ?? "#c8102e").trim() || "#c8102e";
+  const color = hexColor(form.get("color"), "#c8102e");
 
   if (!electionTitle || !party || !title) return;
+  if (imageUrl && !isSafeImageUrl(imageUrl)) return;
 
   const db = await getDb();
   await db.insert(schema.campaigns).values({

@@ -7,6 +7,7 @@ import { start } from "workflow/api";
 import { getDb } from "@/db";
 import { ballots, elections, electionTypes, options, resultsVisibilities, type ElectionType, type ResultsVisibility } from "@/db/schema";
 import { requireAdmin, requireEmperor } from "@/lib/admin";
+import { isVoteChannelId } from "@/lib/governance-config";
 import { cancelElection, getElection, vetoElection } from "@/lib/elections";
 import { dictionaryFor, hasLocale } from "@/lib/i18n";
 import { electionLifecycle } from "@/workflows/election";
@@ -14,6 +15,15 @@ import { electionLifecycle } from "@/workflows/election";
 export type SaveState = { error?: string } | null;
 
 const LAW_OPTIONS = ["yes", "no", "abstain"];
+// Every viewer draws one hemicycle seat per seat, and a huge veto window overflows the date math.
+const MAX_SEATS = 50;
+const MAX_VETO_HOURS = 30 * 24;
+
+/** A whole number in [0, max]; anything else becomes 0. */
+const boundedInt = (value: FormDataEntryValue | null, max: number) => {
+  const n = Number(value ?? 0);
+  return Number.isInteger(n) ? Math.min(max, Math.max(0, n)) : 0;
+};
 
 export async function saveElection(_prev: SaveState, form: FormData): Promise<SaveState> {
   const admin = await requireAdmin();
@@ -32,9 +42,9 @@ export async function saveElection(_prev: SaveState, form: FormData): Promise<Sa
   const opensAt = new Date(String(form.get("opensAt")));
   const closesAt = new Date(String(form.get("closesAt")));
   const maxPicks = type === "multi" ? Number(form.get("maxPicks")) : 1;
-  const seats = type !== "law" ? Math.max(0, Number(form.get("seats") ?? 0)) : 0;
+  const seats = type !== "law" ? boundedInt(form.get("seats"), MAX_SEATS) : 0;
   const quorum = form.get("quorum") ? Number(form.get("quorum")) : null;
-  const vetoHours = type === "law" ? Math.max(0, Number(form.get("vetoHours") ?? 0)) : 0;
+  const vetoHours = type === "law" ? boundedInt(form.get("vetoHours"), MAX_VETO_HOURS) : 0;
 
   if (!title) return { error: t.title };
   if (labels.length < 2 || new Set(labels).size !== labels.length) return { error: t.options };
@@ -45,14 +55,15 @@ export async function saveElection(_prev: SaveState, form: FormData): Promise<Sa
 
   const rawVisibility = String(form.get("resultsVisibility") ?? "after_close") as ResultsVisibility;
   const resultsVisibility: ResultsVisibility = resultsVisibilities.includes(rawVisibility) ? rawVisibility : "after_close";
-  const announceChannelId = String(form.get("announceChannelId") ?? "").trim() || null;
+  const rawChannelId = String(form.get("announceChannelId") ?? "").trim();
+  const announceChannelId = isVoteChannelId(rawChannelId) ? rawChannelId : null;
 
   const values = {
     title,
     description: String(form.get("description") ?? "").trim(),
     type,
     maxPicks,
-    seats: Number.isInteger(seats) ? seats : 0,
+    seats,
     eligibleRoleIds: form.getAll("roles").map(String),
     announceChannelId,
     resultsVisibility,

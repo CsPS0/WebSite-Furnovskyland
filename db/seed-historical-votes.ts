@@ -34,6 +34,7 @@ type HistoricalVote = HistoricalLawVote | HistoricalPluralityVote;
 
 const EMPEROR_ID = "548177745465704468";
 const EMPEROR_NAME = "Furnovsky I";
+const SEED_MARKER = "historical_seed_v1";
 
 export const DEFAULT_PARLIAMENT_SEATS: {
   seatNumber: number;
@@ -861,11 +862,29 @@ export async function seedHistoricalVotes(db: any) {
     .values({ id: EMPEROR_ID, name: EMPEROR_NAME })
     .onConflictDoNothing();
 
+  // Seed once: this runs on every deploy, and must not bring back what an admin deleted.
+  const marker: unknown[] = await db
+    .select({ key: schema.appMeta.key })
+    .from(schema.appMeta)
+    .where(eq(schema.appMeta.key, SEED_MARKER));
+  if (marker.length > 0) return 0;
+
+  const existingRows: { id: number; title: string; seats: number }[] = await db
+    .select({
+      id: schema.elections.id,
+      title: schema.elections.title,
+      seats: schema.elections.seats,
+    })
+    .from(schema.elections);
+  const existingByTitle = new Map(existingRows.map((r) => [r.title, r]));
+  // Databases seeded before the marker existed already hold the archive, so they only get marked.
+  const seededBefore = HISTORICAL_VOTES.some((v) => existingByTitle.has(v.title));
+
   // Seed 15 Parliament seats if not yet seeded
   const existingSeats: { seatNumber: number }[] = await db
     .select({ seatNumber: schema.parliamentSeats.seatNumber })
     .from(schema.parliamentSeats);
-  if (existingSeats.length === 0) {
+  if (!seededBefore && existingSeats.length === 0) {
     await db
       .insert(schema.parliamentSeats)
       .values(DEFAULT_PARLIAMENT_SEATS)
@@ -876,7 +895,7 @@ export async function seedHistoricalVotes(db: any) {
   const existingCampaigns: { id: number }[] = await db
     .select({ id: schema.campaigns.id })
     .from(schema.campaigns);
-  if (existingCampaigns.length === 0) {
+  if (!seededBefore && existingCampaigns.length === 0) {
     await db.insert(schema.campaigns).values(
       DEFAULT_CAMPAIGNS.map((c) => ({
         electionTitle: c.electionTitle,
@@ -892,15 +911,6 @@ export async function seedHistoricalVotes(db: any) {
     );
   }
 
-  const existingRows: { id: number; title: string; seats: number }[] = await db
-    .select({
-      id: schema.elections.id,
-      title: schema.elections.title,
-      seats: schema.elections.seats,
-    })
-    .from(schema.elections);
-  const existingByTitle = new Map(existingRows.map((r) => [r.title, r]));
-
   // Backfill `seats` on already-seeded historical elections if needed
   for (const vote of HISTORICAL_VOTES) {
     if (vote.kind === "plurality" && vote.seats && vote.seats > 0) {
@@ -914,8 +924,7 @@ export async function seedHistoricalVotes(db: any) {
     }
   }
 
-  const missing = HISTORICAL_VOTES.filter((v) => !existingByTitle.has(v.title));
-  if (missing.length === 0) return 0;
+  const missing = seededBefore ? [] : HISTORICAL_VOTES;
 
   for (const vote of missing) {
     const opensAt = new Date(vote.opensAt);
@@ -1021,5 +1030,6 @@ export async function seedHistoricalVotes(db: any) {
     }
   }
 
+  await db.insert(schema.appMeta).values({ key: SEED_MARKER }).onConflictDoNothing();
   return missing.length;
 }

@@ -688,6 +688,7 @@
     "secret": "Die Abstimmung ist geheim: Nur die Summen werden veröffentlicht.",
     "results": "Ergebnis",
     "resultsHidden": "Das Ergebnis wird nach dem Ende angezeigt.",
+    "resultsRestricted": "Das Ergebnis dieser Abstimmung ist eingeschränkt und nur für berechtigte Mitglieder auf der Website sichtbar.",
     "ballots": "{n} Stimmen",
     "elected": "Gewählt",
     "round": "Runde {n}",

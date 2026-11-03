@@ -162,6 +162,12 @@ export const RESULTS_VISIBILITY_OPTIONS: {
   },
 ];
 
+/** Only listed channels: the id goes into a Bot API URL path, so anything else could reach other endpoints. */
+export const isVoteChannelId = (id: string) => DISCORD_VOTE_CHANNELS.some((c) => c.id === id);
+
+/** Whether a closed vote's tally may go to everyone, including the Discord announcement. */
+export const resultsArePublic = (vis: ResultsVisibility | null | undefined) => vis !== "eligible_only" && vis !== "admin_only";
+
 export function getChannelInfo(channelId: string | null | undefined) {
   if (!channelId) return null;
   return DISCORD_VOTE_CHANNELS.find((c) => c.id === channelId) ?? {

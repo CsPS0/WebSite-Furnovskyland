@@ -688,6 +688,7 @@
     "secret": "A szavazás titkos: csak az összesítés nyilvános.",
     "results": "Eredmény",
     "resultsHidden": "Az eredmény a zárás után látható.",
+    "resultsRestricted": "A szavazás eredménye korlátozott: csak a jogosult tagok láthatják a weboldalon.",
     "ballots": "{n} szavazat",
     "elected": "Megválasztva",
     "round": "{n}. forduló",

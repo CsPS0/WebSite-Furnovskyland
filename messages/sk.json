@@ -688,6 +688,7 @@
     "secret": "Hlasovanie je tajné: zverejňujú sa len súčty.",
     "results": "Výsledky",
     "resultsHidden": "Výsledky sa zobrazia po skončení hlasovania.",
+    "resultsRestricted": "Výsledky tohto hlasovania sú obmedzené a na webe ich vidia iba oprávnení členovia.",
     "ballots": "{n} hlasov",
     "elected": "Zvolení",
     "round": "{n}. kolo",

@@ -94,6 +94,12 @@ export const campaigns = pgTable("campaigns", {
   createdAt: createdAt(),
 });
 
+// One-off markers, e.g. that the historical archive was seeded, so later deploys don't undo admin deletions.
+export const appMeta = pgTable("app_meta", {
+  key: text("key").primaryKey(),
+  createdAt: createdAt(),
+});
+
 export type Election = typeof elections.$inferSelect;
 export type Option = typeof options.$inferSelect;
 export type Ballot = typeof ballots.$inferSelect;

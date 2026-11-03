@@ -260,7 +260,7 @@ export function ElectionForm({ lang, roles, draft, t, types, majorities }: Props
         {type === "law" && (
           <label className="block">
             <span className="label">{f.vetoHours}</span>
-            <input name="vetoHours" type="number" min={0} defaultValue={draft?.vetoHours ?? 48} className="input" />
+            <input name="vetoHours" type="number" min={0} max={720} defaultValue={draft?.vetoHours ?? 48} className="input" />
           </label>
         )}
       </div>

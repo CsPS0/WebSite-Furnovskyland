@@ -2,6 +2,7 @@ import "server-only";
 import { asc, eq } from "drizzle-orm";
 import { getDb } from "@/db";
 import { options, type Election } from "@/db/schema";
+import { resultsArePublic } from "./governance-config";
 import { dictionaryFor, fmt, hasLocale, type Dictionary } from "./i18n";
 import type { TallyResult } from "./tally";
 
@@ -31,6 +32,9 @@ export async function announce(kind: Kind, election: Election) {
   let description: string;
   if (kind === "opened") {
     description = [election.description, `${t.vote.closes}: ${discordTime(election.closesAt)}`].filter(Boolean).join("\n\n");
+  } else if (!resultsArePublic(election.resultsVisibility)) {
+    // Restricted results stay on the website; the channel only learns that the vote moved on.
+    description = t.vote.resultsRestricted;
   } else {
     const db = await getDb();
     const opts = await db.select().from(options).where(eq(options.electionId, election.id)).orderBy(asc(options.position));
@@ -54,7 +58,8 @@ export async function announce(kind: Kind, election: Election) {
     allowed_mentions: { parse: [] }, // never ping from user-written titles
   };
 
-  if (election.announceChannelId && process.env.DISCORD_BOT_TOKEN) {
+  // Rows saved before the channel allowlist could hold any string; only a snowflake may go into the URL path.
+  if (election.announceChannelId && /^\d{17,20}$/.test(election.announceChannelId) && process.env.DISCORD_BOT_TOKEN) {
     const botRes = await fetch(`https://discord.com/api/v10/channels/${election.announceChannelId}/messages`, {
       method: "POST",
       headers: {

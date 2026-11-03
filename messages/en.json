@@ -688,6 +688,7 @@
     "secret": "Votes are secret: only the totals are published.",
     "results": "Results",
     "resultsHidden": "Results are shown when the vote closes.",
+    "resultsRestricted": "The results of this vote are restricted and can only be viewed on the website by eligible members.",
     "ballots": "{n} ballots",
     "elected": "Elected",
     "round": "Round {n}",
