@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Suspense } from "react";
+import { connection } from "next/server";
 import { Plus } from "lucide-react";
 import { LocalDate } from "@/components/local-date";
 import { NotAdmin } from "@/components/not-admin";
@@ -27,14 +28,10 @@ export default function AdminPage() {
 }
 
 async function AdminList() {
-  const [admin, t, locale, all, seats] = await Promise.all([
-    getAdmin(),
-    getDictionary(),
-    getLocale(),
-    listAllElections(),
-    listParliamentSeats(),
-  ]);
+  await connection();
+  const [admin, t, locale] = [await getAdmin(), await getDictionary(), await getLocale()];
   if (!admin) return <NotAdmin />;
+  const [all, seats] = await Promise.all([listAllElections(), listParliamentSeats()]);
   const now = new Date();
 
   return (

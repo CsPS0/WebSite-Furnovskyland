@@ -4,20 +4,21 @@ import { drizzle } from "drizzle-orm/neon-http";
 import * as schema from "./schema";
 import { seedHistoricalVotes } from "./seed-historical-votes";
 
-async function connect() {
-  const db = drizzle(neon(process.env.DATABASE_URL!), { schema });
-  await seedHistoricalVotes(db);
-  return db;
+function connect() {
+  return drizzle(neon(process.env.DATABASE_URL!), { schema });
 }
 
-export type Db = Awaited<ReturnType<typeof connect>>;
+export type Db = ReturnType<typeof connect>;
 
 // On globalThis because the dev server loads this module once per bundle layer, and PGlite allows only one instance per folder.
 const shared = globalThis as unknown as { furnovskyDb?: Promise<Db> };
 
 /** Neon in production. Without DATABASE_URL (local dev), an embedded Postgres in .pglite/ instead. */
 export function getDb(): Promise<Db> {
-  shared.furnovskyDb ??= process.env.DATABASE_URL ? connect() : localDb();
+  if (process.env.DATABASE_URL) {
+    return Promise.resolve(connect());
+  }
+  shared.furnovskyDb ??= localDb();
   return shared.furnovskyDb;
 }
 
