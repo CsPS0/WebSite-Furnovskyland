@@ -13,8 +13,10 @@ export const users = pgTable("users", {
 
 export const electionTypes = ["law", "single", "multi", "ranked"] as const;
 export const electionStatuses = ["draft", "scheduled", "open", "closed", "veto_window", "final", "vetoed", "cancelled"] as const;
+export const resultsVisibilities = ["after_close", "live_public", "live_admin_only", "eligible_only", "admin_only"] as const;
 export type ElectionType = (typeof electionTypes)[number];
 export type ElectionStatus = (typeof electionStatuses)[number];
+export type ResultsVisibility = (typeof resultsVisibilities)[number];
 
 export const elections = pgTable("elections", {
   id: serial("id").primaryKey(),
@@ -24,6 +26,8 @@ export const elections = pgTable("elections", {
   maxPicks: integer("max_picks").notNull().default(1),
   seats: integer("seats").notNull().default(0), // > 0 enables D'Hondt parliamentary seat allocation & hemicycle chart
   eligibleRoleIds: text("eligible_role_ids").array().notNull().default([]), // empty = every server member
+  announceChannelId: text("announce_channel_id"), // Discord channel ID for bot announcements
+  resultsVisibility: text("results_visibility", { enum: resultsVisibilities }).notNull().default("after_close"),
   majority: text("majority", { enum: ["simple", "two_thirds"] }).notNull().default("simple"),
   quorum: integer("quorum"),
   vetoHours: integer("veto_hours").notNull().default(0),

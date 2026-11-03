@@ -1,8 +1,14 @@
 "use client";
 
 import { useActionState, useState, useSyncExternalStore } from "react";
-import { CircleAlert } from "lucide-react";
+import { CircleAlert, Eye, Hash, Shield } from "lucide-react";
 import { saveElection, type SaveState } from "@/app/actions/admin";
+import type { ResultsVisibility } from "@/db/schema";
+import {
+  DISCORD_VOTE_CHANNELS,
+  RESULTS_VISIBILITY_OPTIONS,
+  ROLE_ACCESS_PRESETS,
+} from "@/lib/governance-config";
 import type { Dictionary } from "@/lib/i18n";
 import { fmt } from "@/lib/i18n-config";
 
@@ -14,6 +20,8 @@ type Draft = {
   maxPicks: number;
   seats?: number;
   eligibleRoleIds: string[];
+  announceChannelId?: string | null;
+  resultsVisibility?: ResultsVisibility;
   majority: "simple" | "two_thirds";
   quorum: number | null;
   vetoHours: number;
@@ -59,7 +67,17 @@ function DateTimeField({ name, label, initial }: { name: string; label: string; 
 export function ElectionForm({ lang, roles, draft, t, types, majorities }: Props) {
   const [state, action, pending] = useActionState<SaveState, FormData>(saveElection, null);
   const [type, setType] = useState<Draft["type"]>(draft?.type ?? "single");
+  const [selectedRoles, setSelectedRoles] = useState<string[]>(draft?.eligibleRoleIds ?? []);
+  const [announceChannelId, setAnnounceChannelId] = useState<string>(draft?.announceChannelId ?? "852198106627047474");
+  const [resultsVisibility, setResultsVisibility] = useState<ResultsVisibility>(draft?.resultsVisibility ?? "after_close");
   const f = t.fields;
+
+  const toggleRole = (roleId: string) => {
+    setSelectedRoles((prev) => (prev.includes(roleId) ? prev.filter((id) => id !== roleId) : [...prev, roleId]));
+  };
+
+  const activeVis = RESULTS_VISIBILITY_OPTIONS.find((o) => o.value === resultsVisibility) ?? RESULTS_VISIBILITY_OPTIONS[0];
+  const activeChan = DISCORD_VOTE_CHANNELS.find((c) => c.id === announceChannelId);
 
   return (
     <form action={action} onReset={(e) => e.preventDefault()} className="card space-y-6">
@@ -76,16 +94,50 @@ export function ElectionForm({ lang, roles, draft, t, types, majorities }: Props
         <textarea name="description" rows={4} maxLength={4000} defaultValue={draft?.description} className="input" />
       </label>
 
-      <label className="block">
-        <span className="label">{f.type}</span>
-        <select name="type" value={type} onChange={(e) => setType(e.target.value as Draft["type"])} className="input">
-          {(Object.keys(types) as Draft["type"][]).map((k) => (
-            <option key={k} value={k}>
-              {fmt(types[k], { n: "N" })}
-            </option>
-          ))}
-        </select>
-      </label>
+      <div className="grid gap-6 sm:grid-cols-2">
+        <label className="block">
+          <span className="label">{f.type}</span>
+          <select
+            name="type"
+            value={type}
+            onChange={(e) => {
+              const nextType = e.target.value as Draft["type"];
+              setType(nextType);
+              if (nextType === "law" && announceChannelId === "852198106627047474") {
+                setAnnounceChannelId("1490456420444016871"); // #the-parliament
+              }
+            }}
+            className="input"
+          >
+            {(Object.keys(types) as Draft["type"][]).map((k) => (
+              <option key={k} value={k}>
+                {fmt(types[k], { n: "N" })}
+              </option>
+            ))}
+          </select>
+        </label>
+
+        <label className="block">
+          <span className="label flex items-center gap-1.5">
+            <Hash className="size-4 text-secondary" />
+            Discord Announcement Channel
+          </span>
+          <select
+            name="announceChannelId"
+            value={announceChannelId}
+            onChange={(e) => setAnnounceChannelId(e.target.value)}
+            className="input"
+          >
+            <option value="">Default Webhook (DISCORD_WEBHOOK_URL)</option>
+            {DISCORD_VOTE_CHANNELS.map((ch) => (
+              <option key={ch.id} value={ch.id}>
+                {ch.name} — {ch.category}
+              </option>
+            ))}
+          </select>
+          {activeChan && <span className="mt-1 block text-xs text-muted">{activeChan.description}</span>}
+        </label>
+      </div>
 
       {type !== "law" && (
         <label className="block">
@@ -108,17 +160,83 @@ export function ElectionForm({ lang, roles, draft, t, types, majorities }: Props
         </label>
       )}
 
-      <fieldset>
-        <legend className="label">{f.roles}</legend>
-        <div className="flex flex-wrap gap-2">
-          {roles.map((r) => (
-            <label key={r.id} className="flex cursor-pointer items-center gap-2 rounded-full border border-border px-3 py-1.5 has-checked:border-secondary has-checked:bg-secondary/10">
-              <input type="checkbox" name="roles" value={r.id} defaultChecked={draft?.eligibleRoleIds.includes(r.id)} className="accent-secondary" />
-              {r.name}
-            </label>
-          ))}
+      <div className="rounded-xl border border-border bg-bg-alt/40 p-4 space-y-4">
+        <div>
+          <span className="label flex items-center gap-1.5">
+            <Shield className="size-4 text-secondary" />
+            Quick Constitutional Role Presets (Who Can Vote)
+          </span>
+          <div className="mt-2 flex flex-wrap gap-2">
+            {ROLE_ACCESS_PRESETS.map((preset) => {
+              const isSelected =
+                preset.roleIds.length === selectedRoles.length &&
+                preset.roleIds.every((id) => selectedRoles.includes(id));
+              return (
+                <button
+                  key={preset.id}
+                  type="button"
+                  onClick={() => setSelectedRoles([...preset.roleIds])}
+                  className={`rounded-lg border px-3 py-1.5 text-xs font-semibold transition ${
+                    isSelected
+                      ? "border-secondary bg-secondary text-white shadow-xs"
+                      : "border-border bg-surface text-heading hover:border-secondary/60"
+                  }`}
+                  title={preset.description}
+                >
+                  {preset.label}
+                </button>
+              );
+            })}
+          </div>
         </div>
-      </fieldset>
+
+        <fieldset>
+          <legend className="label">{f.roles}</legend>
+          <div className="flex flex-wrap gap-2">
+            {roles.map((r) => {
+              const checked = selectedRoles.includes(r.id);
+              return (
+                <label
+                  key={r.id}
+                  className={`flex cursor-pointer items-center gap-2 rounded-full border px-3 py-1.5 text-sm transition ${
+                    checked ? "border-secondary bg-secondary/10 font-semibold text-heading" : "border-border bg-surface"
+                  }`}
+                >
+                  <input
+                    type="checkbox"
+                    name="roles"
+                    value={r.id}
+                    checked={checked}
+                    onChange={() => toggleRole(r.id)}
+                    className="accent-secondary"
+                  />
+                  {r.name}
+                </label>
+              );
+            })}
+          </div>
+        </fieldset>
+      </div>
+
+      <label className="block rounded-xl border border-border bg-bg-alt/40 p-4">
+        <span className="label flex items-center gap-1.5">
+          <Eye className="size-4 text-secondary" />
+          Website Results Visibility (Who Can See the Results &amp; Graphs)
+        </span>
+        <select
+          name="resultsVisibility"
+          value={resultsVisibility}
+          onChange={(e) => setResultsVisibility(e.target.value as ResultsVisibility)}
+          className="input mt-1"
+        >
+          {RESULTS_VISIBILITY_OPTIONS.map((opt) => (
+            <option key={opt.value} value={opt.value}>
+              {opt.label}
+            </option>
+          ))}
+        </select>
+        <span className="mt-1.5 block text-xs text-muted">{activeVis.description}</span>
+      </label>
 
       <div className="grid gap-6 sm:grid-cols-2">
         <DateTimeField name="opensAt" label={f.opensAt} initial={draft?.opensAt} />

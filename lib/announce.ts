@@ -18,9 +18,8 @@ const discordTime = (d: Date) => `<t:${Math.floor(d.getTime() / 1000)}:f>`;
 
 const COLORS: Record<Kind, number> = { opened: 0x1e3a5f, result: 0xc6a11e, vetoed: 0xc61e2c, final: 0x10b981 };
 
-/** Posts to the announcements channel webhook. Throws on failure so the caller can retry later. */
+/** Posts to the target Discord channel (via Bot API if announceChannelId is set) or webhook fallback. */
 export async function announce(kind: Kind, election: Election) {
-  // Laws go to the gazette channel; falls back to the elections channel if no separate webhook is set.
   const webhook =
     election.type === "law"
       ? process.env.DISCORD_LAW_WEBHOOK_URL || process.env.DISCORD_WEBHOOK_URL
@@ -54,6 +53,19 @@ export async function announce(kind: Kind, election: Election) {
     ],
     allowed_mentions: { parse: [] }, // never ping from user-written titles
   };
+
+  if (election.announceChannelId && process.env.DISCORD_BOT_TOKEN) {
+    const botRes = await fetch(`https://discord.com/api/v10/channels/${election.announceChannelId}/messages`, {
+      method: "POST",
+      headers: {
+        Authorization: `Bot ${process.env.DISCORD_BOT_TOKEN}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(body),
+    });
+    if (botRes.ok) return;
+    console.warn(`[announce] Bot post to channel ${election.announceChannelId} returned ${botRes.status}, falling back to webhook`);
+  }
 
   if (!webhook) {
     console.log("[announce] no webhook set, would post:", JSON.stringify(body));

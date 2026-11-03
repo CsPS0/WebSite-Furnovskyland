@@ -35,6 +35,16 @@ export async function getUserBallot(electionId: number, userId: string) {
   return row ?? null;
 }
 
+/** Computes a live tally of non-voided ballots for an open election (used when resultsVisibility allows live preview). */
+export async function computeLiveTally(election: ElectionWithOptions) {
+  const db = await getDb();
+  const valid = await db
+    .select({ choice: ballots.choice })
+    .from(ballots)
+    .where(and(eq(ballots.electionId, election.id), eq(ballots.voided, false)));
+  return tally({ ...election, ballots: valid.map((b) => b.choice) });
+}
+
 /** Moves a vote along if its times have passed. Safe to call any number of times, from anywhere. */
 export async function syncElection(id: number, now = new Date()) {
   await openIfDue(id, now);

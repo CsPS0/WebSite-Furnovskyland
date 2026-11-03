@@ -15,6 +15,13 @@
       "when": 1793575460000,
       "tag": "0001_parliament_and_campaigns",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1793699600000,
+      "tag": "0002_channel_and_visibility",
+      "breakpoints": true
     }
   ]
 }

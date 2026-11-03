@@ -5,7 +5,7 @@ import { redirect } from "next/navigation";
 import { refresh } from "next/cache";
 import { start } from "workflow/api";
 import { getDb } from "@/db";
-import { ballots, elections, electionTypes, options, type ElectionType } from "@/db/schema";
+import { ballots, elections, electionTypes, options, resultsVisibilities, type ElectionType, type ResultsVisibility } from "@/db/schema";
 import { requireAdmin, requireEmperor } from "@/lib/admin";
 import { cancelElection, getElection, vetoElection } from "@/lib/elections";
 import { dictionaryFor, hasLocale } from "@/lib/i18n";
@@ -43,6 +43,10 @@ export async function saveElection(_prev: SaveState, form: FormData): Promise<Sa
   if (!Number.isInteger(maxPicks) || maxPicks < 1 || maxPicks > labels.length) return { error: t.maxPicks };
   if (quorum !== null && (!Number.isInteger(quorum) || quorum < 1)) return { error: t.quorum };
 
+  const rawVisibility = String(form.get("resultsVisibility") ?? "after_close") as ResultsVisibility;
+  const resultsVisibility: ResultsVisibility = resultsVisibilities.includes(rawVisibility) ? rawVisibility : "after_close";
+  const announceChannelId = String(form.get("announceChannelId") ?? "").trim() || null;
+
   const values = {
     title,
     description: String(form.get("description") ?? "").trim(),
@@ -50,6 +54,8 @@ export async function saveElection(_prev: SaveState, form: FormData): Promise<Sa
     maxPicks,
     seats: Number.isInteger(seats) ? seats : 0,
     eligibleRoleIds: form.getAll("roles").map(String),
+    announceChannelId,
+    resultsVisibility,
     majority: form.get("majority") === "two_thirds" ? ("two_thirds" as const) : ("simple" as const),
     quorum,
     vetoHours,
