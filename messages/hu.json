@@ -16,12 +16,12 @@
   },
   "hero": {
     "welcome": "Furnovskyföld Nemzetszövetségének Birodalma",
-    "discover": "Az Alkotmányos Parlamentáris Monarchia Hivatalos Állami Portálja — Alapítva: 2018. október 31.",
-    "learnMore": "Nemzeti Névjegy"
+    "discover": "Alkotmányos parlamentáris monarchia, alapítva 2018. október 31-én",
+    "learnMore": "Nemzeti névjegy"
   },
   "intro": {
     "title": "Állami Áttekintés",
-    "description": "<strong>Furnovskyföld Nemzetszövetségének Birodalma</strong> szuverén, demokratikus parlamentáris monarchia, amely a 2026. október 24-én hatályba lépett Alkotmány alapján működik. Államfője <strong>Őfelsége I. Furnovsky Császár</strong>, végrehajtó szerve a 15 fős egykamarás <strong>Országgyűlésnek</strong> felelős <strong>XIII. Szövetségi Kormány</strong>. Nemzetünk több mint 250 polgárt egyesít négy régióban (Belső-Furnovskyföld, Portlandia, Nyugat-Advena és Kelet-Advena), élénk többpárti demokráciával, a <strong>Furn-Brule (Fß)</strong> nemzeti valután alapuló központi banki és vállalati gazdasággal, szabad sajtóval, valamint platformfüggetlen Minecraft-szerverrel.",
+    "description": "Furnovskyföld Nemzetszövetségének Birodalma szuverén, demokratikus parlamentáris monarchia, amely a 2026. október 24-én hatályba lépett Alkotmány szerint működik. Államfője Őfelsége I. Furnovsky császár, kormánya a XIII. Szövetségi Kormány, amely a 15 fős egykamarás Országgyűlésnek felel. Több mint 250 polgára négy régióban él (Belső-Furnovskyföld, Portlandia, Nyugat-Advena és Kelet-Advena). Több aktív párt működik, van központi bank, vannak a Furn-Brule (Fß) nemzeti valutában kereskedő vállalatok és független hírügynökségek, valamint egy Java- és Bedrock-kiadásról is elérhető Minecraft-szerver.",
     "stats": {
       "population": "Lakosság",
       "area": "Terület",
@@ -33,45 +33,45 @@
     }
   },
   "join": {
-    "title": "Csatlakozz Közösségünkhöz",
+    "title": "Csatlakozz a közösségünkhöz",
     "discord": {
-      "title": "Discord Szerver",
+      "title": "Discord-szerver",
       "description": "Csatlakozz aktív közösségünkhöz",
       "button": "Csatlakozás"
     },
     "minecraft": {
-      "title": "Minecraft Szerver",
+      "title": "Minecraft-szerver",
       "description": "Építsd velünk városainkat",
       "button": "Kapcsolódás"
     }
   },
   "history": {
     "pageTitle": "Történelem",
-    "pageSubtitle": "Fedezze fel Furnovskyföld Nemzetszövetségének Birodalma gazdag történelmi örökségét",
+    "pageSubtitle": "Furnovskyföld Nemzetszövetségének Birodalma történelme",
     "welcome": "Üdvözöljük Birodalmunkban! Olvassa el történelmünk összefoglalóját!",
     "sections": {
       "foundation": {
-        "title": "Előtörténet és Államalapítás (2018)",
-        "content": "Évszázadokon át a Waffellandi kontinens keleti részét a Waffellandi Birodalom uralta. 2018 áprilisában Furnovsky, egy távoli diktatúra által megdöntött katonai vezető hűséges támogatókat gyűjtött maga köré — útja során kiérdemelve „az angyalokkal harcoló” jelzőt. 2018 októberének elején tárgyalások útján megvásárolta a waffellandi királytól az északi Furnokisfaludi területét, ahol várat, üzleteket és határőrséget építettek. Egy esetleges inváziótól tartva a koronázást egy nappal előrehozta 2018. október 31-én 15:00 órára (CET), amikor Rupitu hercegtől átvette a Királyi Jogart, az Aranyalmát és a gyémánt uralkodói fegyvereket."
+        "title": "Előtörténet és államalapítás (2018)",
+        "content": "Évszázadokon át a Waffellandi kontinens keleti részét a Waffellandi Birodalom uralta. 2018 áprilisában Furnovsky, egy távoli diktatúra által megdöntött katonai vezető hűséges támogatókat gyűjtött maga köré, és útja során kiérdemelte „az angyalokkal harcoló” jelzőt. 2018 októberének elején tárgyalások útján megvásárolta a waffellandi királytól az északi Furnokisfaludi területét, ahol várat, üzleteket és határőrséget építettek. Egy esetleges inváziótól tartva a koronázást egy nappal előrehozta 2018. október 31-én 15:00 órára (CET), amikor Rupitu hercegtől átvette a Királyi Jogart, az Aranyalmát és a gyémánt uralkodói fegyvereket."
       },
       "expansion": {
-        "title": "A Fiatal Nemzet és a Nemzetszövetség Felemelkedése (2018–2021)",
+        "title": "A fiatal nemzet és a Nemzetszövetség felemelkedése (2018–2021)",
         "content": "A 2018 végi kisebb határháborúk után az áttörést a Nagy Havas Világháború végjátéka hozta el: 2019. január 12-én a Micaraguai Szerződéssel kialakult a mai Belső-Furnovskyföld területének 99%-a. 2019 januárjában megépült az első különálló Parlament Stadt Des Parlaments városában, júliusban megtartották az első választást és megnyílt az első Minecraft-szerver, december 1-jén pedig Staßenburg is az ország része lett. 2020-ban elkészült a furn-hauptstadti főparlament, egy hármas koalícióban aratott győzelemmel pedig Nyugat- és Kelet-Advena is csatlakozott. A 2021. januári háromhetes köztársasági időszak után, 2021. április 15-én I. Furnovsky császár kikiáltotta a Nemzetszövetséget és megalapította a Discord-szervert, majd a 2021. június 14-i súlyos szervertámadás utáni újjáépítést követően júliusban az ország csatlakozott a Szerverek Ligájához (League of Servers – LoS)."
       },
       "modernEra": {
-        "title": "A Demokrácia Aranykora és Alkotmányos Reformok (2022–2026)",
-        "content": "2022-ben I. Furnovsky császárt két ciklusra a Szerverek Ligája Világközgyűlésének elnökévé választották, ami számos meghatározó államférfit (Migaspin Casterwill, Hafiz bin Najmuldin, Damian James Ramirez, Softing) hozott a közéletbe. 2022 nyarán megalakult a Szenátus, novemberben szabaddá vált a pártalapítás, 2023. március 7-én pedig hatályba lépett az Első Birodalmi Alkotmány (1/2023. törvény). Migaspin egy teljes éven át vezette a kormányt a „demokrácia atyjaként”. 2024 márciusában Furnovskyföld rendezte meg az első LoS Discord Olimpiát. A 2024–2025-ös politikai váltógazdaság (Softing, Damian Ramirez, XVDX, majd Hunor kormányai) után 2026 történelmi megújulást hozott: januárban az első önkormányzati (polgármesteri) választásokat, áprilisban a választott Parlament felállítását, szeptemberre több mint 250 Discord-tagot Levi miniszterelnök XIII. Szövetségi Kormánya idején, 2026. október 24-én pedig az új Alkotmány hatálybalépését, amely létrehozta az egykamarás, 15 fős Országgyűlést."
+        "title": "Demokrácia és alkotmányos reformok (2022–2026)",
+        "content": "2022-ben I. Furnovsky császárt két ciklusra a Szerverek Ligája Világközgyűlésének elnökévé választották, és ez olyan államférfiakat hozott a közéletbe, mint Migaspin Casterwill, Hafiz bin Najmuldin, Damian James Ramirez és Softing. 2022 nyarán megalakult a Szenátus, novemberben szabaddá vált a pártalapítás, 2023. március 7-én pedig hatályba lépett az Első Birodalmi Alkotmány (1/2023. törvény). Migaspin egy teljes éven át vezette a kormányt a „demokrácia atyjaként”. 2024 márciusában Furnovskyföld rendezte meg az első LoS Discord Olimpiát. A 2024–2025-ös politikai váltógazdaság (Softing, Damian Ramirez, XVDX, majd Hunor kormányai) után 2026 januárjában jöttek az első önkormányzati (polgármesteri) választások, áprilisban a választott Parlament, szeptemberre több mint 250 Discord-tag Levi miniszterelnök XIII. Szövetségi Kormánya idején, 2026. október 24-én pedig az új Alkotmány, amely létrehozta az egykamarás, 15 fős Országgyűlést."
       },
       "geography": {
-        "title": "Földrajz és Régiók",
+        "title": "Földrajz és régiók",
         "content": "Furnovskyföld Nemzetszövetségének Birodalma 546 861 km² szárazföldi területtel és 54,1 millió fős lakossággal rendelkezik négy fő régióban: Belső-Furnovskyföld (Inner-Furnovskyland), Portlandia, Nyugat-Advena és Kelet-Advena. Az ország fővárosa Furn-Hauptstadt, amely a Furnovskyföldi-fennsíkon fekszik, délkeleten a Nagy Havas-hegységgel és a Német–Szlovák Monarchiával határosan. A Minecraft-szerveren (ujfurnvaros.aternos.me) a helyi közigazgatás önálló településekre épül, köztük Értilos, Égerliget, Dzsungelfalva, az Olimpiai és Poszeidón-szigetek, valamint Coastal City."
       },
       "government": {
-        "title": "Közigazgatás, Császári Család és Nemesség",
+        "title": "Közigazgatás, császári család és nemesség",
         "content": "Belső-Furnovskyföld 36 kerületre és 2 határrégióra oszlik, a nagyvárosok pedig 9 városrészből állnak négyjegyű irányítószám-rendszerrel (például az 1019 a főváros központja: 1. kerület, 01-es főváros, 9. városrész). A Császári Család és a trónöröklési sorrend tagjai: Őfelsége I. Furnovsky császár (2018. október 31. óta), Dániel koronaherceg (Furn-Hauptstadt hercege, trónörökös), Máté herceg (Furnovskyvárad hercege, második a sorban), Dániel „Rupitu” herceg (Staßenburg hercege, harmadik a sorban) és Damian James Ramirez negyedik nádor (negyedik a sorban). A közösségért kiemelkedő szolgálatot teljesítő polgárokat a Császár hat nemesi rangra emelheti: báró, vikomt, gróf, őrgróf (márki), herceg és főherceg."
       },
       "flag": {
-        "title": "Zászló és Címer",
+        "title": "Zászló és címer",
         "content": "Furnovskyföld zászlaja három egyenlő szélességű, piros, fehér és zöld vízszintes sávból áll, közepén sárga körrel (amely 2019-ben váltotta fel az eredeti narancssárga pontot). Furnovskyföld címere (a Császári Lobogó) csücskös talpú, négyelt pajzs: az első ezüst mezőben vörös holló, a második vörös mezőben ezüst hajó, a harmadik vörös mezőben ezüst angyal, a negyedik ezüst mezőben vörös csuklyás barát látható; bíbor szívpajzsában arany liliom, bíbor pajzstalpában arany hármas csomó, a pajzson pedig zárt királyi korona nyugszik."
       }
     }
@@ -81,11 +81,11 @@
     "pageSubtitle": "Furnovskyföld alkotmányos rendje, hatalmi ágai és jelenlegi tisztségviselői",
     "state_structure": {
       "title": "Államszerkezet",
-      "content": "Furnovskyföld 2026. október 23-án elfogadott és 2026. október 24-én hatályba lépett Alkotmánya értelmében Furnovskyföld Nemzetszövetségének Birodalma független, demokratikus jogállam, államformája parlamentáris monarchia, amely a hatalmi ágak szétválasztásán alapul. Hivatalos nyelvei a magyar, az angol, a szlovák és a német, fővárosa Furn-Hauptstadt. Az államfő és a Furnovskyföldi Honvédség főparancsnoka <strong>Őfelsége I. Furnovsky császár</strong>, aki egyben a Szerver Tanács elnöke is. A népképviselet legfőbb szerve az egykamarás, 15 tagú <strong>Országgyűlés (Parlament)</strong>, a végrehajtó hatalom általános szerve a miniszterelnök által vezetett <strong>Szövetségi Kormány</strong>, az alkotmányvédelem és igazságszolgáltatás legfőbb szerve a <strong>Legfelsőbb Bíróság</strong>, a településeken a helyi közhatalmat pedig a közvetlenül választott <strong>polgármesterek</strong> gyakorolják."
+      "content": "Furnovskyföld 2026. október 23-án elfogadott és 2026. október 24-én hatályba lépett Alkotmánya értelmében Furnovskyföld Nemzetszövetségének Birodalma független, demokratikus jogállam, államformája parlamentáris monarchia, amely a hatalmi ágak szétválasztásán alapul. Hivatalos nyelvei a magyar, az angol, a szlovák és a német, fővárosa Furn-Hauptstadt. Az államfő és a Furnovskyföldi Honvédség főparancsnoka Őfelsége I. Furnovsky császár, aki egyben a Szerver Tanács elnöke is. A népet az egykamarás, 15 tagú Országgyűlés (Parlament) képviseli. A végrehajtó hatalmat a miniszterelnök vezette Szövetségi Kormány gyakorolja, az alkotmányvédelem és az igazságszolgáltatás a Legfelsőbb Bíróság feladata, a településeket pedig a közvetlenül választott polgármesterek irányítják."
     },
     "legislative_process": {
       "title": "Törvényhozás és jogszabályok",
-      "intro": "Furnovskyföld jogrendszerét a 2026-os Alkotmányban rögzített jogszabályi hierarchia határozza meg:",
+      "intro": "A 2026-os Alkotmány Furnovskyföld jogszabályait a következő rendbe sorolja:",
       "organic_law": "<strong>Alkotmány és alkotmánymódosítás:</strong> A jogrendszer alapja; új Alkotmány elfogadásához vagy módosításához az Országgyűlés összes képviselője kétharmadának szavazata szükséges.",
       "bill": "<strong>Sarkalatos törvény (Organikus törvény):</strong> Alapvető állami intézményeket (állampolgárság, pártok, sajtószabadság, nemzeti vagyon, Szerver Tanács, Honvédség, polgármesterek) szabályoz; elfogadásához a jelen lévő országgyűlési képviselők kétharmadának szavazata szükséges.",
       "act": "<strong>Törvény:</strong> Az Országgyűlés által a jelen lévő képviselők több mint felének szavazatával (egyszerű többséggel) elfogadott jogszabály.",
@@ -97,7 +97,7 @@
     },
     "senate": {
       "title": "Az Országgyűlés (Parlament) és a választási rendszer",
-      "p1": "A népképviselet legfőbb szerve a 15 tagú <strong>Országgyűlés</strong>, amely a 2026. október 24-i Alkotmánnyal váltotta fel a korábbi kétkamarás Parlamentet és az 5 fős Szenátust. A képviselőket 4 havonta, általános és egyenlő választójog alapján, közvetlen és titkos szavazással, országos pártlistás választáson választják meg a <strong>D'Hondt-módszer</strong> szerinti arányos mandátumelosztással. A parlamenti küszöb önálló pártlista esetén 5%, két párt közös listájánál 10%, három vagy több párt közös listájánál 15%. Az Országgyűlés és a választott szervek legfőbb hatáskörei:",
+      "p1": "A népképviselet legfőbb szerve a 15 tagú Országgyűlés, amely a 2026. október 24-i Alkotmánnyal váltotta fel a korábbi kétkamarás Parlamentet és az 5 fős Szenátust. A képviselőket 4 havonta, általános és egyenlő választójog alapján, közvetlen és titkos szavazással, országos pártlistás választáson választják meg a D'Hondt-módszer szerinti arányos mandátumelosztással. A parlamenti küszöb önálló pártlista esetén 5%, két párt közös listájánál 10%, három vagy több párt közös listájánál 15%. Az Országgyűlés és a választott szervek legfőbb hatáskörei:",
       "affairs": {
         "internal": "Törvények, sarkalatos törvények (2/3-os többséggel), a központi költségvetés és az Alkotmány megalkotása",
         "foreign": "A miniszterelnök megválasztása (a Császár javaslatára) és a Kormány parlamenti ellenőrzése interpellációkkal, bizottságokkal és konstruktív bizalmatlansági indítvánnyal",
@@ -127,7 +127,7 @@
       "content": "A 2026-os Alkotmány 22–27. cikkei alapján a Legfelsőbb Bíróság Furnovskyföld igazságszolgáltatásának és alkotmányvédelmének egységes legfőbb szerve. Három független, pártonkívüli hivatásos tagból áll: a Legfelsőbb Bíróság elnökéből (akit a Császár javaslatára az Országgyűlés választ kétharmados többséggel 6 hónapra) és két, az Országgyűlés által kinevezett bíróból. A Legfelsőbb Bíróság vizsgálja a törvények és polgármesteri rendeletek alkotmányosságát, dönt büntető-, magánjogi és közigazgatási ügyekben, elbírálja a Honvédség határbeléptetési elutasítása elleni jogorvoslatokat, valamint lefolytatja a száműzetési (Ostracization) eljárásokat."
     },
     "current_gov": {
-      "title": "Jelenlegi Kormány (XIII. Szövetségi Kormány)",
+      "title": "Jelenlegi kormány (XIII. Szövetségi Kormány)",
       "table": {
         "role": "Szerepkör",
         "name": "Név",
@@ -135,14 +135,14 @@
       }
     },
     "current_senate": {
-      "title": "Országgyűlés, Korábbi Szenátus és Polgármesterek",
+      "title": "Országgyűlés, korábbi Szenátus és polgármesterek",
       "table": {
         "role": "Testület / Frakció",
         "name": "Tisztségviselők"
       }
     },
     "current_supreme_court": {
-      "title": "Jelenlegi Bírói Kar és Alkotmánybíróság",
+      "title": "Jelenlegi bírói kar és Alkotmánybíróság",
       "content": "<strong>A Nemzetszövetség Főbírája (Chief Justice):</strong> Chief Justice Mig (@migaspincasterwill)<br /><strong>A Nemzetszövetség Bírái:</strong> Chief Justice Mig, H.R.H. Damian Ramirez-Casterwill, Diamond Slashear<br /><strong>Alkotmánybírósági Tanács:</strong> Chief Justice Mig, Őfelsége I. Furnovsky császár, Azurkapro miniszterelnök-helyettes és házelnök"
     },
     "structure": {
@@ -172,22 +172,22 @@
       "deputy_pm": "Miniszterelnök-helyettes",
       "minister": "Miniszter",
       "senator": "Az Országgyűlés elnöke (Házelnök)",
-      "deputy_senator": "Alliance for Furnovskyland (9 képviselő — 61,7%)",
-      "observer_internal": "United Conservative Coalition (6 képviselő — 38,3%)",
+      "deputy_senator": "Alliance for Furnovskyland (9 képviselő, 61,7%)",
+      "observer_internal": "United Conservative Coalition (6 képviselő, 38,3%)",
       "observer_foreign": "Utolsó leköszönő Szenátus (2026. szept.–okt.)",
       "observer_minecraft": "Választott települési polgármesterek (2026)",
       "observer_constitutional": "Alkotmányügyek",
       "observer_recruitment": "Toborzási ügyek"
     },
     "duties": {
-      "efficiency_internal": "Belügy és Munkaügy (Államtitkárok: Szabika — Konfiguráció, Shadow — Alkotmányozás, Balázs — Botfejlesztés)",
-      "finance_justice_infra": "Pénzügy (Államtitkárok: Barakk — Pénzügyi és tulajdonjogi végrehajtás, Winter — Rendszermodellezés)",
-      "defense": "Igazságügy, Honvédelem és Biztonság (Államtitkárok: Rumlibáttya, Dr. Montevideo, Mr. Heisenberg, Dr. Attikasp, Hasi)",
-      "education_health_welfare": "Oktatásügy és Egészségügy (Államtitkár: Koffie — Iskolai osztály)",
-      "foreign": "Külügy (Államtitkárok: Karl Marx — Kölcsönös kapcsolatok, Máté herceg — Diplomáciai személyzet)",
-      "culture": "Infrastruktúra, Vallás és Kultúra (Államtitkár: Raymond / Uisztanosz)",
-      "communication": "Kommunikáció (Államtitkár: Adam K — Szervertörténeti kutatás)",
-      "media": "Médiaügyek (Államtitkárok: Ármin — Bulvárügyek, Faember4 — Propagandaügyek)"
+      "efficiency_internal": "Belügy és Munkaügy. Államtitkárok: Szabika (Konfiguráció), Shadow (Alkotmányozás), Balázs (Botfejlesztés)",
+      "finance_justice_infra": "Pénzügy. Államtitkárok: Barakk (Pénzügyi és tulajdonjogi végrehajtás), Winter (Rendszermodellezés)",
+      "defense": "Igazságügy, Honvédelem és Biztonság. Államtitkárok: Rumlibáttya, Dr. Montevideo, Mr. Heisenberg, Dr. Attikasp, Hasi",
+      "education_health_welfare": "Oktatásügy és Egészségügy. Államtitkár: Koffie (Iskolai osztály)",
+      "foreign": "Külügy. Államtitkárok: Karl Marx (Kölcsönös kapcsolatok), Máté herceg (Diplomáciai személyzet)",
+      "culture": "Infrastruktúra, Vallás és Kultúra. Államtitkár: Raymond / Uisztanosz",
+      "communication": "Kommunikáció. Államtitkár: Adam K (Szervertörténeti kutatás)",
+      "media": "Médiaügyek. Államtitkárok: Ármin (Bulvárügyek), Faember4 (Propagandaügyek)"
     }
   },
   "culture": {
@@ -232,8 +232,8 @@
     }
   },
   "culturalDays": {
-    "pageTitle": "Kultúrnapok és Ünnepek",
-    "pageSubtitle": "Fedezze fel Furnovskyföld gazdag kulturális naptárát",
+    "pageTitle": "Kultúrnapok és ünnepek",
+    "pageSubtitle": "Furnovskyföld ünnepei és emléknapjai az év során",
     "months": {
       "january": "Január",
       "february": "Február",
@@ -472,9 +472,9 @@
   },
   "other": {
     "pageTitle": "Egyéb információk és dokumentumok",
-    "pageSubtitle": "Furnovskyföld hivatalos alkotmányai, hatályos törvényei, letölthető térképei és útmutatói",
+    "pageSubtitle": "Furnovskyföld alkotmányai, törvényei, térképei és útmutatói",
     "faq": {
-      "title": "Gyakran Ismételt Kérdések",
+      "title": "Gyakran ismételt kérdések",
       "join": {
         "question": "Hogyan csatlakozhatok Furnovskyföldhöz?",
         "answer": "Csatlakozz hivatalos Discord-szerverünkhöz a főoldalon található meghívóval, majd végezd el a határellenőrzést a beléptető csatornában. Az Alkotmány 39. cikke alapján a Furnovskyföldi Honvédség 72 órán belül elbírálja a belépési kérelmet a másodlagos fiókok (altok), a trollkodás és a biztonsági kockázatok kiszűrésére. Valós személyes adatok (polgári név, lakcím, fénykép) bekérése szigorúan tilos."
@@ -491,13 +491,13 @@
     "resources": {
       "title": "Hivatalos dokumentumok és források",
       "sections": {
-        "constitutions": "A Nemzetszövetség Alkotmányai",
+        "constitutions": "A Nemzetszövetség alkotmányai",
         "laws": "Hatályos törvények, határozatok és irányelvek",
         "maps": "Letölthető térképek és állami jelképek",
-        "mapsDesc": "Belső-Furnovskyföld hivatalos, nagy felbontású közigazgatási térképei és a Császári Címer közvetlenül letölthető formában."
+        "mapsDesc": "Belső-Furnovskyföld nagy felbontású közigazgatási térképei és a Császári Címer, közvetlenül letölthetően."
       },
       "documents": {
-        "title": "Hivatalos Jogszabálytár",
+        "title": "Jogszabálytár",
         "description": "Furnovskyföld Nemzetszövetségének Birodalma kihirdetett alkotmányai, sarkalatos törvényei, törvényei és gazdasági irányelvei.",
         "link": "Letöltés"
       },
@@ -509,7 +509,7 @@
       "items": {
         "constitution_2026": {
           "title": "Furnovskyföld Alkotmánya (2026)",
-          "desc": "A 2026. október 24. óta hatályos Alaptörvény — létrehozza a 15 tagú Országgyűlést, a D'Hondt választási rendszert, a Legfelsőbb Bíróságot, a polgármesteri rendszert és a Szerver Tanácsot."
+          "desc": "A 2026. október 24. óta hatályos Alaptörvény. Létrehozza a 15 tagú Országgyűlést, a D'Hondt választási rendszert, a Legfelsőbb Bíróságot, a polgármesteri rendszert és a Szerver Tanácsot."
         },
         "constitution_2026_temp": {
           "title": "A Nemzetszövetség Második (Ideiglenes) Alkotmánya (2026)",
@@ -517,11 +517,11 @@
         },
         "constitution_2023": {
           "title": "Első Birodalmi Alkotmány — 1/2023. törvény",
-          "desc": "Migaspin Casterwill és Hafiz bin Najmuldin által jegyzett történelmi alkotmány, amely 2023. március 7-től 2026 márciusáig volt hatályban."
+          "desc": "Migaspin Casterwill és Hafiz bin Najmuldin által jegyzett alkotmány, amely 2023. március 7-től 2026 márciusáig volt hatályban."
         },
         "reconfig_2026": {
           "title": "A Szerver-átalakítási Bizottság 2/2026. határozata",
-          "desc": "A Discord-csatornák, fórumok és közigazgatási kategóriák átfogó strukturális reformja."
+          "desc": "A Discord-csatornák, fórumok és közigazgatási kategóriák átszervezése."
         },
         "regional_construction_2026": {
           "title": "Regionális Építési Törvény (2026)",
@@ -581,11 +581,11 @@
         },
         "coat_of_arms": {
           "title": "Birodalmi Címer (The Imperial Banner)",
-          "desc": "Furnovskyföld Nemzetszövetségének Birodalma négyelt pajzsos, királyi koronás címerének hivatalos, nagy felbontású PNG változata."
+          "desc": "Furnovskyföld Nemzetszövetségének Birodalma négyelt pajzsos, királyi koronás címerének nagy felbontású PNG változata."
         },
         "map_districts_numbered": {
           "title": "Belső-Furnovskyföld kerületi térképe (számozott)",
-          "desc": "A 36 számozott kerületet és 2 határrégiót ábrázoló hivatalos közigazgatási térkép."
+          "desc": "A 36 számozott kerületet és 2 határrégiót ábrázoló közigazgatási térkép."
         },
         "map_districts_unnumbered": {
           "title": "Belső-Furnovskyföld kerületi térképe (számozás nélküli)",
@@ -593,7 +593,7 @@
         },
         "map_subdistricts": {
           "title": "Belső-Furnovskyföld alkerületi és városrészi térképe",
-          "desc": "A négyjegyű irányítószám-rendszer alapjául szolgáló részletes települési és városrészi térkép."
+          "desc": "A négyjegyű irányítószám-rendszer alapjául szolgáló települési és városrészi térkép."
         },
         "map_blank": {
           "title": "Belső-Furnovskyföld vaktérképe",
@@ -614,10 +614,10 @@
   },
   "minecraft": {
     "pageTitle": "Minecraft Szerver és Települések",
-    "pageSubtitle": "A Nemzetközösség hivatalos építészeti, önkormányzati és gazdasági világa",
+    "pageSubtitle": "Települések, polgármesterek, gazdaság és infrastruktúra a Nemzetközösség Minecraft-szerverén",
     "description": {
-      "title": "A Birodalom Fizikai Világa",
-      "content": "A hivatalos Furnovskyland Minecraft-szerver (<code>ujfurnvaros.aternos.me</code>) az a terület, ahol alkotmányos településeink, állami nagyberuházásaink és a <strong>Furn-Brule (Fß)</strong> alapú gazdaságunk életre kel. A <strong>Minecraft 1.21.11</strong> verzión futó szerver <strong>Java és Bedrock</strong> kiadásról (tört klienssel is) egyaránt elérhető, működő járművekkel és repülőgépekkel (<strong>MTVehicles</strong>), földalatti metróhálózattal (<code>FM-01</code>, <code>FM-03</code>, <code>FM-04</code>), nemzeti vasúttal és közvetlenül választott polgármesterekkel."
+      "title": "A Birodalom a Minecraftban",
+      "content": "A Furnovskyland Minecraft-szerveren (<code>ujfurnvaros.aternos.me</code>) vannak a településeink, az állami nagyberuházások és a Furn-Brule (Fß) alapú gazdaság. A szerver Minecraft 1.21.11-en fut, és Java, illetve Bedrock kiadásról (tört klienssel is) elérhető. Vannak működő járművek és repülőgépek (MTVehicles), földalatti metróhálózat (<code>FM-01</code>, <code>FM-03</code>, <code>FM-04</code>), nemzeti vasút és közvetlenül választott polgármesterek."
     },
     "status": {
       "title": "Szerver állapot",

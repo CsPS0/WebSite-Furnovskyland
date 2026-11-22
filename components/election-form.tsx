@@ -120,7 +120,7 @@ export function ElectionForm({ lang, roles, draft, t, types, majorities }: Props
         <label className="block">
           <span className="label flex items-center gap-1.5">
             <Hash className="size-4 text-secondary" />
-            Discord Announcement Channel
+            Discord channel for announcements
           </span>
           <select
             name="announceChannelId"
@@ -155,7 +155,7 @@ export function ElectionForm({ lang, roles, draft, t, types, majorities }: Props
 
       {type !== "law" && (
         <label className="block">
-          <span className="label">Parliamentary / Senate Seats (D&apos;Hondt hemicycle — 0 for none, e.g. 15 for Parliament)</span>
+          <span className="label">Seats to share out by D&apos;Hondt (0 for none, 15 for Parliament)</span>
           <input name="seats" type="number" min={0} max={50} defaultValue={draft?.seats ?? 0} className="input w-32" />
         </label>
       )}
@@ -164,7 +164,7 @@ export function ElectionForm({ lang, roles, draft, t, types, majorities }: Props
         <div>
           <span className="label flex items-center gap-1.5">
             <Shield className="size-4 text-secondary" />
-            Quick Constitutional Role Presets (Who Can Vote)
+            Quick presets: who can vote
           </span>
           <div className="mt-2 flex flex-wrap gap-2">
             {ROLE_ACCESS_PRESETS.map((preset) => {

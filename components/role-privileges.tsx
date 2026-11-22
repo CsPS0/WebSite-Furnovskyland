@@ -2,119 +2,119 @@ import { Eye, Hash, ShieldCheck } from "lucide-react";
 
 export const WEBSITE_ROLE_PRIVILEGES = [
   {
-    tier: "Imperial Sovereign",
+    tier: "Emperor",
     discordRole: "『👑』His Majesty, the Emperor of the Commonwealth『👑』",
     roleId: "836272651814830140",
     color: "#992d22",
     privileges: [
-      "Full electoral administration: create, edit, schedule, cancel, and delete any election or referendum",
-      "Imperial Veto (Sanctio Regia): veto passed legislation during the constitutional post-vote veto window",
-      "Assign and modify all 15 seats in the Imperial Parliament Hemicycle and Cabinet roster",
-      "View all live tallies, classified divisions, and voter integrity audit logs",
+      "Create, edit, schedule, cancel and delete any election or referendum",
+      "Veto a passed law (Sanctio Regia) during the veto window after the vote",
+      "Assign and change all 15 seats in the parliament chart and the cabinet roster",
+      "See every live count, every restricted vote and the voter warning flags",
     ],
   },
   {
-    tier: "Electoral Commission & Administration",
+    tier: "Admins",
     discordRole: "Votum Admin · Webmaster · Moderator",
     roleId: "1135221429164584960 · 1566045077980053524 · 1033089906001584129",
     color: "#e74c3c",
     privileges: [
-      "Access the /admin/ electoral dashboard, select Discord announcement channels, and configure result visibility rules",
-      "Inspect voter integrity flags (shared device cookie, shared IP hash, young account, recent server join)",
-      "Void fraudulent or duplicate ballots prior to poll close and remove test votes",
-      "Update Parliamentary seat assignments and moderate campaign submissions",
+      "Use the /admin/ page, pick the Discord channel for announcements and set who can see results",
+      "Check voter warning flags (shared device cookie, shared IP hash, new account, recent server join)",
+      "Void fraudulent or duplicate ballots before the vote closes, and remove test votes",
+      "Update parliament seat assignments and moderate campaign posts",
     ],
   },
   {
-    tier: "Executive & Parliamentary Leadership",
+    tier: "Government and Parliament leaders",
     discordRole: "Prime Minister · Deputy Prime Minister · Speaker of the House · Bureau Officer",
     roleId: "836273968058859581 · 978721383678894091 · 1491734052355444849 · 1564419081405337630",
     color: "#e67e22",
     privileges: [
-      "Assign and update the 15 Parliamentary seats in the interactive hemicycle when MPs or Ministers change",
-      "Publish official coalition and government campaign statements on the Campaign Board",
-      "Vote in both public referendums and restricted executive/parliamentary divisions",
+      "Assign and update the 15 parliament seats in the seat chart when MPs or ministers change",
+      "Publish coalition and government campaign posts in the campaigns section",
+      "Vote in public referendums and in restricted government and parliament votes",
     ],
   },
   {
-    tier: "Legislators & Cabinet Ministers",
+    tier: "MPs and ministers",
     discordRole: "Member of Parliament · Minister of the Government · Senator",
     roleId: "1490455424812454149 · 836274885226397726 · 1006845578270998538",
     color: "#d97706",
     privileges: [
-      "Hold an assigned seat in the 15-Seat III. Federal Parliament Hemicycle with portfolio attribution",
-      "Vote in restricted Parliamentary divisions (bills, constitutional amendments, and confidence motions)",
-      "View chamber-restricted results and publish campaign manifestos during election periods",
+      "Hold an assigned seat in the 15-seat III. Federal Parliament chart, with their portfolio shown",
+      "Vote in restricted parliament votes (bills, constitutional amendments and confidence motions)",
+      "See results restricted to their chamber, and publish manifestos during elections",
     ],
   },
   {
-    tier: "Registered Party Leaders & Candidates",
+    tier: "Party leaders and candidates",
     discordRole: "『🚩』Party Leader『🚩』 · Campaigning...",
     roleId: "891932223169765387 · 999227153415671909",
     color: "#d7342a",
     privileges: [
-      "Publish official party manifestos, coalition slates, and campaign posters to the Website Campaigns section",
-      "Remove or replace their own published campaign posts",
+      "Publish party manifestos, coalition lists and campaign posters in the campaigns section",
+      "Remove or replace their own campaign posts",
     ],
   },
   {
-    tier: "Verified Citizens of the Empire",
+    tier: "Citizens",
     discordRole: "『🇭🇺』Citizen of Furnovskyland『🇭🇺』",
     roleId: "836275657892954122",
     color: "#2ecc71",
     privileges: [
-      "Sign in via Discord OAuth2 and cast secret ballots in all Parliamentary, Municipal, and Citizen Referendum votes",
-      "Change their submitted ballot at any time while the poll remains open",
-      "Inspect all public election circle graphs, D'Hondt seat allocations, and legislative archives",
+      "Sign in with Discord and vote by secret ballot in parliamentary, municipal and referendum votes",
+      "Change their ballot at any time while the vote is open",
+      "See all public results, including the pie charts and D'Hondt seat charts",
     ],
   },
   {
-    tier: "Restricted / Unverified Accounts",
+    tier: "Unverified and restricted accounts",
     discordRole: "『🚫』Unverified『🚫』 · 『🛑』Quarantine『🛑』 · Non-Members",
     roleId: "875780258962505739 · 879725345677410304",
     color: "#64748b",
     privileges: [
-      "Read-only access to public pages, national history, constitutional archives, and finalized public election results",
-      "Blocked from Discord OAuth2 voting session creation and ballot submission until border verification is completed",
+      "Can read the public pages, including history, the legal archive and public election results",
+      "Cannot sign in to vote or cast a ballot until they pass border verification",
     ],
   },
 ] as const;
 
 export const VOTING_WORKFLOW_MATRIX = [
   {
-    voteType: "Parliamentary General Election (15 Seats)",
+    voteType: "Parliamentary election (15 seats)",
     discordChannel: "#『🗳』elections (852198106627047474)",
     eligibleVoters: "『🇭🇺』Citizen of Furnovskyland『🇭🇺』 (Universal Suffrage)",
-    votingRule: "Single-choice party/coalition list · D'Hondt 15-Seat Hemicycle",
-    resultsVisibility: "Hidden while open → Public Circle Graph & Seat Hemicycle after close",
+    votingRule: "One choice of party or coalition list; 15 seats shared out by D'Hondt",
+    resultsVisibility: "Hidden while open; pie chart and seat chart public after it closes",
   },
   {
-    voteType: "National Referendum (Constitution Art. 9)",
+    voteType: "National referendum (Art. 9)",
     discordChannel: "#『✅』citizen-polls『❌』 (871702306352144405)",
     eligibleVoters: "『🇭🇺』Citizen of Furnovskyland『🇭🇺』 (Universal Suffrage)",
-    votingRule: "Law / Referendum (Yes / No / Abstain) · Validity quorum (>50% of target threshold)",
-    resultsVisibility: "Hidden while open (or Live Public if ordered) → Public after close",
+    votingRule: "Yes / No / Abstain; valid only with a quorum (>50% of the target threshold)",
+    resultsVisibility: "Hidden while open (or public live if so set); public after it closes",
   },
   {
-    voteType: "Act of Parliament / Ordinary Bill (Art. 5)",
-    discordChannel: "#the-parliament (1490456420444016871) → #federal-gazette",
+    voteType: "Ordinary bill (Art. 5)",
+    discordChannel: "#the-parliament (1490456420444016871), then #federal-gazette",
     eligibleVoters: "『🕴』Member of Parliament『🕴』 & 『🕴』Speaker of the House『🕴』",
-    votingRule: "Simple Majority (>50% present, quorum ≥ 8 MPs) + 120h Imperial Sanctio Regia window",
-    resultsVisibility: "Chancellery Live Preview while open → Public in #federal-gazette after close",
+    votingRule: "Simple majority (>50% of those present, quorum ≥ 8 MPs), then a 120-hour Sanctio Regia window",
+    resultsVisibility: "Emperor and admins see it live; public in #federal-gazette after it closes",
   },
   {
-    voteType: "Cardinal Law / Constitutional Amendment (Art. S & Art. 5(4))",
-    discordChannel: "#the-parliament (1490456420444016871) → #『📢』throne-hall『🎂』",
+    voteType: "Cardinal law or constitutional amendment (Art. S, Art. 5(4))",
+    discordChannel: "#the-parliament (1490456420444016871), then #『📢』throne-hall『🎂』",
     eligibleVoters: "『🕴』Member of Parliament『🕴』 & 『🕴』Speaker of the House『🕴』",
-    votingRule: "Two-Thirds Supermajority (≥2/3 of MPs) + Imperial Assent in #throne-hall",
-    resultsVisibility: "Chancellery Live Preview while open → Public upon promulgation",
+    votingRule: "Two-thirds majority (≥2/3 of MPs), then imperial assent in #throne-hall",
+    resultsVisibility: "Emperor and admins see it live; public once promulgated",
   },
   {
-    voteType: "Mayoral / Settlement Election (Art. 32)",
+    voteType: "Mayoral election (Art. 32)",
     discordChannel: "#『🗳』elections (852198106627047474)",
     eligibleVoters: "『🇭🇺』Citizen of Furnovskyland『🇭🇺』",
-    votingRule: "Single-choice or Ranked-choice (IRV) · 5-month mandate",
-    resultsVisibility: "Hidden while open → Public Circle Graph after close",
+    votingRule: "Single choice or ranked choice (IRV); 5-month term",
+    resultsVisibility: "Hidden while open; pie chart public after it closes",
   },
 ] as const;
 
@@ -125,17 +125,17 @@ export function RolePrivilegesTable() {
         <div className="flex items-center justify-between border-b border-border bg-bg-alt/60 px-6 py-4">
           <div className="flex items-center gap-2.5">
             <ShieldCheck className="size-5 text-secondary" />
-            <h3 className="text-lg font-bold text-heading">Discord Role &amp; Website Privilege Rules</h3>
+            <h3 className="text-lg font-bold text-heading">What each Discord role can do on the website</h3>
           </div>
-          <span className="text-xs font-semibold text-muted">Live Discord Guild RBAC</span>
+          <span className="text-xs font-semibold text-muted">Synced from Discord</span>
         </div>
-        <div className="table-wrapper" role="region" aria-label="Discord Role and Website Privileges">
+        <div className="table-wrapper" role="region" aria-label="Discord roles and website permissions">
           <table className="data-table">
             <thead>
               <tr>
-                <th>Constitutional Tier</th>
-                <th>Discord Server Role(s)</th>
-                <th>Website Privileges &amp; Permissions</th>
+                <th>Group</th>
+                <th>Discord role(s)</th>
+                <th>Website permissions</th>
               </tr>
             </thead>
             <tbody>
@@ -169,21 +169,21 @@ export function RolePrivilegesTable() {
         <div className="flex items-center justify-between border-b border-border bg-bg-alt/60 px-6 py-4">
           <div className="flex items-center gap-2.5">
             <Hash className="size-5 text-secondary" />
-            <h3 className="text-lg font-bold text-heading">Website Voting Protocol, Discord Channels &amp; Results Visibility</h3>
+            <h3 className="text-lg font-bold text-heading">Vote types, channels and who sees results</h3>
           </div>
           <span className="inline-flex items-center gap-1 text-xs font-semibold text-muted">
-            <Eye className="size-3.5 text-secondary" /> Constitutional Voting Flow
+            <Eye className="size-3.5 text-secondary" /> Per the Constitution
           </span>
         </div>
-        <div className="table-wrapper" role="region" aria-label="Website Voting Protocol and Results Visibility">
+        <div className="table-wrapper" role="region" aria-label="Vote types and results visibility">
           <table className="data-table">
             <thead>
               <tr>
-                <th>Division / Election Type</th>
-                <th>Linked Discord Channel</th>
-                <th>Who Can Vote (Discord Role)</th>
-                <th>Majority &amp; Constitutional Rule</th>
-                <th>Who Can See Results on Website</th>
+                <th>Vote type</th>
+                <th>Discord channel</th>
+                <th>Who can vote</th>
+                <th>Rule</th>
+                <th>Who sees the results</th>
               </tr>
             </thead>
             <tbody>

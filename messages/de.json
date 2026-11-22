@@ -16,12 +16,12 @@
   },
   "hero": {
     "welcome": "Commonwealth-Kaiserreich Furnovskyland",
-    "discover": "Offizielles Staatsportal der Konstitutionellen Parlamentarischen Monarchie — Gegründet am 31. Oktober 2018",
+    "discover": "Konstitutionelle parlamentarische Monarchie, gegründet am 31. Oktober 2018",
     "learnMore": "Staatsprofil"
   },
   "intro": {
     "title": "Staatsübersicht",
-    "description": "Das <strong>Commonwealth-Kaiserreich Furnovskyland</strong> ist eine souveräne demokratische parlamentarische Monarchie auf Grundlage der Verfassung vom 24. Oktober 2026. Unter Staatsoberhaupt <strong>Seiner Majestät Kaiser Furnovsky I.</strong> und der <strong>XIII. Bundesregierung</strong>, die der 15-köpfigen <strong>Nationalversammlung</strong> verantwortlich ist, vereint unsere Nation über 250 Bürger in vier Territorien (Inner-Furnovskyland, Portlandia, West-Advena und Ost-Advena) mit einer aktiven Mehrparteiendemokratie, einer Zentralbank- und Unternehmenswirtschaft in <strong>Furn-Brule (Fß)</strong>, unabhängiger Presse und einem plattformübergreifenden Minecraft-Server.",
+    "description": "Das Commonwealth-Kaiserreich Furnovskyland ist eine souveräne, demokratische parlamentarische Monarchie nach der Verfassung vom 24. Oktober 2026. Staatsoberhaupt ist Seine Majestät Kaiser Furnovsky I.; die XIII. Bundesregierung ist der 15-köpfigen Nationalversammlung verantwortlich. Über 250 Bürger leben in vier Territorien (Inner-Furnovskyland, Portlandia, West-Advena und Ost-Advena). Es gibt mehrere aktive Parteien, eine Zentralbank und Unternehmen, die mit der Landeswährung Furn-Brule (Fß) handeln, unabhängige Nachrichtenagenturen und einen Minecraft-Server für Java und Bedrock.",
     "stats": {
       "population": "Bevölkerung",
       "area": "Fläche",
@@ -35,19 +35,19 @@
   "join": {
     "title": "Treten Sie unserer Gemeinschaft bei",
     "discord": {
-      "title": "Discord Server",
+      "title": "Discord-Server",
       "description": "Treten Sie unserer aktiven Gemeinschaft bei",
       "button": "Beitreten"
     },
     "minecraft": {
-      "title": "Minecraft Server",
+      "title": "Minecraft-Server",
       "description": "Bauen Sie mit uns unsere Städte",
       "button": "Verbinden"
     }
   },
   "history": {
     "pageTitle": "Geschichte",
-    "pageSubtitle": "Entdecken Sie das historische Erbe des Reiches des Völkerbundes des Furnovskyland",
+    "pageSubtitle": "Die Geschichte des Commonwealth-Kaiserreichs Furnovskyland",
     "welcome": "Willkommen in unserem Reich! Lesen Sie hier die Zusammenfassung unserer Geschichte.",
     "sections": {
       "foundation": {
@@ -59,15 +59,15 @@
         "content": "Nach mehreren Grenzkriegen Ende 2018 brachte die Endphase des Großen Schneeweltkriegs den Durchbruch: Am 12. Januar 2019 wurden im Vertrag von Micaragua 99 % des heutigen Inner-Furnovskyland gesichert. Im Januar 2019 entstand das erste Parlamentsgebäude in Stadt Des Parlaments, im Juli folgten die erste Wahl und der erste Minecraft-Server, und am 1. Dezember 2019 trat Staßenburg bei. 2020 wurde das Hauptparlament in Furn-Hauptstadt fertiggestellt und durch einen Dreierkoalitionssieg kamen West- und Ost-Advena hinzu. Nach einer dreiwöchigen Republik im Januar 2021 rief Kaiser Furnovsky I. am 15. April 2021 das Commonwealth aus und gründete den Discord-Server. Nach dem Wiederaufbau infolge des schweren Serverangriffs vom 14. Juni 2021 trat das Land im Juli der League of Servers (LoS) bei."
       },
       "modernEra": {
-        "title": "Goldenes Zeitalter der Demokratie und Verfassungsreformen (2022–2026)",
-        "content": "Im Jahr 2022 diente Kaiser Furnovsky I. zwei Amtszeiten als Präsident der Weltversammlung der League of Servers, wodurch bedeutende Staatsmänner wie Migaspin Casterwill, Hafiz bin Najmuldin, Damian James Ramirez und Softing gewonnen wurden. Im Sommer 2022 wurde der Senat eingerichtet, im November die Parteigründung für alle Bürger geöffnet und am 7. März 2023 die Erste Kaiserliche Verfassung (Gesetz 1/2023) verkündet. Migaspin führte ein Jahr lang die Regierung als „Vater der Demokratie“. Im März 2024 richtete Furnovskyland die ersten LoS-Discord-Olympics aus. Nach spannenden Regierungswechseln 2024–2025 (unter Softing, Damian Ramirez, XVDX und Hunor) brachte 2026 historische Reformen: im Januar die ersten Kommunalwahlen, im April ein gewähltes Parlament, über 250 Discord-Mitglieder im September unter Premierminister Levis XIII. Bundesregierung und am 24. Oktober 2026 das Inkrafttreten der neuen Verfassung mit einer 15-köpfigen Nationalversammlung."
+        "title": "Demokratie und Verfassungsreformen (2022–2026)",
+        "content": "Im Jahr 2022 war Kaiser Furnovsky I. zwei Amtszeiten lang Präsident der Weltversammlung der League of Servers; in dieser Zeit kamen Staatsmänner wie Migaspin Casterwill, Hafiz bin Najmuldin, Damian James Ramirez und Softing in die Politik. Im Sommer 2022 wurde der Senat eingerichtet, im November die Parteigründung für alle Bürger geöffnet und am 7. März 2023 die Erste Kaiserliche Verfassung (Gesetz 1/2023) verkündet. Migaspin führte ein Jahr lang die Regierung als „Vater der Demokratie“. Im März 2024 richtete Furnovskyland die ersten LoS-Discord-Olympics aus. Nach den Regierungswechseln 2024–2025 (unter Softing, Damian Ramirez, XVDX und Hunor) folgten 2026 im Januar die ersten Kommunalwahlen, im April ein gewähltes Parlament, im September über 250 Discord-Mitglieder unter Premierminister Levis XIII. Bundesregierung und am 24. Oktober 2026 das Inkrafttreten der neuen Verfassung mit einer 15-köpfigen Nationalversammlung."
       },
       "geography": {
         "title": "Geographie und Regionen",
         "content": "Das Reich des Völkerbundes des Furnovskyland umfasst eine Fläche von 546.861 km² und 54,1 Millionen Einwohner in vier Hauptregionen: Inner-Furnovskyland, Portlandia, West-Advena und Ost-Advena. Die Hauptstadt ist Furn-Hauptstadt auf dem Furnovskyländischen Plateau an der Grenze zum Großen Schneegebirge und der Deutsch-Slowakischen Monarchie. Auf dem Minecraft-Server (ujfurnvaros.aternos.me) gliedert sich die Kommunalverwaltung in aktive Siedlungen wie Értilos, Égerliget, Dzsungelfalva, die Olympischen und Poseidon-Inseln sowie Coastal City."
       },
       "government": {
-        "title": "Bezirke, Kaiserliche Familie und Adel",
+        "title": "Bezirke, kaiserliche Familie und Adel",
         "content": "Inner-Furnovskyland ist in 36 Bezirke und 2 Grenzregionen unterteilt; Großstädte bestehen aus 9 Stadtteilen mit vierstelligen Postleitzahlen (z. B. 1019 für das Zentrum der Hauptstadt: 1. Bezirk, Hauptort 01, Stadtteil 9). Die Kaiserliche Familie und Thronfolge umfasst Seine Majestät Kaiser Furnovsky I. (seit 31. Oktober 2018), Kronprinz Daniel von Furn-Hauptstadt (Thronfolger), Prinz Matthew von Furnovskyvárad (Zweiter in der Thronfolge), Prinz Daniel „Rupitu“ von Staßenburg (Dritter) sowie den Vierten Palatin Damian James Ramirez (Vierter). Verdiente Bürger können vom Kaiser in sechs Adelsränge erhoben werden: Baron, Viscount, Graf, Marquis, Herzog und Erzherzog."
       },
       "flag": {
@@ -81,11 +81,11 @@
     "pageSubtitle": "Verfassungsordnung, Staatsgewalten und aktuelle Amtsträger von Furnovskyland",
     "state_structure": {
       "title": "Staatsstruktur",
-      "content": "Gemäß der am 23. Oktober 2026 verabschiedeten und seit dem 24. Oktober 2026 geltenden Verfassung von Furnovskyland ist das Reich des Völkerbundes des Furnovskyland ein unabhängiger, demokratischer Rechtsstaat in Form einer parlamentarischen Monarchie auf Grundlage der Gewaltenteilung. Amtssprachen sind Ungarisch, Englisch, Slowakisch und Deutsch; Hauptstadt ist Furn-Hauptstadt. Staatsoberhaupt und Oberbefehlshaber der Verteidigungskräfte ist <strong>Seine Majestät Kaiser Furnovsky I.</strong>, der zugleich dem Serverrat vorsitzt. Die oberste Volksvertretung ist die einkammerige, 15-köpfige <strong>Nationalversammlung (Parlament)</strong>, die Exekutive bildet die vom Premierminister geführte <strong>Bundesregierung</strong>, der Verfassungsschutz und die Rechtsprechung obliegen dem <strong>Obersten Gerichtshof</strong>, und die lokale öffentliche Gewalt in den Siedlungen wird von direkt gewählten <strong>Bürgermeistern</strong> ausgeübt."
+      "content": "Gemäß der am 23. Oktober 2026 verabschiedeten und seit dem 24. Oktober 2026 geltenden Verfassung von Furnovskyland ist das Reich des Völkerbundes des Furnovskyland ein unabhängiger, demokratischer Rechtsstaat in Form einer parlamentarischen Monarchie auf Grundlage der Gewaltenteilung. Amtssprachen sind Ungarisch, Englisch, Slowakisch und Deutsch; Hauptstadt ist Furn-Hauptstadt. Staatsoberhaupt und Oberbefehlshaber der Verteidigungskräfte ist Seine Majestät Kaiser Furnovsky I., der zugleich dem Serverrat vorsitzt. Das Volk wird durch die einkammerige, 15-köpfige Nationalversammlung (Parlament) vertreten. Die vom Premierminister geführte Bundesregierung übt die Exekutive aus, der Oberste Gerichtshof ist für Rechtsprechung und Verfassungsschutz zuständig, und die Siedlungen werden von direkt gewählten Bürgermeistern verwaltet."
     },
     "legislative_process": {
       "title": "Gesetzgebung und Rechtsnormen",
-      "intro": "Das Rechtssystem von Furnovskyland folgt der in der Verfassung von 2026 festgelegten Normenhierarchie:",
+      "intro": "Die Verfassung von 2026 ordnet die Rechtsquellen von Furnovskyland wie folgt:",
       "organic_law": "<strong>Verfassung &amp; Verfassungsänderungen:</strong> Grundlage des Rechtssystems; Verabschiedung oder Änderung erfordert eine Zweidrittelmehrheit aller Mitglieder der Nationalversammlung.",
       "bill": "<strong>Kardinalgesetz (Organgesetz):</strong> Regelt grundlegende Staatsorgane (Staatsbürgerschaft, Parteien, Pressefreiheit, Nationalvermögen, Serverrat, Verteidigungskräfte, Bürgermeister) und erfordert eine Zweidrittelmehrheit der anwesenden Abgeordneten.",
       "act": "<strong>Einfaches Gesetz:</strong> Wird von der Nationalversammlung mit einfacher Mehrheit der anwesenden Mitglieder (bei Beschlussfähigkeit von mehr als der Hälfte der Abgeordneten) beschlossen.",
@@ -97,7 +97,7 @@
     },
     "senate": {
       "title": "Die Nationalversammlung (Parlament) und das Wahlsystem",
-      "p1": "Das oberste Organ der Volksvertretung ist die 15-köpfige <strong>Nationalversammlung</strong>, die mit der Verfassung vom 24. Oktober 2026 das frühere Zweikammerparlament und den 5-köpfigen STV-Senat abgelöst hat. Die Abgeordneten werden alle 4 Monate in allgemeiner, unmittelbarer, gleicher und geheimer Verhältniswahl über landesweite Parteilisten nach dem <strong>D'Hondt-Verfahren</strong> gewählt. Die Sperrklausel beträgt 5 % für einzelne Parteien, 10 % für gemeinsame Listen zweier Parteien und 15 % für Bündnisse aus drei oder mehr Parteien. Zu den wichtigsten Kompetenzen gehören:",
+      "p1": "Das oberste Organ der Volksvertretung ist die 15-köpfige Nationalversammlung, die mit der Verfassung vom 24. Oktober 2026 das frühere Zweikammerparlament und den 5-köpfigen STV-Senat abgelöst hat. Die Abgeordneten werden alle 4 Monate in allgemeiner, unmittelbarer, gleicher und geheimer Verhältniswahl über landesweite Parteilisten nach dem D'Hondt-Verfahren gewählt. Die Sperrklausel beträgt 5 % für einzelne Parteien, 10 % für gemeinsame Listen zweier Parteien und 15 % für Bündnisse aus drei oder mehr Parteien. Zu den wichtigsten Kompetenzen gehören:",
       "affairs": {
         "internal": "Verabschiedung von Gesetzen, Kardinalgesetzen (2/3-Mehrheit), dem Zentralhaushalt und Verfassungsänderungen",
         "foreign": "Wahl des Premierministers (auf Vorschlag des Kaisers) und parlamentarische Kontrolle durch Interpellationen, Ausschüsse und konstruktives Misstrauensvotum",
@@ -135,7 +135,7 @@
       }
     },
     "current_senate": {
-      "title": "Nationalversammlung, Früherer Senat & Bürgermeister",
+      "title": "Nationalversammlung, früherer Senat & Bürgermeister",
       "table": {
         "role": "Organ / Fraktion",
         "name": "Amtsträger"
@@ -172,22 +172,22 @@
       "deputy_pm": "Stellvertretender Premierminister",
       "minister": "Minister",
       "senator": "Präsident der Nationalversammlung (Sprecher)",
-      "deputy_senator": "Alliance for Furnovskyland (9 Sitze — 61,7 %)",
-      "observer_internal": "United Conservative Coalition (6 Sitze — 38,3 %)",
+      "deputy_senator": "Alliance for Furnovskyland (9 Sitze, 61,7 %)",
+      "observer_internal": "United Conservative Coalition (6 Sitze, 38,3 %)",
       "observer_foreign": "Letzter scheidender Senat (Sept.–Okt. 2026)",
       "observer_minecraft": "Gewählte Siedlungsbürgermeister (2026)",
       "observer_constitutional": "Verfassungsangelegenheiten",
       "observer_recruitment": "Rekrutierungsangelegenheiten"
     },
     "duties": {
-      "efficiency_internal": "Inneres & Arbeit (Staatssekretäre: Szabika — Konfiguration, Shadow — Verfassung, Balázs — Bot-Entwicklung)",
-      "finance_justice_infra": "Finanzen (Staatssekretäre: Barakk — Finanz- & Eigentumsrecht, Winter — Systemmodellierung)",
-      "defense": "Justiz, Verteidigung & Sicherheit (Staatssekretäre: Rumlibáttya, Dr. Montevideo, Mr. Heisenberg, Dr. Attikasp, Hasi)",
-      "education_health_welfare": "Bildung & Gesundheit (Staatssekretär: Koffie — Schulabteilung)",
-      "foreign": "Auswärtiges (Staatssekretäre: Karl Marx — Bilaterale Beziehungen, Prinz Matthew — Diplomatisches Personal)",
-      "culture": "Infrastruktur, Religion & Kultur (Staatssekretär: Raymond / Uisztanosz)",
-      "communication": "Kommunikation (Staatssekretär: Adam K — Servergeschichtsforschung)",
-      "media": "Medienangelegenheiten (Staatssekretäre: Ármin — Boulevardmedien, Faember4 — Öffentlichkeitsarbeit)"
+      "efficiency_internal": "Inneres & Arbeit. Staatssekretäre: Szabika (Konfiguration), Shadow (Verfassung), Balázs (Bot-Entwicklung)",
+      "finance_justice_infra": "Finanzen. Staatssekretäre: Barakk (Finanz- & Eigentumsrecht), Winter (Systemmodellierung)",
+      "defense": "Justiz, Verteidigung & Sicherheit. Staatssekretäre: Rumlibáttya, Dr. Montevideo, Mr. Heisenberg, Dr. Attikasp, Hasi",
+      "education_health_welfare": "Bildung & Gesundheit. Staatssekretär: Koffie (Schulabteilung)",
+      "foreign": "Auswärtiges. Staatssekretäre: Karl Marx (Bilaterale Beziehungen), Prinz Matthew (Diplomatisches Personal)",
+      "culture": "Infrastruktur, Religion & Kultur. Staatssekretär: Raymond / Uisztanosz",
+      "communication": "Kommunikation. Staatssekretär: Adam K (Servergeschichtsforschung)",
+      "media": "Medienangelegenheiten. Staatssekretäre: Ármin (Boulevardmedien), Faember4 (Öffentlichkeitsarbeit)"
     }
   },
   "culture": {
@@ -233,7 +233,7 @@
   },
   "other": {
     "pageTitle": "Weitere Informationen & Dokumente",
-    "pageSubtitle": "Offizielle Verfassungen, geltende Gesetze, herunterladbare Karten und Leitfäden von Furnovskyland",
+    "pageSubtitle": "Verfassungen, Gesetze, Karten und Leitfäden von Furnovskyland",
     "faq": {
       "title": "Häufig gestellte Fragen",
       "join": {
@@ -255,10 +255,10 @@
         "constitutions": "Verfassungen des Commonwealth",
         "laws": "Verabschiedete Gesetze, Beschlüsse & Richtlinien",
         "maps": "Herunterladbare Karten & Staatssymbole",
-        "mapsDesc": "Hochauflösende offizielle Bezirkskarten von Inner-Furnovskyland und das Kaiserliche Wappen direkt zum Herunterladen."
+        "mapsDesc": "Hochauflösende Bezirkskarten von Inner-Furnovskyland und das Kaiserliche Wappen zum Herunterladen."
       },
       "documents": {
-        "title": "Offizielles Gesetzesarchiv",
+        "title": "Gesetzesarchiv",
         "description": "Verkündete Verfassungen, Kardinalgesetze, Gesetze und Wirtschaftsrichtlinien des Reiches des Völkerbundes des Furnovskyland.",
         "link": "Herunterladen"
       },
@@ -270,7 +270,7 @@
       "items": {
         "constitution_2026": {
           "title": "Verfassung von Furnovskyland (2026)",
-          "desc": "Aktuelles Grundgesetz in Kraft seit dem 24. Oktober 2026 — begründet die 15-köpfige Nationalversammlung, das D'Hondt-Wahlsystem, den Obersten Gerichtshof, die Bürgermeister und den Serverrat."
+          "desc": "Das seit dem 24. Oktober 2026 geltende Grundgesetz. Es begründet die 15-köpfige Nationalversammlung, das D'Hondt-Wahlsystem, den Obersten Gerichtshof, die Bürgermeister und den Serverrat."
         },
         "constitution_2026_temp": {
           "title": "Zweite (Vorläufige) Verfassung des Commonwealth (2026)",
@@ -278,11 +278,11 @@
         },
         "constitution_2023": {
           "title": "Erste Kaiserliche Verfassung — Gesetz 1/2023",
-          "desc": "Historische Verfassung von Migaspin Casterwill und Hafiz bin Najmuldin, gültig vom 7. März 2023 bis März 2026."
+          "desc": "Verfassung von Migaspin Casterwill und Hafiz bin Najmuldin, gültig vom 7. März 2023 bis März 2026."
         },
         "reconfig_2026": {
           "title": "Beschluss 2/2026 des Server-Rekonfigurationsausschusses",
-          "desc": "Umfassende Strukturreform der Discord-Kanäle, Foren und Verwaltungskategorien."
+          "desc": "Neuordnung der Discord-Kanäle, Foren und Verwaltungskategorien."
         },
         "regional_construction_2026": {
           "title": "Regionales Baugesetz (2026)",
@@ -342,11 +342,11 @@
         },
         "coat_of_arms": {
           "title": "Kaiserliches Wappen (The Imperial Banner)",
-          "desc": "Offizielle hochauflösende PNG-Datei des gevierten Wappenschilds mit Königskrone des Reiches Furnovskyland."
+          "desc": "Hochauflösende PNG-Datei des gevierten Wappenschilds mit Königskrone des Reiches Furnovskyland."
         },
         "map_districts_numbered": {
           "title": "Bezirkskarte von Inner-Furnovskyland (nummeriert)",
-          "desc": "Offizielle Verwaltungskarte mit den 36 nummerierten Bezirken und 2 Grenzregionen."
+          "desc": "Verwaltungskarte mit den 36 nummerierten Bezirken und 2 Grenzregionen."
         },
         "map_districts_unnumbered": {
           "title": "Bezirkskarte von Inner-Furnovskyland (unnummeriert)",
@@ -354,7 +354,7 @@
         },
         "map_subdistricts": {
           "title": "Unterbezirks- & Stadtzonenkarte von Inner-Furnovskyland",
-          "desc": "Detaillierte Karte mit kommunalen Unterteilungen für das vierstellige Postleitzahlensystem."
+          "desc": "Karte der kommunalen Unterteilungen für das vierstellige Postleitzahlensystem."
         },
         "map_blank": {
           "title": "Umrisskarte von Inner-Furnovskyland (Blankokarte)",
@@ -375,10 +375,10 @@
   },
   "minecraft": {
     "pageTitle": "Minecraft-Server & Siedlungen",
-    "pageSubtitle": "Offizielle Staatswelt des Commonwealth — Kommunale Selbstverwaltung, Wirtschaft und Infrastruktur",
+    "pageSubtitle": "Siedlungen, Bürgermeister, Wirtschaft und Infrastruktur auf dem Minecraft-Server des Commonwealth",
     "description": {
-      "title": "Die Physische Welt des Commonwealth",
-      "content": "Der offizielle Minecraft-Server von Furnovskyland (<code>ujfurnvaros.aternos.me</code>) bildet das physische Staatsgebiet, in dem unsere verfassungsmäßigen Gemeinden, die staatliche Infrastruktur und die <strong>Furn-Brule (Fß)</strong>-Wirtschaft lebendig werden. Der Server läuft auf <strong>Minecraft 1.21.11</strong> für <strong>Java und Bedrock Edition</strong> (einschließlich Cracked-Accounts) und bietet Fahrzeuge und Flugzeuge über <strong>MTVehicles</strong>, ein U-Bahn-Netz (<code>FM-01</code>, <code>FM-03</code>, <code>FM-04</code>), die Nationale Eisenbahn sowie demokratisch gewählte Bürgermeister."
+      "title": "Das Commonwealth in Minecraft",
+      "content": "Auf dem Minecraft-Server von Furnovskyland (<code>ujfurnvaros.aternos.me</code>) liegen die Gemeinden, die staatliche Infrastruktur und die Furn-Brule (Fß)-Wirtschaft. Der Server läuft auf Minecraft 1.21.11 für Java und Bedrock Edition (einschließlich Cracked-Accounts). Es gibt Autos und Flugzeuge über MTVehicles, ein U-Bahn-Netz (<code>FM-01</code>, <code>FM-03</code>, <code>FM-04</code>), die Nationale Eisenbahn sowie gewählte Bürgermeister."
     },
     "status": {
       "title": "Serverstatus",
@@ -418,7 +418,7 @@
   },
   "culturalDays": {
     "pageTitle": "Kulturtage und Feiertage",
-    "pageSubtitle": "Entdecken Sie den reichen Kulturkalender von Furnovskyland",
+    "pageSubtitle": "Feiertage und Gedenktage in Furnovskyland im Jahreslauf",
     "months": {
       "january": "Januar",
       "february": "Februar",

@@ -110,7 +110,7 @@ function CircleGraph({ slices, total, ballotsLabel }: { slices: PieSlice[]; tota
   return (
     <div className="rounded-lg border border-border bg-bg-alt/50 p-5">
       <div className="mb-4 flex items-center justify-between border-b border-border pb-3">
-        <span className="text-xs font-bold tracking-wider text-secondary uppercase">Vote Share Distribution</span>
+        <span className="text-xs font-bold tracking-wider text-secondary uppercase">Vote share</span>
         <span className="text-xs font-semibold text-muted">{ballotsLabel}</span>
       </div>
       <div className="grid items-center gap-6 md:grid-cols-[220px_1fr]">
@@ -312,21 +312,21 @@ export function Results({
           <div className="rounded-lg border border-border bg-bg-alt/50 p-5">
             <div className="mb-4 flex items-center justify-between border-b border-border pb-3">
               <span className="text-xs font-bold tracking-wider text-secondary uppercase">
-                Legislative Seat Allocation ({seatData.coalitionSeats.length} Seats)
+                Seats ({seatData.coalitionSeats.length})
               </span>
-              <span className="text-xs text-muted">D&apos;Hondt / Proportional Method</span>
+              <span className="text-xs text-muted">D&apos;Hondt method</span>
             </div>
             <div className={`grid gap-6 ${seatData.partyBreakdownSeats ? "md:grid-cols-2" : "md:grid-cols-1"}`}>
               <HemicycleChart
                 seats={seatData.coalitionSeats}
-                title={seatData.partyBreakdownSeats ? "Coalition Seat Distribution" : "Chamber Seat Distribution"}
+                title={seatData.partyBreakdownSeats ? "Seats by list" : "Seats"}
                 subtitle={seatData.legend.map((l) => `${l.seats} — ${l.label}`).join(" · ")}
               />
               {seatData.partyBreakdownSeats && (
                 <HemicycleChart
                   seats={seatData.partyBreakdownSeats}
-                  title="Individual Party Breakdown"
-                  subtitle="8 AfF (Red) · 1 Ind. (Grey) · 5 CCP (White) · 1 UF (Orange)"
+                  title="Seats by party"
+                  subtitle="8 AfF (red) · 1 Ind. (grey) · 5 CCP (white) · 1 UF (orange)"
                 />
               )}
             </div>

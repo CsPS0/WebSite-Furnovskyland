@@ -71,10 +71,10 @@ async function AdminList() {
       </div>
 
       <div className="border-t border-border pt-12">
-        <p className="eyebrow">Parliamentary Roster Management</p>
-        <h2 className="section-title">15-Seat Imperial Parliament Assignment</h2>
+        <p className="eyebrow">Parliament roster</p>
+        <h2 className="section-title">Assign the 15 seats</h2>
         <p className="section-subtitle">
-          Click any seat in the hemicycle or roster below to assign or update its Member of Parliament, Discord User ID, political party, coalition bench, or ministerial portfolio.
+          Click a seat in the chart or the list below to set its MP, Discord user ID, party, side or ministerial portfolio.
         </p>
         <ParliamentChamber seats={seats} canManage={canManageParliament(admin.member)} />
       </div>

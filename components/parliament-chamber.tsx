@@ -55,12 +55,12 @@ export function ParliamentChamber({
               setSelectedSeatNum(n);
               setEditing(false);
             }}
-            title="Coalition Seat Distribution (15 Seats)"
-            subtitle={`Governing Majority (${govSeats.length} Red) · Opposition (${oppSeats.length} White)`}
+            title="Seats by side (15 seats)"
+            subtitle={`Government (${govSeats.length}, red) · Opposition (${oppSeats.length}, white)`}
           />
           <div className="mt-4 flex flex-wrap justify-center gap-4 border-t border-border pt-3 text-xs">
             <span className="inline-flex items-center gap-2 font-semibold text-heading">
-              <span className="size-3.5 rounded-full bg-[#d60000]" /> Governing Coalition ({govSeats.length})
+              <span className="size-3.5 rounded-full bg-[#d60000]" /> Government ({govSeats.length})
             </span>
             <span className="inline-flex items-center gap-2 font-semibold text-heading">
               <span className="size-3.5 rounded-full border border-slate-400 bg-white" /> Opposition ({oppSeats.length})
@@ -76,8 +76,8 @@ export function ParliamentChamber({
               setSelectedSeatNum(n);
               setEditing(false);
             }}
-            title="Individual Party Seat Breakdown (15 Seats)"
-            subtitle="Click any seat in the arch to inspect or assign its Member of Parliament"
+            title="Seats by party (15 seats)"
+            subtitle="Click a seat to see who holds it or to assign an MP"
           />
           <div className="mt-4 flex flex-wrap justify-center gap-3 border-t border-border pt-3 text-xs">
             <span className="inline-flex items-center gap-1.5 font-medium text-heading">
@@ -114,7 +114,7 @@ export function ParliamentChamber({
               </div>
               <div>
                 <div className="flex flex-wrap items-center gap-2">
-                  <span className="badge">{selected.coalition === "government" ? "Governing Majority" : "Opposition Bench"}</span>
+                  <span className="badge">{selected.coalition === "government" ? "Government" : "Opposition"}</span>
                   <span className="text-xs font-semibold text-secondary">{selected.party}</span>
                 </div>
                 <h3 className="mt-1 text-2xl font-bold text-heading">{selected.memberName}</h3>
@@ -132,7 +132,7 @@ export function ParliamentChamber({
                 className="btn-ghost px-3.5 py-2 text-xs"
               >
                 <Edit3 className="size-4" />
-                {editing ? "Close Seat Editor" : `Assign / Edit Seat #${selected.seatNumber}`}
+                {editing ? "Close editor" : `Edit seat #${selected.seatNumber}`}
               </button>
             )}
           </div>
@@ -147,7 +147,7 @@ export function ParliamentChamber({
             >
               <input type="hidden" name="seatNumber" value={selected.seatNumber} />
               <label className="block">
-                <span className="label">Member Name (RP / Display Name)</span>
+                <span className="label">Member name (RP or display name)</span>
                 <input name="memberName" required defaultValue={selected.memberName} className="input" />
               </label>
               <label className="block">
@@ -159,18 +159,18 @@ export function ParliamentChamber({
                 <input name="party" required defaultValue={selected.party} className="input" />
               </label>
               <label className="block">
-                <span className="label">Parliamentary Bench</span>
+                <span className="label">Side</span>
                 <select name="coalition" defaultValue={selected.coalition} className="input">
-                  <option value="government">Governing Majority</option>
-                  <option value="opposition">Opposition Bench</option>
+                  <option value="government">Government</option>
+                  <option value="opposition">Opposition</option>
                 </select>
               </label>
               <label className="block">
-                <span className="label">Cabinet / Parliamentary Role</span>
+                <span className="label">Role in cabinet or Parliament</span>
                 <input name="role" required defaultValue={selected.role} className="input" />
               </label>
               <label className="block">
-                <span className="label">Party Seat Color</span>
+                <span className="label">Seat color</span>
                 <select name="color" defaultValue={selected.color} className="input">
                   {PARTY_COLOR_PRESETS.map((p) => (
                     <option key={p.value} value={p.value}>
@@ -181,7 +181,7 @@ export function ParliamentChamber({
               </label>
               <div className="sm:col-span-2 lg:col-span-3">
                 <button type="submit" className="btn-primary text-sm">
-                  Save Seat #{selected.seatNumber} Assignment
+                  Save seat #{selected.seatNumber}
                 </button>
               </div>
             </form>
@@ -193,7 +193,7 @@ export function ParliamentChamber({
         <div className="card">
           <div className="mb-4 flex items-center justify-between border-b border-border pb-3">
             <h3 className="flex items-center gap-2 text-lg font-bold text-heading">
-              <Crown className="size-5 text-secondary" /> Governing Majority ({govSeats.length} Seats)
+              <Crown className="size-5 text-secondary" /> Government ({govSeats.length} seats)
             </h3>
             <span className="text-xs font-semibold text-muted">Seats #1 – #{govSeats.length}</span>
           </div>
@@ -237,7 +237,7 @@ export function ParliamentChamber({
         <div className="card">
           <div className="mb-4 flex items-center justify-between border-b border-border pb-3">
             <h3 className="flex items-center gap-2 text-lg font-bold text-heading">
-              <Shield className="size-5 text-primary dark:text-link" /> Her Majesty&apos;s Opposition ({oppSeats.length} Seats)
+              <Shield className="size-5 text-primary dark:text-link" /> Opposition ({oppSeats.length} seats)
             </h3>
             <span className="text-xs font-semibold text-muted">
               Seats #{govSeats.length + 1} – #{seats.length}
@@ -283,7 +283,7 @@ export function ParliamentChamber({
 
       <p className="flex items-center gap-2 text-xs text-muted">
         <UserCheck className="size-4 text-secondary" />
-        Seats are allocated via the D&apos;Hondt proportional representation method under the October 24, 2026 Constitution and may be updated by the Emperor, Electoral Administrators, or Parliamentary Leadership when substitutions occur.
+        Seats are shared out by the D&apos;Hondt method under the October 24, 2026 Constitution. The Emperor, admins and the parliamentary leaders can update them when someone is replaced.
       </p>
     </div>
   );

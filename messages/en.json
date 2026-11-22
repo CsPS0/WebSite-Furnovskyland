@@ -16,12 +16,12 @@
   },
   "hero": {
     "welcome": "Empire of Furnovskyland's Commonwealth",
-    "discover": "Official State Portal of the Constitutional Parliamentary Monarchy — Founded October 31, 2018",
+    "discover": "Constitutional parliamentary monarchy, founded October 31, 2018",
     "learnMore": "National Profile"
   },
   "intro": {
     "title": "State Overview",
-    "description": "The <strong>Empire of Furnovskyland's Commonwealth</strong> is a sovereign democratic parliamentary monarchy governed under the Constitution of October 24, 2026. Headed by <strong>His Majesty Emperor Furnovsky I</strong> and the <strong>XIII. Federal Government</strong> accountable to the 15-seat unicameral <strong>National Assembly</strong>, our nation unites 250+ citizens across four territories (Inner-Furnovskyland, Portlandia, West-Advena, and East-Advena), an active multi-party parliamentary democracy, a central banking and corporate economy in the national <strong>Furn-Brule (Fß)</strong> currency, independent press agencies, and a cross-platform Minecraft server.",
+    "description": "The Empire of Furnovskyland's Commonwealth is a sovereign, democratic parliamentary monarchy under the Constitution of October 24, 2026. His Majesty Emperor Furnovsky I is head of state, and the XIII. Federal Government answers to the 15-seat unicameral National Assembly. More than 250 citizens live across four territories (Inner-Furnovskyland, Portlandia, West-Advena, and East-Advena). The country has several active political parties, a central bank and companies that trade in the national currency, the Furn-Brule (Fß), independent press agencies, and a Minecraft server open to both Java and Bedrock players.",
     "stats": {
       "population": "Population",
       "area": "Area",
@@ -47,28 +47,28 @@
   },
   "history": {
     "pageTitle": "History",
-    "pageSubtitle": "Discover the historical heritage of the Empire of Furnovskyland's Commonwealth",
+    "pageSubtitle": "The history of the Empire of Furnovskyland's Commonwealth",
     "welcome": "Welcome to our Empire! If you are interested, please read this overview of our history.",
     "sections": {
       "foundation": {
         "title": "Early History and State Foundation (2018)",
-        "content": "For centuries, the eastern side of the Waffellandic continent was ruled by the Waffellandic Empire. In April 2018, Furnovsky, a military leader overthrown by a distant dictatorship, gathered loyal followers across the plateau — earning the title \"the one who fought with angels\" along his journey. In early October 2018, he negotiated with the Waffellandic King to purchase the northern settlement of Furnokisfaludi (Furnotinyvillage). Fearing an imminent invasion, he brought his coronation forward by one day to October 31, 2018 at 3:00 PM CET, receiving the Royal Sceptre, the Golden Apple, and diamond monarchical weapons from Prince Rupitu."
+        "content": "For centuries, the eastern side of the Waffellandic continent was ruled by the Waffellandic Empire. In April 2018, Furnovsky, a military leader overthrown by a distant dictatorship, gathered loyal followers across the plateau and on the way earned the title \"the one who fought with angels\". In early October 2018, he negotiated with the Waffellandic King to purchase the northern settlement of Furnokisfaludi (Furnotinyvillage). Fearing an imminent invasion, he brought his coronation forward by one day to October 31, 2018 at 3:00 PM CET, receiving the Royal Sceptre, the Golden Apple, and diamond monarchical weapons from Prince Rupitu."
       },
       "expansion": {
         "title": "The Young Nation and Rise of the Commonwealth (2018–2021)",
-        "content": "Following several late-2018 border wars, Furnovskyland achieved a decisive breakthrough in the Snowy World War, signing the Treaty of Micaragua on January 12, 2019 to secure 99% of modern Inner-Furnovskyland. The first Parliament building opened in Stadt Des Parlaments in January 2019, the first semi-democratic election and Minecraft server launched in July 2019, and Staßenburg joined on December 1, 2019. In 2020, the main Parliament in Furn-Hauptstadt was completed and a three-way coalition victory over Little-Waffelland added West-Advena and East-Advena. After a brief three-week republic in January 2021 during imperial exams, Emperor Furnovsky proclaimed the Empire of Furnovskyland's Commonwealth and founded the Discord server on April 15, 2021. Despite the devastating June 14, 2021 server attack, the nation rebuilt, inaugurated the I. Federal Government under Prince Rupitu on July 1, 2021, and joined the League of Servers (LoS)."
+        "content": "After several border wars in late 2018, the breakthrough came in the Snowy World War: the Treaty of Micaragua, signed on January 12, 2019, secured 99% of modern Inner-Furnovskyland. The first Parliament building opened in Stadt Des Parlaments in January 2019, the first semi-democratic election and the Minecraft server followed in July 2019, and Staßenburg joined on December 1, 2019. In 2020 the main Parliament in Furn-Hauptstadt was completed, and a three-way coalition victory over Little-Waffelland added West-Advena and East-Advena. After a brief three-week republic in January 2021, during imperial exams, Emperor Furnovsky proclaimed the Empire of Furnovskyland's Commonwealth and founded the Discord server on April 15, 2021. The nation rebuilt after a severe server attack on June 14, 2021, inaugurated the I. Federal Government under Prince Rupitu on July 1, 2021, and joined the League of Servers (LoS)."
       },
       "modernEra": {
-        "title": "Golden Age of Democracy and Constitutional Reforms (2022–2026)",
-        "content": "In 2022, Emperor Furnovsky served two terms as World Assembly President of the League of Servers, bringing prominent statesmen such as Migaspin Casterwill, Hafiz bin Najmuldin, Damian James Ramirez, and Softing into public life. Summer 2022 reforms established fixed governmental terms and the elected Senate, followed by open political party formation in November 2022 and the First Imperial Constitution (Law 1/2023) on March 7, 2023. Migaspin led the Government for a full year as \"the father of democracy.\" In March 2024, Furnovskyland hosted the first LoS Discord Olympics. After competitive left-right alternations in 2024–2025 under Prime Ministers Softing, Damian Ramirez, XVDX, and Hunor, the year 2026 brought historic expansion: regional Municipal Elections in January, an elected Parliament in April, over 250 Discord members by September under Prime Minister Levi's XIII. Federal Government, and the adoption of the new Constitution of Furnovskyland on October 24, 2026 establishing the 15-seat unicameral National Assembly."
+        "title": "Democracy and Constitutional Reform (2022–2026)",
+        "content": "In 2022, Emperor Furnovsky served two terms as World Assembly President of the League of Servers, which brought statesmen such as Migaspin Casterwill, Hafiz bin Najmuldin, Damian James Ramirez, and Softing into public life. Reforms in summer 2022 set fixed government terms and created the elected Senate. Any citizen could form a political party from November 2022, and the First Imperial Constitution (Law 1/2023) followed on March 7, 2023. Migaspin led the Government for a full year as \"the father of democracy.\" In March 2024, Furnovskyland hosted the first LoS Discord Olympics. Power alternated between left and right in 2024–2025 under Prime Ministers Softing, Damian Ramirez, XVDX, and Hunor. 2026 brought regional Municipal Elections in January, an elected Parliament in April, more than 250 Discord members by September under Prime Minister Levi's XIII. Federal Government, and on October 24, 2026 the new Constitution of Furnovskyland, which created the 15-seat unicameral National Assembly."
       },
       "geography": {
         "title": "Geography and Regions",
-        "content": "The Empire of Furnovskyland's Commonwealth spans a land area of 546,861 km² with a population of 54.1 million across four major territories: Inner-Furnovskyland, Portlandia, West-Advena, and East-Advena. The national capital is Furn-Hauptstadt, located on the Furnovskylandic Plateau bordering the Great Snowy Mountains and the German-Slovak Monarchy. On the Minecraft server (ujfurnvaros.aternos.me), local administration is organized into active settlements including Értilos, Égerliget, Dzsungelfalva (Jungle Village), the Olympic and Poseidon Islands, and Coastal City."
+        "content": "The Empire of Furnovskyland's Commonwealth has a land area of 546,861 km² and a population of 54.1 million across four major territories: Inner-Furnovskyland, Portlandia, West-Advena, and East-Advena. The capital is Furn-Hauptstadt, on the Furnovskylandic Plateau bordering the Great Snowy Mountains and the German-Slovak Monarchy. On the Minecraft server (ujfurnvaros.aternos.me), local government is organized by settlement, including Értilos, Égerliget, Dzsungelfalva (Jungle Village), the Olympic and Poseidon Islands, and Coastal City."
       },
       "government": {
         "title": "Districts, Royal Family and Nobility",
-        "content": "Inner-Furnovskyland is divided into 36 districts and 2 border regions, with major cities split into 9 municipal zones under a 4-digit postcode system (for example, 1019 denotes District 1, chief city 01, zone 9 in central Furn-Hauptstadt). The Royal Family and line of succession consist of His Majesty Emperor Furnovsky I (reigning since October 31, 2018), Crown Prince Daniel of Furn-Hauptstadt (heir-presumptive), Prince Matthew of Furnovskyvárad (second in line), Prince Daniel \"Rupitu\" of Staßenburg (third in line), and Fourth Palatine Damian James Ramirez (fourth in line). Citizens who render distinguished service to the Commonwealth may be elevated by the Emperor to the six ranks of nobility: Baron, Viscount, Count, Marquess, Duke, and Archduke."
+        "content": "Inner-Furnovskyland is divided into 36 districts and 2 border regions, with major cities split into 9 municipal zones under a 4-digit postcode system (for example, 1019 denotes District 1, chief city 01, zone 9 in central Furn-Hauptstadt). The Royal Family and line of succession consist of His Majesty Emperor Furnovsky I (reigning since October 31, 2018), Crown Prince Daniel of Furn-Hauptstadt (heir-presumptive), Prince Matthew of Furnovskyvárad (second in line), Prince Daniel \"Rupitu\" of Staßenburg (third in line), and Fourth Palatine Damian James Ramirez (fourth in line). The Emperor may raise citizens who have served the Commonwealth with distinction to one of six ranks of nobility: Baron, Viscount, Count, Marquess, Duke, and Archduke."
       },
       "flag": {
         "title": "Flag and Coat of Arms",
@@ -81,11 +81,11 @@
     "pageSubtitle": "Constitutional order, branches of power, and current officeholders of Furnovskyland",
     "state_structure": {
       "title": "State Structure",
-      "content": "Under the Constitution of Furnovskyland (adopted on October 23, 2026 and in force since October 24, 2026), the Empire of Furnovskyland's Commonwealth is an independent, democratic parliamentary monarchy based on the separation of powers. The official languages are Hungarian, English, Slovak, and German, and the capital is Furn-Hauptstadt. Head of State and Commander-in-Chief of the Furnovskyland Defence Force is <strong>His Majesty Emperor Furnovsky I</strong>, who also presides over the Server Council. Popular sovereignty is exercised through the unicameral 15-member <strong>National Assembly (Parliament)</strong>, executive power is vested in the <strong>Federal Government</strong> led by the Prime Minister, judicial and constitutional review authority rests with the <strong>Supreme Court</strong>, and local public power in the settlements is exercised by directly elected <strong>Mayors</strong>."
+      "content": "Under the Constitution of Furnovskyland (adopted on October 23, 2026 and in force since October 24, 2026), the Empire of Furnovskyland's Commonwealth is an independent, democratic parliamentary monarchy based on the separation of powers. The official languages are Hungarian, English, Slovak, and German, and the capital is Furn-Hauptstadt. His Majesty Emperor Furnovsky I is Head of State and Commander-in-Chief of the Furnovskyland Defence Force, and also chairs the Server Council. The people are represented by the unicameral, 15-member National Assembly (Parliament). The Federal Government, led by the Prime Minister, holds executive power; the Supreme Court is responsible for the courts and constitutional review; and directly elected Mayors govern the settlements."
     },
     "legislative_process": {
       "title": "Legislation and Legal Instruments",
-      "intro": "The legal system of Furnovskyland is governed by the hierarchy of norms established in the 2026 Constitution:",
+      "intro": "The 2026 Constitution ranks the legal instruments of Furnovskyland as follows:",
       "organic_law": "<strong>Constitution & Constitutional Amendments:</strong> The supreme foundation of the legal system; adoption or amendment requires a two-thirds majority of all Members of the National Assembly.",
       "bill": "<strong>Cardinal Law (Organic Law):</strong> Regulates fundamental state institutions (citizenship, political parties, press, national assets, Server Council, Defence Force, mayors); requires a two-thirds majority of National Assembly members present.",
       "act": "<strong>Ordinary Law (Act / Bill):</strong> Enacted by the National Assembly by a simple majority of members present (with a quorum of more than half of all MPs).",
@@ -97,7 +97,7 @@
     },
     "senate": {
       "title": "The National Assembly (Parliament) and Electoral System",
-      "p1": "The supreme organ of popular representation is the 15-member <strong>National Assembly</strong>, which replaced the former bicameral Parliament and 5-seat STV Senate under the October 24, 2026 Constitution. Members are elected every 4 months by universal, direct, and secret ballot in a nationwide proportional list election using the <strong>D'Hondt method</strong>. Electoral thresholds are 5% for a single party list, 10% for a two-party joint list, and 15% for a coalition of three or more parties. Key constitutional powers of the National Assembly and other elected bodies include:",
+      "p1": "The 15-member National Assembly is the highest body of popular representation. Under the October 24, 2026 Constitution it replaced the former bicameral Parliament and the 5-seat STV Senate. Members are elected every 4 months by universal, direct, and secret ballot in a nationwide proportional list election, with seats allocated by the D'Hondt method. The thresholds are 5% for a single party list, 10% for a two-party joint list, and 15% for a coalition of three or more parties. The main powers of the National Assembly and the other elected bodies are:",
       "affairs": {
         "internal": "Enacting ordinary laws, cardinal laws (2/3 majority), the central budget, and constitutional amendments",
         "foreign": "Electing the Prime Minister (on the Emperor's proposal) and holding the Government accountable via interpellations, committees, and constructive motions of no confidence",
@@ -124,7 +124,7 @@
     },
     "supreme_court": {
       "title": "The Supreme Court",
-      "content": "Under Articles 22–27 of the 2026 Constitution, the Supreme Court is the integrated supreme organ for the protection of the Constitution and the administration of justice. It consists of three professional judges who must be independent, impartial, and non-partisan: the President of the Supreme Court (elected by a two-thirds majority of the National Assembly for a 6-month term on the proposal of the Emperor) and two judges appointed by the National Assembly. The Supreme Court reviews laws and mayoral decrees for constitutionality, adjudicates criminal, private-law, and administrative cases, hears appeals against border entry refusals by the Furnovskyland Defence Force, and conducts Ostracization proceedings."
+      "content": "Under Articles 22–27 of the 2026 Constitution, the Supreme Court is both the highest court and the body that protects the Constitution. It has three professional judges, who must be independent, impartial, and non-partisan: the President of the Supreme Court (elected by a two-thirds majority of the National Assembly for a 6-month term on the Emperor's proposal) and two judges appointed by the National Assembly. The Court reviews laws and mayoral decrees for constitutionality, decides criminal, private-law, and administrative cases, hears appeals against border entry refusals by the Furnovskyland Defence Force, and conducts Ostracization proceedings."
     },
     "current_gov": {
       "title": "Current Government (XIII. Federal Government)",
@@ -172,22 +172,22 @@
       "deputy_pm": "Deputy Prime Minister",
       "minister": "Minister",
       "senator": "Speaker of the National Assembly",
-      "deputy_senator": "Alliance for Furnovskyland (9 MPs — 61.7%)",
-      "observer_internal": "United Conservative Coalition (6 MPs — 38.3%)",
+      "deputy_senator": "Alliance for Furnovskyland (9 MPs, 61.7%)",
+      "observer_internal": "United Conservative Coalition (6 MPs, 38.3%)",
       "observer_foreign": "Final Outgoing Senate (Sep–Oct 2026)",
       "observer_minecraft": "Elected Settlement Mayors (2026)",
       "observer_constitutional": "Constitutional Affairs",
       "observer_recruitment": "Recruitment Affairs"
     },
     "duties": {
-      "efficiency_internal": "Internal Affairs & Work (State Secretaries: Szabika — Config, Shadow — Constitution, Balázs — Bot Dev)",
-      "finance_justice_infra": "Finance (State Secretaries: Barakk — Property & Enforcement, Winter — Systems Modelling)",
-      "defense": "Justice, Defence & Security (State Secretaries: Rumlibáttya, Dr. Montevideo, Mr. Heisenberg, Dr. Attikasp, Hasi)",
-      "education_health_welfare": "Educational & Healthcare Affairs (State Secretary: Koffie — School Division)",
-      "foreign": "Foreign Affairs (State Secretaries: Karl Marx — Mutual Relations, Prince Matthew — Diplomatic Personnel)",
-      "culture": "Infrastructure, Religious & Cultural Affairs (State Secretary: Raymond / Uisztanosz)",
-      "communication": "Communication (State Secretary: Adam K — Server History Research)",
-      "media": "Media Affairs (State Secretaries: Ármin — Tabloid Affairs, Faember4 — Propaganda Affairs)"
+      "efficiency_internal": "Internal Affairs & Work. State Secretaries: Szabika (Config), Shadow (Constitution), Balázs (Bot Dev)",
+      "finance_justice_infra": "Finance. State Secretaries: Barakk (Property & Enforcement), Winter (Systems Modelling)",
+      "defense": "Justice, Defence & Security. State Secretaries: Rumlibáttya, Dr. Montevideo, Mr. Heisenberg, Dr. Attikasp, Hasi",
+      "education_health_welfare": "Educational & Healthcare Affairs. State Secretary: Koffie (School Division)",
+      "foreign": "Foreign Affairs. State Secretaries: Karl Marx (Mutual Relations), Prince Matthew (Diplomatic Personnel)",
+      "culture": "Infrastructure, Religious & Cultural Affairs. State Secretary: Raymond / Uisztanosz",
+      "communication": "Communication. State Secretary: Adam K (Server History Research)",
+      "media": "Media Affairs. State Secretaries: Ármin (Tabloid Affairs), Faember4 (Propaganda Affairs)"
     }
   },
   "culture": {
@@ -233,7 +233,7 @@
   },
   "other": {
     "pageTitle": "Other Information & Documents",
-    "pageSubtitle": "Official constitutions, enacted laws, downloadable maps, and guides of Furnovskyland",
+    "pageSubtitle": "Constitutions, laws, maps, and guides of Furnovskyland",
     "faq": {
       "title": "Frequently Asked Questions",
       "join": {
@@ -242,7 +242,7 @@
       },
       "citizenship": {
         "question": "How can I obtain citizenship and participate in politics?",
-        "answer": "Once cleared at the border, you receive the Citizen role on Discord. Citizens enjoy universal suffrage to vote and stand as candidates in the 15-member National Assembly elections (every 4 months) and regional Mayoral elections (every 5 months), vote in national referendums, apply for government or judicial offices, or found a political party with at least 2 members."
+        "answer": "Once you clear the border check, you get the Citizen role on Discord. Citizens can vote and stand as candidates in the 15-member National Assembly elections (every 4 months) and the regional Mayoral elections (every 5 months), vote in national referendums, apply for government or judicial offices, and found a political party with at least 2 members."
       },
       "visit": {
         "question": "How can I play on the Minecraft server and participate in the economy?",
@@ -255,11 +255,11 @@
         "constitutions": "Constitutions of the Commonwealth",
         "laws": "Enacted Laws, Acts & Directives",
         "maps": "Downloadable Maps & National Symbols",
-        "mapsDesc": "High-resolution official district maps of Inner-Furnovskyland and the Imperial Coat of Arms hosted directly on this website."
+        "mapsDesc": "High-resolution district maps of Inner-Furnovskyland and the Imperial Coat of Arms, hosted on this website."
       },
       "documents": {
-        "title": "Official Legal Archive",
-        "description": "Publicly promulgated constitutions, cardinal laws, acts, and economic directives of the Empire of Furnovskyland's Commonwealth.",
+        "title": "Legal Archive",
+        "description": "Promulgated constitutions, cardinal laws, acts, and economic directives of the Empire of Furnovskyland's Commonwealth.",
         "link": "Download"
       },
       "guides": {
@@ -270,7 +270,7 @@
       "items": {
         "constitution_2026": {
           "title": "Constitution of Furnovskyland (2026)",
-          "desc": "Current Fundamental Law in force since October 24, 2026 — establishes the 15-member National Assembly, D'Hondt electoral system, Supreme Court, Mayors, and Server Council."
+          "desc": "The Fundamental Law in force since October 24, 2026. It establishes the 15-member National Assembly, the D'Hondt electoral system, the Supreme Court, Mayors, and the Server Council."
         },
         "constitution_2026_temp": {
           "title": "Second (Temporary) Constitution of the Commonwealth (2026)",
@@ -278,11 +278,11 @@
         },
         "constitution_2023": {
           "title": "First Imperial Constitution — Law 1/2023",
-          "desc": "Historical constitution co-authored by Migaspin Casterwill and Hafiz bin Najmuldin, in force from March 7, 2023 to March 2026."
+          "desc": "Constitution co-authored by Migaspin Casterwill and Hafiz bin Najmuldin, in force from March 7, 2023 to March 2026."
         },
         "reconfig_2026": {
           "title": "Resolution 2/2026 of the Server Reconfiguration Committee",
-          "desc": "Comprehensive structural reform of Discord channels, forums, and administrative categories."
+          "desc": "Reorganizes the Discord channels, forums, and administrative categories."
         },
         "regional_construction_2026": {
           "title": "Regional Construction Act (2026)",
@@ -342,19 +342,19 @@
         },
         "coat_of_arms": {
           "title": "Imperial Coat of Arms (The Imperial Banner)",
-          "desc": "Official high-resolution PNG of the quartered shield and royal crown of the Empire of Furnovskyland's Commonwealth."
+          "desc": "High-resolution PNG of the quartered shield and royal crown of the Empire of Furnovskyland's Commonwealth."
         },
         "map_districts_numbered": {
           "title": "Inner-Furnovskyland District Map (Numbered)",
-          "desc": "Official administrative map displaying the 36 numbered districts and 2 border regions."
+          "desc": "Administrative map showing the 36 numbered districts and 2 border regions."
         },
         "map_districts_unnumbered": {
           "title": "Inner-Furnovskyland District Map (Unnumbered)",
-          "desc": "Clean administrative map of Inner-Furnovskyland showing district boundaries without numbers."
+          "desc": "Administrative map of Inner-Furnovskyland showing district boundaries without numbers."
         },
         "map_subdistricts": {
           "title": "Inner-Furnovskyland Sub-District & City Zones Map",
-          "desc": "Detailed map including municipal sub-divisions used in the 4-digit postal code system."
+          "desc": "Map of the municipal subdivisions used in the 4-digit postal code system."
         },
         "map_blank": {
           "title": "Inner-Furnovskyland Blank Outline Map",
@@ -375,10 +375,10 @@
   },
   "minecraft": {
     "pageTitle": "Minecraft Server & Settlements",
-    "pageSubtitle": "Official national realm of the Commonwealth — Municipal self-government, economy, and infrastructure",
+    "pageSubtitle": "Settlements, mayors, economy, and infrastructure on the Commonwealth's Minecraft server",
     "description": {
-      "title": "The Physical Realm of the Commonwealth",
-      "content": "The official Furnovskyland Minecraft server (<code>ujfurnvaros.aternos.me</code>) is the physical territory where our constitutional municipalities, national infrastructure, and <strong>Furn-Brule (Fß)</strong> economy come to life. Running on <strong>Minecraft 1.21.11</strong> with full support for both <strong>Java and Bedrock Editions</strong> (including cracked accounts), the server features working cars and aircraft via <strong>MTVehicles</strong>, an underground metro network (<code>FM-01</code>, <code>FM-03</code>, <code>FM-04</code>), the National Railway, and democratically elected Settlement Mayors."
+      "title": "The Commonwealth in Minecraft",
+      "content": "The Furnovskyland Minecraft server (<code>ujfurnvaros.aternos.me</code>) hosts the settlements, the national infrastructure, and the Furn-Brule (Fß) economy. It runs Minecraft 1.21.11 and supports both Java and Bedrock Editions, including cracked accounts. Cars and aircraft work through MTVehicles, and there is an underground metro (<code>FM-01</code>, <code>FM-03</code>, <code>FM-04</code>), the National Railway, and elected Settlement Mayors."
     },
     "status": {
       "title": "Server Status",
@@ -418,7 +418,7 @@
   },
   "culturalDays": {
     "pageTitle": "Cultural Days and Holidays",
-    "pageSubtitle": "Discover the rich cultural calendar of Furnovskyland",
+    "pageSubtitle": "Holidays and observances in Furnovskyland through the year",
     "months": {
       "january": "January",
       "february": "February",

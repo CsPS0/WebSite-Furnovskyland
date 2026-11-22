@@ -28,13 +28,13 @@ export default async function VotesPage() {
           <p className="section-subtitle">{t.pageSubtitle}</p>
           <div className="mb-8 flex flex-wrap gap-3">
             <a href="#elections-archive" className="btn-ghost px-4 py-2 text-xs">
-              Elections &amp; Referendums
+              Elections and referendums
             </a>
             <a href="#campaigns" className="btn-ghost px-4 py-2 text-xs">
-              Election Campaigns &amp; Posters
+              Campaign posters
             </a>
             <a href="#role-privileges" className="btn-ghost px-4 py-2 text-xs">
-              Discord Role &amp; Voting Privileges
+              Who can do what
             </a>
           </div>
           <Suspense fallback={<div className="card h-40 animate-pulse" />}>
@@ -43,10 +43,10 @@ export default async function VotesPage() {
         </div>
 
         <div id="campaigns" className="scroll-mt-24 border-t border-border pt-12">
-          <p className="eyebrow">Official Electoral Postings · #campaigns</p>
-          <h2 className="section-title">Election Campaigns &amp; Manifestos</h2>
+          <p className="eyebrow">From #campaigns</p>
+          <h2 className="section-title">Campaigns and manifestos</h2>
           <p className="section-subtitle">
-            Official party posters, coalition slates, and candidate manifestos from Furnovskyland&apos;s Parliamentary, Senatorial, and Municipal elections. Authorized candidates and party leaders may publish new campaign materials directly below.
+            Party posters, coalition lists and candidate manifestos from Furnovskyland&apos;s parliamentary, Senate and municipal elections. Candidates and party leaders can publish new posts below.
           </p>
           <Suspense fallback={<div className="card h-64 animate-pulse" />}>
             <CampaignsBlock />
@@ -54,10 +54,10 @@ export default async function VotesPage() {
         </div>
 
         <div id="role-privileges" className="scroll-mt-24 border-t border-border pt-12">
-          <p className="eyebrow">Constitutional Access Control</p>
-          <h2 className="section-title">Website Roles &amp; Electoral Privileges</h2>
+          <p className="eyebrow">Permissions</p>
+          <h2 className="section-title">Who can do what on the website</h2>
           <p className="section-subtitle">
-            Website permissions are synchronized live with the Empire of Furnovskyland Discord server via OAuth2 and the guild bot. Below is the official schedule of Discord roles and the privileges they confer on this site.
+            What you can do here depends on your roles on the Furnovskyland Discord server, which the site checks live through the server bot. The tables below list each role and what it allows.
           </p>
           <RolePrivilegesTable />
         </div>

@@ -47,7 +47,7 @@ export function CampaignsSection({
                 : "border-border bg-surface text-muted hover:border-secondary/40 hover:text-heading"
             }`}
           >
-            All Campaigns ({campaigns.length})
+            All campaigns ({campaigns.length})
           </button>
           {elections.map((el) => (
             <button
@@ -72,7 +72,7 @@ export function CampaignsSection({
             className="btn-primary px-4 py-2 text-xs"
           >
             <Plus className="size-4" />
-            {showForm ? "Cancel" : "Publish Campaign Poster / Manifesto"}
+            {showForm ? "Cancel" : "Publish a poster or manifesto"}
           </button>
         )}
       </div>
@@ -87,11 +87,11 @@ export function CampaignsSection({
         >
           <div className="flex items-center gap-2 border-b border-border pb-3">
             <Megaphone className="size-5 text-secondary" />
-            <h3 className="text-lg font-bold text-heading">Publish Official Election Campaign</h3>
+            <h3 className="text-lg font-bold text-heading">Publish a campaign post</h3>
           </div>
           <div className="grid gap-4 sm:grid-cols-2">
             <label className="block">
-              <span className="label">Election Cycle</span>
+              <span className="label">Election</span>
               <input
                 name="electionTitle"
                 required
@@ -101,7 +101,7 @@ export function CampaignsSection({
               />
             </label>
             <label className="block">
-              <span className="label">Party or Coalition</span>
+              <span className="label">Party or coalition</span>
               <input
                 name="party"
                 required
@@ -110,22 +110,22 @@ export function CampaignsSection({
               />
             </label>
             <label className="block sm:col-span-2">
-              <span className="label">Campaign Headline / Slogan</span>
+              <span className="label">Headline or slogan</span>
               <input
                 name="title"
                 required
                 maxLength={180}
-                placeholder="e.g. Forward with Stability, Constitutional Order, and Active Governance"
+                placeholder="e.g. United We Can!"
                 className="input"
               />
             </label>
             <label className="block sm:col-span-2">
-              <span className="label">Manifesto / Campaign Statement</span>
+              <span className="label">Manifesto</span>
               <textarea
                 name="body"
                 rows={4}
                 required
-                placeholder="Outline your coalition's platform, legislative priorities, or municipal development plan..."
+                placeholder="What you stand for and what you plan to do if elected..."
                 className="input"
               />
             </label>
@@ -138,7 +138,7 @@ export function CampaignsSection({
               />
             </label>
             <label className="block">
-              <span className="label">Party Accent Color</span>
+              <span className="label">Party color</span>
               <select name="color" defaultValue="#d60000" className="input">
                 {COLOR_OPTIONS.map((c) => (
                   <option key={c.value} value={c.value}>
@@ -149,7 +149,7 @@ export function CampaignsSection({
             </label>
           </div>
           <button type="submit" className="btn-primary text-sm">
-            Publish Campaign
+            Publish
           </button>
         </form>
       )}
@@ -173,7 +173,7 @@ export function CampaignsSection({
                     className="h-64 w-full object-cover object-top transition duration-300 group-hover:scale-[1.02]"
                   />
                   <span className="absolute right-3 bottom-3 rounded bg-black/75 px-2.5 py-1 text-[11px] font-semibold text-white">
-                    View Full Poster
+                    View poster
                   </span>
                 </button>
               )}

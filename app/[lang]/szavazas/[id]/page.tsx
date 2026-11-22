@@ -169,8 +169,8 @@ async function Vote({ params }: { params: PageProps<"/[lang]/szavazas/[id]">["pa
           <Lock className="size-5 text-secondary shrink-0" />
           <p className="text-sm">
             {vis === "admin_only"
-              ? "Results for this division are classified and visible exclusively to His Majesty the Emperor and the Electoral Commission."
-              : "Results for this division are restricted to members holding the eligible Discord chamber role."}
+              ? "Only His Majesty the Emperor and the admins can see the results of this vote."
+              : "Only members with a Discord role that can vote here can see the results."}
           </p>
         </div>
       )}

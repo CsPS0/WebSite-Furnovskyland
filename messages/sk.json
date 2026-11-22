@@ -16,12 +16,12 @@
   },
   "hero": {
     "welcome": "Cisárstvo Spoločenstva Furnovskyland",
-    "discover": "Oficiálny štátny portál konštitučnej parlamentnej monarchie — Založené 31. októbra 2018",
+    "discover": "Konštitučná parlamentná monarchia založená 31. októbra 2018",
     "learnMore": "Profil štátu"
   },
   "intro": {
     "title": "Prehľad štátu",
-    "description": "<strong>Cisárstvo Spoločenstva Furnovskyland</strong> je zvrchovaná demokratická parlamentná monarchia spravovaná podľa Ústavy z 24. októbra 2026. Na čele s hlavou štátu <strong>Jeho Veličenstvom cisárom Furnovským I.</strong> a <strong>XIII. federálnou vládou</strong> zodpovednou 15-člennému jednokomorovému <strong>Národnému zhromaždeniu</strong> náš národ spája viac ako 250 občanov v štyroch teritóriách (Vnútorný Furnovskyland, Portlandia, Západná Advena a Východná Advena) s aktívnou parlamentnou demokraciou, centrálnou bankou a korporátnou ekonomikou v národnej mene <strong>Furn-Brule (Fß)</strong>, slobodnou tlačou a multiplatformovým Minecraft serverom.",
+    "description": "Cisárstvo Spoločenstva Furnovskyland je zvrchovaná demokratická parlamentná monarchia podľa Ústavy z 24. októbra 2026. Hlavou štátu je Jeho Veličenstvo cisár Furnovsky I. a XIII. federálna vláda sa zodpovedá 15-člennému jednokomorovému Národnému zhromaždeniu. Viac ako 250 občanov žije v štyroch teritóriách (Vnútorný Furnovskyland, Portlandia, Západná Advena a Východná Advena). Krajina má niekoľko aktívnych politických strán, centrálnu banku a firmy obchodujúce v národnej mene Furn-Brule (Fß), nezávislé tlačové agentúry a Minecraft server pre Java aj Bedrock.",
     "stats": {
       "population": "Obyvateľstvo",
       "area": "Rozloha",
@@ -35,19 +35,19 @@
   "join": {
     "title": "Pripojte sa k našej komunite",
     "discord": {
-      "title": "Discord Server",
+      "title": "Discord server",
       "description": "Pripojte sa k našej aktívnej komunite",
       "button": "Pripojiť sa"
     },
     "minecraft": {
-      "title": "Minecraft Server",
+      "title": "Minecraft server",
       "description": "Stavajte s nami naše mestá",
       "button": "Pripojiť"
     }
   },
   "history": {
     "pageTitle": "História",
-    "pageSubtitle": "Objavte bohaté historické dedičstvo Ríše Spoločnosti národov Furnovskyland",
+    "pageSubtitle": "História Cisárstva Spoločenstva Furnovskyland",
     "welcome": "Vitajte v našej ríši! Prečítajte si prehľad našej histórie.",
     "sections": {
       "foundation": {
@@ -56,18 +56,18 @@
       },
       "expansion": {
         "title": "Mladý národ a vzostup Spoločenstva (2018–2021)",
-        "content": "Po viacerých pohraničných vojnách koncom roka 2018 priniesla prielom záverečná fáza Veľkej snehovej svetovej vojny: 12. januára 2019 bola Micaragujskou zmluvou zabezpečená 99 % rozloha dnešného Vnútorného Furnovskylandu. V januári 2019 bola postavená prvá budova parlamentu v Stadt Des Parlaments, v júli sa konali prvé voľby a otvoril sa prvý Minecraft server a 1. decembra 2019 sa pripojilo mesto Staßenburg. V roku 2020 bol dokončený hlavný parlament vo Furn-Hauptstadte a víťazstvom trojkoalície pribudli Západná a Východná Advena. Po trojtýždňovej republike v januári 2021 cisár Furnovsky I. 15. apríla 2021 vyhlásil Spoločenstvo a založil Discord server. Po obnove po ničivom útoku na server zo 14. júna 2021 krajina v júli vstúpila do Ligy serverov (League of Servers – LoS)."
+        "content": "Po viacerých pohraničných vojnách koncom roka 2018 priniesla prielom záverečná fáza Veľkej snehovej svetovej vojny: 12. januára 2019 bola Micaragujskou zmluvou zabezpečená 99 % rozloha dnešného Vnútorného Furnovskylandu. V januári 2019 bola postavená prvá budova parlamentu v Stadt Des Parlaments, v júli sa konali prvé voľby a otvoril sa prvý Minecraft server a 1. decembra 2019 sa pripojilo mesto Staßenburg. V roku 2020 bol dokončený hlavný parlament vo Furn-Hauptstadte a víťazstvom trojkoalície pribudli Západná a Východná Advena. Po trojtýždňovej republike v januári 2021 cisár Furnovsky I. 15. apríla 2021 vyhlásil Spoločenstvo a založil Discord server. Po obnove po vážnom útoku na server zo 14. júna 2021 krajina v júli vstúpila do Ligy serverov (League of Servers – LoS)."
       },
       "modernEra": {
-        "title": "Zlatý vek demokracie a ústavné reformy (2022–2026)",
-        "content": "V roku 2022 pôsobil cisár Furnovsky I. dve funkčné obdobia ako predseda Svetového zhromaždenia Ligy serverov, čo do verejného života prinieslo významných štátnikov ako Migaspin Casterwill, Hafiz bin Najmuldin, Damian James Ramirez a Softing. V lete 2022 vznikol Senát, v novembri sa otvorilo slobodné zakladanie strán a 7. marca 2023 vstúpila do platnosti Prvá cisárska ústava (zákon 1/2023). Migaspin viedol vládu celý rok ako „otec demokracie“. V marci 2024 Furnovskyland hostil prvé Discord olympijské hry LoS. Po striedaní vlád v rokoch 2024–2025 (Softing, Damian Ramirez, XVDX a Hunor) priniesol rok 2026 historický rozmach: v januári prvé komunálne voľby starostov, v apríli volený Parlament, v septembri viac než 250 členov na Discorde počas XIII. federálnej vlády premiéra Leviho a 24. októbra 2026 prijatie novej Ústavy Furnovskylandu, ktorá zriadila jednokomorové 15-členné Národné zhromaždenie."
+        "title": "Demokracia a ústavné reformy (2022–2026)",
+        "content": "V roku 2022 pôsobil cisár Furnovsky I. dve funkčné obdobia ako predseda Svetového zhromaždenia Ligy serverov, čo do verejného života prinieslo štátnikov ako Migaspin Casterwill, Hafiz bin Najmuldin, Damian James Ramirez a Softing. V lete 2022 vznikol Senát, v novembri sa otvorilo slobodné zakladanie strán a 7. marca 2023 vstúpila do platnosti Prvá cisárska ústava (zákon 1/2023). Migaspin viedol vládu celý rok ako „otec demokracie“. V marci 2024 Furnovskyland hostil prvé Discord olympijské hry LoS. Po striedaní vlád v rokoch 2024–2025 (Softing, Damian Ramirez, XVDX a Hunor) prišli v roku 2026: v januári prvé komunálne voľby starostov, v apríli volený Parlament, v septembri viac než 250 členov na Discorde počas XIII. federálnej vlády premiéra Leviho a 24. októbra 2026 prijatie novej Ústavy Furnovskylandu, ktorá zriadila jednokomorové 15-členné Národné zhromaždenie."
       },
       "geography": {
         "title": "Geografia a regióny",
         "content": "Ríša Spoločnosti národov Furnovskyland má rozlohu 546 861 km² a 54,1 milióna obyvateľov v štyroch hlavných regiónoch: Vnútorný Furnovskyland (Inner-Furnovskyland), Portlandia, Západná Advena a Východná Advena. Hlavným mestom je Furn-Hauptstadt na Furnovskylandskej náhornej plošine pri Veľkých snehových horách a hranici s Nemecko-Slovenskou monarchiou. Na Minecraft serveri (ujfurnvaros.aternos.me) tvoria miestnu samosprávu sídla Értilos, Égerliget, Dzsungelfalva, Olympijské a Poseidónove ostrovy a Coastal City."
       },
       "government": {
-        "title": "Okresy, Cisárska rodina a šľachta",
+        "title": "Okresy, cisárska rodina a šľachta",
         "content": "Vnútorný Furnovskyland sa delí na 36 okresov a 2 pohraničné regióny, pričom veľké mestá sú rozdelené na 9 mestských častí so štvormiestnym PSČ (napr. 1019 označuje centrum hlavného mesta: 1. okres, hlavné mesto 01, časť 9). Cisársku rodinu a poradie následníctva trónu tvoria Jeho Veličenstvo cisár Furnovsky I. (od 31. októbra 2018), korunný princ Daniel z Furn-Hauptstadtu (následník trónu), princ Matthew z Furnovskyváradu (druhý v poradí), princ Daniel „Rupitu“ zo Staßenburgu (tretí) a štvrtý palatín Damian James Ramirez (štvrtý). Občanov s mimoriadnymi zásluhami môže cisár povýšiť do šiestich šľachtických hodností: barón, vikomt, gróf, markíz, vojvoda a arcivojvoda."
       },
       "flag": {
@@ -81,11 +81,11 @@
     "pageSubtitle": "Ústavný poriadok, zložky moci a súčasní predstavitelia Furnovskylandu",
     "state_structure": {
       "title": "Štruktúra štátu",
-      "content": "Podľa Ústavy Furnovskylandu prijatej 23. októbra 2026 a účinnej od 24. októbra 2026 je Ríša Spoločnosti národov Furnovskyland nezávislým, demokratickým právnym štátom s formou vlády parlamentnej monarchie založenej na deľbe moci. Úradnými jazykmi sú maďarčina, angličtina, slovenčina a nemčina; hlavným mestom je Furn-Hauptstadt. Hlavou štátu a hlavným veliteľom Obranných síl Furnovskylandu je <strong>Jeho Veličenstvo cisár Furnovsky I.</strong>, ktorý je zároveň predsedom Serverovej rady. Najvyšším orgánom ľudového zastúpenia je jednokomorové 15-členné <strong>Národné zhromaždenie (Parlament)</strong>, výkonnú moc vykonáva <strong>Federálna vláda</strong> na čele s premiérom, ochrana ústavy a súdnictvo prináležia <strong>Najvyššiemu súdu</strong> a miestnu verejnú moc v sídlach vykonávajú priamo volení <strong>starostovia (Mayors)</strong>."
+      "content": "Podľa Ústavy Furnovskylandu prijatej 23. októbra 2026 a účinnej od 24. októbra 2026 je Ríša Spoločnosti národov Furnovskyland nezávislým, demokratickým právnym štátom s formou vlády parlamentnej monarchie založenej na deľbe moci. Úradnými jazykmi sú maďarčina, angličtina, slovenčina a nemčina; hlavným mestom je Furn-Hauptstadt. Hlavou štátu a hlavným veliteľom Obranných síl Furnovskylandu je Jeho Veličenstvo cisár Furnovsky I., ktorý je zároveň predsedom Serverovej rady. Ľud zastupuje jednokomorové 15-členné Národné zhromaždenie (Parlament). Výkonnú moc má Federálna vláda na čele s premiérom, súdnictvo a ochrana ústavy patria Najvyššiemu súdu a sídla spravujú priamo volení starostovia (Mayors)."
     },
     "legislative_process": {
       "title": "Legislatívny proces a právne predpisy",
-      "intro": "Právny poriadok Furnovskylandu sa riadi hierarchiou právnych predpisov stanovenou v Ústave z roku 2026:",
+      "intro": "Ústava z roku 2026 určuje toto poradie právnych predpisov Furnovskylandu:",
       "organic_law": "<strong>Ústava a ústavné zmeny:</strong> Základ právneho systému; prijatie novej Ústavy alebo jej zmena vyžaduje dvojtretinovú väčšinu všetkých poslancov Národného zhromaždenia.",
       "bill": "<strong>Kardinálny zákon (Organický zákon):</strong> Upravuje základné štátne inštitúcie (občianstvo, politické strany, slobodu tlače, národný majetok, Serverovú radu, Obranné sily, starostov); vyžaduje dvojtretinovú väčšinu prítomných poslancov.",
       "act": "<strong>Zákon:</strong> Prijímaný Národným zhromaždením nadpolovičnou väčšinou prítomných poslancov (pri uznášaniaschopnosti viac ako polovice všetkých poslancov).",
@@ -97,7 +97,7 @@
     },
     "senate": {
       "title": "Národné zhromaždenie (Parlament) a volebný systém",
-      "p1": "Najvyšším orgánom ľudového zastúpenia je 15-členné <strong>Národné zhromaždenie</strong>, ktoré podľa Ústavy z 24. októbra 2026 nahradilo predchádzajúci dvojkomorový Parlament a 5-členný Senát. Poslanci sú volení každé 4 mesiace vo všeobecných, priamych a tajných voľbách na základe pomerného zastúpenia z celoštátnych straníckych kandidátnych listín podľa <strong>D'Hondtovej metódy</strong>. Volebný prah je 5 % pre samostatnú stranu, 10 % pre spoločnú kandidátku dvoch strán a 15 % pre koalíciu troch alebo viacerých strán. Hlavné právomoci zahŕňajú:",
+      "p1": "Najvyšším orgánom ľudového zastúpenia je 15-členné Národné zhromaždenie, ktoré podľa Ústavy z 24. októbra 2026 nahradilo predchádzajúci dvojkomorový Parlament a 5-členný Senát. Poslanci sú volení každé 4 mesiace vo všeobecných, priamych a tajných voľbách na základe pomerného zastúpenia z celoštátnych straníckych kandidátnych listín podľa D'Hondtovej metódy. Volebný prah je 5 % pre samostatnú stranu, 10 % pre spoločnú kandidátku dvoch strán a 15 % pre koalíciu troch alebo viacerých strán. Hlavné právomoci zahŕňajú:",
       "affairs": {
         "internal": "Prijímanie zákonov, kardinálnych zákonov (2/3 väčšinou), štátneho rozpočtu a zmien Ústavy",
         "foreign": "Voľbu premiéra (na návrh cisára) a parlamentnú kontrolu vlády prostredníctvom interpelácií, výborov a konštruktívneho vyslovenia nedôvery",
@@ -127,7 +127,7 @@
       "content": "Podľa článkov 22–27 Ústavy z roku 2026 je Najvyšší súd jednotným najvyšším orgánom ochrany Ústavy a výkonu spravodlivosti. Pozostáva z troch nezávislých, nestraníckych profesionálnych sudcov: predsedu Najvyššieho súdu (voleného Národným zhromaždením dvojtretinovou väčšinou na 6 mesiacov na návrh cisára) a dvoch sudcov vymenovaných Národným zhromaždením. Najvyšší súd preskúmava ústavnosť zákonov a nariadení starostov, rozhoduje v trestných, súkromnoprávnych a správnych veciach, posudzuje odvolania proti zamietnutiu vstupu na hraniciach a vedie konania o ostrakizácii (vylúčení)."
     },
     "current_gov": {
-      "title": "Súčasná Vláda (XIII. federálna vláda)",
+      "title": "Súčasná vláda (XIII. federálna vláda)",
       "table": {
         "role": "Úloha",
         "name": "Meno",
@@ -135,7 +135,7 @@
       }
     },
     "current_senate": {
-      "title": "Národné zhromaždenie, Bývalý Senát a Starostovia",
+      "title": "Národné zhromaždenie, bývalý Senát a starostovia",
       "table": {
         "role": "Orgán / Frakcia",
         "name": "Predstavitelia"
@@ -172,22 +172,22 @@
       "deputy_pm": "Podpredseda vlády",
       "minister": "Minister",
       "senator": "Predseda Národného zhromaždenia",
-      "deputy_senator": "Alliance for Furnovskyland (9 poslancov — 61,7 %)",
-      "observer_internal": "United Conservative Coalition (6 poslancov — 38,3 %)",
+      "deputy_senator": "Alliance for Furnovskyland (9 poslancov, 61,7 %)",
+      "observer_internal": "United Conservative Coalition (6 poslancov, 38,3 %)",
       "observer_foreign": "Posledný odchádzajúci Senát (sept.–okt. 2026)",
       "observer_minecraft": "Volení starostovia sídiel (2026)",
       "observer_constitutional": "Ústavné záležitosti",
       "observer_recruitment": "Záležitosti náboru"
     },
     "duties": {
-      "efficiency_internal": "Vnútro a práca (Štátni tajomníci: Szabika — konfigurácia, Shadow — ústava, Balázs — vývoj botov)",
-      "finance_justice_infra": "Financie (Štátni tajomníci: Barakk — finančné a majetkové právo, Winter — systémové modelovanie)",
-      "defense": "Spravodlivosť, obrana a bezpečnosť (Štátni tajomníci: Rumlibáttya, Dr. Montevideo, Mr. Heisenberg, Dr. Attikasp, Hasi)",
-      "education_health_welfare": "Školstvo a zdravotníctvo (Štátny tajomník: Koffie — školský odbor)",
-      "foreign": "Zahraničné veci (Štátni tajomníci: Karl Marx — vzájomné vzťahy, princ Matthew — diplomatický personál)",
-      "culture": "Infraštruktúra, náboženstvo a kultúra (Štátny tajomník: Raymond / Uisztanosz)",
-      "communication": "Komunikácia (Štátny tajomník: Adam K — výskum histórie servera)",
-      "media": "Mediálne záležitosti (Štátni tajomníci: Ármin — bulvárne médiá, Faember4 — propagácia)"
+      "efficiency_internal": "Vnútro a práca. Štátni tajomníci: Szabika (konfigurácia), Shadow (ústava), Balázs (vývoj botov)",
+      "finance_justice_infra": "Financie. Štátni tajomníci: Barakk (finančné a majetkové právo), Winter (systémové modelovanie)",
+      "defense": "Spravodlivosť, obrana a bezpečnosť. Štátni tajomníci: Rumlibáttya, Dr. Montevideo, Mr. Heisenberg, Dr. Attikasp, Hasi",
+      "education_health_welfare": "Školstvo a zdravotníctvo. Štátny tajomník: Koffie (školský odbor)",
+      "foreign": "Zahraničné veci. Štátni tajomníci: Karl Marx (vzájomné vzťahy), princ Matthew (diplomatický personál)",
+      "culture": "Infraštruktúra, náboženstvo a kultúra. Štátny tajomník: Raymond / Uisztanosz",
+      "communication": "Komunikácia. Štátny tajomník: Adam K (výskum histórie servera)",
+      "media": "Mediálne záležitosti. Štátni tajomníci: Ármin (bulvárne médiá), Faember4 (propagácia)"
     }
   },
   "culture": {
@@ -232,8 +232,8 @@
     }
   },
   "culturalDays": {
-    "pageTitle": "Kultúrne Dni a Sviatky",
-    "pageSubtitle": "Objavte bohatý kultúrny kalendár Furnovskylandu",
+    "pageTitle": "Kultúrne dni a sviatky",
+    "pageSubtitle": "Sviatky a pamätné dni Furnovskylandu počas roka",
     "months": {
       "january": "Január",
       "february": "Február",
@@ -472,7 +472,7 @@
   },
   "other": {
     "pageTitle": "Ostatné informácie a dokumenty",
-    "pageSubtitle": "Oficiálne ústavy, platné zákony, mapy na stiahnutie a príručky Furnovskylandu",
+    "pageSubtitle": "Ústavy, zákony, mapy a príručky Furnovskylandu",
     "faq": {
       "title": "Často kladené otázky",
       "join": {
@@ -494,10 +494,10 @@
         "constitutions": "Ústavy Spoločenstva",
         "laws": "Platné zákony, uznesenia a smernice",
         "maps": "Mapy a štátne symboly na stiahnutie",
-        "mapsDesc": "Oficiálne administratívne mapy Vnútorného Furnovskylandu vo vysokom rozlíšení a Cisársky štátny znak priamo na stiahnutie."
+        "mapsDesc": "Administratívne mapy Vnútorného Furnovskylandu vo vysokom rozlíšení a Cisársky štátny znak na stiahnutie."
       },
       "documents": {
-        "title": "Oficiálny archív právnych predpisov",
+        "title": "Archív právnych predpisov",
         "description": "Vyhlásené ústavy, kardinálne zákony, zákony a hospodárske smernice Ríše Spoločnosti národov Furnovskyland.",
         "link": "Stiahnuť"
       },
@@ -509,7 +509,7 @@
       "items": {
         "constitution_2026": {
           "title": "Ústava Furnovskylandu (2026)",
-          "desc": "Súčasný základný zákon účinný od 24. októbra 2026 — zriaďuje 15-členné Národné zhromaždenie, D'Hondtov volebný systém, Najvyšší súd, starostov a Serverovú radu."
+          "desc": "Základný zákon účinný od 24. októbra 2026. Zriaďuje 15-členné Národné zhromaždenie, D'Hondtov volebný systém, Najvyšší súd, starostov a Serverovú radu."
         },
         "constitution_2026_temp": {
           "title": "Druhá (Dočasná) ústava Spoločenstva (2026)",
@@ -517,11 +517,11 @@
         },
         "constitution_2023": {
           "title": "Prvá cisárska ústava — Zákon 1/2023",
-          "desc": "Historická ústava spísaná Migaspinom Casterwillom a Hafizom bin Najmuldinom, platná od 7. marca 2023 do marca 2026."
+          "desc": "Ústava spísaná Migaspinom Casterwillom a Hafizom bin Najmuldinom, platná od 7. marca 2023 do marca 2026."
         },
         "reconfig_2026": {
           "title": "Uznesenie 2/2026 Výboru pre rekonfiguráciu servera",
-          "desc": "Komplexná štrukturálna reforma Discord kanálov, fór a administratívnych kategórií."
+          "desc": "Reorganizácia Discord kanálov, fór a administratívnych kategórií."
         },
         "regional_construction_2026": {
           "title": "Zákon o regionálnej výstavbe (2026)",
@@ -581,19 +581,19 @@
         },
         "coat_of_arms": {
           "title": "Cisársky štátny znak (The Imperial Banner)",
-          "desc": "Oficiálny PNG súbor vo vysokom rozlíšení so štvrteným štítom a kráľovskou korunou Ríše Furnovskyland."
+          "desc": "PNG súbor vo vysokom rozlíšení so štvrteným štítom a kráľovskou korunou Ríše Furnovskyland."
         },
         "map_districts_numbered": {
           "title": "Mapa okresov Vnútorného Furnovskylandu (očíslovaná)",
-          "desc": "Oficiálna administratívna mapa zobrazujúca 36 očíslovaných okresov a 2 pohraničné regióny."
+          "desc": "Administratívna mapa zobrazujúca 36 očíslovaných okresov a 2 pohraničné regióny."
         },
         "map_districts_unnumbered": {
           "title": "Mapa okresov Vnútorného Furnovskylandu (neočíslovaná)",
-          "desc": "Čistá administratívna mapa Vnútorného Furnovskylandu zobrazujúca hranice okresov bez čísel."
+          "desc": "Administratívna mapa Vnútorného Furnovskylandu zobrazujúca hranice okresov bez čísel."
         },
         "map_subdistricts": {
           "title": "Mapa podokresov a mestských zón Vnútorného Furnovskylandu",
-          "desc": "Podrobná mapa vrátane mestských častí používaných v štvormiestnom systéme PSČ."
+          "desc": "Mapa mestských častí používaných v štvormiestnom systéme PSČ."
         },
         "map_blank": {
           "title": "Slepá obrysová mapa Vnútorného Furnovskylandu",
@@ -614,10 +614,10 @@
   },
   "minecraft": {
     "pageTitle": "Minecraft Server a Sídla",
-    "pageSubtitle": "Oficiálny národný svet Spoločenstva — Miestna samospráva, ekonomika a infraštruktúra",
+    "pageSubtitle": "Sídla, starostovia, ekonomika a infraštruktúra na Minecraft serveri Spoločenstva",
     "description": {
-      "title": "Fyzický svet Spoločenstva",
-      "content": "Oficiálny Minecraft server Furnovskylandu (<code>ujfurnvaros.aternos.me</code>) je fyzickým územím, kde ožívajú naše ústavné samosprávy, štátna infraštruktúra a ekonomika založená na mene <strong>Furn-Brule (Fß)</strong>. Server beží na verzii <strong>Minecraft 1.21.11</strong> s plnou podporou pre <strong>Java aj Bedrock edíciu</strong> (vrátane neoriginálnych účtov) a ponúka funkčné autá a lietadlá cez <strong>MTVehicles</strong>, podzemnú sieť metra (<code>FM-01</code>, <code>FM-03</code>, <code>FM-04</code>), Národnú železnicu a demokraticky volených starostov sídiel."
+      "title": "Spoločenstvo v Minecrafte",
+      "content": "Na Minecraft serveri Furnovskylandu (<code>ujfurnvaros.aternos.me</code>) sú naše sídla, štátna infraštruktúra a ekonomika v mene Furn-Brule (Fß). Server beží na verzii Minecraft 1.21.11 pre Java aj Bedrock edíciu (vrátane neoriginálnych účtov). Funkčné autá a lietadlá zabezpečuje MTVehicles a nájdete tu podzemné metro (<code>FM-01</code>, <code>FM-03</code>, <code>FM-04</code>), Národnú železnicu a volených starostov sídiel."
     },
     "status": {
       "title": "Stav servera",

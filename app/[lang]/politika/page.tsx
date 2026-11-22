@@ -71,7 +71,7 @@ export default async function PoliticsPage() {
 
         <article className="space-y-4">
           <div>
-            <p className="eyebrow">III. Federal Parliament · D&apos;Hondt 15-Seat Chamber</p>
+            <p className="eyebrow">III. Federal Parliament · 15 seats, D&apos;Hondt</p>
             <h2 className="mb-2 text-2xl">{extras.parliamentCompositionTitle}</h2>
             <p className="text-sm text-muted">{extras.parliamentCompositionDesc}</p>
           </div>
